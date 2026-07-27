@@ -1,0 +1,23 @@
+name: "Transcription fix"
+description: "Report where a canonical version file diverges from the authored original."
+title: "[Transcription] "
+labels: ["transcription"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The version files in `versions/` are transcriptions of the authored source documents. If a heading, table, or passage doesn't match the original, report it here. This is the **only** kind of edit allowed to a released version file — and it must bring the text *closer* to the authored original.
+  - type: input
+    id: file
+    attributes:
+      label: Which file / section?
+      placeholder: "e.g. versions/v5.1/... → 'The Garlick Equilibrium'"
+    validations:
+      required: true
+  - type: textarea
+    id: discrepancy
+    attributes:
+      label: The discrepancy
+      description: "What does the repo say vs. what the authored original says?"
+    validations:
+      required: true

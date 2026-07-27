@@ -1,0 +1,56 @@
+name: "Application / Usage report"
+description: "Tell us you're using the methodology and which parts — this is how we track real-world use."
+title: "[Usage] "
+labels: ["usage", "adoption"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting your use of the GFunnel Methodology. This is the primary way maintainers learn **who** uses it and **what** they use. Share only what you're comfortable making public.
+  - type: input
+    id: who
+    attributes:
+      label: Who are you / your org?
+      placeholder: "Name, company, product, or 'AI system: <name>'"
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of use
+      options:
+        - Business / operations
+        - Product or service (embeds the framework)
+        - AI system / agent
+        - Education / coaching / consulting
+        - Research / evaluation
+        - Personal
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How are you using it?
+      placeholder: "e.g. We run quarterly BEAS scoring across our 9 departments and use the Shepherd's Way for corrections."
+    validations:
+      required: true
+  - type: textarea
+    id: parts
+    attributes:
+      label: Which layers / algorithms / domains do you use?
+      description: "This is the 'what are they using' signal — be as specific as you can."
+      placeholder: "e.g. Layer V (Garlick Equilibrium / BEAS), Layer VI (Shepherd's Way), Master Meta-Algorithm"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Which version?
+      placeholder: "e.g. v5.1 / v5.2 / v5.3 / all"
+  - type: checkboxes
+    id: registry
+    attributes:
+      label: Adoption registry
+      options:
+        - label: "You may add me to the public adoption registry (adoption/registry.md)."

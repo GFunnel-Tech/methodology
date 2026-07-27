@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Adoption registry (tell us you use it)
+    url: https://github.com/gfunnel-tech/methodology/blob/main/adoption/registry.md
+    about: Add your name/org and which layers you use via pull request.
+  - name: How to use the methodology
+    url: https://github.com/gfunnel-tech/methodology/blob/main/docs/how-to-use.md
+    about: Human on-ramp for reading and applying the framework.

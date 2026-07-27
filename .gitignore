@@ -1,0 +1,18 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Local scratch / build
+/tmp/
+*.tmp
+node_modules/
+_site/
+.cache/
+
+# Source office docs are transcribed into versions/*.md; keep originals out unless intentionally archived
+*.docx
+!archive/**/*.docx

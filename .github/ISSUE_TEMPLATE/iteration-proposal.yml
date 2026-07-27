@@ -1,0 +1,54 @@
+name: "Iteration proposal"
+description: "Propose a new version or a variable movement, under the Iteration Protocol."
+title: "[Iteration] "
+labels: ["iteration"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) first. A valid iteration **narrows a held-open variable, holds it open honestly, or opens a new one** — and the **base code does not change**.
+  - type: input
+    id: substrate
+    attributes:
+      label: Which version does this load as substrate?
+      placeholder: "e.g. v5.3"
+    validations:
+      required: true
+  - type: textarea
+    id: movement
+    attributes:
+      label: The variable movement
+      description: "What narrows, what stays open, what newly opens?"
+      placeholder: "Narrows: ... | Held open: ... | Newly opened (per Gödel): ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Forcing Test outcome class
+      description: "Be honest about which applies (see framework/registers.md)."
+      options:
+        - "Forced-fill (Output 1) — resolves by logical necessity"
+        - "Live hypothesis — plausible, not forced; falsifier attached"
+        - "Stipulation — an operator/presentation choice"
+        - "Proven-open (Output 4) — cannot be closed from inside the system"
+    validations:
+      required: true
+  - type: textarea
+    id: structure
+    attributes:
+      label: The structure that narrows it
+      description: "Evidence, derivation, or logical necessity. If live hypothesis, attach the falsifier."
+    validations:
+      required: true
+  - type: checkboxes
+    id: honesty
+    attributes:
+      label: Honesty checklist
+      options:
+        - label: "This does not fill a held-open variable with assumption."
+          required: true
+        - label: "This does not claim more than is forced."
+          required: true
+        - label: "The base code is unchanged (or an architectural addition is logged explicitly as a departure)."
+          required: true

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "GFunnel Methodology (The Omni Process)"
+message: "If you use this methodology, please cite it as below."
+type: dataset
+authors:
+  - family-names: Garlick
+    given-names: Cameron
+    affiliation: GFunnel
+    city: Austin
+    region: Texas
+    country: US
+abstract: >-
+  A unified framework proposing one invariant algorithm — DETECT, PROCESS,
+  RESPOND — operating at every scale of reality, expressed across seventeen
+  layers, ten Universal Process Domains, and seventy-plus operational
+  algorithms (v5.1), run against itself at higher resolution (v5.2), and
+  extended with a meta-tier, the Container (v5.3). Governed by the Variable
+  Principle: never fill an unmeasured variable with assumption.
+keywords:
+  - methodology
+  - omni process
+  - systems thinking
+  - operational doctrine
+  - hermetic principles
+  - business framework
+version: "5.3"
+date-released: 2026-07-27

@@ -1,0 +1,41 @@
+name: "Variable evidence"
+description: "Report evidence bearing on a held-open variable (may narrow, hold, or open one)."
+title: "[Variable] "
+labels: ["variable", "evidence"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when you have evidence about a variable the framework holds open (see [framework/registers.md](../blob/main/framework/registers.md)). Evidence that *doesn't* resolve a variable is still valuable — report it and say so.
+  - type: input
+    id: variable
+    attributes:
+      label: Which variable?
+      placeholder: "e.g. the Renewal-Floor; experiential-identity continuation; substrate-dependence of the 9×4 decomposition"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: The evidence
+      description: "What did you observe/measure/derive? Cite sources where possible."
+    validations:
+      required: true
+  - type: dropdown
+    id: effect
+    attributes:
+      label: Effect on the variable
+      options:
+        - "Narrows its range"
+        - "Keeps it open (but sharpens it)"
+        - "Opens a new coupled variable"
+        - "Unsure — needs discussion"
+    validations:
+      required: true
+  - type: checkboxes
+    id: honesty
+    attributes:
+      label: Discipline
+      options:
+        - label: "I am not filling the variable with assumption to sound complete."
+          required: true

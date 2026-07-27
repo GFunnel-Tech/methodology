@@ -1,0 +1,34 @@
+Copyright (c) 2026 Cameron Garlick / GFunnel. All rights reserved.
+
+The GFunnel Methodology ("the Omni Process") and all documents in this
+repository are the proprietary intellectual property of Cameron Garlick and
+GFunnel.
+
+This work is provided for reading, evaluation, and application by permitted
+users. Except as expressly permitted in writing by the copyright holder, no
+part of this repository may be reproduced, redistributed, published,
+sublicensed, sold, or incorporated into another product or work.
+
+You MAY:
+  - Read, reference, and apply the methodology in your own work and operations.
+  - Cite the methodology with attribution (see CITATION.cff).
+  - Propose iterations and contributions under CONTRIBUTING.md, which, once
+    accepted, become part of this proprietary work.
+
+You MAY NOT, without prior written permission:
+  - Redistribute or republish the documents, in whole or in substantial part.
+  - Create or distribute derivative frameworks that reproduce substantial
+    portions of the text.
+  - Remove authorship or attribution.
+
+NO WARRANTY. The work is provided "as is", without warranty of any kind. The
+copyright holder is not liable for any claim, damages, or other liability
+arising from its use.
+
+-------------------------------------------------------------------------------
+NOTE FOR THE MAINTAINER: This is a deliberately conservative default so nothing
+is unintentionally open-sourced. If you prefer an open or shared-culture
+license instead (for example Creative Commons BY-NC-SA for the writing, or a
+permissive license to encourage adoption), replace the text of this single file
+with your chosen license. Choose deliberately before making the repository
+public.

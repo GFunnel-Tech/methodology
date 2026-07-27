@@ -1,0 +1,36 @@
+# GFunnel Methodology (Omni Process)
+
+> A unified framework claiming one invariant algorithm — DETECT → PROCESS → RESPOND — operating at every scale of reality. Expressed in 17 layers, 10 Universal Process Domains, and 70+ operational algorithms (v5.1), run against itself at higher resolution (v5.2), and extended with a meta-tier, the Container ⊙ (v5.3). Authored by Cameron Garlick, GFunnel, Austin, Texas.
+
+Read AGENTS.md first for the operating protocol. The base code does not change between versions; each version loads the prior as substrate. Never fill a held-open variable with assumption.
+
+## Canonical versions
+
+- [v5.1 — The Complete System](versions/v5.1/GFunnel-Methodology-v5.1.md): Full architecture; self-contained; start here.
+- [v5.2 — The Framework Run Against Itself](versions/v5.2/GFunnel-Methodology-v5.2.md): Deep-lens runs; narrows held-open variables; no new architecture.
+- [v5.3 — The Meta-Tier](versions/v5.3/GFunnel-Methodology-v5.3.md): First architectural addition; Layer ⊙, the Container.
+- [LATEST pointer](versions/LATEST.md): What the current complete framework is.
+
+## Map (navigable index)
+
+- [Framework map](framework/README.md): The whole framework at a glance.
+- [Layers](framework/layers.md): The 16 layers, each with a deep link into v5.1.
+- [Domains](framework/domains.md): The ten Universal Process Domains.
+- [Algorithms](framework/algorithms.md): Algorithm Index by problem type.
+- [Registers](framework/registers.md): Variable Registry, Falsifiability, Iteration Ledger.
+
+## Guides
+
+- [How to use (humans)](docs/how-to-use.md)
+- [AI integration (RAG, agents, system prompts)](docs/ai-integration.md)
+- [Glossary](docs/glossary.md)
+
+## Contributing & governance
+
+- [Iteration Protocol](CONTRIBUTING.md): How to propose a new version.
+- [Changelog / lineage](CHANGELOG.md)
+
+## Optional
+
+- [Adoption registry](adoption/registry.md): Opt-in list of who uses the methodology and which parts.
+- [Usage tracking](docs/usage-tracking.md): What can and cannot be tracked.
