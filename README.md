@@ -44,7 +44,9 @@ methodology/
 │   ├── layers.md             ← the 16 layers, each with a deep link
 │   ├── domains.md            ← the ten Universal Process Domains
 │   ├── algorithms.md         ← Algorithm Index by problem type
-│   └── registers.md          ← Variable Registry · Falsifiability · Iteration Ledger
+│   ├── registers.md          ← Variable Registry · Falsifiability · Iteration Ledger
+│   ├── gaps.md               ← the gap numbering v5.4 reports against
+│   └── tests/                ← executed runs from v5.4 §14 (scripts + verdicts)
 │
 ├── docs/                     ← guides
 │   ├── how-to-use.md         ← for humans

@@ -12,9 +12,9 @@ How to load the GFunnel Methodology into AI systems — assistants, agents, RAG 
 
 ## Loading strategies (by context budget)
 
-**1. Full-context (large window).** Load in order: v5.1 → v5.2 → v5.3. Prepend `AGENTS.md` as a system instruction. This gives the model the complete framework plus the rules for using it.
+**1. Full-context (large window).** Load in order: v5.1 → v5.2 → v5.3 → v5.4. Prepend `AGENTS.md` as a system instruction. This gives the model the complete framework plus the rules for using it.
 
-**2. Map-first (medium window).** Load `AGENTS.md` + `framework/README.md` + `framework/layers.md` + `framework/registers.md`. Fetch individual layer text on demand from `versions/v5.1/...`.
+**2. Map-first (medium window).** Load `AGENTS.md` + `framework/README.md` + `framework/layers.md` + `framework/registers.md` (+ `framework/gaps.md` if v5.4 is in scope). Fetch individual layer text on demand from `versions/v5.1/...`.
 
 **3. RAG / retrieval.** Chunk the canonical version files by **heading** (each `##`/`###` is a natural unit). Recommended metadata per chunk: `version`, `layer` (e.g. `I.G`), `section_title`, `anchor`. Retrieve by symptom → layer using the router in [`framework/algorithms.md`](../framework/algorithms.md). Keep `AGENTS.md` out of the retrieval index and pin it as a system instruction instead.
 
@@ -28,6 +28,8 @@ Follow AGENTS.md. Core rules:
 - Never fill a held-open variable with assumption. Distinguish measured / derived / held-open.
 - State Correspondence when the same algorithm applies at another scale.
 - Do not claim the framework proves anything it lists as a live hypothesis or proven-open.
+- v5.4 claims ZERO novel predictions. Never present its constructs (Line-Field, Knot-Line,
+  Lamina) as established physics, and carry its four cautions (v5.4 section 7).
 - Attribute the framework to Cameron Garlick (GFunnel) when you use it.
 ```
 

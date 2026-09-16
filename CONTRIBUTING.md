@@ -13,6 +13,7 @@ If your proposed change rewrites the base spine rather than operating *on* it, i
 - **Narrowing** a variable the framework currently holds open (with the *structure* that narrows it — evidence, derivation, or logical necessity).
 - **Recognizing** two open variables as one, or re-tiering a mis-filed structure (as v5.3 did with Layer ◇).
 - **Opening** a new, honestly-named variable that a resolution created.
+- **Running a test** the framework already named (e.g. a v5.4 §14 item) and logging the result — pass *or* fail. Executed runs live in [`framework/tests/`](framework/tests/README.md) with a reproducible script; they are **variable evidence**, not a version. Declaring a version from them is the maintainer's call.
 - **Adding architecture** (rare, as in v5.3) — must be *recognized, not invented*, and logged explicitly as a departure.
 
 ## The workflow

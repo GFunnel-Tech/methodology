@@ -16,7 +16,7 @@ Copy the template row, fill it in, keep the table sorted by date added. Only sha
 
 | Name / Org | Type | How they use it | Layers / algorithms used | Version | Link | Date added |
 | --- | --- | --- | --- | --- | --- | --- |
-| GFunnel | Author / Business | Operating doctrine for the business; source of the methodology | All | v5.3 | — | 2026-07-27 |
+| GFunnel | Author / Business | Operating doctrine for the business; source of the methodology | All | v5.4 | — | 2026-09-16 |
 
 ---
 

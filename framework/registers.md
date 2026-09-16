@@ -40,6 +40,12 @@ The Forcing Test classifies each gap into one of four outcomes. Use these labels
 
 ---
 
+## 2b. The Gap Register
+
+v5.4 reports results by gap number ("Gap 1", "Gap 3", "Gap 5") whose definitions live in a substrate document not present here. [`gaps.md`](gaps.md) reconstructs the numbering from canon so the references resolve — and records that **Gap 4 is never referenced in any canonical text in this repository.**
+
+---
+
 ## 3. The Iteration Ledger
 
 Each iteration appends rows here (mirroring the ledgers inside v5.2 §4, v5.3 §5 and v5.4 §13). A valid row records **what narrowed, what stayed open, what newly opened, and confirms the base code did not change.**
@@ -62,8 +68,13 @@ Each iteration appends rows here (mirroring the ledgers inside v5.2 §4, v5.3 §
 | 12 | v5.4 | Mass spectrum — protein pattern + trefoil (Mathematical) | form derived (invariant ÷ partition); Koide 2/3 and δ=2/9 matched; composite masses via Skyrme | tension law; partition identity = stipulation; prediction run; meson 1/3 test | ◐ |
 | 13 | v5.4 | Lamina (I.G / density) | falsifier attached (nuclear saturation as fold plateau) | falsifier not yet run; Higgs-as-lamina row | ☐ |
 | 14 | v5.4 | Devices D1–D3 (applied) | D1 physics-permitted; D2 materials-bound; D3 W1 + coherence | deep-and-reversible fold; macroscopic coherence | ☐ |
+| 15 | v5.4 → test | **Koide δ = 2/9 prediction run** (§14 #1) — [run](tests/koide-delta.md) | **Passes at 0.42σ:** δ = 2/9 reproduces all three lepton masses to ≤3.1×10⁻⁵ from one scale | Koide's 2/3 shown built into the form (one test, not two); Test B still unmet; m_τ precision is the binding limit | ✅ |
+| 16 | v5.4 → test | **D1 energy budget** (§14 #5) — [run](tests/d1-energy-budget.md) | Quantified: ~105 T (small arms) → ~241 T (long rod) by the pressure criterion; plasma shown **forced**, not merely cheaper | dense-plasma confinement at ~4 GPa as D1's binding constraint (~4×10⁴ above precedent) | ◐ |
+| 17 | v5.4 → test | **Lamina falsifier** (§14 #3) — [run](tests/lamina-falsifier.md) | Nuclear saturation confirmed as one genuine plateau | falsifier not decidable as written; needs a stated plateau spacing or a dated observational bound | ☐ |
 
 Legend: ✅ resolved/forced · ◐ partial · ☐ queued · ⊘ proven-open · a compound status (e.g. ✅ / ⊘) means the run forced its mechanism **and** opened a proven-open item
+
+> Rows 15–17 are **variable evidence**, not a version: executed tests from v5.4 §14, each with a reproducible script in [`tests/`](tests/README.md). Declaring a version from them is the maintainer's call.
 
 > When you propose an iteration, add your row here **and** in the version document's own ledger, then follow [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 

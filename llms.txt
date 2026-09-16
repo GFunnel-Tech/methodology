@@ -19,6 +19,8 @@ Read AGENTS.md first for the operating protocol. The base code does not change b
 - [Domains](framework/domains.md): The ten Universal Process Domains.
 - [Algorithms](framework/algorithms.md): Algorithm Index by problem type.
 - [Registers](framework/registers.md): Variable Registry, Falsifiability, Iteration Ledger.
+- [Gaps](framework/gaps.md): The gap numbering v5.4 reports against, reconstructed from canon.
+- [Tests](framework/tests/README.md): Executed runs from v5.4 §14, with scripts and honest verdicts.
 
 ## Guides
 

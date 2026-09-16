@@ -15,6 +15,8 @@ The complete articulation of the **Omni Process** — a framework claiming one i
 3. **[`versions/v5.3/GFunnel-Methodology-v5.3.md`](versions/v5.3/GFunnel-Methodology-v5.3.md)** — the Meta-Tier (Layer ⊙, the Container).
 4. **[`versions/v5.4/GFunnel-Methodology-v5.4.md`](versions/v5.4/GFunnel-Methodology-v5.4.md)** — Run 8: the first run executed *with* the meta-tier. Derivations only; no new layer.
 
+For v5.4's gap numbering see [`framework/gaps.md`](framework/gaps.md); for which of its §14 tests have actually been run, see [`framework/tests/`](framework/tests/README.md) — cite those results rather than the canonical wording where the two differ.
+
 If you can only load one file, load v5.1. If you can load a map instead of the full text, load [`framework/README.md`](framework/README.md) and follow its deep links.
 
 ## Operating protocol (the document's own eight rules)
