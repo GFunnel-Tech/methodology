@@ -73,6 +73,98 @@ Credited: Eyring/Pauling (transition state), Fermi, Gamow, Einstein.
 6. **Interaction modes:** self (knotting), adjacent (local coupling), distant (entanglement — shares a line nonlocally, no signal along it; ER=EPR). Forced for existence (FT paper, asymmetric anti).
 7. **Projection rule.** One line value, read per partition. See §6 (demoted to stipulation on the partition identity).
 
+## §4a · Frequency — the Line-Field Read on the Time Axis
+
+*Derivation run. Frequency is not a new construct: it is the same register read with time as the axis. Everything in this section is measured physics; the lines supply the placement.*
+
+### 4a.1 · Definition (forced)
+
+**Frequency is a two-place relation: line × node.** It is the rate at which a ripple passes a node along a line. No line → no path to count along; no node → nothing to count. This is the node-reading rule (Forcing-Test Audit Paper) with time as the axis, and it is why the lines were needed before frequency could be placed. Fourier duality is the formal statement: time-on-the-line and frequency-at-the-node are conjugate descriptions of one ripple. Credited: Fourier; Planck; Einstein.
+
+### 4a.2 · The identities (forced)
+
+| Register column | Frequency reading | Measured instance |
+|---|---|---|
+| Energy | E = hf — energy *is* frequency in other units | Planck 1900; Einstein 1905 |
+| Mass | a knot's standing frequency: f = mc²/h (Compton) | electron 1.24×10²⁰ Hz; de Broglie clock; Zitterbewegung |
+| Momentum | wavelength along the line: p = h/λ | de Broglie; electron diffraction |
+| Fold energy (lamina) | trapped frequency; density = frequency per volume | nuclear vs chemical spectra |
+| Lifetime (closure) | inverse linewidth: Δf · Δt ≥ 1/4π → τ = 1/(2π·Δf) | every spectral line width |
+| Temperature | mean ripple frequency: kT ≈ hf | Wien; CMB 2.7 K ↔ 160 GHz peak |
+| Gravity | frequency gradient along the line-field | Pound–Rebka 1959; GPS |
+| Cosmic expansion | line stretch = frequency drop | CMB stretched ×1100 |
+| Antiparticle | negative-frequency mode = the line run backward | Feynman–Stückelberg |
+
+### 4a.3 · The frequency ladder — every fold has its modes (forced)
+
+Every fold is a resonator with its own mode spectrum; spectra scale with fold depth (E = hf) and **nest** — an atom carries nuclear, electronic, vibrational and rotational modes simultaneously. Same rule at every level (standing waves on a closed path, quantized): Correspondence, exact.
+
+| Fold / scale | Characteristic frequency | Reading |
+|---|---|---|
+| Planck | 1.9×10⁴³ Hz | ceiling — geometry yields to Third Kingdom substrate (canon Planck row); proven-open above |
+| Electroweak / Higgs | ~10²⁶ Hz (125 GeV) | the frequency at which mass switched on (Stage 3) |
+| Nuclear folds | 10¹⁹–10²³ Hz | gamma; fission/fusion release |
+| Electron shells | 10¹⁵–10¹⁶ Hz | optical / UV; chemistry |
+| Molecular bonds | ~10¹³ Hz | infrared; fold storage (chemical) |
+| Molecular rotation | ~10¹¹ Hz | microwave |
+| Lattice / phonons | 10¹²–10¹³ Hz | solids; band gaps |
+| Biological | 10⁻⁵–10³ Hz | neural (1–100 Hz), cardiac (~1 Hz), circadian (10⁻⁵ Hz) — canon Layer I domains |
+| Planetary / stellar | 10⁻⁵–10⁻⁹ Hz | orbits; pulsars up to 10³ Hz |
+| Cosmic floor | Hubble ~2×10⁻¹⁸ Hz | the lowest frequency the observable line carries |
+
+The observable line-field spans ~61 orders of magnitude of frequency, ceiling to floor, with no gap in which the rule changes. Spectroscopy is fold-reading: what a thing is made of is read by which frequencies it absorbs and emits.
+
+### 4a.4 · The mechanisms, restated (forced)
+
+1. **Interaction = frequency match.** A knot's specific point has a frequency. It unties when the *summed* incoming ripples overlap that frequency — not when they are large. Coupling strength sets the *width* of the match window (linewidth), not whether a match is needed. Fermi's golden rule is a frequency-matching integral; stimulated emission is resonance. The collective-timing rule (§3) is: the sum of arriving frequencies overlaps the point's frequency.
+
+2. **Lifetime = 1/linewidth.** A knot that unties easily has a broad line; a stable knot has a sharp one. The proton's line is unmeasurably narrow (τ > 10³⁴ yr); the top quark's is 1.4 GeV wide (τ ≈ 5×10⁻²⁵ s). Closure and spectral width are one quantity. (Heisenberg energy–time.)
+
+3. **Thresholds are frequency classes.** *Present*: a cutoff frequency exists — the photoelectric effect is the cleanest instance in physics (no electrons below cutoff at any intensity). *Never-reached*: the coupling window is so narrow nothing ambient falls in it (neutrinos). *None*: no cutoff; gravity couples at every frequency, only weaker. **Mediation** = something shifts the window (catalysis; a chaperone lowers the transition-state frequency). **Layer gating** = a lamina passes some frequencies and blocks others — band gaps, photonic crystals, Faraday cages, glass transparent at optical and opaque at UV.
+
+4. **Gravity = frequency gradient.** Clocks run slower deeper in a well; free fall follows the gradient toward lower frequency (maximal proper time). Curvature (ρ + 3p) sets the gradient; Raychaudhuri focusing restated: lines converge where frequency is lowest. Attract/repel = sign of the gradient; negative pressure reverses it.
+
+5. **The boundary is a frequency filter.** Casimir plates exclude modes whose wavelength does not fit; the vacuum between them holds *fewer frequencies* — measurably less energy. "The boundary reflects the zero state and vacuum energy arises" = the boundary selects which frequencies exist. Measured instance of Stage 1→2; the first boundary itself stays proven-open.
+
+6. **Coupled lines share modes.** Interacting knots form normal modes — shared frequencies (bonds, phonons, coupled pendulums). Entangled lines share one energy/frequency with no signal along the line (ER=EPR; Bell-safe). Distant interaction = a shared mode.
+
+7. **Decoherence = frequency spread.** A large object spans too many frequencies to hold one phase; the environment's modes overlap too many of its points. Macroscopic coherence (D3's lock) is a frequency-isolation problem. (Zurek.)
+
+8. **Symmetry breaking = the floor frequency dropping.** Each Stage-3 collapse lowers the field's ground frequency everywhere and releases the difference as ripples (reheating). Knots hold once ambient ripple frequency falls below their linewidth.
+
+9. **Entropy = frequency spreading toward equipartition.** Concentrated frequency (a fold) spreads into many low frequencies (heat). Stability is where the spread stops — modes locked by conservation. Boltzmann restated.
+
+10. **Fold storage and release are spectroscopic.** Energy in a fold sits in its modes; releasing it means a frequency match at the fold's specific point. D2's "calculated release" = hit the fold's own frequency (isomer triggering attempted exactly this with X-rays).
+
+### 4a.5 · The gaps, restated in frequency
+
+| Gap | Frequency form | Status |
+|---|---|---|
+| 1 · First boundary | what selected the first mode spectrum — the filter before any filter | proven-open |
+| 2 · Mass spectrum | which standing frequencies a knot admits (the tension law = the dispersion relation of the line) | live; one input |
+| 2a · Partition identity | are the three charged leptons three *phases* of one mode (Koide, 120° apart, offset 2/9)? Integer harmonics (1:2:3) **forced-no** — measured 1 : 207 : 3477. Partition = phase replaces strand ≠ generation | stipulation (equivocation removed) |
+| 3 · Gravitation sign | sign of the frequency gradient; neutral-by-group = gradients cancel; intrinsic neutral = flat gradient at ρ+3p=0 | forced / held open |
+| 4 · Floor vs asymptote | is there a highest admissible frequency (Planck) or an unbounded ladder | proven-open |
+| 5 · Sub-Planck lines | above 10⁴³ Hz | proven-open |
+| W1 · Negative energy | a sustained *deficit* of frequencies relative to the node (Casimir does it between plates); negative-frequency modes = the anti-container = the line run backward. Container/Anti-Container = positive/negative frequency; the self-dual center = light, E = pc, its own antiparticle | live route |
+| Vacuum-density discrepancy | how many modes the vacuum actually carries (QFT counts to the Planck cutoff: 10¹¹³; measured: 10⁻⁹) | held open |
+| Lamina falsifier | discrete mode-density plateaus with fold depth (nuclear saturation) | attached, not run |
+| D3 coherence | frequency isolation by the shell | engineering direction, physics known |
+
+### 4a.6 · Correspondence up the layers (labeled derivation)
+
+The same three rules — frequency as line × node, interaction as match, stability as narrow linewidth — hold above the physical folds. Biological rhythms entrain by frequency match (circadian, cardiac, neural binding at gamma). Canon's Vibration principle (Layer 0, III) and the resonance language of Layers IV–VII already run on this; v5.4 §4a supplies the physical floor they correspond to. Labeled derivation, not canon extension.
+
+### 4a.7 · Forcing-Test verdict on §4a
+
+- **Forced:** 4a.1, 4a.2, 4a.3, 4a.4 (all ten) — each is measured physics placed on the lines.
+- **Live:** partition = phase; W1 as sustained frequency deficit.
+- **Forced-no:** generations as integer harmonics.
+- **Proven-open:** the first filter; above Planck; floor vs asymptote.
+- **Anti-Operation conjugate of the whole section:** if energy is frequency read at a node, *what is the node's own frequency?* — the observer's clock. That is the latency-floor / Renewal-Floor variable (v5.2 rows 1–2), arriving from the physics side. Held open; logged as convergence, not closure.
+
+**Status line:** frequency adds no construct and closes no gap by itself. It gives every gap a measurable form, removes one equivocation (strand → phase), turns one device lock into an engineering problem, and hands W1 a physical handle (frequency deficit). Nothing contradicted.
+
 ---
 
 ## §5 · Gravitation, Mass, Lamina, Black Holes
@@ -201,6 +293,7 @@ Run against QM, QFT, Standard Model, GR, thermodynamics, cosmology, decay theory
 | 13 | Mass spectrum via protein pattern + trefoil | Mathematical domain | form derived (invariant ÷ partition); Koide 2/3 & δ=2/9 matched; composite masses via Skyrme | tension law; partition identity (stipulation); prediction run; meson 1/3 test | ◐ |
 | 14 | Lamina (falsifier attached) | I.G / density | nuclear saturation as fold plateau | falsifier not yet run; Higgs-as-lamina row | ☐ |
 | 15 | Devices D1–D3 | applied | D1 physics-permitted; D2 materials-bound; D3 W1 + coherence | deep-and-reversible fold; macroscopic coherence | ☐ |
+| 16 | Frequency (§4a) | I.E / I.F / II | **Forced:** frequency = line × node; energy/mass/lifetime/gravity as frequency readings; thresholds as frequency classes; partition strand → phase | the node's own frequency (= Renewal-Floor, v5.2); W1 as sustained frequency deficit | ✅ / ◐ |
 
 Legend: ✅ forced · ◐ partial · ☐ queued · ⊘ proven-open
 
@@ -211,7 +304,7 @@ Legend: ✅ forced · ◐ partial · ☐ queued · ⊘ proven-open
 1. Run the Koide prediction: m_e → m_μ, m_τ from the trefoil form; then neutrinos.
 2. Run the meson 1/3 test (two-fold partition).
 3. Run the lamina falsifier against nuclear-density data.
-4. Resolve strand ≠ generation — find the partition that is actually three-fold for leptons, or demote further.
+4. Test partition = phase: derive why three phases from the line's dispersion relation (the tension law), or demote further.
 5. D1 energy budget with fold storage — first engineering estimate.
 6. Open the CONTRIBUTING issue for rows 9–15.
 

@@ -7,7 +7,7 @@ The GFunnel Methodology iterates rather than replaces. There is no single "lates
 | 1 | **v5.1** | The complete architecture — 17 layers, 10 domains, 70+ algorithms. Self-contained. | [v5.1](v5.1/GFunnel-Methodology-v5.1.md) |
 | 2 | **v5.2** | The framework run against itself — deep-lens runs that narrow held-open variables. No new architecture. | [v5.2](v5.2/GFunnel-Methodology-v5.2.md) |
 | 3 | **v5.3** | The Meta-Tier — Layer ⊙, the Container. First architectural addition; object-level base code untouched. | [v5.3](v5.3/GFunnel-Methodology-v5.3.md) |
-| 4 | **v5.4** | Run 8 — the first run executed with the meta-tier. Line-Field / Knot-Line / Lamina; motion as tying/untying; closure as the specific point; three test devices. No new architecture. | [v5.4](v5.4/GFunnel-Methodology-v5.4.md) |
+| 4 | **v5.4** | Run 8 — the first run executed with the meta-tier. Line-Field / Knot-Line / Lamina; motion as tying/untying; closure as the specific point; frequency on the time axis (§4a); three test devices. No new architecture. | [v5.4](v5.4/GFunnel-Methodology-v5.4.md) |
 
 ## If you only load one thing
 

@@ -12,17 +12,22 @@ Recording these is the point of the Capsule (Layer I.G): a test that cannot be r
 
 Note also §6's own cross-domain guard: 2/9 shows "clean near-hits only in generation-1↔2 quark mixing… 1% off, 2.6σ from 2/9." That is the *existing* evidence in the quark sector, and it is already described as "consistency in one sector, not convergence."
 
-## §14 item 4 — resolve strand ≠ generation
+## §14 item 4 — test partition = phase
 
-**Held open, deliberately.** v5.4 demoted the partition identity to a **stipulation** in-run (§6, retraction #11) because generations are excitations, not spatial strands. Closing it requires either the tension law (Gap 2's single missing input) or a genuinely three-fold lepton partition that has not been found.
+**Still held open, but better posed than it was.** §4a.5 replaces the equivocation ("strand ≠ generation") with **partition = phase**: the three charged leptons as three *phases* of one mode, 120° apart, offset 2/9. That is a real improvement — it is exactly the structure the Brannen parametrization already has, so the reframing costs nothing and removes a false spatial picture.
 
-Supplying one here would be filling a held-open variable with assumption — the one act [`../../AGENTS.md`](../../AGENTS.md) calls "the single most important rule" to avoid. It stays open.
+It also lands one **forced-no**, which is genuine progress: generations as *integer harmonics* (1:2:3) fails against the measured ratios **1 : 207 : 3477** (verified — see [koide-delta.md](koide-delta.md)).
+
+What remains open is unchanged in substance: **why three phases?** §14 item 4 now asks for that to be derived "from the line's dispersion relation (the tension law), or demote further." The tension law is Gap 2's single missing input, so this test still cannot run.
+
+Supplying the reason here would be filling a held-open variable with assumption — the one act [`../../AGENTS.md`](../../AGENTS.md) calls "the single most important rule" to avoid. It stays open.
 
 ## The substrate documents
 
 Neither the **Forcing-Test Audit Paper** nor the **Feb-2026 Omni Force chain** is in this repository, though v5.4 §0 declares both as loaded substrate. This blocks:
 
-- resolving Gap 4 (never referenced in any canonical text here — see [`../gaps.md`](../gaps.md));
 - checking `FT eq. 2` (§2) and `FT eq. 6` (§5).
+
+(Gap 4 and W1 were on this list before §4a; §4a.5 defines both — see [`../gaps.md`](../gaps.md).)
 
 **No amount of work inside the repo closes these.** They close when the documents are added.

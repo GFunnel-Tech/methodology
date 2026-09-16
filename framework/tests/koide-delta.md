@@ -1,6 +1,6 @@
 # Test 1 — The Koide / δ = 2/9 Prediction Run
 
-**v5.4 §14, item 1:** *"Run the Koide prediction: m_e in, δ = 2/9, trefoil form → m_μ, m_τ out; then neutrinos."*
+**v5.4 §14, item 1** (unchanged by §4a):** *"Run the Koide prediction: m_e in, δ = 2/9, trefoil form → m_μ, m_τ out; then neutrinos."*
 **v5.4 §6 states the stakes:** *"A hit makes the model physics; a miss with a stated law makes it forced-no."*
 
 Script: [`koide_delta.py`](koide_delta.py) · standard library only · PDG 2024 masses.
@@ -39,6 +39,10 @@ For `√m_k = μ(1 + √2 cos(2πk/3 + δ))`, the sums are `Σ√m = 3μ` and `�
 
 **2. The test is one number, matched post hoc.**
 Three masses, two parameters (μ, δ) → one prediction, which is Koide. Fixing δ = 2/9 buys one more. So this is a genuine 2-prediction test — but δ = 2/9 was chosen *after* the masses were known. A post-hoc match of one number, however precise, is a **live hypothesis** under the framework's own Forcing Test (Test B, uniqueness, is not met: nothing forces the trefoil over any other structure yielding 2/9).
+
+*Updated after §4a.* The **partition = phase** reframing (§4a.5) improves the picture without changing this verdict. The Brannen form *is* three phases 120° apart with offset δ, so reading the partition as phase rather than as spatial strands costs nothing and removes a false picture — it is the honest description of what this script actually computes. Test B is still unmet: the reframing says *what* the partition is, not *why there are three*. That needs the tension law.
+
+§4a also lands a real **forced-no** in this sector, which this run confirms: generations as **integer harmonics** (1:2:3) fails outright — the measured ratios are **1 : 206.8 : 3477.4**. Ruling that out is a genuine narrowing, and it is the kind of result the framework should be logging.
 
 **3. §6's dichotomy is too strong, and should be softened in a future version.**
 *"A hit makes the model physics"* does not follow. This hit produces **no novel prediction** — it retrodicts three already-measured masses. It is fully consistent with v5.4 §7's own honest status line ("zero novel predictions"), and the two statements should be reconciled in canon. The miss branch is sound: a miss *would* have been forced-no.

@@ -13,7 +13,7 @@ The complete articulation of the **Omni Process** — a framework claiming one i
 1. **[`versions/v5.1/GFunnel-Methodology-v5.1.md`](versions/v5.1/GFunnel-Methodology-v5.1.md)** — the full architecture. Self-contained; no prior version required.
 2. **[`versions/v5.2/GFunnel-Methodology-v5.2.md`](versions/v5.2/GFunnel-Methodology-v5.2.md)** — higher-resolution runs; narrows variables v5.1 holds open.
 3. **[`versions/v5.3/GFunnel-Methodology-v5.3.md`](versions/v5.3/GFunnel-Methodology-v5.3.md)** — the Meta-Tier (Layer ⊙, the Container).
-4. **[`versions/v5.4/GFunnel-Methodology-v5.4.md`](versions/v5.4/GFunnel-Methodology-v5.4.md)** — Run 8: the first run executed *with* the meta-tier. Derivations only; no new layer.
+4. **[`versions/v5.4/GFunnel-Methodology-v5.4.md`](versions/v5.4/GFunnel-Methodology-v5.4.md)** — Run 8: the first run executed *with* the meta-tier, including §4a (Frequency). Derivations only; no new layer.
 
 For v5.4's gap numbering see [`framework/gaps.md`](framework/gaps.md); for which of its §14 tests have actually been run, see [`framework/tests/`](framework/tests/README.md) — cite those results rather than the canonical wording where the two differ.
 

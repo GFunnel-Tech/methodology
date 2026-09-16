@@ -6,7 +6,7 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 ---
 
-## v5.4 — Run 8 · The Line-Field · Knots · Lamina · Motion as Tying/Untying
+## v5.4 — Run 8 · The Line-Field · Knots · Lamina · Motion as Tying/Untying · Frequency
 *Iteration of v5.3. Loads v5.1 + v5.2 + v5.3 + the Forcing-Test Audit Paper + the Feb-2026 Omni Force chain as substrate.*
 
 **The first run executed *with* the meta-tier.** v5.3 named the Container; v5.4 uses it — every construct is classified
@@ -25,6 +25,9 @@ operates inside Layer I (I.E / I.F / I.G) and Layer II. Base code unchanged.
   floor vs. asymptote at maximum density; the measurement problem (canon's hard problem).
 - **Forced-no / retracted in-run:** thirteen items, logged in v5.4 §9 — including "folds as an energy source,"
   "topological closure," "lines are strings," and "the Big Bang never happened" (corrected to *event false, phase forced*).
+- **Frequency (§4a), forced.** The line-field read on the time axis: frequency as a two-place relation, **line × node**. Energy, mass, lifetime, gravity, temperature and cosmic expansion are shown to be readings of one register (E = hf; f = mc²/h; τ = 1/2πΔf; Pound–Rebka); thresholds become frequency classes; the boundary of Stage 1→2 becomes a **frequency filter** (Casimir as mode exclusion). A ~61-order frequency ladder from the Planck ceiling to the Hubble floor with no gap in which the rule changes.
+- **Frequency's three movements.** It *defines* **Gap 4** (floor vs. asymptote) and **W1** (negative energy as a sustained frequency deficit), both of which the rest of v5.4 uses without defining. It replaces the demoted "strand ≠ generation" with **partition = phase**, removing that equivocation. And it adds a **forced-no**: generations as integer harmonics (1:2:3) fails against the measured 1 : 207 : 3477.
+- **Frequency claims nothing new.** §4a's own status line: it "adds no construct and closes no gap by itself." Every identity in it is established physics placed on the lines.
 - **Applied:** three test devices, each naming its own locks — D1 Lamina Shield (physics-permitted, energy-bound),
   D2 Designed Storage Fold (materials-bound), D3 Coupling-Modulation Sphere (two proven-open locks: W1 and
   macroscopic coherence).
@@ -34,7 +37,7 @@ operates inside Layer I (I.E / I.F / I.G) and Layer II. Base code unchanged.
 
 *Repository note:* two declared substrate documents — the Forcing-Test Audit Paper and the Feb-2026 Omni Force chain —
 are **not in this repository**, so v5.4's "Gap 1/2/3/5" numbering and its "FT eq. 2 / eq. 6" references cannot be
-resolved from the repo alone. v5.4 §13 numbers its ledger rows 9–15; the same movements are rows 8–14 in
+resolved from the repo alone. v5.4 §13 numbers its ledger rows 9–16 (row 16 is Frequency); the same movements are rows 8–15 in
 `framework/registers.md` (see the numbering note there).
 
 ## v5.3 — The Meta-Tier · The Container Named

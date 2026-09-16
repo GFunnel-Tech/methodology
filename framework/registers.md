@@ -50,7 +50,7 @@ v5.4 reports results by gap number ("Gap 1", "Gap 3", "Gap 5") whose definitions
 
 Each iteration appends rows here (mirroring the ledgers inside v5.2 §4, v5.3 §5 and v5.4 §13). A valid row records **what narrowed, what stayed open, what newly opened, and confirms the base code did not change.**
 
-> **Numbering note.** This master ledger and the version documents' own ledgers run **one apart**. v5.2's five movements are numbered 1–5 here, so v5.3's two land at 6–7 and v5.4's seven at 8–14. The version documents number the same movements 7–8 (v5.3 §5) and 9–15 (v5.4 §13), because v5.3 assumed six v5.2 rows. Both sequences are internally consistent; neither is renumbered, because released version text is immutable. **When a document says "rows 9–15" (e.g. v5.4 §14, item 6), it means rows 8–14 here.**
+> **Numbering note.** This master ledger and the version documents' own ledgers run **one apart**. v5.2's five movements are numbered 1–5 here, so v5.3's two land at 6–7 and v5.4's eight at 8–15. The version documents number the same movements 7–8 (v5.3 §5) and 9–16 (v5.4 §13), because v5.3 assumed six v5.2 rows. Both sequences are internally consistent; neither is renumbered, because released version text is immutable. **When a document says "rows 9–15" (e.g. v5.4 §14, item 6), it means rows 8–14 here** — §4a added row 16 in canon (row 15 here) after that instruction was written.
 
 | # | Version | Mechanism / run | Variable narrowed or resolved | New variable opened | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -68,13 +68,14 @@ Each iteration appends rows here (mirroring the ledgers inside v5.2 §4, v5.3 §
 | 12 | v5.4 | Mass spectrum — protein pattern + trefoil (Mathematical) | form derived (invariant ÷ partition); Koide 2/3 and δ=2/9 matched; composite masses via Skyrme | tension law; partition identity = stipulation; prediction run; meson 1/3 test | ◐ |
 | 13 | v5.4 | Lamina (I.G / density) | falsifier attached (nuclear saturation as fold plateau) | falsifier not yet run; Higgs-as-lamina row | ☐ |
 | 14 | v5.4 | Devices D1–D3 (applied) | D1 physics-permitted; D2 materials-bound; D3 W1 + coherence | deep-and-reversible fold; macroscopic coherence | ☐ |
-| 15 | v5.4 → test | **Koide δ = 2/9 prediction run** (§14 #1) — [run](tests/koide-delta.md) | **Passes at 0.42σ:** δ = 2/9 reproduces all three lepton masses to ≤3.1×10⁻⁵ from one scale | Koide's 2/3 shown built into the form (one test, not two); Test B still unmet; m_τ precision is the binding limit | ✅ |
-| 16 | v5.4 → test | **D1 energy budget** (§14 #5) — [run](tests/d1-energy-budget.md) | Quantified: ~105 T (small arms) → ~241 T (long rod) by the pressure criterion; plasma shown **forced**, not merely cheaper | dense-plasma confinement at ~4 GPa as D1's binding constraint (~4×10⁴ above precedent) | ◐ |
-| 17 | v5.4 → test | **Lamina falsifier** (§14 #3) — [run](tests/lamina-falsifier.md) | Nuclear saturation confirmed as one genuine plateau | falsifier not decidable as written; needs a stated plateau spacing or a dated observational bound | ☐ |
+| 15 | v5.4 | Frequency (§4a; I.E / I.F / II) | **Forced:** frequency = line × node; energy, mass, lifetime, gravity as frequency readings; thresholds as frequency classes; partition strand → **phase** | the node's own frequency (= Renewal-Floor, rows 1–2); W1 as sustained frequency deficit | ✅ / ◐ |
+| 16 | v5.4 → test | **Koide δ = 2/9 prediction run** (§14 #1) — [run](tests/koide-delta.md) | **Passes at 0.42σ:** δ = 2/9 reproduces all three lepton masses to ≤3.1×10⁻⁵ from one scale | Koide's 2/3 shown built into the form (one test, not two); Test B still unmet; m_τ precision is the binding limit | ✅ |
+| 17 | v5.4 → test | **D1 energy budget** (§14 #5) — [run](tests/d1-energy-budget.md) | Quantified: ~105 T (small arms) → ~241 T (long rod) by the pressure criterion; plasma shown **forced**, not merely cheaper | dense-plasma confinement at ~4 GPa as D1's binding constraint (~4×10⁴ above precedent) | ◐ |
+| 18 | v5.4 → test | **Lamina falsifier** (§14 #3) — [run](tests/lamina-falsifier.md) | Nuclear saturation confirmed as one genuine plateau | falsifier not decidable as written; needs a stated plateau spacing or a dated observational bound | ☐ |
 
 Legend: ✅ resolved/forced · ◐ partial · ☐ queued · ⊘ proven-open · a compound status (e.g. ✅ / ⊘) means the run forced its mechanism **and** opened a proven-open item
 
-> Rows 15–17 are **variable evidence**, not a version: executed tests from v5.4 §14, each with a reproducible script in [`tests/`](tests/README.md). Declaring a version from them is the maintainer's call.
+> Rows 16–18 are **variable evidence**, not a version: executed tests from v5.4 §14, each with a reproducible script in [`tests/`](tests/README.md). Declaring a version from them is the maintainer's call.
 
 > When you propose an iteration, add your row here **and** in the version document's own ledger, then follow [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
@@ -96,7 +97,8 @@ As of v5.4, the framework additionally does **not** claim:
 - that the model predicts anything the Standard Model or General Relativity does not (**zero novel predictions** to date);
 - that folds are an energy source (**forced-no**; folds store);
 - that device D3 is buildable (two **proven-open** locks: W1 and macroscopic coherence);
-- that the first boundary, the black-hole interior, sub-Planck geometry, the vacuum-density discrepancy, or the measurement problem are resolved.
+- that the first boundary, the black-hole interior, sub-Planck geometry, the vacuum-density discrepancy, or the measurement problem are resolved;
+- that frequency (§4a) closes any gap by itself — it restates the gaps in measurable form, and **forced-no** on one sub-claim (generations as integer harmonics 1:2:3, measured 1 : 207 : 3477).
 
 See [v5.4 §11](../versions/v5.4/GFunnel-Methodology-v5.4.md) for the canonical statement of this list, and §12 for the per-item outcome classes.
 
