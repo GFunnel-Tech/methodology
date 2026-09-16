@@ -6,7 +6,7 @@ This is a **living operational doctrine** — designed to be read, run, and appl
 
 - **Sequentially (to learn it):** [README](../README.md) → this page → the [Variable Principle](../framework/registers.md) → [Layer 0](../framework/layers.md) → Layers I → ◇ in order → appendices → algorithms → axioms. The full text is [v5.1](../versions/v5.1/GFunnel-Methodology-v5.1.md).
 - **For a specific problem:** go straight to the [Algorithm Index](../framework/algorithms.md), find your symptom, follow the named algorithm, reference its layer for context.
-- **To verify a claim:** locate the layer, then check the [Registers](../framework/registers.md) for the framework's own falsification conditions. The framework's strength is that it names what would prove it wrong.
+- **To verify a claim:** locate the layer, then check the [Registers](../framework/registers.md) for the framework's own falsification conditions. The framework's strength is that it names what would prove it wrong. For v5.4's physics claims, [`framework/tests/`](../framework/tests/README.md) holds the runs that have actually been executed — including where the result is weaker than the canonical wording.
 
 ## The seven-point self-audit (are you using it correctly?)
 

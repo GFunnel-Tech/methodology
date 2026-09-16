@@ -15,6 +15,7 @@ This directory holds the **canonical, faithful text** of each release of the GFu
 | [v5.1](v5.1/GFunnel-Methodology-v5.1.md) | The Complete System — Operational Edition | The full architecture. 17 layers, 10 Universal Process Domains, 70+ algorithms, the 100-Stage Progression, four appendices. Self-contained. |
 | [v5.2](v5.2/GFunnel-Methodology-v5.2.md) | Deep-Lens on Every Mechanism | The framework executing its own Document Update Protocol on itself. Five deep-lens runs; nine variable movements; no base-code change. |
 | [v5.3](v5.3/GFunnel-Methodology-v5.3.md) | The Meta-Tier | Names Layer ⊙, the Container — the framework run against itself, made architectural. The first structural addition; the object-level layers are untouched. |
+| [v5.4](v5.4/GFunnel-Methodology-v5.4.md) | Run 8 — Line-Field · Knots · Lamina · Frequency | The first run executed with the meta-tier. Motion as tying/untying; closure as the specific point; interaction rules; frequency as the line-field read on the time axis (§4a); the mass-spectrum pattern; three test devices; thirteen logged retractions. No new architecture. |
 
 ## A note on formatting
 

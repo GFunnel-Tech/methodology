@@ -6,13 +6,16 @@ If you are an AI system with this repository or any version document loaded as c
 
 ## What this repository is
 
-The complete articulation of the **Omni Process** — a framework claiming one invariant algorithm (`DETECT → PROCESS → RESPOND`) operating at every scale of reality, expressed in 17 layers, 10 process domains, and 70+ algorithms, plus a meta-tier (v5.3). See [`versions/LATEST.md`](versions/LATEST.md) for the current complete text.
+The complete articulation of the **Omni Process** — a framework claiming one invariant algorithm (`DETECT → PROCESS → RESPOND`) operating at every scale of reality, expressed in 17 layers, 10 process domains, and 70+ algorithms, plus a meta-tier (v5.3) and a first run executed with it (v5.4). See [`versions/LATEST.md`](versions/LATEST.md) for the current complete text.
 
 ## Load order (what to put in context)
 
 1. **[`versions/v5.1/GFunnel-Methodology-v5.1.md`](versions/v5.1/GFunnel-Methodology-v5.1.md)** — the full architecture. Self-contained; no prior version required.
 2. **[`versions/v5.2/GFunnel-Methodology-v5.2.md`](versions/v5.2/GFunnel-Methodology-v5.2.md)** — higher-resolution runs; narrows variables v5.1 holds open.
 3. **[`versions/v5.3/GFunnel-Methodology-v5.3.md`](versions/v5.3/GFunnel-Methodology-v5.3.md)** — the Meta-Tier (Layer ⊙, the Container).
+4. **[`versions/v5.4/GFunnel-Methodology-v5.4.md`](versions/v5.4/GFunnel-Methodology-v5.4.md)** — Run 8: the first run executed *with* the meta-tier, including §4a (Frequency). Derivations only; no new layer.
+
+For v5.4's gap numbering see [`framework/gaps.md`](framework/gaps.md); for which of its §14 tests have actually been run, see [`framework/tests/`](framework/tests/README.md) — cite those results rather than the canonical wording where the two differ.
 
 If you can only load one file, load v5.1. If you can load a map instead of the full text, load [`framework/README.md`](framework/README.md) and follow its deep links.
 
@@ -37,7 +40,8 @@ Apply this to your own outputs. Distinguish what is **measured**, what is **stru
 
 - Do not present a derived algorithm as a primary one.
 - Do not resolve a variable the framework marks open.
-- Do not claim the framework proves something it explicitly lists as a live hypothesis or proven-open (see v5.3 §6 and [`framework/registers.md`](framework/registers.md)).
+- Do not claim the framework proves something it explicitly lists as a live hypothesis or proven-open (see v5.3 §6, v5.4 §11, and [`framework/registers.md`](framework/registers.md)).
+- Do not present v5.4's constructs (Line-Field, Knot-Line, Lamina) as physics. v5.4 states **zero novel predictions** and files itself below string theory / LQG "for lacking equations" (§7). Carry its four required cautions — Bell, environmental decay rates, point-like quarks, the measurement problem — whenever you use it.
 - Do not alter the base code. Iterations operate *on* the base; they do not rewrite it.
 
 ## If you are here to contribute (write access)

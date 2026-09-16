@@ -4,14 +4,16 @@ This is the **map** into the canonical methodology. Every link below points into
 
 > **The base code:** `DETECT → PROCESS → RESPOND` — one invariant algorithm. The substrate changes (chemistry, biology, consciousness, economics, language, sales); the code does not. Every layer below is a "gene expression" of that base code.
 
-## The four maps
+## The maps
 
 | Map | What it indexes |
 | --- | --- |
-| **[Layers](layers.md)** | The 16 layers (0 → ◇) plus the meta-tier ⊙ — each with a one-line function and a deep link. |
+| **[Layers](layers.md)** | The 16 layers (0 → ◇) plus the meta-tier ⊙ — 17 in all, each with a one-line function and a deep link. |
 | **[Domains](domains.md)** | The ten Universal Process Domains — the proof set that the algorithm is domain-independent. |
 | **[Algorithms](algorithms.md)** | The Algorithm Index by problem type — start here when something is *stuck* or *failing*. |
 | **[Registers](registers.md)** | The Variable Registry, Falsifiability Register, and Iteration Ledger — the framework's honesty apparatus. |
+| **[Gaps](gaps.md)** | The gap numbering v5.4 reports against, reconstructed from canon. |
+| **[Tests](tests/README.md)** | Executed runs from v5.4 §14, with reproducible scripts and honest verdicts. |
 
 ## The three orientations (from the document's own "How To Use")
 
