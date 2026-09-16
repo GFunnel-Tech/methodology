@@ -6,37 +6,36 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 ---
 
-## v5.4 — Run 8 · Line-Field, Knot-Line, Lamina — **PROPOSED, canon not yet in repo**
-*Iteration of v5.3. Declares as substrate: v5.1 + v5.2 + v5.3 + the Forcing-Test Audit Paper + the Feb-2026 Omni Force chain.*
+## v5.4 — Run 8 · The Line-Field · Knots · Lamina · Motion as Tying/Untying
+*Iteration of v5.3. Loads v5.1 + v5.2 + v5.3 + the Forcing-Test Audit Paper + the Feb-2026 Omni Force chain as substrate.*
 
-> **Status: incomplete landing.** The navigation and ledger updates for v5.4 are in this repository; the **canonical text
-> (`versions/v5.4/GFunnel-Methodology-v5.4.md`) is not**, and neither are two of its declared substrate documents (the
-> Forcing-Test Audit Paper, the Feb-2026 Omni Force chain). Per `versions/README.md` — *"Everything in `framework/` and
-> `docs/` navigates into these files"* — v5.4's map currently navigates into a file that does not exist. Until the canon
-> lands, v5.4 is a **logged proposal**, not a released version. It is recorded rather than dropped per Layer I.G (the
-> Capsule): nothing is lost.
+**The first run executed *with* the meta-tier.** v5.3 named the Container; v5.4 uses it — every construct is classified
+by the Forcing Test and every fill carries its Anti-Operation conjugate. **No new architecture, no new layer:** the loop
+operates inside Layer I (I.E / I.F / I.G) and Layer II. Base code unchanged.
 
-**Adds no architecture.** Its constructs — Line-Field, Knot-Line, Lamina, the loop — are logged as derivations inside
-I.E / I.F / I.G and II, not as new layers. Base code unchanged.
+- **Forced:** first motion = reflection at a boundary → vacuum reaction (Casimir instance); motion *is* tying/untying,
+  self-sustaining after the first reflection; lines are geodesics at First Kingdom scale (Gap 5 closed at that scale);
+  convergence = Raychaudhuri; closure = the specific point, with collective timing; gravitation sign attract / repel /
+  neutral-by-group; entropy as the mechanism that finds stability.
+- **Live hypothesis (named, not filled):** lines as physical (LQG/string class); knot = particle; quark-as-knot;
+  lamina density thresholds (falsifier attached, not yet run); "every never is a removable layer"; the (c,b,t) Koide hit.
+- **Stipulation (named as such):** the partition identity in the 2/9 derivation — strand ≠ generation. The trefoil form
+  is derived; the Koide match is fact; the identity linking them is **demoted**, in-run, by the run's own audit.
+- **Proven-open:** the first boundary at Stage 1; line identity below the Planck length; the black-hole interior;
+  floor vs. asymptote at maximum density; the measurement problem (canon's hard problem).
+- **Forced-no / retracted in-run:** thirteen items, logged in v5.4 §9 — including "folds as an energy source,"
+  "topological closure," "lines are strings," and "the Big Bang never happened" (corrected to *event false, phase forced*).
+- **Applied:** three test devices, each naming its own locks — D1 Lamina Shield (physics-permitted, energy-bound),
+  D2 Designed Storage Fold (materials-bound), D3 Coupling-Modulation Sphere (two proven-open locks: W1 and
+  macroscopic coherence).
+- **Discipline:** v5.4 states **zero novel predictions** beyond the Standard Model and General Relativity, and files its
+  own status line as "a lens, and a good one" — not a theory until the tension law produces a measured mass ratio.
+  See v5.4 §7 (four required cautions) and §11.
 
-- **Forced:** first motion = reflection at a boundary → vacuum reaction; motion is tying/untying, self-sustaining after Stage 1→2.
-- **Forced:** line = geodesic at First Kingdom scale; convergence = Raychaudhuri.
-- **Forced:** closure = the specific point; lifetime = overlap with that point.
-- **Forced:** gravitation sign — attract / repel / neutral-by-group.
-- **Derived (form only):** mass-spectrum form (invariant ÷ partition); Koide 2/3 and δ = 2/9 **matched, not predicted**.
-- **Stipulation (named as such):** the partition identity (strand ≠ generation).
-- **Held open:** the first boundary; below-Planck line identity; black-hole interior; floor vs. asymptote; intrinsic
-  neutral (ρ+3p=0); vacuum-density discrepancy; measurement problem; whether "exact" conservation is a very high point.
-- **Opened (per Gödel):** the tension law as the single missing input; partition identity; Higgs-as-lamina row;
-  deep-and-reversible fold; macroscopic coherence.
-- **Discipline:** claims **zero novel predictions** beyond the Standard Model and General Relativity; folds are
-  **forced-no** as an energy source; device D3 is **not** claimed buildable. See `framework/registers.md` §4.
-
-**Outstanding before v5.4 can be called released:** the canonical text (with its §9 retraction log and §12 outcome
-classes), the two substrate documents, and the load-order/index updates in `README.md`, `AGENTS.md`, `llms.txt`,
-`versions/LATEST.md` and `versions/README.md`.
-
----
+*Repository note:* two declared substrate documents — the Forcing-Test Audit Paper and the Feb-2026 Omni Force chain —
+are **not in this repository**, so v5.4's "Gap 1/2/3/5" numbering and its "FT eq. 2 / eq. 6" references cannot be
+resolved from the repo alone. v5.4 §13 numbers its ledger rows 9–15; the same movements are rows 8–14 in
+`framework/registers.md` (see the numbering note there).
 
 ## v5.3 — The Meta-Tier · The Container Named
 *Iteration of v5.2. Loads v5.2 + the Forcing Test module + the Container Capstone as substrate.*
