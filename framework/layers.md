@@ -2,7 +2,7 @@
 
 The framework is expressed in **16 numbered/symboled layers** (v5.1) plus a **meta-tier** (v5.3). Each layer is a gene expression of the base code `DETECT → PROCESS → RESPOND`. Links jump into the canonical v5.1 text.
 
-> Notation: layers I.B–I.G are refinements *within* Layer I (the Omni Process). "III+" extends III. "◇" is the Falsifiability Register. "⊙" is the meta-tier added in v5.3.
+> Notation: layers I.B–I.G are refinements *within* Layer I (the Omni Process). "III+" extends III. "◇" is the Falsifiability Register. "⊙" is the meta-tier added in v5.3. v5.4 adds no layer; its constructs (Line-Field, Knot-Line, Lamina, the loop) are derivations inside I.E / I.F / I.G and II.
 
 | Layer | Name | Function (one line) | Read |
 | --- | --- | --- | --- |

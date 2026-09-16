@@ -6,6 +6,38 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 ---
 
+## v5.4 — Run 8 · Line-Field, Knot-Line, Lamina — **PROPOSED, canon not yet in repo**
+*Iteration of v5.3. Declares as substrate: v5.1 + v5.2 + v5.3 + the Forcing-Test Audit Paper + the Feb-2026 Omni Force chain.*
+
+> **Status: incomplete landing.** The navigation and ledger updates for v5.4 are in this repository; the **canonical text
+> (`versions/v5.4/GFunnel-Methodology-v5.4.md`) is not**, and neither are two of its declared substrate documents (the
+> Forcing-Test Audit Paper, the Feb-2026 Omni Force chain). Per `versions/README.md` — *"Everything in `framework/` and
+> `docs/` navigates into these files"* — v5.4's map currently navigates into a file that does not exist. Until the canon
+> lands, v5.4 is a **logged proposal**, not a released version. It is recorded rather than dropped per Layer I.G (the
+> Capsule): nothing is lost.
+
+**Adds no architecture.** Its constructs — Line-Field, Knot-Line, Lamina, the loop — are logged as derivations inside
+I.E / I.F / I.G and II, not as new layers. Base code unchanged.
+
+- **Forced:** first motion = reflection at a boundary → vacuum reaction; motion is tying/untying, self-sustaining after Stage 1→2.
+- **Forced:** line = geodesic at First Kingdom scale; convergence = Raychaudhuri.
+- **Forced:** closure = the specific point; lifetime = overlap with that point.
+- **Forced:** gravitation sign — attract / repel / neutral-by-group.
+- **Derived (form only):** mass-spectrum form (invariant ÷ partition); Koide 2/3 and δ = 2/9 **matched, not predicted**.
+- **Stipulation (named as such):** the partition identity (strand ≠ generation).
+- **Held open:** the first boundary; below-Planck line identity; black-hole interior; floor vs. asymptote; intrinsic
+  neutral (ρ+3p=0); vacuum-density discrepancy; measurement problem; whether "exact" conservation is a very high point.
+- **Opened (per Gödel):** the tension law as the single missing input; partition identity; Higgs-as-lamina row;
+  deep-and-reversible fold; macroscopic coherence.
+- **Discipline:** claims **zero novel predictions** beyond the Standard Model and General Relativity; folds are
+  **forced-no** as an energy source; device D3 is **not** claimed buildable. See `framework/registers.md` §4.
+
+**Outstanding before v5.4 can be called released:** the canonical text (with its §9 retraction log and §12 outcome
+classes), the two substrate documents, and the load-order/index updates in `README.md`, `AGENTS.md`, `llms.txt`,
+`versions/LATEST.md` and `versions/README.md`.
+
+---
+
 ## v5.3 — The Meta-Tier · The Container Named
 *Iteration of v5.2. Loads v5.2 + the Forcing Test module + the Container Capstone as substrate.*
 
