@@ -37,7 +37,7 @@ methodology/
 │   ├── v5.1/                 ← the full architecture (17 layers, 10 domains, 70+ algorithms)
 │   ├── v5.2/                 ← the framework run against itself (deep-lens runs)
 │   ├── v5.3/                 ← the Meta-Tier (the Container ⊙)
-│   └── v5.4/                 ← Run 8 (Line-Field · Knots · Lamina · Frequency)
+│   └── v5.4/                 ← Run 8 (Line-Field · Knots · Lamina · Frequency · Anti-Triad)
 │
 ├── framework/                ← the navigable MAP into the canonical documents
 │   ├── README.md             ← the whole framework at a glance
@@ -70,7 +70,7 @@ The methodology **iterates**; it does not get replaced. Each version loads the p
 - **v5.1 — The Complete System.** Names the whole architecture: **17 layers**, **10 Universal Process Domains**, **70+ operational algorithms**, the 100-Stage Progression. Self-contained. *Start here to learn the framework.*
 - **v5.2 — The Framework Run Against Itself.** Adds **no new architecture**; applies a deep-lens to mechanisms v5.1 already names, narrowing held-open variables. Higher resolution, same base code.
 - **v5.3 — The Meta-Tier.** The **first architectural addition**: names a tier *above* the numbered layers — **Layer ⊙, the Container** — the framework turned on itself, made structural. The object-level base code is left untouched.
-- **v5.4 — Run 8.** The **first run executed with** the meta-tier: three constructs (Line-Field, Knot-Line, Lamina), motion as tying/untying, closure as the specific point, frequency as the same register read on the time axis (§4a), three test devices, thirteen in-run retractions. Adds **no architecture**. It claims **zero novel predictions** and files itself as "a lens, not a theory" — read §7 and §11 before citing it.
+- **v5.4 — Run 8.** The **first run executed with** the meta-tier: three constructs (Line-Field, Knot-Line, Lamina), motion as tying/untying, closure as the specific point, frequency as the same register read on the time axis (§4a), the C·P·T anti-triad run against every layer (§4b), three test devices, thirteen in-run retractions. Adds **no architecture**. It claims **zero novel predictions** and files itself as "a lens, not a theory" — read §7 and §11 before citing it.
 
 **The current complete framework = v5.1 (architecture) + v5.2 (higher-resolution runs) + v5.3 (meta-tier) + v5.4 (Run 8).** See [`versions/LATEST.md`](versions/LATEST.md) and [`CHANGELOG.md`](CHANGELOG.md).
 

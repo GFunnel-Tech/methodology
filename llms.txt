@@ -9,7 +9,7 @@ Read AGENTS.md first for the operating protocol. The base code does not change b
 - [v5.1 — The Complete System](versions/v5.1/GFunnel-Methodology-v5.1.md): Full architecture; self-contained; start here.
 - [v5.2 — The Framework Run Against Itself](versions/v5.2/GFunnel-Methodology-v5.2.md): Deep-lens runs; narrows held-open variables; no new architecture.
 - [v5.3 — The Meta-Tier](versions/v5.3/GFunnel-Methodology-v5.3.md): First architectural addition; Layer ⊙, the Container.
-- [v5.4 — Run 8](versions/v5.4/GFunnel-Methodology-v5.4.md): The first run executed with the meta-tier. Line-Field, Knot-Line, Lamina; motion as tying/untying; frequency as the line-field on the time axis (§4a); three test devices. Derivations only; zero novel predictions claimed.
+- [v5.4 — Run 8](versions/v5.4/GFunnel-Methodology-v5.4.md): The first run executed with the meta-tier. Line-Field, Knot-Line, Lamina; motion as tying/untying; frequency on the time axis (§4a); the C·P·T anti-triad run against every layer (§4b); three test devices. Derivations only; zero novel predictions claimed.
 - [LATEST pointer](versions/LATEST.md): What the current complete framework is.
 
 ## Map (navigable index)

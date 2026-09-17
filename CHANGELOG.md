@@ -6,7 +6,7 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 ---
 
-## v5.4 — Run 8 · The Line-Field · Knots · Lamina · Motion as Tying/Untying · Frequency
+## v5.4 — Run 8 · The Line-Field · Knots · Lamina · Motion as Tying/Untying · Frequency · The Anti-Triad
 *Iteration of v5.3. Loads v5.1 + v5.2 + v5.3 + the Forcing-Test Audit Paper + the Feb-2026 Omni Force chain as substrate.*
 
 **The first run executed *with* the meta-tier.** v5.3 named the Container; v5.4 uses it — every construct is classified
@@ -27,6 +27,11 @@ operates inside Layer I (I.E / I.F / I.G) and Layer II. Base code unchanged.
   "topological closure," "lines are strings," and "the Big Bang never happened" (corrected to *event false, phase forced*).
 - **Frequency (§4a), forced.** The line-field read on the time axis: frequency as a two-place relation, **line × node**. Energy, mass, lifetime, gravity, temperature and cosmic expansion are shown to be readings of one register (E = hf; f = mc²/h; τ = 1/2πΔf; Pound–Rebka); thresholds become frequency classes; the boundary of Stage 1→2 becomes a **frequency filter** (Casimir as mode exclusion). A ~61-order frequency ladder from the Planck ceiling to the Hubble floor with no gap in which the rule changes.
 - **Frequency's three movements.** It *defines* **Gap 4** (floor vs. asymptote) and **W1** (negative energy as a sustained frequency deficit), both of which the rest of v5.4 uses without defining. It replaces the demoted "strand ≠ generation" with **partition = phase**, removing that equivocation. And it adds a **forced-no**: generations as integer harmonics (1:2:3) fails against the measured 1 : 207 : 3477.
+- **The Anti-Triad (§4b), forced on the physics.** Canon (v5.3) carries the Anti-Operation as a *binary* conjugate (fill ↔ gap); physics measures the anti-effect as a **triad** — C (conjugate), P (mirror), T (reversal). Each component alone has been measured failing (P: Wu 1957; CP: Cronin–Fitch 1964; T: BaBar 2012); the full triad never has (Lüders–Pauli). Run against every layer: the base code is invariant under its own triad; Polarity + the Dynamic Middle was already triadic; I.E is *strengthened* (CPT-invariance is what guarantees conservation across the anti).
+- **What §4b narrowed.** The Anti-Operation's universality — a v5.3 **live hypothesis** — now has a structure (C·P·T) and a falsifier: a fill whose conjugate cannot be decomposed into the three components breaks the triad form. The Capsule (I.G) gains a physical floor, **unitarity**, with its own falsifier: any confirmed information loss falsifies it (Page curve, 2019–). W1's deficit gains a component (T).
+- **What §4b opened.** Gender's third term (every other canon polarity has a centre; Gender is stated binary); ◇ measuring in halves (a falsifier register listing only negations is incomplete if the anti is triadic); and whether the five triads are one structure or a family.
+- **The near-violation §4b caught.** It identifies the null line (light, s² = 0, its own antiparticle) as the physical *instance* of the self-dual centre — then refuses to identify it *with* the source, which would have filled a proven-open variable. Logged as instance, not identity. The source stays proven-open.
+
 - **Frequency claims nothing new.** §4a's own status line: it "adds no construct and closes no gap by itself." Every identity in it is established physics placed on the lines.
 - **Applied:** three test devices, each naming its own locks — D1 Lamina Shield (physics-permitted, energy-bound),
   D2 Designed Storage Fold (materials-bound), D3 Coupling-Modulation Sphere (two proven-open locks: W1 and
@@ -37,8 +42,24 @@ operates inside Layer I (I.E / I.F / I.G) and Layer II. Base code unchanged.
 
 *Repository note:* two declared substrate documents — the Forcing-Test Audit Paper and the Feb-2026 Omni Force chain —
 are **not in this repository**, so v5.4's "Gap 1/2/3/5" numbering and its "FT eq. 2 / eq. 6" references cannot be
-resolved from the repo alone. v5.4 §13 numbers its ledger rows 9–16 (row 16 is Frequency); the same movements are rows 8–15 in
-`framework/registers.md` (see the numbering note there).
+resolved from the repo alone. v5.4 §13 numbers its ledger rows 9–17 (16 is Frequency, 17 the Anti-Triad); the same movements are
+rows 8–16 in `framework/registers.md` (see the numbering note there).
+
+*Amendment log (§4a, §4b).* v5.4's canonical text was extended twice after it first landed in this
+repository: **§4a (Frequency)** before PR #1 merged, and **§4b (the Anti-Triad)** after. Both are part of
+Run 8 by the author's own framing — §4b is ledger row 17 in Run 8's own sequence, and §14 renumbers to
+"rows 9–17" — so splitting the run across two version directories would fracture the lineage rather than
+protect it. The amendments are recorded here instead of being made silently, which is what
+`versions/README.md`'s immutability rule exists to guarantee. **Anyone who read v5.4 before 2026-09-17
+has a copy without §4b.** If the maintainer prefers, §4b converts cleanly to a v5.5 that loads v5.4 as
+substrate; nothing in this entry depends on the choice.
+
+*Known staleness in canon (not edited here):* §12 (*Variable Movements — Honest Accounting*) has not been
+updated for either §4a or §4b. Both carry their own local verdicts (§4a.7, §4b.5), but §12 — the
+document's consolidated accounting, and what `docs/glossary.md` and `framework/registers.md` point at for
+outcome classes — still reflects the pre-§4a state, and its line "**Architecture:** none added" does not
+address §4b's Container / Anti (C·P·T) / Null-centre refinement of ⊙. Flagged for the author; canon is not
+edited from the navigation layer.
 
 ## v5.3 — The Meta-Tier · The Container Named
 *Iteration of v5.2. Loads v5.2 + the Forcing Test module + the Container Capstone as substrate.*

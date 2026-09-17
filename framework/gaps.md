@@ -21,7 +21,29 @@ v5.4 §8 names **W1** as one of D3's two locks without defining it. §4a.5 suppl
 
 > **W1 · Negative energy** — *a sustained **deficit** of frequencies relative to the node* (the Casimir effect does this between plates); negative-frequency modes = the anti-container = the line run backward. Container/Anti-Container = positive/negative frequency; the self-dual center = light, E = pc, its own antiparticle.
 
-**Status: live route.** This converts W1 from an unexplained label into a stated physical handle. It does not make W1 achievable — sustained, macroscopic negative energy density remains bounded by the quantum energy inequalities (Ford–Roman, credited in §10).
+**Status: live route.** §4b refines it further: negative energy density as a **T-deficit** — fewer forward modes than filled anti-modes. This converts W1 from an unexplained label into a stated physical handle with a named component. It does not make W1 achievable — sustained, macroscopic negative energy density remains bounded by the quantum energy inequalities (Ford–Roman, credited in §10).
+
+---
+
+## Gaps opened by §4b (the Anti-Triad)
+
+§4b ran the C·P·T triad against every layer. It closed nothing and opened three, which is the correct outcome for a consistency run:
+
+| # | Gap | Why it opened | Status |
+| --- | --- | --- | --- |
+| **§4b-1** | **Gender's third term.** Every other polarity in canon has a centre — Polarity has the Dynamic Middle (I.D), Container has the Null centre. Gender (Layer 0, Hermetic) is stated strictly binary. | Physics has a third term at every comparable place (neutral charge; the null line). Canon states none for Gender. | **Held open.** Either Gender admits a neuter term, or it is the one strictly binary principle — and *that* would itself need a reason. |
+| **§4b-2** | **◇ measures in halves.** The Falsifiability Register lists only *negations*. | If the anti is triadic, a complete falsifier has three forms: negation (C), mirror case (P), reversal (T). | **Queued** as a ◇ refinement — presentation, not architecture. Now v5.4 §14 item 6. |
+| **§4b-3** | **One triad or several?** CPT, interval sign, colour, Yang/Yin/centre and the Three Kingdoms share a shape. | Whether that is one structure seen five times under Correspondence, or a family of distinct triads, is the Anti-Operation applied to itself. | **Held open.** |
+
+A fourth item is logged as a **labeled derivation**, not a gap: the Kingdom ↔ C/P/T assignment (First = what it is, Second = how arranged, Third = direction of reading). Coherent, not forced; it stays labeled until something selects it.
+
+### The near-violation §4b caught
+
+Worth recording on its own, because it is the register working as designed. §4b identifies the **null line** (light: s² = 0, its own antiparticle) as the physical instance of the self-dual centre at First Kingdom scale — then explicitly refuses to identify it *with* the source:
+
+> *"Caught near-violation: identifying the null line with the source would fill a proven-open variable. Logged as instance, not identity. The source stays proven-open."*
+
+That is the Variable Principle catching a fill in progress. v5.3 lists the self-dual centre as **proven-unforceable** — "sealing it would make the tier imperfect" — and §4b preserves it.
 
 ---
 
