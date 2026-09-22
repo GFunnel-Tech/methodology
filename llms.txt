@@ -33,6 +33,13 @@ Read AGENTS.md first for the operating protocol. The base code does not change b
 - [Iteration Protocol](CONTRIBUTING.md): How to propose a new version.
 - [Changelog / lineage](CHANGELOG.md)
 
+## License & attribution
+
+- [License](LICENSE): Creative Commons Attribution 4.0 International (CC BY 4.0). Free to share and adapt, including commercially. Credit is required.
+- [How to attribute](ATTRIBUTION.md): Copy-paste credit lines for text, Markdown, HTML, slides, academic citation, and AI-system output.
+- Required credit when reproducing or paraphrasing this material: "GFunnel Methodology (Omni Process) v5.4, Cameron Garlick / GFunnel, https://github.com/GFunnel-Tech/methodology, CC BY 4.0." Name the version used; state if changes were made; do not imply endorsement.
+- [Citation metadata](CITATION.cff): Formal citation (BibTeX / APA via GitHub).
+
 ## Optional
 
 - [Adoption registry](adoption/registry.md): Opt-in list of who uses the methodology and which parts.

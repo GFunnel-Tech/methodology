@@ -6,6 +6,23 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 ---
 
+## Repository changes (not framework iterations)
+
+These entries change how the work is published, not what it claims. **No version, no base code, and no variable is affected.**
+
+### 2026-09-22 — Licensed CC BY 4.0
+
+`LICENSE` changed from **All Rights Reserved (proprietary)** — the deliberately conservative placeholder the repository shipped with — to **[Creative Commons Attribution 4.0 International](LICENSE)**.
+
+- **What this grants:** anyone may copy, quote, redistribute, adapt, and commercially use the text of this repository, without asking.
+- **What it requires:** attribution — name the work and author, link to the source, name the license, and indicate if changes were made. Failure to attribute terminates the license automatically (CC BY 4.0 § 6).
+- **What was added:** [`ATTRIBUTION.md`](ATTRIBUTION.md), with copy-paste credit lines for plain text, Markdown, HTML, slides, academic citation, and AI-system output. `README.md`, `AGENTS.md`, `llms.txt`, `docs/ai-integration.md`, and `CITATION.cff` now carry the license and the required credit line. `CONTRIBUTING.md` states that accepted iterations are published under the same license.
+- **What is reserved:** the "GFunnel" name and logo (trademarks, not licensed by CC BY), and any implication of endorsement.
+- **Held open, honestly:** copyright binds *expression*, not ideas or methods. A reader who applies the framework in their own words incurs no legal attribution duty. That gap is covered by norm, not law — [`CITATION.cff`](CITATION.cff) and the [adoption registry](adoption/registry.md) are the instruments. The license is not claimed to do more than it does.
+- **Note:** CC licenses are **irrevocable**. Copies made under CC BY 4.0 stay licensed under it, even if the repository's license changes later.
+
+---
+
 ## v5.4 — Run 8 · The Line-Field · Knots · Lamina · Motion as Tying/Untying · Frequency
 *Iteration of v5.3. Loads v5.1 + v5.2 + v5.3 + the Forcing-Test Audit Paper + the Feb-2026 Omni Force chain as substrate.*
 

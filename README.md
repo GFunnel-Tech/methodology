@@ -30,7 +30,8 @@ methodology/
 ├── CHANGELOG.md              ← version lineage v5.1 → v5.2 → v5.3 → v5.4
 ├── CONTRIBUTING.md           ← the Iteration Protocol (how to propose a version)
 ├── CITATION.cff              ← how to cite the methodology
-├── LICENSE                   ← usage terms (proprietary by default — see note)
+├── LICENSE                   ← CC BY 4.0 — free to use and share, credit required
+├── ATTRIBUTION.md            ← copy-paste credit lines for every medium
 │
 ├── versions/                 ← the canonical documents, immutable per version
 │   ├── LATEST.md             ← pointer to the current complete framework
@@ -88,6 +89,21 @@ GitHub gives you some of this for free, and some of it must be **opt-in** — th
 
 ---
 
-## License & authorship
+## License & attribution
 
-Authored by **Cameron Garlick (GFunnel)**. See [`LICENSE`](LICENSE) — the default here is **All Rights Reserved (proprietary)** so nothing is unintentionally open-sourced. If you want an open or Creative-Commons license instead, change that one file. To cite the work, see [`CITATION.cff`](CITATION.cff).
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+
+Authored by **Cameron Garlick · GFunnel · Austin, Texas**. This work is licensed under **[Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE)**.
+
+**You may** copy it, quote it, adapt it, teach it, and use it commercially — no permission needed.
+**You must** credit the source: name the work and author, link back here, note the license, and say if you changed anything.
+
+Copy-paste credit line:
+
+> GFunnel Methodology (The Omni Process) v5.4 by Cameron Garlick / GFunnel — https://github.com/GFunnel-Tech/methodology — licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+More formats (Markdown, HTML, slides, academic, AI-system output) are in **[`ATTRIBUTION.md`](ATTRIBUTION.md)**. For a formal citation, see [`CITATION.cff`](CITATION.cff) or GitHub's *Cite this repository* button.
+
+**The honest limit.** Copyright covers the *text*, not the ideas. Someone who reads this and applies the method in their own words is not legally required to credit it — attribution there rests on citation norms and the [adoption registry](adoption/registry.md), not on the license. The license binds copying; the registry builds the norm. Both are doing real work.
+
+**Not licensed:** the "GFunnel" name and logo are trademarks, and nothing here implies endorsement of anyone's adaptation.

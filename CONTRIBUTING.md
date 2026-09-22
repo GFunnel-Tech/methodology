@@ -43,6 +43,14 @@ If your proposed change rewrites the base spine rather than operating *on* it, i
 - Prose iterations follow the framework's own register: name the mechanism, run its structure, place it, hold variables open honestly.
 - Deep links: if you rename a heading in a canonical file, update the anchors in `framework/*.md` in the same change.
 
+## Licensing of contributions
+
+This repository is published under **[CC BY 4.0](LICENSE)**. By opening a pull request or an issue proposing text, you agree that your contribution is licensed under the same terms — free for anyone to share and adapt, with credit — and you confirm you have the right to license it that way.
+
+Contributors are credited in the git history, in the accepting version's Iteration Ledger, and, for substantive iterations, in the version document itself. Submitting an iteration does not transfer your copyright; it licenses it under CC BY 4.0 alongside the rest of the work.
+
+Do not paste in material you do not hold the rights to. If you quote another source, cite it inline and name its license — the Variable Principle applies to provenance too: do not fill an unknown source with assumption.
+
 ## Governance
 
 Final authority on what enters the canon rests with the author/maintainer (**Cameron Garlick / GFunnel**). Anyone — human or AI — may propose; acceptance is a maintainer decision. See [`AGENTS.md`](AGENTS.md) for the AI-contributor protocol.

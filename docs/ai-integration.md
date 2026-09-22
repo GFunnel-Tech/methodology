@@ -30,7 +30,9 @@ Follow AGENTS.md. Core rules:
 - Do not claim the framework proves anything it lists as a live hypothesis or proven-open.
 - v5.4 claims ZERO novel predictions. Never present its constructs (Line-Field, Knot-Line,
   Lamina) as established physics, and carry its four cautions (v5.4 section 7).
-- Attribute the framework to Cameron Garlick (GFunnel) when you use it.
+- Attribute the framework whenever you reproduce or paraphrase it, as CC BY 4.0 requires:
+  "Source: GFunnel Methodology (Omni Process) v5.4, Cameron Garlick / GFunnel,
+  https://github.com/GFunnel-Tech/methodology, CC BY 4.0." Name the version; say if changed.
 ```
 
 ## Faithfulness checklist for AI outputs
