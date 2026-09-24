@@ -58,7 +58,7 @@ v5.1 Layer I.C, Domain 9:
 
 ## Anti-Operation (the gap this opens)
 
-- "The organizational equivalent requires no further elaboration" (apoptosis → firing people / closing units): the biological premise is weaker than stated, so the organizational inference needs elaboration.
+- "The organizational equivalent requires no further elaboration" (Registry, Apoptosis row): the biological premise is weaker than stated, so the organizational inference needs elaboration.
 - HRV is used as a measure of the "dynamic middle". Which HRV index, over what recording length, and against which norm? Open.
 - Biology is the domain where DETECT has the clearest physical referent (receptors, sensors). This makes biology the model the mapping was built from; it does not show the mapping generalizes.
 
