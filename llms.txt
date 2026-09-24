@@ -22,6 +22,16 @@ Read AGENTS.md first for the operating protocol. The base code does not change b
 - [Gaps](framework/gaps.md): The gap numbering v5.4 reports against, reconstructed from canon.
 - [Tests](framework/tests/README.md): Executed runs from v5.4 §14, with scripts and honest verdicts.
 
+## Reality Audit (derivation / work-in-progress — not canon)
+
+- [Audit overview](audit/README.md): Compares canon against measured reality, item by item. Nothing here is canon until the author declares a version.
+- [Audit schema](audit/SCHEMA.md): Vocabularies (observation grade, claim outcome, diff state, exclusion diagnosis, intake result) and record formats.
+- [Findings](audit/FINDINGS.md): Running list of confirmed findings and questions for the author.
+- [Coverage](audit/COVERAGE.md): What is audited, sparse, or blind.
+- [Containers](containers/README.md): Knowledge containers (KC-####), one per solved item, each with at least one open edge.
+- [Substrate](substrate/README.md): Dated input documents, including the audit's governing model (unclassified).
+- [Task brief](tasks/reality-audit/TASK.md): The standing brief for every audit phase.
+
 ## Guides
 
 - [How to use (humans)](docs/how-to-use.md)
