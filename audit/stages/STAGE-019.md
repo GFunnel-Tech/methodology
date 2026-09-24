@@ -34,7 +34,7 @@ v5.1 Appendix A, table "Stages 1–22", row 19 (line 1757):
 3. Falsifiability condition: falsified if acetyl-CoA were not the product that enters the Krebs cycle from pyruvate.
 4. Variables: measurable: reaction stoichiometry. Held open: none for the core claim.
 5. Test designed: fetch KEGG reaction and module entries.
-6. Data (unfiltered): table above. PDH yields acetyl-CoA, CO2 and NADH. KEGG lists more than one enzyme system for this step (PDH complex; ferredoxin-dependent PFOR, which uses ferredoxin rather than NAD+ as the electron acceptor per its K-numbers).
+6. Data (unfiltered): table above. PDH yields acetyl-CoA, CO2 and NADH. KEGG lists more than one enzyme system for this step (PDH complex; pyruvate:ferredoxin oxidoreductase, EC 1.2.7.1, named as ferredoxin-linked in https://rest.kegg.jp/get/K00169, retrieved 2026-09-24).
 7. Variable Principle applied: measured.
 8. Model update (Capsule): accounted. Canon's generic wording ("Pyruvate Oxidation → Acetyl-CoA") covers both enzyme systems.
 9. Documented: this file.
