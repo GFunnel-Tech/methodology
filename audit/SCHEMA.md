@@ -93,8 +93,9 @@ If a value cannot be verified from a primary source, grade it `held-open` and sa
 | Constant | `CONST-<slug>` (lowercase, digits, hyphens) | `audit/constants/` | 4 |
 | Domain | `DOMAIN-##` (01–10) | `audit/domains/` | 5 |
 | Unmapped | `UNMAPPED-####` | `audit/unmapped/` | 6 |
+| Claim | `CLAIM-###` | `audit/claims/` | 3–5 (extension) |
 
-The file name is `<id>.md` (a `-<slug>` suffix is allowed after the id, e.g. `LABEL-005-stage-5.md`). The `GOV` prefix is an extension made by this file (brief Phase 1 allows "a dedicated `audit/governance/` file").
+The file name is `<id>.md` (a `-<slug>` suffix is allowed after the id, e.g. `LABEL-005-stage-5.md`). The `CLAIM` prefix (extension, derivation) covers canonical claims that are not a stage, constant, domain, or label: rows of the Falsifiability Register (v5.1 ◇), Appendix B/C entries, and Core Axioms with a factual core. The `GOV` prefix is an extension made by this file (brief Phase 1 allows "a dedicated `audit/governance/` file").
 
 ---
 

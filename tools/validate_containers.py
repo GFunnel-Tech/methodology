@@ -25,7 +25,7 @@ REQUIRED_KEYS = [
 ]
 LIST_KEYS = {"canon_refs", "audit_refs", "links_up", "links_down"}
 ID_RE = re.compile(r"^KC-\d{4}$")
-AUDIT_ID_RE = re.compile(r"^(GOV-\d{3}|LABEL-\d{3}|STAGE-\d{3}|CONST-[a-z0-9-]+|DOMAIN-\d{2}|UNMAPPED-\d{4})$")
+AUDIT_ID_RE = re.compile(r"^(GOV-\d{3}|LABEL-\d{3}|STAGE-\d{3}|CONST-[a-z0-9-]+|DOMAIN-\d{2}|UNMAPPED-\d{4}|CLAIM-\d{3})$")
 SKIP = {"README.md", "TEMPLATE.md", "INDEX.md"}
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
