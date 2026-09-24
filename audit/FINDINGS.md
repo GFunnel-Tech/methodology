@@ -89,6 +89,21 @@ Each row links the audit file that holds the sources. "Canon" is v5.1 unless sta
 | F-050 | **Energy conservation stated without its domain:** undefined globally in an expanding universe — and Layer I.E rests on it. | [CONST-energy-conservation](constants/CONST-energy-conservation.md) | Add the domain limit; carry to Layer I.E. | open |
 | F-051 | **Sustained oscillation** (e.g. the repressilator) is a measured stable regime that "perfect process or the draw — no third configuration" neither includes nor excludes. | Elowitz & Leibler 2000 — [CLAIM-013](claims/CLAIM-013.md) | Name as a candidate third configuration. | open |
 
+#### H. Appendix D — information, biological, economic and framework laws
+
+| # | Finding | Evidence (see file) | Proposed resolution | Status |
+| --- | --- | --- | --- | --- |
+| F-054 | **Bremermann's limit printed `~1.36×10⁵°`** (line 2059); c²/h = 1.3564 × 10⁵⁰. Same corruption pattern as F-010 (superscript digits → `°`, `µ`): likely a transcription defect. | CODATA — [CONST-bremermann-limit](constants/CONST-bremermann-limit.md) | Transcription-fix issue together with F-010. | ❓ author |
+| F-055 | **Kleiber's 3/4 "from bacteria to whales"**: exponents 1.7–2.0 (prokaryotes), 1.0–1.1 (protists), 0.76–0.79 (metazoans); 619-species study finds 2/3. | DeLong 2010; White & Seymour 2003 — [CONST-kleiber-law](constants/CONST-kleiber-law.md) | "Metazoans ≈ M^0.67–0.79 (contested); not universal." | proposal |
+| F-056 | **Miller's 7 ± 2** as working-memory capacity: ≈ 4 chunks when chunking is controlled. | Cowan 2001 — [CONST-miller-7-plus-minus-2](constants/CONST-miller-7-plus-minus-2.md) | Correct. | proposal |
+| F-057 | **Dunbar's ~150 as a "cognitive limit"**: re-estimation gives 69–109 with a 95% CI of 4–520. | Lindenfors 2021 — [CONST-dunbar-number](constants/CONST-dunbar-number.md) | Contested; held open. | open |
+| F-058 | **Pareto 80/20 and "all follow power laws"**: the split depends on the exponent; only 4% of ~1000 networks are strongly scale-free. | Broido & Clauset; Clauset 2009 — [CONST-pareto-principle](constants/CONST-pareto-principle.md), [CONST-pareto-distribution](constants/CONST-pareto-distribution.md) | Rule of thumb; drop "all". | proposal |
+| F-059 | **Conway's law as universal**: "prevalent but not universal" (142 studies). | Colfer & Baldwin 2016 — [CONST-conway-law](constants/CONST-conway-law.md) | A tendency. | proposal |
+| F-060 | **Bekenstein bound stated as information ∝ area** — that is the holographic bound; Bekenstein's is S ≤ 2πRE/(ħc). | [CONST-bekenstein-bound](constants/CONST-bekenstein-bound.md) | Relabel or restate. | proposal |
+| F-061 | **Hayflick limit as an "apoptosis trigger"** — it ends in senescence; senescent cells resist apoptosis. | [CONST-hayflick-limit](constants/CONST-hayflick-limit.md) | Fix role text. | proposal |
+| F-062 | **Smaller:** Church–Turing role text extends it to "any process" (physical thesis, separate conjecture); Lindy "another X" needs α = 2; Moore "slowing" not shown in transistor counts through 2022; diminishing-returns optimum is MR = MC, not "the middle"; Gödel conditions omitted; genetic code has 26 variant tables; Hox has lineage losses. | linked files in `constants/` | Wording fixes. | proposal |
+| F-063 | **Framework invariants that do not match the repo:** "9 = 3 Kingdoms × 3 operations" (the department table has no 3×3 grid); "49 = cellular-to-cosmic arc complete" (Stage 49 is "Cycle Restart"; glossary says otherwise); frontier starts at 86 vs "81–100"; "17 Layer" algorithms but 16 headings; "6 … minimum for the recursion to close" vs line 888 "does not terminate at any finite level"; "17 … Fibonacci near-neighbor" (17 is not Fibonacci). | [CONST-invariant-9](constants/CONST-invariant-9.md), [‑49](constants/CONST-invariant-49.md), [‑100](constants/CONST-invariant-100.md), [‑17](constants/CONST-invariant-17.md), [‑6](constants/CONST-invariant-6.md) | Reconcile each count with the text it names. | proposal |
+
 #### F. Architectural questions for the author (brief §10)
 
 | # | Question | Where |
@@ -111,5 +126,5 @@ Each row links the audit file that holds the sources. "Canon" is v5.1 unless sta
 
 - **F-003 / GOV-001:** the scoped base-code rule is forced by canon's own ◇ — confirm the drafted wording.
 - **F-004 / GOV-002:** accept "refinement (adds an intake step to ⊙)"?
-- **F-010, F-027, F-035, F-042, F-048** and **A1–A4** above.
+- **F-010 + F-054** (transcription), **F-027, F-035, F-042, F-048** and **A1–A4** above.
 - **F-009.** Add a "Docs / navigation / tooling" issue template, or keep using the PR template's change type for tooling work?

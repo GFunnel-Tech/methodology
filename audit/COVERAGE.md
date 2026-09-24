@@ -27,7 +27,7 @@ Legend: ☐ not started · ◐ partial · ✅ covered · ⚠ sparse · ⛔ blind
 | Stage names 50–100 | v5.1 Appendix A | 51 | 51 (in stage files) | ✅ |
 | Domain names | v5.1 Layer I.C | 10 | 10 (in domain files) | ✅ |
 | Layer names | v5.1 + v5.3 (⊙) | 17 | 17 ([LABEL-101–117](labels/)) | ✅ |
-| Appendix D entry names | v5.1 Appendix D | 86 | in constant files | ◐ |
+| Appendix D entry names | v5.1 Appendix D | 86 | 86 (in constant files) | ✅ |
 
 ## 3. Stages (Phase 3)
 
@@ -53,11 +53,11 @@ Counted from the entry rows of each table in v5.1 Appendix D (header rows exclud
 | Physical constants | 12 (+1 held-open variable row) | 13 | CODATA / NIST; PDG; Planck data releases | ✅ |
 | Conservation laws | 8 | 8 | PDG limits; primary measurements | ✅ |
 | Dynamical laws | 12 | 12 | primary measurements | ✅ |
-| Information & computation laws | 11 | 0 | theorems (proof, not measurement) + physical bounds | ◐ in progress |
-| Biological & scaling laws | 9 | 0 | primary biological datasets | ◐ in progress |
-| Economic, network & social laws | 12 | 0 | empirical datasets (reproducibility varies) | ◐ in progress |
-| Hermetic & framework invariants | 10 | 0 | none external — framework-internal counts | ◐ in progress |
-| **Total** | **86** | **45 + pending** | | |
+| Information & computation laws | 11 | 11 | theorems (proof, not measurement) + physical bounds | ✅ |
+| Biological & scaling laws | 9 | 9 | primary biological datasets | ✅ |
+| Economic, network & social laws | 12 | 12 | empirical datasets (reproducibility varies) | ✅ |
+| Hermetic & framework invariants | 10 | 10 | none external — framework-internal counts | ✅ |
+| **Total** | **86** | **87** (86 entries + 1 held-open variable row) | | |
 
 **Named in advance (not yet findings):** the information-and-computation section is mostly theorems, which are proved rather than measured, so their "reality" grade needs a rule; the Hermetic & framework invariants have no external measurement source by construction. Phase 4 must say how each is graded before auditing it.
 
