@@ -13,7 +13,7 @@ ledger_row: null
 
 ## Canon says
 
-v5.1 Appendix A, table "Stages 23–49", row 23 (line 1769):
+v5.1 Appendix A, table "Stages 23–49", row 23 (line 1771):
 
 > | 23 | ATP Hydrolysis / Cellular Work | Energy captured by molecular machines: motor proteins, ion pumps, ribosomes, polymerases. Universal currency. |
 

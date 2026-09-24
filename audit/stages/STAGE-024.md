@@ -13,7 +13,7 @@ ledger_row: null
 
 ## Canon says
 
-v5.1 Appendix A, table "Stages 23–49", row 24 (line 1770):
+v5.1 Appendix A, table "Stages 23–49", row 24 (line 1772):
 
 > | 24 | Ion Gradients / Membrane Potentials | Na+/K+ ATPase establishes electrochemical asymmetry. Polarity deliberately created and maintained. |
 
