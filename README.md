@@ -17,6 +17,7 @@ This repository is the **canonical, versioned home** of the GFunnel Methodology 
 | **Evaluating / verifying a claim** | [`framework/registers.md`](framework/registers.md) — Variable Registry & Falsifiability | The layer in question |
 | **Wanting to contribute an iteration** | [`CONTRIBUTING.md`](CONTRIBUTING.md) — the Iteration Protocol | Open an issue |
 | **Adopting it in your org / product** | [`adoption/README.md`](adoption/README.md) | Register your use |
+| **Following the Reality Audit** *(derivation / work-in-progress — not canon)* | [`audit/README.md`](audit/README.md) — canon compared against measured reality | [`tasks/reality-audit/TASK.md`](tasks/reality-audit/TASK.md) · [`substrate/`](substrate/README.md) · [`containers/`](containers/README.md) |
 
 ---
 
@@ -58,6 +59,13 @@ methodology/
 ├── adoption/                 ← opt-in registry of who uses the methodology
 │   ├── README.md
 │   └── registry.md
+│
+│   ── Reality Audit: derivation / work-in-progress, NOT canon ──
+├── tasks/reality-audit/      ← the standing brief for the audit
+├── substrate/                ← dated inputs a future version loads (not canon)
+├── audit/                    ← canon vs. reality: schema, findings, coverage, audit records
+├── containers/               ← knowledge containers (KC-####): one per solved item
+├── tools/                    ← stdlib validators for audit records and containers
 │
 └── .github/                  ← issue & PR templates that double as usage capture
 ```

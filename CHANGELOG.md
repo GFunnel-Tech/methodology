@@ -10,6 +10,14 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 These entries change how the work is published, not what it claims. **No version, no base code, and no variable is affected.**
 
+### 2026-09-24 — Reality Audit, Phase 0 (foundation)
+
+Adds the working areas for the Reality Audit, which compares canon against measured reality item by item. **All of it is derivation / work-in-progress, not canon.**
+
+- **Added:** [`tasks/reality-audit/TASK.md`](tasks/reality-audit/TASK.md) (the brief); [`substrate/`](substrate/README.md) with the audit's governing model as a dated substrate document, **unclassified**; [`audit/`](audit/README.md) (governing Master Meta run, schema, findings, coverage map); [`containers/`](containers/README.md) (the knowledge-container unit, template, index); [`tools/`](tools/README.md) (stdlib validators with self-tests).
+- **Findings opened:** F-001 – F-007 seeded from the brief; F-008 (`forced-no` is used in v5.4 but is not in the register's outcome table) and F-009 (the brief's "Docs / navigation / tooling" issue template does not exist) found while building the schema. See [`audit/FINDINGS.md`](audit/FINDINGS.md).
+- **Not changed:** no released version, no `framework/` file, `CONTRIBUTING.md`, `AGENTS.md`, or template. No variable moved, so no Iteration Ledger row. The scoped base-code rule recorded in the substrate is an author decision awaiting Phase 1 classification; it is **not** applied.
+
 ### 2026-09-22 — Licensed CC BY 4.0
 
 `LICENSE` changed from **All Rights Reserved (proprietary)** — the deliberately conservative placeholder the repository shipped with — to **[Creative Commons Attribution 4.0 International](LICENSE)**.
