@@ -1,0 +1,640 @@
+[
+  {
+    "id": "pdg",
+    "name": "Particle Data Group (LBNL-hosted Review of Particle Physics)",
+    "audit_use": "STAGE-001, STAGE-002, STAGE-003, STAGE-005, STAGE-006, STAGE-007, CONST-angular-momentum-conservation, CONST-baryon-number-conservation, CONST-charge-conservation, CONST-cpt-symmetry, CONST-lepton-number-conservation, CONST-maxwells-equations, CLAIM-002, CLAIM-014, CANON-v54-koide, CANON-v54-lifetime-linewidth",
+    "figures": [
+      {
+        "amount": 1860000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "LBNL Particle Data Group budget FY2008, with overheads (salaries, M&S, printing, travel); funders DOE 84% + NSF 11% + Japan 5% (FY09 split). Excludes unpaid external collaborators (~170 authors).",
+        "quote": "TOTAL 1860 2333 2507 2100 2257"
+      },
+      {
+        "amount": 2333000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "LBNL PDG budget FY2009 (planned, in 2008 five-year plan), with overheads",
+        "quote": "TOTAL 1860 2333 2507 2100 2257"
+      },
+      {
+        "amount": 508599,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 0355084 'Berkeley Particle Data Center', funds obligated 2004-2007 (the NSF share only)",
+        "quote": "\"fundsObligatedAmt\":\"508599\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/0355084.json",
+        "source_type": "primary"
+      }
+    ],
+    "source_url": "https://pdg.lbl.gov/doereview/agenda/doe_review08_barnett_five.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "Source is the PDG leader's slides for the September 2008 DOE review ('Budget in k$ with Overheads', columns FY08-FY12; FY09-FY12 are plans). Amounts are in k$, converted to units here. Price year not stated (nominal/then-year). The same slides say 'The only authors paid to do PDG work are in the LBNL PDG. All others are volunteers', so the collaborators' time (paid by their own institutes) is NOT in these numbers. A cumulative cost through the 2024 edition is held open: only FY08-FY12 figures were found; later DOE/LBNL PDG budgets were not found on a fetched page. pdg.lbl.gov/pdg_funding.html lists funders (DOE, NSF PHY-0355084, CERN, INFN, Japan MEXT) but no amounts."
+  },
+  {
+    "id": "kegg",
+    "name": "KEGG (Kyoto Encyclopedia of Genes and Genomes)",
+    "audit_use": "STAGE-015, STAGE-016, STAGE-019, STAGE-020, STAGE-021, CONST-atp-yield-per-glucose, CONST-krebs-cycle-stoichiometry",
+    "figures": [],
+    "source_url": "https://www.kegg.jp/kegg/docs/plea.html",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "held-open",
+    "note": "No currency amount found. The operator's own page (fetched) gives only ratios: 'public funding accounts for only about one tenth of our total operational cost', and that an earlier NBDC (JST) grant 'amounts to only one-third of the entire operational cost'. It says KEGG was fully grant-funded (JST BIRD, then NBDC) until its 16th year. Tried and failed: KAKEN grant database (kaken.nii.ac.jp returned a robot check), GenomeWeb article on the 2011 subscription move (403). Held open: absolute annual operating cost and 1995-2026 cumulative cost."
+  },
+  {
+    "id": "bicep-keck",
+    "name": "BICEP2 / Keck Array / BICEP3 (South Pole CMB polarization)",
+    "audit_use": "STAGE-001, STAGE-003",
+    "figures": [
+      {
+        "amount": 1259000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 0742818, funds obligated (all years): Caltech, 2008-05-15 to 2010-07-31 (BICEP2 and SPUD)",
+        "quote": "\"fundsObligatedAmt\":\"1259000\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/0742818.json",
+        "source_type": "primary"
+      },
+      {
+        "amount": 874342,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 0742592, funds obligated (all years): U Chicago, 2008-05-15 to 2011-01-31 (BICEP2 and SPUD)",
+        "quote": "\"fundsObligatedAmt\":\"874342\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/0742592.json",
+        "source_type": "primary"
+      },
+      {
+        "amount": 2919786,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 1044978, funds obligated (all years): Harvard, 2009-11-01 to 2013-04-30 (BICEP2 and SPUD)",
+        "quote": "\"fundsObligatedAmt\":\"2919786\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/1044978.json",
+        "source_type": "primary"
+      },
+      {
+        "amount": 944253,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 1110087, funds obligated (all years): U Minnesota, 2010-09-01 to 2013-04-30 (BICEP2 and SPUD)",
+        "quote": "\"fundsObligatedAmt\":\"944253\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/1110087.json",
+        "source_type": "primary"
+      },
+      {
+        "amount": 3644169,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 1145172, funds obligated (all years): Harvard, 2012-08-01 to 2018-07-31 (Imaging the Beginning of Time)",
+        "quote": "\"fundsObligatedAmt\":\"3644169\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/1145172.json",
+        "source_type": "primary"
+      },
+      {
+        "amount": 1512856,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 1145143, funds obligated (all years): U Minnesota, 2012-08-01 to 2017-07-31",
+        "quote": "\"fundsObligatedAmt\":\"1512856\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/1145143.json",
+        "source_type": "primary"
+      },
+      {
+        "amount": 804263,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 1145248, funds obligated (all years): Stanford, 2012-08-01 to 2017-07-31",
+        "quote": "\"fundsObligatedAmt\":\"804263\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/1145248.json",
+        "source_type": "primary"
+      },
+      {
+        "amount": 1984775,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 1639040, funds obligated (all years): Caltech, 2016-09-01 to 2023-08-31 (runs past BK18)",
+        "quote": "\"fundsObligatedAmt\":\"1984775\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/1639040.json",
+        "source_type": "primary"
+      },
+      {
+        "amount": 4879657,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 1638957, funds obligated (all years): Harvard, 2016-09-01 to 2025-08-31 (runs past BK18)",
+        "quote": "\"fundsObligatedAmt\":\"4879657\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/1638957.json",
+        "source_type": "primary"
+      },
+      {
+        "amount": 1602589,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 1638978, funds obligated (all years): Stanford, 2016-09-01 to 2023-08-31 (runs past BK18)",
+        "quote": "\"fundsObligatedAmt\":\"1602589\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/1638978.json",
+        "source_type": "primary"
+      },
+      {
+        "amount": 3516052,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NSF award 1638970, funds obligated (all years): U Minnesota, 2016-09-01 to 2024-02-29 (runs past BK18)",
+        "quote": "\"fundsObligatedAmt\":\"3516052\"",
+        "source_url": "https://api.nsf.gov/services/v1/awards/1638970.json",
+        "source_type": "primary"
+      }
+    ],
+    "source_url": "https://arxiv.org/pdf/2110.00483",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "held-open",
+    "note": "Derivation: the BK18 paper (arXiv:2110.00483, fetched) acknowledgments name 11 NSF grants: 0742818, 0742592, 1044978, 1110087, 1145172, 1145143, 1145248, 1639040, 1638957, 1638978 & 1638970. Each amount was fetched from the NSF Award API (api.nsf.gov). Sum of obligations = $23,941,742 (nominal; some awards run past 2021, so this overstates the 'to BK18' NSF share). NOT included, amounts not found: Keck Foundation, NASA detector grants (06-ARPA206-0040, 10-SAT10-0017, 12-SAT12-0031, 14-SAT14-0009, 16-SAT-16-0002), JPL R&TD, Moore Foundation, CFI (UBC), UK STFC, DOE (Stanford/SLAC), and shared South Pole Station / US Antarctic Program logistics (explicitly excluded here, not costed). A construction + operations total is held open."
+  },
+  {
+    "id": "eso-vlt",
+    "name": "ESO Very Large Telescope (incl. X-shooter)",
+    "audit_use": "STAGE-007, STAGE-008",
+    "figures": [
+      {
+        "amount": 990000000,
+        "currency": "DEM",
+        "price_year": 1998,
+        "scope": "VLT/VLTI total cumulative cost to completion in 2003, incl. external contracts, ESO internal labour and Paranal Observatory operations to 2003; excludes member-state institute manpower on instruments. ESO DG estimate, Sept 1998.",
+        "quote": "The VLT total cumulative cost to completion (including the initial operations of the Paranal Observatory) is estimated to reach 990 MDM (1998 prices) in 2003."
+      },
+      {
+        "amount": 602000000,
+        "currency": "DEM",
+        "price_year": 1998,
+        "scope": "VLT external-contract cost ceiling (1998)",
+        "quote": "The current VLT cost ceiling of 602 MDM for external contracts appears quite firm"
+      },
+      {
+        "amount": 382000000,
+        "currency": "DEM",
+        "price_year": 1986,
+        "scope": "1987 approval estimate incl. instrumentation (telescope 309 + instruments 48 + site)",
+        "quote": "The total cost, including instrumentation, is estimated to be about 382 million DM (1986-prices).",
+        "source_url": "https://www.eso.org/public/spain/news/eso9205/",
+        "source_type": "primary"
+      },
+      {
+        "amount": 5300000,
+        "currency": "EUR",
+        "price_year": null,
+        "scope": "X-shooter instrument construction (hardware; plus ~70 person-years), completed 2009",
+        "quote": "the shortest construction time of VLT instruments so far) at a cost of about 5.3 million Euro",
+        "source_url": "https://arxiv.org/pdf/1110.1944",
+        "source_type": "primary"
+      }
+    ],
+    "source_url": "https://www.eso.org/sci/publications/messenger/archive/no.93-sep98/messenger-no93.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "Main figure from 'The Cost of the VLT', report of the ESO Director General to Council (15 Sept 1998), printed in The Messenger No. 93. All figures there are in 1998 prices; the report notes the 'mixed' (nominal) value of the total estimate is 944 MDM. An estimate at 1998, not a final audited cost. Operations after 2003 to 2019 held open (not found). The 1998 DG report shows the 1987 'Blue Book' contract estimate as 524 MDM in 1998 prices; ESO's 1992 press release gives 382 MDM in 1986 prices; these are the same estimate at different price levels, not a disagreement. X-shooter figure is from the instrument paper by the consortium (Vernet et al. 2011, A&A; arXiv PDF fetched); aanda.org returned 403. A per-night share for the kilonova spectra is held open."
+  },
+  {
+    "id": "messenger",
+    "name": "MESSENGER (NASA Mercury orbiter)",
+    "audit_use": "CONST-einstein-field-equations, CONST-keplers-laws",
+    "figures": [
+      {
+        "amount": 427000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Mission cost at launch (2004): spacecraft and instrument development, launch vehicle, mission operations and data analysis (primary mission)",
+        "quote": "Cost: Approximately $427 million (including spacecraft and instrument development, launch vehicle, mission operations and data analysis)"
+      },
+      {
+        "amount": 446000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Mission cost as reported at end of mission (2015)",
+        "quote": "The $446 million robotic science mission was the first probe to ever enter orbit around the closest planet",
+        "source_url": "https://spaceflightnow.com/2015/04/30/messenger-mission-ends-with-plunge-into-mercury/",
+        "source_type": "secondary"
+      },
+      {
+        "amount": 450000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Total mission cost incl. spacecraft construction (upper bound as stated)",
+        "quote": "MESSENGER ' s total mission cost, including the cost of the spacecraft's construction, was estimated at under US$450 million.",
+        "source_url": "https://en.wikipedia.org/wiki/MESSENGER",
+        "source_type": "secondary"
+      }
+    ],
+    "source_url": "https://www.jhuapl.edu/sites/default/files/2023-03/MESSENGER_Launch_Press_Kit.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "Primary figure is the NASA/APL launch press kit (2004; APL built and operated the spacecraft). It covers the primary mission only. Cost of the two extended missions (2012-2015) is held open; the $446M (Spaceflight Now, 2015) may include them but the article does not say. NASA end-of-mission press kit URL returned 404. Price years not stated (then-year)."
+  },
+  {
+    "id": "alma",
+    "name": "ALMA (Atacama Large Millimeter/submillimeter Array)",
+    "audit_use": "STAGE-009",
+    "figures": [
+      {
+        "amount": 1400000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Total construction cost (all partners); ESO share 37.5%",
+        "quote": "The total construction cost of ALMA is approximately US$ 1.4 billion, of which ESO’s share is 37.5%."
+      },
+      {
+        "amount": 1300000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Construction over 10 years (NRAO figure, 2013)",
+        "quote": "at a total cost of $1.3 billion (US), ALMA is an international partnership",
+        "source_url": "https://public.nrao.edu/news/alma-inauguration/",
+        "source_type": "primary"
+      },
+      {
+        "amount": 100000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Average annual global operating cost",
+        "quote": "Million US dollars are the average annual operating costs of ALMA on a global level",
+        "source_url": "https://www.almaobservatory.org/en/factsheet/",
+        "source_type": "primary"
+      }
+    ],
+    "source_url": "https://www.eso.org/public/news/eso1312/",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "ESO (eso1312) and the ALMA factsheet ('1400 Million dollars was the total cost to build ALMA') give $1.4B; NRAO's inauguration release (same date, March 2013) gives $1.3B. Neither states a price year. The factsheet number '100' sits in a separate element from its caption (quoted caption; the number is 100). Operations 2013-2015 are ~$100M/yr per the factsheet, but a summed construction + operations to 2015 is not stated by any source and is not computed here."
+  },
+  {
+    "id": "darpa-hafnium-isomer",
+    "name": "DARPA hafnium-178m2 isomer triggering program",
+    "audit_use": "CANON-v54-hafnium-isomer",
+    "figures": [
+      {
+        "amount": 3000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "DARPA SIER program (PE 0602702E, Tactical Technology), FY2004 as reported in the Feb 2005 budget (FY2004 column)",
+        "quote": "Stimulated Isomer Energy Release (SIER)  3.000 4.000 0.000 0.000"
+      },
+      {
+        "amount": 4000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "SIER FY2005 amount in the Feb 2005 budget; FY2006-07 zero",
+        "quote": "Stimulated Isomer Energy Release (SIER)  3.000 4.000 0.000 0.000"
+      },
+      {
+        "amount": 9616000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "SIER planned FY2004 in the Feb 2003 FY2004/05 biennial budget (plan, superseded)",
+        "quote": "Simulated Isomer Energy Release (SIER)  0.000 0.000 9.616 20.000",
+        "source_url": "https://comptroller.war.gov/Portals/45/Documents/defbudget/fy2004/budget_justification/pdfs/03_RDT_and_E/DARPA_RDTE.pdf",
+        "source_type": "primary"
+      },
+      {
+        "amount": 20000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "SIER planned FY2005 in the Feb 2003 budget (plan, superseded)",
+        "quote": "Simulated Isomer Energy Release (SIER)  0.000 0.000 9.616 20.000",
+        "source_url": "https://comptroller.war.gov/Portals/45/Documents/defbudget/fy2004/budget_justification/pdfs/03_RDT_and_E/DARPA_RDTE.pdf",
+        "source_type": "primary"
+      }
+    ],
+    "source_url": "https://comptroller.war.gov/Portals/45/Documents/defbudget/fy2006/budget_justification/pdfs/03_RDT_and_E/DARPA.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "DoD R-2 exhibits, $ millions, columns FY2002-FY2005 (Feb 2003 document) and FY2004-FY2007 (Feb 2005 document). The Feb 2003 plan shows zero for FY2002-03, then 9.616 and 20.000 planned. The Feb 2005 exhibit shows 3.000 (FY2004) and 4.000 (FY2005). The 2003 exhibit spells it 'Simulated', the 2005 one 'Stimulated'. AIP FYI (2004, secondary, fetched: aip.org/fyi/2004/armed-services-committees-refuse-authorize-sier-weapon-research) reports the $4.0M FY2005 request and that the House and Senate Armed Services Committees recommended zero ('a reduction of $4.0 million'). Whether FY2005 money was actually obligated is held open. So is pre-FY2004 funding (1998-2003 hafnium work through other DoD/AFOSR channels): the FY2004 exhibit shows 0.000 for SIER in FY2002-03, but other lines were not searched. The JASON report was not fetched. Best sourced program total is about $3M (FY2004) + up to $4M (FY2005), nominal."
+  },
+  {
+    "id": "exa-cel-clinical-program",
+    "name": "Casgevy (exa-cel) development and clinical program (Vertex / CRISPR Therapeutics)",
+    "audit_use": "STAGE-065",
+    "figures": [
+      {
+        "amount": 130300000,
+        "currency": "USD",
+        "price_year": 2023,
+        "scope": "CRISPR Therapeutics' share (40%) of CASGEVY program costs, 2023, net of Vertex reimbursements; EXCLUDES $80.9M of its 2023 share deferred under the JDCA",
+        "quote": "the Company recognized $ 130.3 million, $ 110.3 million and $ 101.2 million of collaboration expense, net, related to the CASGEVY program"
+      },
+      {
+        "amount": 110300000,
+        "currency": "USD",
+        "price_year": 2022,
+        "scope": "CRISPR Therapeutics' share, 2022, net; excludes $36.1M deferred",
+        "quote": "the Company recognized $ 130.3 million, $ 110.3 million and $ 101.2 million of collaboration expense, net, related to the CASGEVY program"
+      },
+      {
+        "amount": 101200000,
+        "currency": "USD",
+        "price_year": 2021,
+        "scope": "CRISPR Therapeutics' share, 2021, net",
+        "quote": "the Company recognized $ 130.3 million, $ 110.3 million and $ 101.2 million of collaboration expense, net, related to the CASGEVY program"
+      }
+    ],
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017024017571/crsp-20231231.htm",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "held-open",
+    "note": "Total R&D + clinical-trial spend to FDA approval (Dec 2023) is not disclosed. Neither Vertex nor CRISPR Therapeutics reports a program total. These are CRISPR Therapeutics' annual 'collaboration expense, net' for the CASGEVY program from its FY2023 10-K (SEC EDGAR, fetched). Under the amended collaboration (2021) Vertex leads and holds 60% of program economics, CRISPR 40%. The 10-K notes the Company 'deferred $80.9 million and $36.1 million of its share of costs' for 2023 and 2022. Derivation, not a sourced total: dividing CRISPR's 40% share by 0.4 would give a rough program cost for 2021-2023, but that is not done here because the 60/40 split and the deferral treatment make it an assumption. Program costs before 2021 (the 2015-2020 co-development under the original 50/50 JDA) and Vertex's own R&D line for exa-cel are held open. Transfers between the companies ($900M up-front in 2021, $200M approval milestone) are deal payments, not development costs, and are not recorded as cost."
+  },
+  {
+    "id": "fermi",
+    "name": "Fermi Gamma-ray Space Telescope (GBM detected GRB 170817A)",
+    "audit_use": "CONST-einstein-field-equations",
+    "figures": [
+      {
+        "amount": 690000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Total mission cost at launch (2008): US $600M + international $90M",
+        "quote": "U.S. contribution $600 million; international contribution $90 million; Total $690 million."
+      },
+      {
+        "amount": 13800000,
+        "currency": "USD",
+        "price_year": 2021,
+        "scope": "Annual operations, FY2021 baseline request (2019 Astrophysics Senior Review)",
+        "quote": "Fermi Fermi Gamma-ray Space Telescope 2008 13.8 0.4",
+        "source_url": "https://science.nasa.gov/wp-content/uploads/2023/04/SR2019_Subcommittee_Rpt.pdf",
+        "source_type": "primary"
+      }
+    ],
+    "source_url": "https://www3.nasa.gov/mission_pages/GLAST/main/questions_answers.html",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "The NASA GLAST Q&A (www3.nasa.gov mirror; the nasa.gov URL now 404s) gives $690M. Space.com and IEEE Spectrum (fetched, secondary) repeat it. Price year not stated. Operations: the 2019 Senior Review panel table gives the FY21 baseline request in $M (13.8); its Fermi section also cites a proposed FY2020 budget of $13.6M. Lifecycle cost to 2017 (launch cost + nine years of operations) is held open: operating spend for FY2008-FY2017 was not found as a series. The SR table quote is a table row: 'Fermi Fermi Gamma-ray Space Telescope 2008 13.8 0.4' = name, full name, launch year, FY21 baseline $M, enhanced delta $M."
+  },
+  {
+    "id": "meg",
+    "name": "MEG / MEG II (PSI, mu -> e gamma search)",
+    "audit_use": "CONST-lepton-number-conservation",
+    "figures": [],
+    "source_url": null,
+    "source_type": null,
+    "retrieved": "2026-09-27",
+    "status": "held-open",
+    "note": "No cost figure found. Tried: MEG proposal documents on meg.web.psi.ch (PSI R-99-05 and the INFN proposal PDFs return a JavaScript/robot challenge page, not the PDF); arXiv MEG detector and MEG II design papers (search snippets show no cost); PSI media pages; SNSF data portal. The SNSF grant cited in MEG II papers (137738, 'Fundamentale Myonenphysik am Paul Scherrer Institut', 2013-2015) shows an approved amount of about CHF 0.13M in a WebFetch rendering. That is a single small group grant, not the detector or beam cost, so it is not recorded as a figure. Detector construction (INFN, ICEPP/Tokyo, PSI, UC Irvine, JINR) and PSI beam-time costs are held open."
+  },
+  {
+    "id": "microscope",
+    "name": "MICROSCOPE (CNES equivalence-principle satellite)",
+    "audit_use": "CONST-newtons-first-law",
+    "figures": [
+      {
+        "amount": 5000000,
+        "currency": "EUR",
+        "price_year": null,
+        "scope": "ESA's contribution only (cooperative agreement with CNES, 2004); NOT the mission total",
+        "quote": "ESA’s participation in the Microscope mission comes to 5 million euros."
+      }
+    ],
+    "source_url": "https://spacenews.com/esa-is-participating-in-two-cnes-science-missions-corot-and-microscope/",
+    "source_type": "secondary",
+    "retrieved": "2026-09-27",
+    "status": "held-open",
+    "note": "Mission lifecycle cost held open. Fetched with no cost figure: cnes.fr/en/projects/microscope, eoPortal MicroSCOPE page, en/fr Wikipedia. The French Wikipedia mentions a cost overrun ('dépassement des coûts') tied to the Vega launcher and deorbit requirement, with no amount. The only figure found is ESA's EUR 5M participation (SpaceNews, reporting the ESA-CNES agreement; secondary). CNES funded most of the mission (search summaries say 80-90%; not confirmed on a fetched page, not recorded)."
+  },
+  {
+    "id": "ncbi",
+    "name": "NCBI (US National Center for Biotechnology Information)",
+    "audit_use": "CONST-genetic-code-universality",
+    "figures": [
+      {
+        "amount": 399265000,
+        "currency": "USD",
+        "price_year": 2023,
+        "scope": "NLM Intramural Programs, FY2023 Final. CONTAINER: NCBI is one part of NLM's intramural programs (with the Lister Hill Center, library operations etc.); NOT an NCBI-only figure",
+        "quote": "Intramural Programs 551 $399,265 638 $401,862 638 $430,608 87 $31,343"
+      },
+      {
+        "amount": 54300000,
+        "currency": "USD",
+        "price_year": 2016,
+        "scope": "FY2016 increase requested specifically for NCBI (sequencing data, PubMed Central) - an increment, not NCBI's total",
+        "quote": "Funds ($54.300 million) have been specifically included in NLM’s budget request to allow the National Center for Biotechnology Information (NCBI)",
+        "source_url": "https://www.nlm.nih.gov/about/2016CJ.html",
+        "source_type": "primary"
+      }
+    ],
+    "source_url": "https://www.nlm.nih.gov/about/2025CJ_NLM.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "held-open",
+    "note": "The NLM congressional justifications (FY2016, FY2020, FY2021, FY2025; fetched from nlm.nih.gov) do not break out an NCBI-only budget line. NCBI sits inside 'Intramural Programs' (FY2023 Final $399.265M; table in $ thousands; columns FY2023 Final / FY2024 CR / FY2025 PB). The FY2016 CJ says the line for 'developing advanced information systems, standards and research tools' was $135.189M enacted in FY2015, raised by the $54.3M NCBI increment to $189.489M requested. That line is closer to NCBI but is not labelled as NCBI alone. The NCBI Handbook history page (reported to cite an $8M start-up budget) returned a reCAPTCHA page, so it is not recorded. NCBI's annual budget, and the share spent maintaining genetic-code tables (tiny, not separable), are held open. The genetic code itself was established by 1960s experiments; NCBI only curates the translation tables."
+  },
+  {
+    "id": "nicer",
+    "name": "NICER (ISS X-ray timing instrument)",
+    "audit_use": "CANON-v54-nuclear-saturation",
+    "figures": [
+      {
+        "amount": 55000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Cost CAP for ISS-attached Explorer Missions of Opportunity at NICER's 2013 selection; NOT an actual cost",
+        "quote": "Satellite mission costs are capped at $200 million and space station mission costs are capped at $55 million.",
+        "source_url": "https://www.nasa.gov/news-release/nasa-selects-explorer-investigations-for-formulation/",
+        "source_type": "primary"
+      },
+      {
+        "amount": 4900000,
+        "currency": "USD",
+        "price_year": 2021,
+        "scope": "Annual operations, FY2021 baseline request incl. $2.5M Guest Observer program (2019 Senior Review panel)",
+        "quote": "NICER Neutron star Interior Composition Explorer 2017 4.9 (incl. $2.5M GO program)"
+      }
+    ],
+    "source_url": "https://science.nasa.gov/wp-content/uploads/2023/04/SR2019_Subcommittee_Rpt.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "held-open",
+    "note": "Actual NICER development cost is held open. Only the $55M cap for ISS-attached Missions of Opportunity (NASA release 13-088, April 2013) and FY21 operations ($4.9M/yr) were found. Fetched with no figure: en.wikipedia NICER page, Gunter's Space Page, the NASA response to the 2019 Senior Review. ISS accommodation and launch (SpaceX CRS-11) costs are not included and are held open."
+  },
+  {
+    "id": "nustar",
+    "name": "NuSTAR (NASA hard X-ray telescope)",
+    "audit_use": "STAGE-008",
+    "figures": [
+      {
+        "amount": 170000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Upper end of lifecycle cost at launch (2012): spacecraft, launch and two years of science operations (PI Harrison)",
+        "quote": "Harrison said that the lifecycle cost of the NuSTAR mission is $165-170 million including the spacecraft, launch, and two years of science operations."
+      },
+      {
+        "amount": 165000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Lower end of the same lifecycle range",
+        "quote": "Harrison said that the lifecycle cost of the NuSTAR mission is $165-170 million including the spacecraft, launch, and two years of science operations."
+      },
+      {
+        "amount": 170000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Build, launch and operate for two-year mission (project manager, May 2012)",
+        "quote": "NuSTAR is expected to cost $170 million to build, launch and operate in a near-equatorial orbit for its two-year mission",
+        "source_url": "https://spacenews.com/15132nasa-nustar-x-ray-space-telescope-set-for-june-13-launch/",
+        "source_type": "secondary"
+      },
+      {
+        "amount": 132000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Proposed total mission cost to NASA at 2003 feasibility-study selection (before the 2006 cancellation and 2007 restart)",
+        "quote": "at a total mission cost to NASA of $132 million.",
+        "source_url": "https://www.nasa.gov/news-release/nasa-selects-explorer-mission-proposals-for-feasibility-studies/",
+        "source_type": "primary"
+      },
+      {
+        "amount": 8400000,
+        "currency": "USD",
+        "price_year": 2021,
+        "scope": "Annual operations, FY2021 baseline request",
+        "quote": "NuSTAR Nuclear Spectroscopic Telescope Array 2012 8.4 0.3",
+        "source_url": "https://science.nasa.gov/wp-content/uploads/2023/04/SR2019_Subcommittee_Rpt.pdf",
+        "source_type": "primary"
+      }
+    ],
+    "source_url": "https://spacepolicyonline.com/news/nustar-x-ray-telescope-launched-update-3/",
+    "source_type": "secondary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "The lifecycle range comes from the PI (Fiona Harrison) as reported by SpacePolicyOnline (secondary). SpaceNews (secondary) reports $170M from JPL's project manager and adds that NASA budget documents expected spending of $160M through 2012. No NASA page with the lifecycle figure was fetched; the NuSTAR mission-status page 404s. The NASA 2003 selection release quote is shared verbatim with other candidates ('at a total mission cost to NASA of $132 million'); the sentence before it names NuSTAR/Harrison. Cost to 2014 is roughly the $165-170M lifecycle (two years of operations = to mid-2014); not computed further. Price years not stated."
+  },
+  {
+    "id": "pew-global-religion",
+    "name": "Pew-Templeton Global Religious Futures project",
+    "audit_use": "STAGE-045",
+    "figures": [
+      {
+        "amount": 2750000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "John Templeton Foundation grant 35518 to Pew Charitable Trusts: Jan 2012 - Jun 2014, described as 'a second phase' of GRF (covers the Dec 2012 Global Religious Landscape report)",
+        "quote": "Grant Amount $2,750,000",
+        "source_url": "https://www.templeton.org/grant/pew-templeton-global-religious-futures-project",
+        "source_type": "primary"
+      },
+      {
+        "amount": 2600000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "John Templeton Foundation grant 51240 to Pew Charitable Trusts: Jan 2014 - Dec 2016, Phase 3",
+        "quote": "Grant Amount $2,600,000",
+        "source_url": "https://www.templeton.org/grant/pew-templeton-global-religious-futures-phase-3",
+        "source_type": "primary"
+      },
+      {
+        "amount": 2500000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "John Templeton Foundation grant 61059 to Pew Charitable Trusts: Jan 2018 - Dec 2020, Phase V",
+        "quote": "Grant Amount $2,500,000",
+        "source_url": "https://www.templeton.org/grant/pew-templeton-global-religious-futures-project-phase-v",
+        "source_type": "primary"
+      },
+      {
+        "amount": 2446900,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "John Templeton Foundation grant 61640 to Pew Charitable Trusts: Jan 2020 - Dec 2021, Phase VI",
+        "quote": "Grant Amount $2,446,900",
+        "source_url": "https://www.templeton.org/grant/pew-templeton-global-religious-futures-project-phase-vi",
+        "source_type": "primary"
+      },
+      {
+        "amount": 2683750,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "John Templeton Foundation grant 62287 to Pew Charitable Trusts: Jan 2022 - Jun 2024, Phase VII",
+        "quote": "Grant Amount $2,683,750",
+        "source_url": "https://www.templeton.org/grant/pew-templeton-global-religious-futures-project-phase-vii",
+        "source_type": "primary"
+      },
+      {
+        "amount": 3315000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "John Templeton Foundation grant 63095 to Pew Charitable Trusts: Dec 2023 - Dec 2025, Phase VIII (covers the 2025 religious-landscape report)",
+        "quote": "Grant Amount $3,315,000",
+        "source_url": "https://www.templeton.org/grant/pew-templeton-global-religious-futures-grf-phase-viii",
+        "source_type": "primary"
+      },
+      {
+        "amount": 3600000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "John Templeton Foundation grant 63753 to Pew Charitable Trusts: Jan 2026 - Dec 2027, Phase IX (after both reports)",
+        "quote": "Grant Amount $3,600,000",
+        "source_url": "https://www.templeton.org/grant/pew-templeton-global-religious-futures-phase-ix",
+        "source_type": "primary"
+      }
+    ],
+    "source_url": "https://www.templeton.org/grant/pew-templeton-global-religious-futures-project",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "All seven grants that the Templeton grant database lists for the Pew-Templeton GRF were fetched from templeton.org/grant pages (a site search returned exactly these seven). Sum = $19,895,650 nominal (JTF share only). The grant relevant to the 2012 report is 35518 ($2.75M, 2012-14); for the 2025 report it is Phase VIII ($3.315M, 2023-25), with Phase VII also contributing. Held open: Phase I (2008-2011, not in the database), Phase IV (c. 2016-2018, not in the database), and The Pew Charitable Trusts' own co-funding (the project is 'jointly funded'; no amount found; pew.org returned 403). Price year not stated."
+  },
+  {
+    "id": "un-wup",
+    "name": "UN World Urbanization Prospects (UN DESA Population Division; via World Bank WDI)",
+    "audit_use": "STAGE-043",
+    "figures": [
+      {
+        "amount": 8051000,
+        "currency": "USD",
+        "price_year": 2026,
+        "scope": "UN regular budget for DESA Subprogramme 5 (Population, i.e. the whole Population Division: 41 posts), proposed 2026 = approved 2025. CONTAINER: World Urbanization Prospects is one of ~18 deliverable lines; NOT a WUP-only figure",
+        "quote": "The proposed regular budget resources for 2026 amount to $8,051,000 and reflect no change compared with the approved budget for 2025."
+      },
+      {
+        "amount": 6768700,
+        "currency": "USD",
+        "price_year": 2024,
+        "scope": "Subprogramme 5 (Population) regular-budget expenditure, 2024 actual ($ thousands in source)",
+        "quote": "5. Population  6 768.7  8 051.0  – – – – – 8 051.0"
+      },
+      {
+        "amount": 569700,
+        "currency": "USD",
+        "price_year": 2026,
+        "scope": "Subprogramme 5 (Population) extrabudgetary resources, 2026 estimate",
+        "quote": "5. Population  365.0  389.7  180.0  46.2  569.7"
+      }
+    ],
+    "source_url": "https://documents.un.org/api/symbol/access?s=A/80/6(Sect.9)&l=en&t=pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "held-open",
+    "note": "Source: UN proposed programme budget for 2026, A/80/6 (Sect. 9) Economic and social affairs (fetched via documents.un.org). The WUP-specific cost is held open. The budget is by subprogramme, not by product. It lists 'World Urbanization Prospects: Summary of Results' as one deliverable (1 in 2026). WUP is a cheap statistical compilation: a small team inside a roughly $8M/yr division that also produces World Population Prospects, the Commission on Population and Development reports, and policy databases. The national censuses and surveys it compiles are out of scope. The World Bank WDI redistribution cost is not included."
+  },
+  {
+    "id": "us-census-bfs",
+    "name": "US Census Bureau Business Formation Statistics",
+    "audit_use": "STAGE-042",
+    "figures": [],
+    "source_url": "https://www.census.gov/econ/bfs/methodology.html",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "held-open",
+    "note": "No budget line found. BFS is a cheap product with no survey of its own: it tabulates IRS EIN applications (Form SS-4) linked to the Census Business Register and Longitudinal Business Database. The fetched methodology page names its development partners (Federal Reserve System, Federal Reserve Bank of Atlanta, University of Maryland, University of Notre Dame) and gives no cost. Census congressional budget submissions (commerce.gov FY2014 and FY2025 PDFs) returned 403 to both curl and WebFetch. Census funds BFS inside the Current Economic Statistics / business statistics programs, so even a fetched CJ would likely give only a container line. Program operating cost to 2026 is held open."
+  }
+]

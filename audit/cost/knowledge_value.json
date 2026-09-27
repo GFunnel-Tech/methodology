@@ -1,0 +1,233 @@
+{
+  "base_year": 2025,
+  "items": 248,
+  "by_basis": {
+    "facility": 29,
+    "studies": 83,
+    "reference": 24,
+    "none": 81,
+    "proof": 31
+  },
+  "programs": {
+    "alma": {
+      "low": 1796580055.546732,
+      "high": 1934778521.3580189,
+      "note": ""
+    },
+    "bicep-keck": {
+      "low": 32520351.893349424,
+      "high": 32520351.893349424,
+      "note": "NSF awards named in BK18 only \u2014 partial"
+    },
+    "cassini": {
+      "low": 4281715812.663185,
+      "high": 5122298058.093995,
+      "note": "primary"
+    },
+    "darpa-hafnium-isomer": {
+      "low": 11706726.237572905,
+      "high": 11706726.237572905,
+      "note": ""
+    },
+    "desi": {
+      "low": 69660130.36540179,
+      "high": 93294817.45366311,
+      "note": "primary"
+    },
+    "eso-vlt": {
+      "low": 1042029485.0457834,
+      "high": 1042029485.0457834,
+      "note": ""
+    },
+    "exa-cel-clinical-program": {
+      "low": 379248308.2216649,
+      "high": 948120770.5541623,
+      "note": "CRISPR 40% share 2021\u201323; high = /0.4 (derived total)"
+    },
+    "fermi": {
+      "low": 1031758359.1496636,
+      "high": 1031758359.1496636,
+      "note": ""
+    },
+    "hubble": {
+      "low": 19009809203.970917,
+      "high": 22303274122.924206,
+      "note": "primary"
+    },
+    "iss": {
+      "low": 106074082522.30333,
+      "high": 106074082522.30333,
+      "note": "primary"
+    },
+    "jwst": {
+      "low": 11524696829.907368,
+      "high": 11524696829.907368,
+      "note": "price tag as of May 2021"
+    },
+    "kamland": {
+      "low": 46528727.07059477,
+      "high": 46528727.07059477,
+      "note": "primary"
+    },
+    "lhc": {
+      "low": 5988948447.342842,
+      "high": 18579513184.142445,
+      "note": "primary"
+    },
+    "ligo": {
+      "low": 773093626.2464545,
+      "high": 956333910.8314347,
+      "note": "primary"
+    },
+    "messenger": {
+      "low": 605807085.5677019,
+      "high": 727737750.1323451,
+      "note": ""
+    },
+    "nist": {
+      "low": 1108417700.33377,
+      "high": 1498416520.821578,
+      "note": "ONE YEAR only (floor)"
+    },
+    "nustar": {
+      "low": 231367522.67045307,
+      "high": 238378659.72107285,
+      "note": ""
+    },
+    "osiris-rex": {
+      "low": 1077714816.443607,
+      "high": 1319257107.0843766,
+      "note": "primary"
+    },
+    "pdg": {
+      "low": 2781261.663794745,
+      "high": 3500995.2548977565,
+      "note": "ONE YEAR only (floor)"
+    },
+    "pew-global-religion": {
+      "low": 25508111.075955667,
+      "high": 25508111.075955667,
+      "note": "Templeton grants only"
+    },
+    "planck": {
+      "low": 1463800180.6215243,
+      "high": 1463800180.6215243,
+      "note": "primary"
+    },
+    "rhic": {
+      "low": 1192309909.9639857,
+      "high": 1292796320.5282114,
+      "note": "primary"
+    },
+    "super-kamiokande": {
+      "low": 152795282.40088108,
+      "high": 236375183.55359766,
+      "note": "secondary"
+    },
+    "wmap": {
+      "low": 316873031.496063,
+      "high": 316873031.496063,
+      "note": "secondary"
+    }
+  },
+  "programs_held_open": [
+    "borexino",
+    "cobe",
+    "kegg",
+    "meg",
+    "microscope",
+    "ncbi",
+    "nicer",
+    "un-wup",
+    "us-census-bfs"
+  ],
+  "studies_by_field": {
+    "astronomy": {
+      "papers": 5,
+      "low": 700000.0,
+      "high": 4150000.0
+    },
+    "physics": {
+      "papers": 46,
+      "low": 6440000.0,
+      "high": 8280000.0
+    },
+    "earth-science": {
+      "papers": 9,
+      "low": 2250000.0,
+      "high": 3060000.0
+    },
+    "chemistry": {
+      "papers": 6,
+      "low": 840000.0,
+      "high": 1080000.0
+    },
+    "biochemistry": {
+      "papers": 32,
+      "low": 6400000.0,
+      "high": 11200000.0
+    },
+    "genetics-evolution": {
+      "papers": 27,
+      "low": 5400000.0,
+      "high": 9450000.0
+    },
+    "cell-biology": {
+      "papers": 27,
+      "low": 5400000.0,
+      "high": 9450000.0
+    },
+    "other": {
+      "papers": 14,
+      "low": 2800000.0,
+      "high": 4900000.0
+    },
+    "neuroscience": {
+      "papers": 31,
+      "low": 6200000.0,
+      "high": 10850000.0
+    },
+    "psychology": {
+      "papers": 12,
+      "low": 1080000.0,
+      "high": 1200000.0
+    },
+    "social-science": {
+      "papers": 9,
+      "low": 810000.0,
+      "high": 900000.0
+    },
+    "computer-science": {
+      "papers": 13,
+      "low": 1170000.0,
+      "high": 1560000.0
+    },
+    "mathematics": {
+      "papers": 8,
+      "low": 720000.0,
+      "high": 960000.0
+    },
+    "economics": {
+      "papers": 5,
+      "low": 450000.0,
+      "high": 500000.0
+    }
+  },
+  "subtotal_programs": [
+    158239753488.20255,
+    176823580247.25516
+  ],
+  "subtotal_studies": [
+    40660000.0,
+    67540000.0
+  ],
+  "total": [
+    158280413488.20255,
+    176891120247.25516
+  ],
+  "total_excluding_iss": [
+    52206330965.899216,
+    70817037724.95183
+  ],
+  "produced_confirmed": 0
+}
