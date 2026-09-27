@@ -16,6 +16,7 @@ For every stage, constant, domain, and label in canon, the audit asks whether re
 - The record formats: [`SCHEMA.md`](SCHEMA.md)
 - What is confirmed so far: [`FINDINGS.md`](FINDINGS.md)
 - What is covered, sparse, or blind: [`COVERAGE.md`](COVERAGE.md)
+- What the measurements the audit reads cost to produce (sourced): [`cost/`](cost/README.md)
 
 ---
 
