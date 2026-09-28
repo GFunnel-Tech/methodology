@@ -7,9 +7,9 @@ prediction_kind: structural
 tolerance: "HIT if no free-living organism is known to conserve energy without maintaining a transmembrane ion gradient — i.e. chemiosmotic coupling is reported as universal among free-living cells. MISS if at least one free-living organism is characterised as lacking it (e.g. conserving energy by substrate-level phosphorylation alone, with no maintained ion gradient). Obligate intracellular parasites, organelles and viruses are outside the claim and do not count either way; canon's claim is about systems that must establish their own gradients."
 contamination_risk: low
 discriminating: yes
-lookup_status: withheld
-phase_a_commit: null
-verdict: null
+lookup_status: revealed
+phase_a_commit: 753827e461cea846cd8a5a40f7285e408a128226
+verdict: partial
 ---
 
 ## Target
@@ -50,6 +50,22 @@ The executor's honest expectation is that this is the prediction most likely to 
 <!-- PHASE B BELOW THIS LINE — must be empty when Phase A is committed -->
 ## Measured
 
+| Quantity | Value | Uncertainty | Grade | Source | Retrieved |
+| --- | --- | --- | --- | --- | --- |
+| A catalogued free-living organism that conserves energy with **no** maintained transmembrane ion gradient | **none found** in this run's searches | — | held-open | Europe PMC searches over chemiosmotic universality, obligate fermenters, and minimal bioenergetics (queries recorded in the session log) | 2026-09-28 |
+| A primary source asserting that chemiosmotic coupling is **universal** among free-living cells | **none found** | — | held-open | as above | 2026-09-28 |
+| Nearest relevant statement found | *"The common ancestor of all cells used ATP synthase to convert proton gradients into ATP. However, pumps generating proton gradients and lipids maintaining proton gradients are **not universally conserved across all lineages**."* | as stated | measured-single | https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/j.xcrp.2025.102461%22 (Cell Rep Phys Sci 2025, PMID 40123866) | 2026-09-28 |
+
 ## Verdict
 
+**PARTIAL.** Neither branch of the Phase A tolerance was satisfied. No exception was found, so canon is not refuted; but no source asserting universality was found either, so canon is not confirmed. The one directly relevant statement retrieved says the *machinery* for making and holding proton gradients is not universally conserved across lineages — which bears on the claim without settling it, since an organism can maintain a gradient by other means.
+
+This is the outcome Phase A predicted as most likely, and said so before the lookup.
+
 ## What this does and does not show
+
+**Shows** what the audit has now found five times over (FINDINGS F-042, F-043, and the two exceptionless-law failures in the sweep): canon's "zero exceptions" claims are **not operational**. This one is stated in canon's strongest form, with a falsifier attached by Layer ◇, and a directed literature search still cannot determine whether the falsifier has fired. A claim whose exception-status cannot be established is doing no predictive work, whatever its truth.
+
+**Does not show** that the claim is false. Chemiosmotic coupling may well be universal among free-living cells. The finding is about the claim's testability as canon words it, not about bioenergetics.
+
+**What would settle it:** a systematic survey of characterised free-living prokaryotes for maintained ion gradients, or a bioenergetics review that states the universality claim explicitly and names the hard cases. Until one exists, this stays **held open** — and canon should not assert "zero exceptions" while it does.

@@ -7,9 +7,9 @@ prediction_kind: structural
 tolerance: "Canon-as-written HITS if the archaellum is driven by ATP hydrolysis. The audit's correction HITS if it is driven by an ion-motive force. If both contribute, or the answer is unresolved in the literature, the verdict is 'partial' and neither position is credited."
 contamination_risk: high
 discriminating: yes
-lookup_status: withheld
-phase_a_commit: null
-verdict: null
+lookup_status: revealed
+phase_a_commit: 753827e461cea846cd8a5a40f7285e408a128226
+verdict: hit
 ---
 
 ## Target
@@ -50,6 +50,24 @@ It is sealed anyway because the *informative* outcome does not depend on the exe
 <!-- PHASE B BELOW THIS LINE — must be empty when Phase A is committed -->
 ## Measured
 
+| Quantity | Value | Uncertainty | Grade | Source | Retrieved |
+| --- | --- | --- | --- | --- | --- |
+| Archaellar motor torque, *Halobacterium salinarum*, under varied viscous load | 160 pN·nm, constant and independent of rotation speed | as stated | measured-single | https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1038/s42003-019-0422-6%22 (Commun Biol 2019, PMID 31149643) | 2026-09-28 |
+| Energy source of archaellar rotation | ATP hydrolysis by the hexameric ATPase motor protein FlaI | — | measured-reproduced | as above, plus the review https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1007/s12551-019-00564-9%22 (PMID 31321734): *"there exists another ATP-driven protein motor in life: the rotary machinery that rotates archaeal flagella (archaella)"* | 2026-09-28 |
+| Work per rotation vs ATP available in the hexamer | about **twice** the energy expected from hydrolysing six ATP, so more than six ATP are needed per rotation | as stated | measured-single | PMID 31149643 | 2026-09-28 |
+
 ## Verdict
 
+**HIT for canon as written. The audit's own correction (F-d) is the thing that fails.**
+
+The archaellum is ATP-driven. Appendix A Stage 23's *"motor proteins … Universal currency"* is correct for this evolutionarily independent motor, and the sweep's proposed relabel — treating gradient-driven mechanical work as the general case — was over-generalised from the single motor that happens to be an ion turbine.
+
+The correct statement is the disjunction, not either branch alone: cells drive rotary mechanical work **either** from ATP (archaellum, F₁ portion of ATP synthase) **or** directly from an ion-motive force (bacterial flagellum). Two independent solutions to one problem, in two domains of life.
+
 ## What this does and does not show
+
+**Shows:** the audit can be wrong, and this run caught it. Finding F-d is revised here, before it ever reached the v5.5 draft: Stage 23's ATP claim needs widening to a disjunction, not replacement by a gradient claim. Recorded against the audit, not against canon.
+
+**Does not show** that the framework predicted anything. Contamination was graded **high** in Phase A for exactly this outcome: the executor suspected the archaellum was ATP-driven before sealing, and says so in the sealed text. Canon's "hit" here is a correct statement canon already contained, not a derivation — and the same Stage 23 sentence remains **forced-no** as an exclusive claim, because the bacterial flagellum still contradicts "universal".
+
+Unresolved and left open: the measured work per rotation exceeds what six ATP supply, so the stoichiometry of this motor is not settled. Canon says nothing about it either way.
