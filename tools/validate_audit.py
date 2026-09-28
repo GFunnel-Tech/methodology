@@ -49,6 +49,7 @@ ID_RULES = {
     "domains": re.compile(r"^DOMAIN-(\d{2})$"),
     "unmapped": re.compile(r"^UNMAPPED-\d{4}$"),
     "claims": re.compile(r"^CLAIM-\d{3}$"),
+    "sweep": re.compile(r"^SWEEP-\d{3}$"),
 }
 CONTAINER_RE = re.compile(r"^KC-\d{4}$")
 
