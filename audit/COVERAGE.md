@@ -2,7 +2,7 @@
 
 > **Status: derivation / work-in-progress.** Updated after every audit block (brief §8, §9). A cell reads **audited / in scope**. "Sparse" and "blind" areas are named, not hidden: an unnamed blind spot is a hidden gap, which the Container's Perfection Criterion (v5.3 §3: zero **hidden** gaps) does not allow.
 
-**As of:** 2026-09-24, after the first canon → reality pass (Phases 1–5). **Not yet run:** the reality → canon sweep (Phase 6), which looks for what the methodology does not hold.
+**As of:** 2026-09-24, after the first canon → reality pass (Phases 1–5). **Phase 6 (reality → canon) begun 2026-09-28:** one bacterium swept end to end, 35 components — see §8.
 
 Legend: ☐ not started · ◐ partial · ✅ covered · ⚠ sparse · ⛔ blind (no measurement source available)
 
@@ -109,6 +109,29 @@ When the methodology predicts something the grid does not contain, it is recorde
 | --- | --- | --- |
 | *(none yet)* | | |
 
+## 6b. Bacterial machinery test (Phase 6, first swept system)
+
+One organism (mostly *E. coli* K-12) swept end to end: 35 measured components, each asked which canonical item holds it and whether `DETECT → PROCESS → RESPOND` fits the measured mechanism.
+
+| Block | Components | Files | State |
+| --- | --- | --- | --- |
+| Sensing and motility | 10 | [SWEEP-001–010](sweep/) | ✅ |
+| Information machinery | 12 | [SWEEP-011–022](sweep/) | ✅ |
+| Energy, structure, lifecycle | 13 | [SWEEP-023–035](sweep/) | ✅ |
+| **Total** | **35** | | **✅** |
+
+Result: 3 accounted · 17 methodology-gap · 11 conflict · 3 unmapped · 1 unobserved-claim; 9 canonical claims **forced-no**. See [`FINDINGS.md`](FINDINGS.md) → *The bacterial machinery test*.
+
+Sparse within this system: cell-envelope biochemistry beyond turgor and wall mechanics; sporulation beyond the decision step; phage defence beyond CRISPR and toxin-antitoxin; anything specific to Gram-positive envelopes.
+
+## 6c. Prediction test (Phase 6 extension)
+
+| Prediction | Sealed in | State |
+| --- | --- | --- |
+| [PRED-001](prediction/PRED-001.md) φ at a bacterial allocation optimum | `753827e` | ◐ **still sealed** — value not fetched yet |
+| [PRED-002](prediction/PRED-002.md) ATP vs ion-motive force on an independent motor | `753827e` | ✅ revealed — hit for canon, against the audit |
+| [PRED-003](prediction/PRED-003.md) "zero exceptions" for chemiosmotic coupling | `753827e` | ✅ revealed — partial |
+
 ## 7. Containers (Phase 7)
 
 | Scale batch | Containers | Validated | State |
@@ -127,7 +150,7 @@ When the methodology predicts something the grid does not contain, it is recorde
 
 ## Sparse and blind areas (named)
 
-- **The reality → canon direction (Phase 6) has not been run.** Everything above tests what canon *says*. It cannot find what canon *omits*, except by accident (F-045 – F-051). This is the largest blind area.
+- **The reality → canon direction (Phase 6) has been run for exactly one system: a bacterium** (§6b). Every other cell of the detection grid in §6.1 is still unswept — that remains the largest blind area. The bacterial sweep alone produced 20 new findings and 9 forced-no results, which indicates the rate at which further sweeps would find more.
 - **Layers V, VI, VII (business methods):** labels audited; their empirical claims (e.g. conversion rates, BEAS calibration, "you start as a draw") are not.
 - **Layer I.B case figures** (deaths, costs, $22T) — not checked; GAO source blocked.
 - **Canon's per-layer and domain-specific algorithms (70+)** — not audited; most are procedures, not claims about reality.
