@@ -16,3 +16,6 @@ _site/
 # Source office docs are transcribed into versions/*.md; keep originals out unless intentionally archived
 *.docx
 !archive/**/*.docx
+
+# Built skill bundle (python3 tools/build_skill.py)
+/dist/

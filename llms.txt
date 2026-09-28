@@ -36,6 +36,7 @@ Read AGENTS.md first for the operating protocol. The base code does not change b
 
 - [How to use (humans)](docs/how-to-use.md)
 - [AI integration (RAG, agents, system prompts)](docs/ai-integration.md)
+- [Agent Skill](skills/README.md): the whole repository packaged as the `gfunnel-methodology` Agent Skill (router, workflows, line-numbered section index); install for Claude Code, claude.ai, or the API.
 - [Glossary](docs/glossary.md)
 
 ## Contributing & governance

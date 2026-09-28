@@ -13,6 +13,7 @@ This repository is the **canonical, versioned home** of the GFunnel Methodology 
 | --- | --- | --- |
 | **A human, first time** | [`docs/how-to-use.md`](docs/how-to-use.md) | [`framework/`](framework/README.md) → the map |
 | **An AI system / agent** | [`AGENTS.md`](AGENTS.md) and [`llms.txt`](llms.txt) | Load [the latest full version](versions/LATEST.md) as context |
+| **Giving an AI the whole repo as a skill** (Claude Code, claude.ai, API) | [`skills/README.md`](skills/README.md) — install the `gfunnel-methodology` Agent Skill | `python3 tools/build_skill.py` |
 | **Here for a specific problem** | [`framework/algorithms.md`](framework/algorithms.md) — Algorithm Index by symptom | Jump to the named layer |
 | **Evaluating / verifying a claim** | [`framework/registers.md`](framework/registers.md) — Variable Registry & Falsifiability | The layer in question |
 | **Wanting to contribute an iteration** | [`CONTRIBUTING.md`](CONTRIBUTING.md) — the Iteration Protocol | Open an issue |
@@ -56,6 +57,10 @@ methodology/
 │   ├── usage-tracking.md     ← honest guide to "who is using this, and what"
 │   └── glossary.md
 │
+├── skills/                   ← the whole repo packaged as an Agent Skill (install guide inside)
+│   └── gfunnel-methodology/  ← SKILL.md · workflows/ · SECTIONS.md (line-numbered index)
+├── .claude-plugin/           ← makes this repo a Claude Code plugin marketplace
+│
 ├── adoption/                 ← opt-in registry of who uses the methodology
 │   ├── README.md
 │   └── registry.md
@@ -65,7 +70,7 @@ methodology/
 ├── substrate/                ← dated inputs a future version loads (not canon)
 ├── audit/                    ← canon vs. reality: schema, findings, coverage, audit records
 ├── containers/               ← knowledge containers (KC-####): one per solved item
-├── tools/                    ← stdlib validators for audit records and containers
+├── tools/                    ← stdlib validators for audit records and containers; skill builder
 │
 └── .github/                  ← issue & PR templates that double as usage capture
 ```

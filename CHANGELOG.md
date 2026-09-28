@@ -10,6 +10,14 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 These entries change how the work is published, not what it claims. **No version, no base code, and no variable is affected.**
 
+### 2026-09-28 — The repository as an Agent Skill
+
+Packages the whole repository as the `gfunnel-methodology` Agent Skill so an AI can load and use all of it on demand. **Navigation and tooling only.**
+
+- **Added:** [`skills/gfunnel-methodology/`](skills/gfunnel-methodology/SKILL.md): `SKILL.md` (the eight-rule protocol from `AGENTS.md`, the prohibitions, a workflow router, a corpus map, the credit line), `workflows/` (answer · run-algorithm · derive · iterate · reality-audit · integrate), and `SECTIONS.md` (generated, line-numbered index of every section of v5.1–v5.4 and the long working files). [`skills/README.md`](skills/README.md): install guide for Claude Code, the plugin marketplace, claude.ai, the API and other agents. [`tools/build_skill.py`](tools/build_skill.py): regenerates the index, checks the skill (`--check`), and builds a portable bundle with every repo file (`dist/`, git-ignored). `.claude/skills/gfunnel-methodology/SKILL.md` (Claude Code entry point in a clone) and `.claude-plugin/` (plugin + marketplace manifests).
+- **Linked from:** `README.md`, `llms.txt`, `AGENTS.md` (one pointer under the load order), `docs/ai-integration.md`, `tools/README.md`.
+- **Not changed:** no released version, no `framework/` file, no canonical text. No variable moved, so no Iteration Ledger row. The workflows restate canon and route into it; they add no framework content.
+
 ### 2026-09-24 — Reality Audit, Phase 0 (foundation)
 
 Adds the working areas for the Reality Audit, which compares canon against measured reality item by item. **All of it is derivation / work-in-progress, not canon.**

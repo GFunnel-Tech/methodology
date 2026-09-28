@@ -17,6 +17,8 @@ The complete articulation of the **Omni Process** — a framework claiming one i
 
 For v5.4's gap numbering see [`framework/gaps.md`](framework/gaps.md); for which of its §14 tests have actually been run, see [`framework/tests/`](framework/tests/README.md) — cite those results rather than the canonical wording where the two differ.
 
+If your runtime supports Agent Skills, the packaged form of this protocol is [`skills/gfunnel-methodology/SKILL.md`](skills/gfunnel-methodology/SKILL.md): it routes each task to a workflow and to the exact line range of the section it needs ([`SECTIONS.md`](skills/gfunnel-methodology/SECTIONS.md)).
+
 If you can only load one file, load v5.1. If you can load a map instead of the full text, load [`framework/README.md`](framework/README.md) and follow its deep links.
 
 ## Operating protocol (the document's own eight rules)
