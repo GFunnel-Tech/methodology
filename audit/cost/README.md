@@ -107,13 +107,9 @@ A result counts as produced by the methodology when the methodology stated it **
 
 ### C. Cost of organizing the knowledge
 
-| Part | Measured | Held open |
-| --- | --- | --- |
-| Canon written (v5.1 – v5.4) | about 58,000 words; v5.1 dated May 2026; repository history from 2026-07-27 | the author's hours before and after the repository existed |
-| Maps, guides, tests | about 10,000 words | — |
-| This audit | about 166,000 words across 249 files; 2026-09-24 to 2026-09-27 | the compute cost of the AI sessions |
+**Held open — by author decision (2026-09-28).** The author's judgment is that the hours and thought that went into gaining and organizing this knowledge are not meaningfully countable in dollars, and that word counts do not measure them either. The record therefore does not assign this a dollar value. It is not zero and not unknown-but-estimable: it is outside what this cost record measures.
 
-The organizing cost is **held open** until the author supplies hours and a rate, and the AI-session spend. Formula: *hours × rate + AI spend*.
+For reference only (size, not cost): canon v5.1–v5.4 is about 58,000 words; maps and guides about 10,000; this audit about 166,000 words across 249 files.
 
 ## Caveats (read before quoting)
 
