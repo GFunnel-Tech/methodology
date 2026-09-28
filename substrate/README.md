@@ -18,6 +18,7 @@ A substrate document may state conclusions reached with the author. Those conclu
 
 | File | Date | What it holds | Loaded by |
 | --- | --- | --- | --- |
+| [`2026-09-28-conservation-level.md`](2026-09-28-conservation-level.md) | 2026-09-28 | Author clarification: "no information discarded" is claimed at the quantum level, via superposition and structure stability. Splits the claim into physical persistence (a) and functional integration (b). | [`audit/claims/CLAIM-021.md`](../audit/claims/CLAIM-021.md); the v5.5 draft |
 | [`2026-09-24-reality-filter.md`](2026-09-24-reality-filter.md) | 2026-09-24 | The governing model of the Reality Audit: reality is the authority, the methodology is the growing log of the known, concentration discipline, no imported models, containers, the scoped base-code rule, weak observations cannot force change. | [`tasks/reality-audit/TASK.md`](../tasks/reality-audit/TASK.md) and every audit phase; the v5.5 draft (Phase 8) |
 
 ## How to cite a substrate document
