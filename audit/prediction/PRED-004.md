@@ -7,9 +7,9 @@ prediction_kind: structural
 tolerance: "HIT if reliability-engineering sources identify correlated / common-cause failure across redundant or layered stages as a dominant (not incidental) limit on achieved reliability, such that the product-of-independent-stages calculation overstates real performance. MISS if the literature treats stage independence as generally safe to assume, or identifies some other factor as dominant while treating correlation as minor. PARTIAL if sources disagree or the question is not addressed in those terms."
 contamination_risk: medium
 discriminating: yes
-lookup_status: withheld
-phase_a_commit: null
-verdict: null
+lookup_status: revealed
+phase_a_commit: 323f73dcb1e98907e2b7f94cbfbd258a0b56214d
+verdict: hit
 ---
 
 ## Target
@@ -53,6 +53,30 @@ The honest reading if this hits: it is weak evidence about the framework's origi
 <!-- PHASE B BELOW THIS LINE — must be empty when Phase A is committed -->
 ## Measured
 
+Source: **NASA, *Probabilistic Risk Assessment Procedures Guide for NASA Managers and Practitioners*, Second Edition** (Stamatelatos et al., December 2011), https://ntrs.nasa.gov/api/citations/20120001369/downloads/20120001369.pdf — retrieved 2026-09-28. Text extracted from the PDF locally; quotes verbatim.
+
+| Quantity | Value | Uncertainty | Grade | Source | Retrieved |
+| --- | --- | --- | --- | --- | --- |
+| Whether the independence calculation is optimistic | *"Therefore, if A and B represent failure of a function, the actual probability of failure of both will be **higher** than the expected probability calculated based on the assumption of independence."* | as stated | derived | as above | 2026-09-28 |
+| Standing of correlated failure in the method | A dedicated chapter and a mandatory screening stage: *"Preliminary Identification of Common Cause Failure Vulnerabilities (Screening Analysis)"*, whose objective is *"to identify potential common cause vulnerabilities and to determine those that are insignificant contributors to system unavailability and to the overall risk"* | as stated | derived | as above | 2026-09-28 |
+| Why independence gets assumed anyway | *"Assumption C makes the models mathematically tractable — by assuming independence of the failures, the joint pdf … can often be solved analytically"* | as stated | derived | as above | 2026-09-28 |
+| Worked instance in the guide's own example | a fault tree in which *"Leak not detected will result from Controller fails **OR** Pressure Transducers fail due to Common Cause OR** Pressure Transducer 1 fails AND Pressure Transducer 2 fails"* — the correlated term sits beside, and defeats, the redundant AND-term | as stated | derived | as above | 2026-09-28 |
+
 ## Verdict
 
+**HIT.** Both halves of the Phase A tolerance are satisfied:
+
+1. **The product calculation is optimistic** — stated in almost exactly the design's terms.
+2. **Correlation is a first-order concern, not an incidental one** — it has its own chapter, its own mandatory screening stage before detailed analysis, and it appears as a distinct OR-branch in the guide's worked fault tree, positioned exactly where it defeats redundancy.
+
+The third row is the sharpest part and was not anticipated in Phase A: the guide states plainly that independence is assumed **because it makes the mathematics tractable**, not because it is true. That is the precise failure mode step 8 of the design algorithm exists to prevent — a variable filled for convenience rather than measured.
+
 ## What this does and does not show
+
+**Shows** that the design algorithm's step ordering works as claimed. Step 5 produced the multiplicative architecture; step 8 refused to let its key assumption stay implicit; step 9 named the independence failure as the most likely cause if the falsifier fires. A 300-page agency methodology reaches the same place, and reaches it by dedicating a chapter to it. The scaffold surfaced the dominant risk **before** any engineering source was consulted, early and cheaply — which is the only claim [`../../design/RUN-001-self-healing-pipeline.md`](../../design/RUN-001-self-healing-pipeline.md) makes for itself.
+
+**Does not show** that the framework knew anything new. Contamination was graded **medium** in the sealed text and should be discounted accordingly: common-cause failure is a known concept and the executor said so before looking. What was genuinely uncertain — and is now settled — is whether the literature treats it as first-order. It does.
+
+**Does not show** that canon-as-written would have produced this. Step 8 is the Variable Principle, which is canon's strongest element and carried unchanged. But step 5, which generated the architecture whose assumption step 8 then caught, required the audit's correction to Layer I.G ([CLAIM-021](CLAIM-021.md)): canon as written would have told the designer to retain every reject. **The scaffold that worked is canon plus the audit.**
+
+**Credit where it is due:** this is the first prediction in the audit to score a hit that was *not* a restatement of something canon already contained. It is a hit for the framework's **process** — run the steps in order and the omission surfaces — rather than for its content. That is a narrower claim than the framework makes for itself, and it is real.
