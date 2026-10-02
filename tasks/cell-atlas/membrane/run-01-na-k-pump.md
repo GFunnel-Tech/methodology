@@ -4,7 +4,7 @@
 >
 > **Run outcome: stopped at Deep-Lens step E** (blocker logged below). Steps A–D are complete. Steps F–L were not run in the framework tier.
 
-**Inventory item:** [membrane 2.4](README.md) · **Canon anchor:** v5.1 Appendix A Stage 24 (Ion Gradients / Membrane Potentials); Stage 23 (ATP Hydrolysis / Cellular Work); Domain 9 (Biological).
+**Position in the breakdown:** L4 leaf — C (exchange) → C3 (primary active transport) → P-type ATPases → Na+/K+ pump **(animals only)**. See [README](README.md). *Run out of order as a pilot of the run format. The parent runs (L0, L1 C, L2 C3) come first. The plant and fungal sibling is the H+ pump ([gaps.md](gaps.md) MG-01).* · **Canon anchor:** v5.1 Appendix A Stage 24 (Ion Gradients / Membrane Potentials); Stage 23 (ATP Hydrolysis / Cellular Work); Domain 9 (Biological).
 
 ---
 

@@ -6,6 +6,8 @@
 
 Break the eukaryotic cell into every known process, run each one through the methodology, and pull out the algorithm and the recurring patterns. Start with the plasma membrane (the lipid bilayer and everything it does), then move inward.
 
+Breakdown is **top-down**: the whole structure as one process (L0), then functional categories (L1), subcategories (L2), mechanism families (L3), and specific mechanisms (L4). Runs follow the same order. The decomposition rule is a derivation: see [`membrane/README.md`](membrane/README.md) and gap MF-03.
+
 Completeness is a **held-open variable**. Cell biology is still finding membrane mechanisms. The inventory carries an open edge and grows; it never claims to be final.
 
 ## Method (applied identically to every process)
@@ -27,12 +29,12 @@ Each run ends with:
 
 | Area | Inventory | Runs done |
 | --- | --- | --- |
-| Plasma membrane | [`membrane/README.md`](membrane/README.md) | 1 / 30+ |
+| Plasma membrane | [`membrane/README.md`](membrane/README.md) · gaps: [`membrane/gaps.md`](membrane/gaps.md) | L0 mapped; 11 L1 categories queued; 1 L4 pilot (out of order) |
 | *(next: cytoskeleton, nucleus, ER, Golgi, mitochondria, lysosome, …)* | — | — |
 
 ## Files
 
-- [`membrane/`](membrane/README.md) — the membrane inventory and its runs.
+- [`membrane/`](membrane/README.md) — the membrane breakdown, its gap register, and its runs.
 - [`patterns.md`](patterns.md) — the cross-process pattern catalogue. This is where "the algorithm/patterns from each" accumulate.
 - [`scripts/`](scripts/) — reproducible checks, Python standard library only (same convention as [`framework/tests/`](../../framework/tests/README.md)).
 
