@@ -10,6 +10,14 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 These entries change how the work is published, not what it claims. **No version, no base code, and no variable is affected.**
 
+### 2026-10-02 — Cell Atlas: plasma-membrane inventory and pilot run
+
+Adds a working area for breaking the eukaryotic cell into its processes and running each one through the methodology. **All of it is derivation / work-in-progress, not canon.**
+
+- **Added:** [`tasks/cell-atlas/`](tasks/cell-atlas/README.md) (method; plasma-membrane inventory of 30+ processes; pattern catalogue); pilot [run 01, the Na+/K+ pump](tasks/cell-atlas/membrane/run-01-na-k-pump.md), with a stdlib script that reproduces the published pump energy budget.
+- **Blocker found:** Deep-Lens steps E, F and J (v5.2 §1) assume an operator and cannot be completed honestly at molecular scale. The pilot stops at step E, per the invariant run form.
+- **Not changed:** no released version, no `framework/` file, no container (container population is Reality Audit Phase 7). No variable moved, so no Iteration Ledger row. One narrative word in Stage 24 ("deliberately") is flagged for the label phase, not edited.
+
 ### 2026-09-24 — Reality Audit, Phase 0 (foundation)
 
 Adds the working areas for the Reality Audit, which compares canon against measured reality item by item. **All of it is derivation / work-in-progress, not canon.**
