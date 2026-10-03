@@ -22,4 +22,4 @@
 | P-07 | **Threshold memory.** A weak or brief input does not flip the switch; a strong one flips it and the new state outlasts the input. | Information A1 / D2 (N7) | — | Reality Filter item 8, *weak observations cannot force change* — candidate fit |
 | P-08 | **Recycle the material, erase the information.** Degradation returns building blocks while the item's state is lost. | Information C1–C2 (N9; recycling detail *source pending*) | — | Bears on Layer I.G — IG-01 |
 
-The correspondence column stays empty until Deep-Lens step K (correspondence check) runs. That step comes after the step-E blocker (see [run 01](membrane/run-01-na-k-pump.md)).
+For P-01 – P-05 the correspondence column stays empty until Deep-Lens step K (correspondence check) runs, which comes after the step-E blocker (see [run 01](membrane/run-01-na-k-pump.md)). P-06 – P-08 carry candidates from the information area's correspondence check; they are unchecked.
