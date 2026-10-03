@@ -52,7 +52,10 @@ Legend: ✅ run complete · ◐ partial · ☐ queued. **New** = added from the 
 
 ### B. Self-maintenance — the membrane running the loop on itself *(D → P → R)*
 
-- ☐ B1 Self-sensing: packing, saturation, sterol level, tension — **new**, MG-02 (partly held open)
+- ☐ B1 Self-sensing — **new**, MG-02 (reframed 2026-10-03; partly held open)
+  - ☐ B1a Lipid self-organization with no separate detector: phase separation, curvature sorting, phase change with temperature **(U?)** — whether this counts as sensing depends on MF-02
+  - ☐ B1b Protein sensors of the bilayer's physical state: packing (Mga2, ALPS motifs), curvature (BAR domains), tension (Piezo) **(?)**
+  - ☐ B1c Specific lipids read as labels by protein domains (PIP₂ at the inner leaflet; phosphatidylserine on the outer surface in apoptosis → K4) **(?)** — sources pending
 - ☐ B2 Lipid supply: synthesis in the ER; delivery by vesicles and by contact sites **(U)**
 - ☐ B3 Protein supply: insertion and topology set in the ER; delivery to the surface **(U)** — **new**, MG-06
 - ☐ B4 Asymmetry upkeep: flippases, floppases, scramblases **(U)**

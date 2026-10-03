@@ -25,7 +25,7 @@ All sources retrieved 2026-10-02.
 | ID | Gap | Status |
 | --- | --- | --- |
 | MG-01 | Scope was animal-only, but "eukaryote" includes plants, fungi and protists | **solved** (tree re-scoped; H+ pump and cell-wall interface added) |
-| MG-02 | No self-sensing: how the membrane detects its own state | **partly solved / held open** |
+| MG-02 | No self-sensing: how the membrane detects its own state | **partly solved / held open** — reframed 2026-10-03: sensors read physical properties, not composition (B1a–B1c) |
 | MG-03 | DETECT covered only chemical signals; physical sensing missing | **solved** |
 | MG-04 | RESPOND had no outward signals beyond secretion | **solved** (source for G3 pending) |
 | MG-05 | Missing categories: shape and mechanics, spatial organization, through-passage | **solved** (categories I, J, item C7) |
@@ -67,9 +67,23 @@ All sources retrieved 2026-10-02.
 | Lipid packing / saturation | Mga2 transmembrane helix (controls unsaturated fatty-acid production) | **ER membrane**, fungi | Covino et al. 2016, *Mol. Cell*, [doi:10.1016/j.molcel.2016.05.015](https://doi.org/10.1016/j.molcel.2016.05.015) |
 | Mechanical force on the membrane | Piezo1 / Piezo2 mechanically activated channels | Plasma membrane | Coste et al. 2010, *Science* 330:55, [doi:10.1126/science.1193270](https://doi.org/10.1126/science.1193270) |
 
-**Held open:** a measured sensor that reads the **plasma membrane's** lipid composition directly. The composition sensor found here sits in the ER, where the lipids are made. So the plasma membrane may be regulated at its source rather than sensed in place. This run does not show which.
+**Held open (as first framed, 2026-10-02):** a measured sensor that reads the **plasma membrane's** lipid composition directly. The composition sensor found here sits in the ER, where the lipids are made. So the plasma membrane may be regulated at its source rather than sensed in place.
 
-**Data that would narrow it:** a measured plasma-membrane-resident sensor of lipid composition, or evidence that composition control acts only through supply.
+#### Reframe (2026-10-03) — raised by the author's question "would the molecular makeup be self-sensing?"
+
+**Derived reframe, not established.** The first framing asked for a sensor of *composition*. None of the measured sensors reads composition directly. They read the **physical properties the composition produces**: packing, curvature, tension. Self-sensing therefore splits into three layers, now B1a–B1c in the breakdown:
+
+| Layer | What happens | Status |
+| --- | --- | --- |
+| **B1a** Lipids alone | The bilayer reorganizes itself (phase separation, curvature sorting, phase change with temperature). The makeup and the response are the same molecules; there is no separate detector. | **Held open.** Counts as sensing only if MF-02 says a response with no distinct PROCESS step qualifies. Under the MF-02 criterion as proposed, this is self-organization, not self-sensing. Measurements of bare bilayers enter at the A3 run. |
+| **B1b** Proteins read the bilayer's physical state | Packing: Mga2 (above) and the ALPS motif, which is unstructured in solution and folds into a helix only where lipids are loosely packed (Bigay et al. 2005, *EMBO J.* 24:2244, [doi:10.1038/sj.emboj.7600714](https://doi.org/10.1038/sj.emboj.7600714)). Curvature: BAR domains, crescent-shaped dimers that bind highly curved membranes (Peter et al. 2004, *Science* 303:495, [doi:10.1126/science.1092586](https://doi.org/10.1126/science.1092586)). Tension: Piezo (above). | **Measured** for the sensors listed. Where each one acts (plasma membrane vs. ER vs. Golgi) is not yet checked per sensor. |
+| **B1c** Specific lipids read as labels | Protein domains bind particular lipids: PIP₂ marks the plasma membrane's inner leaflet; phosphatidylserine on the outer surface marks an apoptotic cell (→ K4). | **Sources pending.** Enter at the B1c run. |
+
+**Open edge (what would solve it):**
+1. A measured **plasma-membrane-resident sensor of packing** (B1b currently has PM tension via Piezo, but its packing sensors are ER- or curvature-associated).
+2. The author's ruling on **MF-02**, which decides whether B1a is sensing.
+3. Sources for B1c.
+4. A check of whether composition control at the plasma membrane acts only through supply (B2) or also through in-place sensing (B1b).
 
 ### MG-03 — DETECT covered only chemical signals — **solved**
 
