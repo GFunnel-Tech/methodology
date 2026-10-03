@@ -33,7 +33,10 @@ REQUIRED_KEYS = [
     "id", "canon_ref", "canon_label", "diff_state", "exclusion_diagnosis",
     "claim_outcome", "intake_result", "review_after", "container", "ledger_row",
 ]
-OPTIONAL_KEYS = {"proposed_label"}
+OPTIONAL_KEYS = {"proposed_label", "utility"}
+
+# audit/SCHEMA.md §3b — required for RUN-### (fullrun) records only.
+UTILITY = {"works-forced", "works-descriptive", "vacuous", "fails", "not-applicable"}
 
 REQUIRED_SECTIONS = [
     "Canon says", "Reality shows", "Scientific Inquiry run", "Forcing Test", "Anti-Operation",
@@ -48,6 +51,9 @@ ID_RULES = {
     "constants": re.compile(r"^CONST-[a-z0-9]+(?:-[a-z0-9]+)*$"),
     "domains": re.compile(r"^DOMAIN-(\d{2})$"),
     "unmapped": re.compile(r"^UNMAPPED-\d{4}$"),
+    "claims": re.compile(r"^CLAIM-\d{3}$"),
+    "sweep": re.compile(r"^SWEEP-\d{3}$"),
+    "fullrun": re.compile(r"^RUN-\d{3}$"),
 }
 CONTAINER_RE = re.compile(r"^KC-\d{4}$")
 
@@ -69,6 +75,15 @@ def check_record(text, subdir, filename, today):
     for key in fields:
         if key not in REQUIRED_KEYS and key not in OPTIONAL_KEYS:
             errors.append(f"unknown key '{key}'")
+
+    if subdir == "fullrun":
+        u = fields.get("utility")
+        if u is None:
+            errors.append("fullrun records require a 'utility' grade (SCHEMA.md §3b)")
+        elif u not in UTILITY:
+            errors.append(f"utility '{u}' not in {sorted(UTILITY)}")
+    elif "utility" in fields:
+        errors.append("'utility' applies only to fullrun records (SCHEMA.md §3b)")
 
     rid = fields.get("id") or ""
     rule = ID_RULES.get(subdir)

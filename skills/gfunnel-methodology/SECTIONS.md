@@ -333,15 +333,16 @@ Ranges are inclusive and nest: a `###` range sits inside its `##` range. Release
 | 404–414 | 10. When to stop and ask the author |
 | 415–420 | 11. Credit line (for outputs that reproduce canon) |
 
-## `audit/SCHEMA.md` (216 lines)
+## `audit/SCHEMA.md` (232 lines)
 
 | Lines | Section |
 | --- | --- |
 | 9–66 | 1. Status vocabularies (use these exact terms) |
 | 67–85 | 2. Permitted measurement sources (reference points only) |
-| 86–100 | 3. File identifiers |
-| 101–164 | 4. Audit record |
-| 165–216 | 5. Container record (derivation: the container unit) |
+| 86–104 | 3. File identifiers |
+| 105–116 | 3b. Utility grade (the full-run extension) |
+| 117–180 | 4. Audit record |
+| 181–232 | 5. Container record (derivation: the container unit) |
 
 ## `framework/registers.md` (105 lines)
 

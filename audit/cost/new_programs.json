@@ -1,0 +1,162 @@
+[
+  {
+    "slug": "pdg",
+    "name": "Particle Data Group (LBNL-hosted Review of Particle Physics)",
+    "used_by": [
+      "STAGE-001",
+      "STAGE-002",
+      "STAGE-003",
+      "STAGE-005",
+      "STAGE-006",
+      "STAGE-007",
+      "CONST-angular-momentum-conservation",
+      "CONST-baryon-number-conservation",
+      "CONST-charge-conservation",
+      "CONST-cpt-symmetry",
+      "CONST-lepton-number-conservation",
+      "CONST-maxwells-equations",
+      "CLAIM-002",
+      "CLAIM-014",
+      "CANON-v54-koide",
+      "CANON-v54-lifetime-linewidth"
+    ],
+    "what_to_cost": "compilation operations (staff + collaborators) through the 2024 edition; not the underlying experiments"
+  },
+  {
+    "slug": "kegg",
+    "name": "KEGG (Kyoto Encyclopedia of Genes and Genomes)",
+    "used_by": [
+      "STAGE-015",
+      "STAGE-016",
+      "STAGE-019",
+      "STAGE-020",
+      "STAGE-021",
+      "CONST-atp-yield-per-glucose",
+      "CONST-krebs-cycle-stoichiometry"
+    ],
+    "what_to_cost": "database development + curation operations 1995-2026"
+  },
+  {
+    "slug": "bicep-keck",
+    "name": "BICEP2 / Keck Array / BICEP3 (South Pole CMB polarization)",
+    "used_by": [
+      "STAGE-001",
+      "STAGE-003"
+    ],
+    "what_to_cost": "construction + operations through the 2021 BK18 result (excl. shared South Pole station costs, or state them)"
+  },
+  {
+    "slug": "eso-vlt",
+    "name": "ESO Very Large Telescope (incl. X-shooter)",
+    "used_by": [
+      "STAGE-007",
+      "STAGE-008"
+    ],
+    "what_to_cost": "construction + operations to 2019, or a per-night share for the kilonova spectra"
+  },
+  {
+    "slug": "messenger",
+    "name": "MESSENGER (NASA Mercury orbiter)",
+    "used_by": [
+      "CONST-einstein-field-equations",
+      "CONST-keplers-laws"
+    ],
+    "what_to_cost": "mission lifecycle cost (development, launch, operations to 2015)"
+  },
+  {
+    "slug": "alma",
+    "name": "ALMA (Atacama Large Millimeter/submillimeter Array)",
+    "used_by": [
+      "STAGE-009"
+    ],
+    "what_to_cost": "construction + operations to 2015 (HL Tau long-baseline campaign)"
+  },
+  {
+    "slug": "darpa-hafnium-isomer",
+    "name": "DARPA hafnium-178m2 isomer triggering program",
+    "used_by": [
+      "CANON-v54-hafnium-isomer"
+    ],
+    "what_to_cost": "program budget, ~1998-2004"
+  },
+  {
+    "slug": "exa-cel-clinical-program",
+    "name": "Casgevy (exa-cel) development and clinical program (Vertex / CRISPR Therapeutics)",
+    "used_by": [
+      "STAGE-065"
+    ],
+    "what_to_cost": "R&D + clinical-trial spend to FDA approval, Dec 2023"
+  },
+  {
+    "slug": "fermi",
+    "name": "Fermi Gamma-ray Space Telescope (GBM detected GRB 170817A)",
+    "used_by": [
+      "CONST-einstein-field-equations"
+    ],
+    "what_to_cost": "mission lifecycle cost to 2017"
+  },
+  {
+    "slug": "meg",
+    "name": "MEG / MEG II (PSI, mu -> e gamma search)",
+    "used_by": [
+      "CONST-lepton-number-conservation"
+    ],
+    "what_to_cost": "detector construction + beam operations to 2023"
+  },
+  {
+    "slug": "microscope",
+    "name": "MICROSCOPE (CNES equivalence-principle satellite)",
+    "used_by": [
+      "CONST-newtons-first-law"
+    ],
+    "what_to_cost": "mission lifecycle cost to 2022 final result"
+  },
+  {
+    "slug": "ncbi",
+    "name": "NCBI (US National Center for Biotechnology Information)",
+    "used_by": [
+      "CONST-genetic-code-universality"
+    ],
+    "what_to_cost": "share of operations maintaining genetic-code tables; or note that the code itself was established by 1960s studies"
+  },
+  {
+    "slug": "nicer",
+    "name": "NICER (ISS X-ray timing instrument)",
+    "used_by": [
+      "CANON-v54-nuclear-saturation"
+    ],
+    "what_to_cost": "instrument + operations to date (neutron-star radius constraints)"
+  },
+  {
+    "slug": "nustar",
+    "name": "NuSTAR (NASA hard X-ray telescope)",
+    "used_by": [
+      "STAGE-008"
+    ],
+    "what_to_cost": "mission lifecycle cost to 2014 (Cas A 44Ti map)"
+  },
+  {
+    "slug": "pew-global-religion",
+    "name": "Pew-Templeton Global Religious Futures project",
+    "used_by": [
+      "STAGE-045"
+    ],
+    "what_to_cost": "project cost for the 2012 and 2025 landscape reports (grant totals)"
+  },
+  {
+    "slug": "un-wup",
+    "name": "UN World Urbanization Prospects (UN DESA Population Division; via World Bank WDI)",
+    "used_by": [
+      "STAGE-043"
+    ],
+    "what_to_cost": "compilation program operations; underlying national censuses are out of scope or costed separately"
+  },
+  {
+    "slug": "us-census-bfs",
+    "name": "US Census Bureau Business Formation Statistics",
+    "used_by": [
+      "STAGE-042"
+    ],
+    "what_to_cost": "program operating cost to 2026 (small survey product)"
+  }
+]

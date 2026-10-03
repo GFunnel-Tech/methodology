@@ -45,7 +45,7 @@ And the prohibitions:
 | Diagnose something stuck or failing, or run a named algorithm on their situation | `workflows/run-algorithm.md` |
 | Apply the framework to a domain or problem it has no algorithm for | `workflows/derive.md` |
 | Propose an iteration, log variable evidence, run a §14 test, or open an issue/PR | `workflows/iterate.md` |
-| Work on the Reality Audit (`audit/`) or knowledge containers (`containers/`) | `workflows/reality-audit.md` |
+| Work on the Reality Audit (`audit/`), its predictions, the Cell Atlas (`tasks/cell-atlas/`), or knowledge containers (`containers/`) | `workflows/reality-audit.md` |
 | Quote, publish, build a product/prompt/RAG index on the framework, or register an integration | `workflows/integrate.md` |
 
 Load only the workflow you need. Several may apply in one task (e.g. a diagnosis that ends in a publishable write-up: `workflows/run-algorithm.md` then `workflows/integrate.md`).
@@ -70,7 +70,8 @@ Load only the workflow you need. Several may apply in one task (e.g. a diagnosis
 | Executed §14 tests + scripts | `framework/tests/` (`README.md` first) |
 | Glossary / human how-to / AI integration | `docs/glossary.md`, `docs/how-to-use.md`, `docs/ai-integration.md` |
 | Iteration Protocol; issue and PR templates | `CONTRIBUTING.md`, `.github/ISSUE_TEMPLATE/`, `.github/PULL_REQUEST_TEMPLATE.md` |
-| Reality Audit (work in progress, **not canon**) | `tasks/reality-audit/TASK.md`, `audit/`, `containers/`, `substrate/`, `tools/` |
+| Reality Audit (work in progress, **not canon**) | `tasks/reality-audit/TASK.md`, `audit/` (incl. `audit/RUNBOOK.md`, `audit/VERDICT.md`, `audit/prediction/`), `containers/`, `substrate/`, `tools/` |
+| Cell Atlas: cell processes run through the methodology (derivation, **not canon**) | `tasks/cell-atlas/` |
 | Lineage; license; attribution; citation | `CHANGELOG.md`, `LICENSE`, `ATTRIBUTION.md`, `CITATION.cff` |
 | Adoption registry | `adoption/registry.md` |
 

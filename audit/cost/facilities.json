@@ -1,0 +1,549 @@
+[
+  {
+    "id": "cobe",
+    "name": "COBE (Cosmic Background Explorer)",
+    "audit_use": "CMB spectrum/temperature; Stage 6",
+    "figures": [
+      {
+        "amount": 30000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Cost CAP set at NASA approval, excluding launcher and data analysis. NOT an actual cost.",
+        "quote": "NASA accepted the proposal provided that the costs be kept under US$30 million, excluding launcher and data analysis."
+      }
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Cosmic_Background_Explorer",
+    "source_type": "secondary",
+    "retrieved": "2026-09-27",
+    "status": "held-open",
+    "note": "Actual COBE total cost held open. Fetched and checked with no cost figure found: NASA COBE press kit (science.nasa.gov/wp-content/uploads/2024/06/cobe-press-kit.pdf), NASA APPEL COBE case study (spacese.spacegrant.org mirror; only a '$1 million per month' burn-rate remark), science.nasa.gov/mission/cobe, LAMBDA/LBL/Scholarpedia pages, NASA Historical Data Book Vol. V (Explorer funding is reported only as a program aggregate, Table 4-9) and Vol. VIII. A '$160 million' figure appears only in search-engine summaries of secondary pages that could not be confirmed on a fetched page, so it is NOT recorded. The only fetched figure is the $30M approval cap (secondary; Wikipedia cites a GSFC overview). Price year of the cap not stated."
+  },
+  {
+    "id": "wmap",
+    "name": "WMAP (Wilkinson Microwave Anisotropy Probe)",
+    "audit_use": "CMB; Stages 3-6",
+    "figures": [
+      {
+        "amount": 150000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Proposed budget at the 1995 proposal (MIDEX); not a final/actual cost",
+        "quote": "It was proposed in 1995 with a budget of just $150 million"
+      }
+    ],
+    "source_url": "https://www.skyatnightmagazine.com/space-missions/wmap-cosmic-microwave-background",
+    "source_type": "secondary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "Secondary only (BBC Sky at Night Magazine). No primary NASA cost figure found: wmap.gsfc.nasa.gov/mission, nasa.gov WMAP page, science.gsfc.nasa.gov project page and the Wikipedia article were fetched and state no cost; hq.nasa.gov budget page LIFCY982.htm returned 403. Actual/final WMAP lifecycle cost remains held open."
+  },
+  {
+    "id": "planck",
+    "name": "Planck (ESA)",
+    "audit_use": "H0, Omega_m, Lambda; constants + Stages 3-6",
+    "figures": [
+      {
+        "amount": 700000000,
+        "currency": "EUR",
+        "price_year": null,
+        "scope": "Total mission: spacecraft, scientific payload, launch and operations (ESA factsheet)",
+        "quote": "The total cost of the Planck mission is about €700 million. This includes the spacecraft and its scientific payload, the launch and the operations."
+      }
+    ],
+    "source_url": "https://esamultimedia.esa.int/docs/planck/Planck-Factsheet.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "Price year not stated by ESA (factsheet contemporaneous with 2009 launch). Whether nationally funded instrument (HFI/LFI) costs are fully inside the €700M is not stated; held open. Launch was shared with Herschel."
+  },
+  {
+    "id": "hubble",
+    "name": "Hubble Space Telescope (lifetime incl. servicing)",
+    "audit_use": "SH0ES H0 distance ladder",
+    "figures": [
+      {
+        "amount": 16000000000,
+        "currency": "USD",
+        "price_year": 2021,
+        "scope": "Lifetime since 1977 start, adjusted to 2021 dollars; EXCLUDES Space Shuttle operations for deployment and servicing",
+        "quote": "The Hubble mission has cost approximately $16 billion (adjusted for inflation to 2021 dollars) since its official start in 1977."
+      },
+      {
+        "amount": 1200000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Development cost at completion (~1985), before launch and servicing",
+        "quote": "however, the telescope was not completed until 2 years later at a cost of approximately $1.2 billion.",
+        "source_url": "https://oig.nasa.gov/docs/CT-18-002.pdf",
+        "source_type": "primary"
+      },
+      {
+        "amount": 1700000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NASA estimate (low end) for one shuttle servicing mission (SM4), as reported by GAO in 2004",
+        "quote": "NASA estimates the cost at between $1.7 billion to $2.4 billion.",
+        "source_url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-05-34/html/GAOREPORTS-GAO-05-34.htm",
+        "source_type": "primary"
+      },
+      {
+        "amount": 2400000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NASA estimate (high end) for one shuttle servicing mission (SM4), as reported by GAO in 2004",
+        "quote": "NASA estimates the cost at between $1.7 billion to $2.4 billion.",
+        "source_url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-05-34/html/GAOREPORTS-GAO-05-34.htm",
+        "source_type": "primary"
+      },
+      {
+        "amount": 205000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Servicing Mission 3A (STS-103): shuttle $110M + HST $95M",
+        "quote": "Total     205 Million",
+        "source_url": "https://asd.gsfc.nasa.gov/archive/sm3a/downloads/sm3a_fact_sheets/cost-to-taxpayers.pdf",
+        "source_type": "primary"
+      }
+    ],
+    "source_url": "https://science.nasa.gov/mission/hubble/overview/faqs/",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "A lifetime total INCLUDING shuttle servicing flights is held open: NASA's $16B (2021$) explicitly excludes shuttle operations; per-mission shuttle costs were found only for SM3A ($205M) and the SM4 estimate range ($1.7-2.4B, 2004). NASA FAQ points to Appendix A of 'Not Yet Imagined' for the year-by-year budget (not fetched). Whether ESA's contribution is included is not stated. gao.gov itself returns 403 to this run; the same GAO-05-34 text was fetched from govinfo.gov."
+  },
+  {
+    "id": "lhc",
+    "name": "LHC (accelerator) + ATLAS + CMS",
+    "audit_use": "Higgs mass; Stage 3",
+    "figures": [
+      {
+        "amount": 4332000000,
+        "currency": "CHF",
+        "price_year": null,
+        "scope": "LHC materials construction cost charged to CERN: machine and areas 3756 MCHF (incl. machine R&D, injectors, tests, pre-operation) + CERN share of detectors/areas 493 + CERN share of computing 83. Materials only; excludes personnel.",
+        "quote": "Construction costs (MCHF) ... LHC machine and areas* 3756 CERN share to detectors and detectors areas** 493 LHC computing (CERN share) 83 Total 4332"
+      },
+      {
+        "amount": 1500000000,
+        "currency": "CHF",
+        "price_year": null,
+        "scope": "All LHC detectors combined (all funders)",
+        "quote": "The total cost of all LHC detectors is about 1500 MCHF"
+      },
+      {
+        "amount": 475000000,
+        "currency": "CHF",
+        "price_year": 1995,
+        "scope": "ATLAS full-construction expenditure ceiling (set 1998, 1995 currency rate); a ceiling, not an actual",
+        "quote": "the budget for the full construction was established with an expenditure ceiling set at 475 MCHF (in 1995 currency rate) in 1998.",
+        "source_url": "http://www.scholarpedia.org/article/The_ATLAS_experiment",
+        "source_type": "secondary"
+      },
+      {
+        "amount": 475000000,
+        "currency": "CHF",
+        "price_year": null,
+        "scope": "'material cost ceiling' imposed at 1997 construction approval of ATLAS/CMS; the article does not make explicit whether it applies to each experiment",
+        "quote": "after the first of a long series of Technical Design Reports and the imposing of a material cost ceiling of SwFr475 million.",
+        "source_url": "https://cerncourier.com/a/towards-a-higgs-boson-first-steps-in-an-incredible-journey/",
+        "source_type": "primary"
+      },
+      {
+        "amount": 13250000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Total cost-to-Higgs-discovery (Forbes estimate via IBTimes): ~$4.75B construction + ~$1B/yr operations + ~$5B experiments",
+        "quote": "According to Forbes , finding the Higgs boson ran about $13.25 billion.",
+        "source_url": "https://www.ibtimes.com/forbes-finding-higgs-boson-cost-1325-billion-721503",
+        "source_type": "secondary"
+      },
+      {
+        "amount": 4750000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "LHC construction (Forbes via IBTimes)",
+        "quote": "The facility took 10 years and around $4.75 billion to construct.",
+        "source_url": "https://www.ibtimes.com/forbes-finding-higgs-boson-cost-1325-billion-721503",
+        "source_type": "secondary"
+      }
+    ],
+    "source_url": "https://home.cern/resources/faqs/facts-and-figures-about-lhc",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "CERN states no price year for the 4332 MCHF. CMS individual final cost is held open: the CMS 1997 bulletin (cms-docdb.cern.ch) failed TLS verification via curl and returned 503 via WebFetch; a CMS talk (indico.cern.ch) gives only the magnet (~80 MCHF). Forbes original returned 403, so the $13.25B is taken from IBTimes' report of it (secondary, not independently verified; it is not a CERN figure). lhc-closer.es (secondary, by a former CERN fellow) says 'The cost for the machine alone is about 3000 million Euro'."
+  },
+  {
+    "id": "rhic",
+    "name": "RHIC (Relativistic Heavy Ion Collider)",
+    "audit_use": "Quark-gluon plasma; Stage 4",
+    "figures": [
+      {
+        "amount": 617000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Construction 1991-1999 (DOE reported project cost/budget)",
+        "quote": "constructed between 1991 and 1999 at a reported cost of $617 million"
+      },
+      {
+        "amount": 32000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Overrun above the $617M budget found by DOE IG",
+        "quote": "the cost of the project exceeded its $617 million budget by about $32 million."
+      },
+      {
+        "amount": 20000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Overhead absorbed by other Brookhaven activities that should have been charged to RHIC",
+        "quote": "Brookhaven projects and activities had to absorb about $20 million in overhead that should have"
+      },
+      {
+        "amount": 66000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "RHIC operating funds expended (IG could not determine the portion spent to obtain beam collisions)",
+        "quote": "Brookhaven expended $66 million in RHIC operating funds."
+      }
+    ],
+    "source_url": "https://www.energy.gov/sites/prod/files/igprod/documents/CalendarYear2002/ig-0543.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "DOE Inspector General audit DOE/IG-0543 (March 2002). Then-year dollars (price year not stated). Construction-only; excludes 2000-present operations. Detectors' non-DOE contributions not addressed."
+  },
+  {
+    "id": "ligo",
+    "name": "LIGO (and Virgo)",
+    "audit_use": "GW170817 neutron-star merger heavy elements; Stage 8",
+    "figures": [
+      {
+        "amount": 272100000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Initial LIGO NSF construction funding through FY2001, 'then year' dollars (1998 NSF review plan)",
+        "quote": "(All funds shown in \"then year\" $ Millions) ... Total 272.1 20 68.7 12.1 372.9"
+      },
+      {
+        "amount": 372900000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Initial LIGO total NSF funding through FY2001: construction 272.1 + R&D 20 + operations 68.7 + advanced R&D 12.1 (then-year $M)",
+        "quote": "Total 272.1 20 68.7 12.1 372.9"
+      },
+      {
+        "amount": 205000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Advanced LIGO upgrade, NSF MREFC-funded project (completed)",
+        "quote": "Advanced LIGO is a now-completed $205.0 million project funded by the MREFC account",
+        "source_url": "https://nsf-gov-resources.nsf.gov/about/budget/fy2023/pdf/47_fy2023.pdf",
+        "source_type": "primary"
+      },
+      {
+        "amount": 45000000,
+        "currency": "USD",
+        "price_year": 2023,
+        "scope": "Annual LIGO operations & maintenance (FY2023 request), NSF",
+        "quote": "Current annual operating costs are $45.0 million.",
+        "source_url": "https://nsf-gov-resources.nsf.gov/about/budget/fy2023/pdf/47_fy2023.pdf",
+        "source_type": "primary"
+      },
+      {
+        "amount": 11500000,
+        "currency": "EUR",
+        "price_year": 2023,
+        "scope": "Virgo annual budget 2023 (operations, not construction)",
+        "quote": "Budget 11.5 million euros in 2023",
+        "source_url": "https://en.wikipedia.org/wiki/Virgo_interferometer",
+        "source_type": "secondary"
+      }
+    ],
+    "source_url": "https://dcc.ligo.org/public/0038/G980034/000/G980034-00.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "LIGO-G980034 is a LIGO Lab presentation to an NSF review (31 Mar 1998); its table is a funding plan by year, not a final audited cost. Caltech's LIGO fact sheet (source of an often-cited ~$1.4B total NSF investment) failed TLS via curl and returned 503 via WebFetch, so that total is held open. Virgo construction cost held open (1989 Virgo proposal PDF and a JINST paper were fetched and state no usable figure; Wikipedia gives only the 2023 operating budget). UK A+ contribution (~GBP 10M) is mentioned in the NSF doc but not recorded here."
+  },
+  {
+    "id": "osiris-rex",
+    "name": "OSIRIS-REx",
+    "audit_use": "Bennu samples; Stage 10",
+    "figures": [
+      {
+        "amount": 800000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Program cost excluding launch vehicle (2016 press kit)",
+        "quote": "Program Cost • Approximately $800 million (excluding launch vehicle)"
+      },
+      {
+        "amount": 183500000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NASA launch cost (Atlas V), incl. payload processing, integrated services, telemetry",
+        "quote": "NASA’s total cost to launch OSIRIS-REx is apporixmately $183.5 million",
+        "source_url": "https://www.nasa.gov/news-release/nasa-selects-launch-services-contract-for-osiris-rex-mission-2/",
+        "source_type": "primary"
+      },
+      {
+        "amount": 1020000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Lifetime cost, not adjusted for inflation (Planetary Society compilation of NASA budget data)",
+        "quote": "(OSIRIS-REx) cost $1.02 billion (not adjusted for inflation) over its lifetime",
+        "source_url": "https://www.planetary.org/space-policy/cost-of-osiris-rex",
+        "source_type": "secondary"
+      }
+    ],
+    "source_url": "https://www.nasa.gov/wp-content/uploads/2016/06/osiris-rex_press_kit_0.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "Quote 'apporixmately' is verbatim (typo in NASA source). $800M + $183.5M are pre-launch-era figures; the $1.02B lifetime figure is the Planetary Society's (secondary, nominal dollars). OSIRIS-APEX extension not included. No NASA OIG lifecycle figure fetched."
+  },
+  {
+    "id": "hgp",
+    "name": "Human Genome Project",
+    "audit_use": "Genome/phylogeny; Stages 14-31",
+    "figures": [
+      {
+        "amount": 2700000000,
+        "currency": "USD",
+        "price_year": 1991,
+        "scope": "U.S. HGP cost at completion (2003), FY1991 dollars",
+        "quote": "the Human Genome Project was finished two and a half years ahead of time and, at $2.7 billion in FY 1991 dollars"
+      },
+      {
+        "amount": 3000000000,
+        "currency": "USD",
+        "price_year": 1991,
+        "scope": "Projection given to Congress at outset",
+        "quote": "the U.S. Congress was told the project would cost about $3 billion in FY 1991 dollars"
+      }
+    ],
+    "source_url": "https://www.genome.gov/11006929/2003-release-international-consortium-completes-hgp",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "U.S. funding only (NIH+DOE); international partners (e.g. Wellcome/Sanger) excluded. DOE/ORNL budget page (https://doe-humangenomeproject.ornl.gov/human-genome-project-budget/) gives annual U.S. totals in $ millions (then-year); DERIVED sum of FY1990-2003 rows = $3,723.7M (FY1988-2003 = $3,798.3M) — derivation, not a source figure; ORNL notes the '$3 billion' covered a wide range of genomics activities, of which sequencing was 'only a small fraction'."
+  },
+  {
+    "id": "super-kamiokande",
+    "name": "Super-Kamiokande",
+    "audit_use": "Neutrino oscillation, lepton number, proton decay limits",
+    "figures": [
+      {
+        "amount": 8700000000,
+        "currency": "JPY",
+        "price_year": null,
+        "scope": "Construction as approved/funded 1991",
+        "quote": "Costing 8.7 billion yen ($62 million), construction is getting underway now and will continue until early 1996."
+      },
+      {
+        "amount": 62000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Same figure converted by the source (1991 rate)",
+        "quote": "Costing 8.7 billion yen ($62 million)"
+      },
+      {
+        "amount": 100000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Total funding approved by Japanese ministry in 1991 (Wikipedia)",
+        "quote": "approved by the Japanese Ministry of Education, Science, Sports and Culture in 1991 for total funding of approximately $100 million.",
+        "source_url": "https://en.wikipedia.org/wiki/Super-Kamiokande",
+        "source_type": "secondary"
+      },
+      {
+        "amount": 3000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "U.S. DOE portion (outer detector), approved 1993",
+        "quote": "was approved by the United States Department of Energy in 1993 for $3 million.",
+        "source_url": "https://en.wikipedia.org/wiki/Super-Kamiokande",
+        "source_type": "secondary"
+      }
+    ],
+    "source_url": "https://www.osti.gov/etdeweb/biblio/22396540",
+    "source_type": "secondary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "OSTI ETDEWEB abstract of a CERN Courier item published 15 May 1991 (contemporaneous; indexed abstract, labelled secondary). SOURCES DISAGREE: 8.7 billion yen / $62M (CERN Courier 1991) vs ~$100M (Wikipedia). Excludes operations, 2001 accident rebuild and SK-Gd upgrade."
+  },
+  {
+    "id": "kamland",
+    "name": "KamLAND / KamLAND-Zen",
+    "audit_use": "Neutrino oscillation; 0vbb lepton-number limit (KamLAND-Zen)",
+    "figures": [
+      {
+        "amount": 20000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Japanese ministry share of KamLAND construction ('more than')",
+        "quote": "Japan's Ministry of Education, Science, Sports, and Culture provided more than $20 million of KamLAND's construction costs."
+      },
+      {
+        "amount": 6000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "U.S. DOE Office of Science share of construction ('nearly')",
+        "quote": "The U.S. Department of Energy's Office of Science provided nearly $6 million."
+      }
+    ],
+    "source_url": "https://web.stanford.edu/group/grattalab/kamland/KamLANDArticle.html",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "Text is the Berkeley Lab/collaboration release (Dec 2002) hosted by the Stanford KamLAND group. Bounds, not totals ('more than', 'nearly'). KamLAND-Zen (xenon-loaded upgrade) cost HELD OPEN: not found."
+  },
+  {
+    "id": "desi",
+    "name": "DESI (Dark Energy Spectroscopic Instrument)",
+    "audit_use": "Dark energy; Stages 81-84",
+    "figures": [
+      {
+        "amount": 56000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "DOE-funded construction project",
+        "quote": "the $56 million DESI project team"
+      },
+      {
+        "amount": 19000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "In-kind hardware from international partners (UK, France, Spain, Switzerland)",
+        "quote": "by obtaining some $19 million worth of “in-kind” hardware from international partners"
+      }
+    ],
+    "source_url": "https://newscenter.lbl.gov/2021/10/28/department-of-energy-awards-berkeley-labs-desi-project-management-excellence-award/",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "Construction only; survey operations excluded. $56M + $19M = $75M total is arithmetic (derived), not stated on the fetched page. Price year not stated."
+  },
+  {
+    "id": "iss",
+    "name": "International Space Station (U.S. total)",
+    "audit_use": "Stage 63 (one fact)",
+    "figures": [
+      {
+        "amount": 78000000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "U.S. investment over 21 years to 2014: $46.7B construction+program costs through 2014 + $30.7B for 37 supporting Shuttle flights",
+        "quote": "The United States has invested almost $78 billion in the International Space Station (ISS or Station) over the last 21 years"
+      },
+      {
+        "amount": 75000000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "U.S. investment through FY2013: $43.7B construction+program + $30.7B Shuttle flights",
+        "quote": "The United States has invested almost $75 billion in the ISS – including construction,",
+        "source_url": "https://oig.nasa.gov/wp-content/uploads/2024/02/IG-14-031.pdf",
+        "source_type": "primary"
+      }
+    ],
+    "source_url": "https://oig.nasa.gov/wp-content/uploads/2024/02/IG-15-021.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "NASA OIG IG-15-021 (2015). U.S. only (Russia, ESA, Japan, Canada excluded); nominal/then-year dollars; OIG says Shuttle cost share 'is less certain'. Excludes ~$3-4B/yr spending after 2014 — a current cumulative total is held open."
+  },
+  {
+    "id": "jwst",
+    "name": "JWST (James Webb Space Telescope) — FUTURE USE",
+    "audit_use": "Not yet used; planned for Phase 9 re-audits of H0",
+    "figures": [
+      {
+        "amount": 9700000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "NASA price tag as of May 2021 (composition — development/launch/operations years — not stated in fetched text)",
+        "quote": "JWST launched on December 25, 2021 and carried a price tag of $9.7 billion as of May 2021."
+      }
+    ],
+    "source_url": "https://oig.nasa.gov/wp-content/uploads/2024/02/ig-22-011.pdf",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "FUTURE USE flag. NASA OIG IG-22-011 (2022). ESA and CSA contributions not included (NASA figure). Breakdown of the $9.7B held open (not in fetched text). OIG CT-18-002 (2018, fetched) separately noted pre-launch that 'its price tag now exceeds $8 billion'."
+  },
+  {
+    "id": "nist",
+    "name": "NIST annual budget",
+    "audit_use": "CODATA / metrology",
+    "figures": [
+      {
+        "amount": 1460000000,
+        "currency": "USD",
+        "price_year": 2024,
+        "scope": "Total NIST discretionary appropriation, FY2024 enacted",
+        "quote": "Total, NIST Discretionary ** $1,460.0"
+      },
+      {
+        "amount": 1080000000,
+        "currency": "USD",
+        "price_year": 2024,
+        "scope": "Scientific and Technical Research and Services (STRS) — the lab/measurement account, FY2024 enacted",
+        "quote": "Scientific and Technical Research and Services (STRS) $850.0 $953.0 $1,080.0"
+      }
+    ],
+    "source_url": "https://www.nist.gov/congressional-and-legislative-affairs/nist-appropriations-summary",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "Table is 'Dollars in Table in Millions', columns FY2022/FY2023/FY2024 enacted. FY2024 STRS includes $222.8M of congressionally directed projects. FY2025/FY2026 enacted not found on nist.gov pages fetched this run (held open)."
+  },
+  {
+    "id": "cassini",
+    "name": "Cassini-Huygens (added: audit uses Cassini PPN-gamma test)",
+    "audit_use": "GR / Einstein field equations: PPN gamma from Cassini radio Doppler (CONST-einstein-field-equations)",
+    "figures": [
+      {
+        "amount": 3900000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Total mission: $2.5B pre-launch (incl. launch vehicle and ESA/ASI contributions) + $1.4B post-launch (20 years operations/tracking)",
+        "quote": "Cost of mission: $3.9 billion."
+      },
+      {
+        "amount": 3000000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "JPL figure in 2004 (pre-orbit-insertion)",
+        "quote": "The cost of the Cassini mission is approximately $3 billion.",
+        "source_url": "https://www.jpl.nasa.gov/news/cassini-huygens-will-unlock-saturns-secrets/",
+        "source_type": "primary"
+      },
+      {
+        "amount": 3260000000,
+        "currency": "USD",
+        "price_year": null,
+        "scope": "Total incl. $1.4B development, $704M ops, $54M tracking, $422M launch vehicle (Wikipedia)",
+        "quote": "The total cost of this scientific exploration mission was about US$3.26 billion",
+        "source_url": "https://en.wikipedia.org/wiki/Cassini%E2%80%93Huygens",
+        "source_type": "secondary"
+      }
+    ],
+    "source_url": "https://science.nasa.gov/mission/cassini/quick-facts/",
+    "source_type": "primary",
+    "retrieved": "2026-09-27",
+    "status": "sourced",
+    "note": "SOURCES DISAGREE by scope/date: $3.9B (NASA, full 20-yr life incl. partners) vs $3B (JPL 2004) vs $3.26B (Wikipedia). JPL page fetched via WebFetch (curl got 403)."
+  },
+  {
+    "id": "borexino",
+    "name": "Borexino (added: audit cites Borexino solar-pp neutrinos and electron-lifetime limit)",
+    "audit_use": "Solar pp-chain neutrinos (STAGE-007); charge conservation electron-lifetime limit (CONST-charge-conservation)",
+    "figures": [],
+    "source_url": null,
+    "source_type": null,
+    "retrieved": "2026-09-27",
+    "status": "held-open",
+    "note": "No cost figure found. Web searches (INFN/LNGS pages, 2008 NIM detector paper) returned no cost statement; no page with a figure was available to fetch. Held open."
+  }
+]

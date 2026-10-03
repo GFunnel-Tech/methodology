@@ -93,10 +93,26 @@ If a value cannot be verified from a primary source, grade it `held-open` and sa
 | Constant | `CONST-<slug>` (lowercase, digits, hyphens) | `audit/constants/` | 4 |
 | Domain | `DOMAIN-##` (01–10) | `audit/domains/` | 5 |
 | Unmapped | `UNMAPPED-####` | `audit/unmapped/` | 6 |
+| Claim | `CLAIM-###` | `audit/claims/` | 3–5 (extension) |
+| Sweep | `SWEEP-###` | `audit/sweep/` | 6 (reality → canon) |
+| Full run | `RUN-###` | `audit/fullrun/` | 6b — one canonical layer, run in full against one real system |
+| Prediction | `PRED-###` | `audit/prediction/` | separate schema — see [`prediction/PROTOCOL.md`](prediction/PROTOCOL.md) |
 
-The file name is `<id>.md` (a `-<slug>` suffix is allowed after the id, e.g. `LABEL-005-stage-5.md`). The `GOV` prefix is an extension made by this file (brief Phase 1 allows "a dedicated `audit/governance/` file").
+The file name is `<id>.md` (a `-<slug>` suffix is allowed after the id, e.g. `LABEL-005-stage-5.md`). The `SWEEP` prefix covers a reality-side sweep: a measured component of a real system, asked which canonical item holds it (Phase 6, reality → canon). `PRED` files are **not** audit records and are not checked by `validate_audit.py`; they follow [`prediction/PROTOCOL.md`](prediction/PROTOCOL.md) and `tools/validate_prediction.py`. The `CLAIM` prefix (extension, derivation) covers canonical claims that are not a stage, constant, domain, or label: rows of the Falsifiability Register (v5.1 ◇), Appendix B/C entries, and Core Axioms with a factual core. The `GOV` prefix is an extension made by this file (brief Phase 1 allows "a dedicated `audit/governance/` file").
 
 ---
+
+## 3b. Utility grade (the full-run extension)
+
+`RUN-###` files additionally carry `utility`, which records **what the layer produced when run against a real system**. This is a derivation: canon grades claims, not the usefulness of its own instruments.
+
+| Term | Meaning |
+| --- | --- |
+| `works-forced` | Produced a correct, non-trivial statement about the system that measurement confirms, and that the layer's structure (not general knowledge) supplied. |
+| `works-descriptive` | Produced a correct statement, but one any competent description would produce. Correct, no added value. |
+| `vacuous` | Produced a statement that could not have come out false as applied. No observation would contradict it. |
+| `fails` | Produced a statement measurement contradicts. |
+| `not-applicable` | The layer's subject genuinely does not include this system. **If canon claims the layer is universal, `not-applicable` is itself a failure of that universality claim** — say so in the file. |
 
 ## 4. Audit record
 
