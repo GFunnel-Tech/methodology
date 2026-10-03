@@ -131,7 +131,7 @@ From the **measured and derived tiers only**. These do not depend on the blocked
 - **status:** forced-fill, **for the measured mechanism and the derived equation only**. The Tier 3 mapping is not part of the container.
 - **form:** both. Equation and Trace are in Tier 2; Algorithm is the 8-step cycle.
 - **canon_refs:** v5.1 Appendix A Stage 24, Stage 23; v5.1 Domain 9
-- **diff state vs. Stage 24:** `accounted`. Reality shows the pump establishing Na+/K+ asymmetry, as the stage says. *Narrative stripped:* "Polarity **deliberately** created and maintained." Nothing measured forces "deliberately," so it is flagged for the Reality Audit label phase, not changed here.
+- **diff state vs. Stage 24:** `accounted`. Reality shows the pump establishing Na+/K+ asymmetry, as the stage says. *Narrative stripped:* "Polarity **deliberately** created and maintained." Nothing measured forces "deliberately." The Reality Audit already reviewed this in [STAGE-024](../../../audit/stages/STAGE-024.md): "deliberately" attributes intent; the measurement shows an ATP-driven pump; the grade is unchanged. No separate flag is needed.
 
 ## Open edge
 

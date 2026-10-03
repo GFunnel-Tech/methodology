@@ -52,7 +52,7 @@ Legend: ☐ queued · *source pending* = no measured source attached yet.
 - ☐ A1 Thresholds, ultrasensitivity and bistable switches (N7)
 - ☐ A2 Proofreading by delay at recognition (kinetic proofreading, Hopfield 1974 — a model; which steps are measured enters at the run)
 - ☐ A3 Persistence filters: a signal must last long enough to count — *source pending*
-- ☐ A4 Relative (fold-change) detection rather than absolute level — *source pending*
+- ☐ A4 Relative (fold-change) detection rather than absolute level — *source pending*; see audit [F-071](../../../audit/FINDINGS.md): bacterial chemotaxis responds to rate of change, with no set-point
 - ☐ A5 Noise: controlled and sometimes used (N8)
 
 ### B. Record fidelity — keeping the stored record correct
@@ -108,7 +108,7 @@ The Reality Audit has its own knowledge-cleaning rules (the [Reality Filter](../
 | Filter item 8: *weak observations cannot force change* | Thresholds and bistable switches: a weak or brief input does not flip the switch (A1, D2, N7) | **Fits** |
 | Filter item 1: *reality is the authority; the log adapts* | Selection: the environment decides which records persist; the genome adapts (F3) | **Fits**, at the generation scale |
 | Container rule: *re-form, do not overwrite* | Mismatch repair and degradation **overwrite or erase**; the error and the old state are not kept (B1, C1–C3) | **Counter-instance** → IG-03 |
-| Layer I.G (the Capsule): *nothing is discarded* | Erasure at every level; most sequence is not maintained (N5) | **Candidate conflict** → IG-01 |
+| Layer I.G (the Capsule): *nothing is discarded* | Erasure at every level; most sequence is not maintained (N5) | Fails for the functional half (b), consistent with the audit's grade (F-067 / CLAIM-021); the physical half (a) is not tested here → IG-01 |
 | Shepherd's Way step 03, *Gather*: *filter nothing* | The cell filters at intake (A); its variation, by contrast, enters unfiltered and is filtered afterwards by selection (F1 → F3) | **Split by scale** → IG-02 |
 | Filter item 3: *concentration discipline* | No clear counterpart found yet | Open |
 
