@@ -21,6 +21,14 @@ Adds a working area for breaking the eukaryotic cell into its processes and runn
 - **Blocker found:** Deep-Lens steps E, F and J (v5.2 §1) assume an operator and cannot be completed honestly at molecular scale. The pilot stops at step E, per the invariant run form.
 - **Not changed:** no released version, no `framework/` file, no container (container population is Reality Audit Phase 7). No variable moved, so no Iteration Ledger row. One narrative word in Stage 24 ("deliberately") was noted; the Reality Audit's STAGE-024 already covers it.
 
+### 2026-09-28 — The repository as an Agent Skill
+
+Packages the whole repository as the `gfunnel-methodology` Agent Skill so an AI can load and use all of it on demand. **Navigation and tooling only.**
+
+- **Added:** [`skills/gfunnel-methodology/`](skills/gfunnel-methodology/SKILL.md): `SKILL.md` (the eight-rule protocol from `AGENTS.md`, the prohibitions, a workflow router, a corpus map, the credit line), `workflows/` (answer · run-algorithm · derive · iterate · reality-audit · integrate), and `SECTIONS.md` (generated, line-numbered index of every section of v5.1–v5.4 and the long working files). [`skills/README.md`](skills/README.md): install guide for Claude Code, the plugin marketplace, claude.ai, the API and other agents. [`tools/build_skill.py`](tools/build_skill.py): regenerates the index, checks the skill (`--check`), and builds a portable bundle with every repo file (`dist/`, git-ignored). `.claude/skills/gfunnel-methodology/SKILL.md` (Claude Code entry point in a clone) and `.claude-plugin/` (plugin + marketplace manifests).
+- **Linked from:** `README.md`, `llms.txt`, `AGENTS.md` (one pointer under the load order), `docs/ai-integration.md`, `tools/README.md`.
+- **Not changed:** no released version, no `framework/` file, no canonical text. No variable moved, so no Iteration Ledger row. The workflows restate canon and route into it; they add no framework content.
+
 ### 2026-09-24 — Reality Audit, Phase 0 (foundation)
 
 Adds the working areas for the Reality Audit, which compares canon against measured reality item by item. **All of it is derivation / work-in-progress, not canon.**

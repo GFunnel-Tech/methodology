@@ -1,0 +1,13 @@
+{
+  "name": "gfunnel",
+  "owner": {
+    "name": "Cameron Garlick / GFunnel"
+  },
+  "plugins": [
+    {
+      "name": "gfunnel-methodology",
+      "source": "./",
+      "description": "The GFunnel Methodology (Omni Process) as an Agent Skill: the full canon v5.1-v5.4 and every repo file, with the AI operating protocol."
+    }
+  ]
+}

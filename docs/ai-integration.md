@@ -16,6 +16,8 @@ How to load the GFunnel Methodology into AI systems — assistants, agents, RAG 
 
 **2. Map-first (medium window).** Load `AGENTS.md` + `framework/README.md` + `framework/layers.md` + `framework/registers.md` (+ `framework/gaps.md` if v5.4 is in scope). Fetch individual layer text on demand from `versions/v5.1/...`.
 
+**2b. Agent Skill (Claude Code, claude.ai, Claude API).** The repository ships as the `gfunnel-methodology` skill: a router with this protocol, six task workflows, and a line-numbered section index, so the model loads only the section it needs. See [`skills/README.md`](../skills/README.md) for installation on each surface.
+
 **3. RAG / retrieval.** Chunk the canonical version files by **heading** (each `##`/`###` is a natural unit). Recommended metadata per chunk: `version`, `layer` (e.g. `I.G`), `section_title`, `anchor`. Retrieve by symptom → layer using the router in [`framework/algorithms.md`](../framework/algorithms.md). Keep `AGENTS.md` out of the retrieval index and pin it as a system instruction instead.
 
 ## System-prompt seed (copy/paste)

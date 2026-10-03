@@ -1,0 +1,11 @@
+{
+  "name": "gfunnel-methodology",
+  "version": "5.4.0",
+  "description": "The GFunnel Methodology (Omni Process) as an Agent Skill: the full canon v5.1-v5.4, maps, registers, tests, Reality Audit, and the AI operating protocol.",
+  "author": {
+    "name": "Cameron Garlick / GFunnel"
+  },
+  "homepage": "https://github.com/GFunnel-Tech/methodology",
+  "repository": "https://github.com/GFunnel-Tech/methodology",
+  "license": "CC-BY-4.0"
+}
