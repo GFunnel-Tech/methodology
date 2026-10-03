@@ -1,0 +1,134 @@
+{
+  "base_year": 2025,
+  "level1": {
+    "rows": [
+      {
+        "name": "WMAP (Wilkinson Microwave Anisotropy Probe)",
+        "audit_use": "CMB; Stages 3-6",
+        "low": 316873031.496063,
+        "high": 316873031.496063,
+        "source_type": "secondary"
+      },
+      {
+        "name": "Planck (ESA)",
+        "audit_use": "H0, Omega_m, Lambda; constants + Stages 3-6",
+        "low": 1463800180.6215243,
+        "high": 1463800180.6215243,
+        "source_type": "primary"
+      },
+      {
+        "name": "Hubble Space Telescope (lifetime incl. servicing)",
+        "audit_use": "SH0ES H0 distance ladder",
+        "low": 19009809203.970917,
+        "high": 22303274122.924206,
+        "source_type": "primary"
+      },
+      {
+        "name": "LHC (accelerator) + ATLAS + CMS",
+        "audit_use": "Higgs mass; Stage 3",
+        "low": 5988948447.342842,
+        "high": 18579513184.142445,
+        "source_type": "primary"
+      },
+      {
+        "name": "RHIC (Relativistic Heavy Ion Collider)",
+        "audit_use": "Quark-gluon plasma; Stage 4",
+        "low": 1192309909.9639857,
+        "high": 1292796320.5282114,
+        "source_type": "primary"
+      },
+      {
+        "name": "LIGO (and Virgo)",
+        "audit_use": "GW170817 neutron-star merger heavy elements; Stage 8",
+        "low": 773093626.2464545,
+        "high": 956333910.8314347,
+        "source_type": "primary"
+      },
+      {
+        "name": "OSIRIS-REx",
+        "audit_use": "Bennu samples; Stage 10",
+        "low": 1077714816.443607,
+        "high": 1319257107.0843766,
+        "source_type": "primary"
+      },
+      {
+        "name": "Human Genome Project",
+        "audit_use": "Genome/phylogeny; Stages 14-31",
+        "low": 6382129955.947137,
+        "high": 6382129955.947137,
+        "source_type": "primary"
+      },
+      {
+        "name": "Super-Kamiokande",
+        "audit_use": "Neutrino oscillation, lepton number, proton decay limits",
+        "low": 152795282.40088108,
+        "high": 236375183.55359766,
+        "source_type": "secondary"
+      },
+      {
+        "name": "KamLAND / KamLAND-Zen",
+        "audit_use": "Neutrino oscillation; 0vbb lepton-number limit (KamLAND-Zen)",
+        "low": 46528727.07059477,
+        "high": 46528727.07059477,
+        "source_type": "primary"
+      },
+      {
+        "name": "DESI (Dark Energy Spectroscopic Instrument)",
+        "audit_use": "Dark energy; Stages 81-84",
+        "low": 69660130.36540179,
+        "high": 93294817.45366311,
+        "source_type": "primary"
+      },
+      {
+        "name": "Cassini-Huygens (added: audit uses Cassini PPN-gamma test)",
+        "audit_use": "GR / Einstein field equations: PPN gamma from Cassini radio Doppler (CONST-einstein-field-equations)",
+        "low": 4281715812.663185,
+        "high": 5122298058.093995,
+        "source_type": "primary"
+      },
+      {
+        "name": "International Space Station (U.S. total)",
+        "audit_use": "Stage 63 (one fact)",
+        "low": 106074082522.30333,
+        "high": 106074082522.30333,
+        "source_type": "primary"
+      }
+    ],
+    "total": {
+      "low": 146829461646.83594,
+      "high": 164186557122.05057
+    },
+    "total_excluding_iss": {
+      "low": 40755379124.53259,
+      "high": 58112474599.747246
+    },
+    "excluded": {
+      "cobe": "held open \u2014 only a $30M approval cap was sourced, not an actual cost",
+      "borexino": "held open \u2014 no cost found",
+      "jwst": "not yet used by the audit (future Phase 9 re-audits)",
+      "nist": "an annual budget, not a facility total \u2014 reported separately"
+    }
+  },
+  "level2": {
+    "global_gerd": {
+      "sum": 62765529789596.56,
+      "from": 1996,
+      "to": 2023
+    },
+    "global_basic_proxy": {
+      "sum": 10446289516805.266,
+      "from": 1996,
+      "to": 2023
+    },
+    "us_federal_rd": {
+      "sum": 10245483863555.805,
+      "from": 1949,
+      "to": 2025
+    },
+    "nih": {
+      "sum": 1283613299790.9194,
+      "from": 1996,
+      "to": 2025
+    }
+  }
+}

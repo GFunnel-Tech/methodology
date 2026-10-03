@@ -1,0 +1,2393 @@
+[
+  {
+    "id": "STAGE-001",
+    "canon_label": "Unmanifest / Pre-Geometric Ground",
+    "knowledge_basis": "facility",
+    "programs": [
+      "planck",
+      "bicep-keck",
+      "pdg",
+      "nist"
+    ],
+    "n_studies": 1,
+    "field": "astronomy",
+    "note": "Edge of measurement: Planck z* (via PDG), BICEP/Keck r limit, CODATA Planck units; one reheating-bound study."
+  },
+  {
+    "id": "STAGE-002",
+    "canon_label": "Vacuum Fluctuation / First Vibration",
+    "knowledge_basis": "facility",
+    "programs": [
+      "planck",
+      "pdg"
+    ],
+    "n_studies": 3,
+    "field": "physics",
+    "note": "Three Casimir-force experiments; n_s, A_s, rho_Lambda from Planck 2018 (partly via PDG)."
+  },
+  {
+    "id": "STAGE-003",
+    "canon_label": "Symmetry Breaking / Inflation",
+    "knowledge_basis": "facility",
+    "programs": [
+      "planck",
+      "bicep-keck",
+      "lhc",
+      "pdg"
+    ],
+    "n_studies": 2,
+    "field": "astronomy",
+    "note": "n_s, curvature, cosmic strings (Planck), r (BICEP/Keck), Higgs mass (ATLAS/CMS); lattice + reheating studies."
+  },
+  {
+    "id": "STAGE-004",
+    "canon_label": "Quark-Gluon Plasma → Hadronization",
+    "knowledge_basis": "facility",
+    "programs": [
+      "rhic",
+      "lhc"
+    ],
+    "n_studies": 2,
+    "field": "physics",
+    "note": "QGP measured at RHIC (STAR) and LHC (ALICE); lattice-QCD and reheating-bound studies."
+  },
+  {
+    "id": "STAGE-005",
+    "canon_label": "Big Bang Nucleosynthesis",
+    "knowledge_basis": "facility",
+    "programs": [
+      "planck",
+      "pdg"
+    ],
+    "n_studies": 0,
+    "field": "astronomy",
+    "note": "BBN abundances (He, D, Li) via PDG compilation of astronomical surveys; CMB baryon density from Planck."
+  },
+  {
+    "id": "STAGE-006",
+    "canon_label": "Recombination / Photon Decoupling",
+    "knowledge_basis": "facility",
+    "programs": [
+      "cobe",
+      "wmap",
+      "planck",
+      "pdg"
+    ],
+    "n_studies": 0,
+    "field": "astronomy",
+    "note": "CMB temperature/spectrum from COBE-FIRAS (+WMAP calibration); z*, theta* from Planck."
+  },
+  {
+    "id": "STAGE-007",
+    "canon_label": "First Stars / Stellar Nucleosynthesis",
+    "knowledge_basis": "facility",
+    "programs": [
+      "borexino",
+      "jwst",
+      "eso-vlt",
+      "planck",
+      "pdg"
+    ],
+    "n_studies": 1,
+    "field": "astronomy",
+    "note": "Solar neutrinos (Borexino), z=14 galaxy (JWST/JADES), kilonova Sr (VLT), reionization (Planck); one stellar study."
+  },
+  {
+    "id": "STAGE-008",
+    "canon_label": "Supernova Seeding",
+    "knowledge_basis": "facility",
+    "programs": [
+      "ligo",
+      "nustar",
+      "eso-vlt"
+    ],
+    "n_studies": 1,
+    "field": "astronomy",
+    "note": "GW170817 kilonova (LIGO trigger, VLT spectra), Cas A 44Ti (NuSTAR); one deep-sea 60Fe study."
+  },
+  {
+    "id": "STAGE-009",
+    "canon_label": "Molecular Cloud Collapse / Planetary Formation",
+    "knowledge_basis": "facility",
+    "programs": [
+      "alma"
+    ],
+    "n_studies": 2,
+    "field": "earth-science",
+    "note": "HL Tau disk imaged by ALMA; two meteorite/planet geochronology studies (Pb-Pb, Hf-W)."
+  },
+  {
+    "id": "STAGE-010",
+    "canon_label": "Prebiotic Chemistry",
+    "knowledge_basis": "facility",
+    "programs": [
+      "osiris-rex"
+    ],
+    "n_studies": 5,
+    "field": "chemistry",
+    "note": "Bennu sample organics (OSIRIS-REx); five meteorite and Miller-Urey lab studies."
+  },
+  {
+    "id": "STAGE-011",
+    "canon_label": "RNA World / Self-Replicating Molecules",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 4,
+    "field": "biochemistry",
+    "note": "Ribosome structure, ribozyme polymerase, cross-replicating RNA, Archean-mimetic metabolism: lab studies."
+  },
+  {
+    "id": "STAGE-012",
+    "canon_label": "Lipid Bilayer / Protocell Formation",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "biochemistry",
+    "note": "Two fatty-acid vesicle lab studies; protocell origin itself held open."
+  },
+  {
+    "id": "STAGE-013",
+    "canon_label": "Chemiosmosis at Alkaline Hydrothermal Vents",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 4,
+    "field": "biochemistry",
+    "note": "Lost City vent field study, microfluidic pH-gradient chemistry, a hypothesis paper, LUCA inference."
+  },
+  {
+    "id": "STAGE-014",
+    "canon_label": "LUCA — Last Universal Common Ancestor",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 4,
+    "field": "genetics-evolution",
+    "note": "Phylogenetic model-selection and divergence-time studies of universal common ancestry."
+  },
+  {
+    "id": "STAGE-015",
+    "canon_label": "Glycolysis",
+    "knowledge_basis": "reference",
+    "programs": [
+      "kegg"
+    ],
+    "n_studies": 4,
+    "field": "biochemistry",
+    "note": "Pathway equations from KEGG; four studies on archaeal variants, aldolase, prebiotic chemistry, LUCA."
+  },
+  {
+    "id": "STAGE-016",
+    "canon_label": "Fermentation / Anaerobic Respiration",
+    "knowledge_basis": "reference",
+    "programs": [
+      "kegg"
+    ],
+    "n_studies": 2,
+    "field": "biochemistry",
+    "note": "LDH reaction from KEGG; two anaerobic-respiration studies."
+  },
+  {
+    "id": "STAGE-017",
+    "canon_label": "Oxygenic Photosynthesis (~2.4 Bya)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 7,
+    "field": "earth-science",
+    "note": "Geochemical/geochronological studies of the Great Oxidation Event plus one genomic inference."
+  },
+  {
+    "id": "STAGE-018",
+    "canon_label": "Endosymbiosis / Mitochondrial Acquisition",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 3,
+    "field": "genetics-evolution",
+    "note": "Two phylogenomic studies and one Asgard archaeon cultivation study."
+  },
+  {
+    "id": "STAGE-019",
+    "canon_label": "Pyruvate Oxidation → Acetyl-CoA",
+    "knowledge_basis": "reference",
+    "programs": [
+      "kegg"
+    ],
+    "n_studies": 0,
+    "field": "biochemistry",
+    "note": "Pyruvate dehydrogenase reaction and module from KEGG only."
+  },
+  {
+    "id": "STAGE-020",
+    "canon_label": "Krebs Cycle",
+    "knowledge_basis": "reference",
+    "programs": [
+      "kegg"
+    ],
+    "n_studies": 0,
+    "field": "biochemistry",
+    "note": "Krebs cycle reactions from KEGG only."
+  },
+  {
+    "id": "STAGE-021",
+    "canon_label": "Electron Transport Chain",
+    "knowledge_basis": "studies",
+    "programs": [
+      "kegg"
+    ],
+    "n_studies": 5,
+    "field": "biochemistry",
+    "note": "Five respiratory-chain studies/reviews; one KEGG reaction."
+  },
+  {
+    "id": "STAGE-022",
+    "canon_label": "ATP Synthase / Chemiosmotic Coupling",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 4,
+    "field": "biochemistry",
+    "note": "Single-molecule F1 rotation, c-ring structure, P/O ratio review."
+  },
+  {
+    "id": "STAGE-023",
+    "canon_label": "ATP Hydrolysis / Cellular Work",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 6,
+    "field": "biochemistry",
+    "note": "In-vivo ATP free energy, F1 rotation, Na/K pump, ribosome, tRNA synthetase studies."
+  },
+  {
+    "id": "STAGE-024",
+    "canon_label": "Ion Gradients / Membrane Potentials",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 4,
+    "field": "cell-biology",
+    "note": "Na/K-ATPase and plasma-membrane pump structure studies, one review, respiratory proton gradient."
+  },
+  {
+    "id": "STAGE-025",
+    "canon_label": "Multicellularity",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 5,
+    "field": "genetics-evolution",
+    "note": "Phylogenetic reviews, yeast apoptosis study, two fossil-dating studies (Francevillian, Bangiomorpha)."
+  },
+  {
+    "id": "STAGE-026",
+    "canon_label": "Tissue Differentiation / Gene Expression",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "cell-biology",
+    "note": "Yamanaka iPSC reprogramming study."
+  },
+  {
+    "id": "STAGE-027",
+    "canon_label": "Organ Systems / Homeostasis",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "other",
+    "note": "One large outpatient body-temperature cohort (BMJ 2017)."
+  },
+  {
+    "id": "STAGE-028",
+    "canon_label": "Nervous System",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 3,
+    "field": "neuroscience",
+    "note": "Ctenophore nervous-system genome study, bacterial electrical signalling, molecular-clock study."
+  },
+  {
+    "id": "STAGE-029",
+    "canon_label": "Sensory Transduction",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 3,
+    "field": "neuroscience",
+    "note": "Hair-cell latency, bacteriorhodopsin, E. coli chemotaxis lab studies."
+  },
+  {
+    "id": "STAGE-030",
+    "canon_label": "Action Potential / Neural Firing",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 4,
+    "field": "neuroscience",
+    "note": "Genetic-code review, Nirenberg codon study, Paramecium and C. elegans action-potential studies."
+  },
+  {
+    "id": "STAGE-031",
+    "canon_label": "Synaptic Transmission",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 3,
+    "field": "neuroscience",
+    "note": "SNARE origin study, molecular-clock study, Jebel Irhoud fossil dating."
+  },
+  {
+    "id": "STAGE-032",
+    "canon_label": "Neural Network Pattern Recognition",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "neuroscience",
+    "note": "Concept-cell recordings (human MTL) and Hubel & Wiesel 1959."
+  },
+  {
+    "id": "STAGE-033",
+    "canon_label": "Memory Formation",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "neuroscience",
+    "note": "Bliss & Lomo LTP and optogenetic memory study."
+  },
+  {
+    "id": "STAGE-034",
+    "canon_label": "Emotion / Limbic Processing",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "neuroscience",
+    "note": "Amygdala value-coding recordings and a conceptual review."
+  },
+  {
+    "id": "STAGE-035",
+    "canon_label": "Cognition / Belief Filters",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "neuroscience",
+    "note": "Rao & Ballard predictive-coding model (computational study)."
+  },
+  {
+    "id": "STAGE-036",
+    "canon_label": "Self-Awareness — “I AM”",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 3,
+    "field": "psychology",
+    "note": "Three mirror mark-test studies (chimpanzee, elephant, cleaner wrasse)."
+  },
+  {
+    "id": "STAGE-037",
+    "canon_label": "Co-Creator Identity Activated",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Framework construct (Omni Force, Third Kingdom); nothing measured."
+  },
+  {
+    "id": "STAGE-038",
+    "canon_label": "Will / Intention / Cause-Setting",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 3,
+    "field": "neuroscience",
+    "note": "Libet readiness-potential study and two follow-ups."
+  },
+  {
+    "id": "STAGE-039",
+    "canon_label": "Language / Symbolic Externalization",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "neuroscience",
+    "note": "Speaker-listener fMRI coupling and Jebel Irhoud dating; language origin held open."
+  },
+  {
+    "id": "STAGE-040",
+    "canon_label": "Relationships / Family",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "social-science",
+    "note": "Forager co-residence study (32 societies) and fMRI coupling study."
+  },
+  {
+    "id": "STAGE-041",
+    "canon_label": "Communities / Tribes",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "social-science",
+    "note": "Forager band-size study; first religious structure held open."
+  },
+  {
+    "id": "STAGE-042",
+    "canon_label": "Organizations / Businesses",
+    "knowledge_basis": "facility",
+    "programs": [
+      "us-census-bfs"
+    ],
+    "n_studies": 0,
+    "field": "economics",
+    "note": "US Census Business Formation Statistics; nine-department claim is a framework construct."
+  },
+  {
+    "id": "STAGE-043",
+    "canon_label": "Cities / Civil Infrastructure",
+    "knowledge_basis": "facility",
+    "programs": [
+      "un-wup"
+    ],
+    "n_studies": 0,
+    "field": "social-science",
+    "note": "World Bank urbanization series sourced from UN World Urbanization Prospects."
+  },
+  {
+    "id": "STAGE-044",
+    "canon_label": "Civilizations",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "social-science",
+    "note": "Seshat Global History Databank analysis (one PNAS paper)."
+  },
+  {
+    "id": "STAGE-045",
+    "canon_label": "Religious / Spiritual Systems",
+    "knowledge_basis": "facility",
+    "programs": [
+      "pew-global-religion"
+    ],
+    "n_studies": 0,
+    "field": "social-science",
+    "note": "Pew global religious landscape estimates built from >2,500 censuses and surveys."
+  },
+  {
+    "id": "STAGE-046",
+    "canon_label": "Recognition / The Algorithm Names Itself",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only repository existence measured (plus Wiener 1948 as prior art); universal algorithm held open."
+  },
+  {
+    "id": "STAGE-047",
+    "canon_label": "The Omni Force as Conscious System",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Framework construct; nothing measured."
+  },
+  {
+    "id": "STAGE-048",
+    "canon_label": "Death as First Kingdom Event",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "neuroscience",
+    "note": "Post-cardiac-arrest EEG (rats) and BrainEx pig-brain study; afterlife held open."
+  },
+  {
+    "id": "STAGE-049",
+    "canon_label": "Cycle Restart at Higher Baseline",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Framework construct (cycle restart); nothing measured."
+  },
+  {
+    "id": "STAGE-050",
+    "canon_label": "The Algorithm Becomes Teachable",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only this repository/registry inspected; no external knowledge gained (projected stage)."
+  },
+  {
+    "id": "STAGE-051",
+    "canon_label": "Methodology Externalization",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only this repository/registry inspected; no external knowledge gained (projected stage)."
+  },
+  {
+    "id": "STAGE-052",
+    "canon_label": "Tool-Building From The Framework",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only this repository/registry inspected; no external knowledge gained (projected stage)."
+  },
+  {
+    "id": "STAGE-053",
+    "canon_label": "Network Formation Among Recognizers",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only this repository/registry inspected; no external knowledge gained (projected stage)."
+  },
+  {
+    "id": "STAGE-054",
+    "canon_label": "Cross-Domain Translation Layer",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only this repository/registry inspected; no external knowledge gained (projected stage)."
+  },
+  {
+    "id": "STAGE-055",
+    "canon_label": "Predictive Capacity Confirmed",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only this repository/registry inspected; no external knowledge gained (projected stage)."
+  },
+  {
+    "id": "STAGE-056",
+    "canon_label": "Institutional Adoption",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only this repository/registry inspected; no external knowledge gained (projected stage)."
+  },
+  {
+    "id": "STAGE-057",
+    "canon_label": "Counter-Framework Emergence",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-058",
+    "canon_label": "Synthesis Across Frameworks",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-059",
+    "canon_label": "Civilizational Restructuring Around The Algorithm",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only this repository/registry inspected; no external knowledge gained (projected stage)."
+  },
+  {
+    "id": "STAGE-060",
+    "canon_label": "Planetary Coordination",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-061",
+    "canon_label": "Resource Throughput Optimization at Civilizational Scale",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Global energy sources (EI, IEA) blocked; value held open, nothing measured in audit."
+  },
+  {
+    "id": "STAGE-062",
+    "canon_label": "Apoptosis Made Cultural",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-063",
+    "canon_label": "Expansion Beyond Origin Substrate",
+    "knowledge_basis": "facility",
+    "programs": [
+      "iss"
+    ],
+    "n_studies": 0,
+    "field": "other",
+    "note": "Continuous human occupation of the ISS (NASA facts page)."
+  },
+  {
+    "id": "STAGE-064",
+    "canon_label": "Substrate-Independent Coordination",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-065",
+    "canon_label": "Engineered Biology",
+    "knowledge_basis": "facility",
+    "programs": [
+      "exa-cel-clinical-program"
+    ],
+    "n_studies": 0,
+    "field": "genetics-evolution",
+    "note": "FDA approval of first CRISPR therapy (Casgevy) rests on its clinical program; germline editing held open."
+  },
+  {
+    "id": "STAGE-066",
+    "canon_label": "Engineered Cognition",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "neuroscience",
+    "note": "One implanted speech-neuroprosthesis study (Card et al., NEJM 2024)."
+  },
+  {
+    "id": "STAGE-067",
+    "canon_label": "Substrate-Portable Consciousness",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Operational measure of consciousness / Third Kingdom awareness held open."
+  },
+  {
+    "id": "STAGE-068",
+    "canon_label": "Multi-Generational Awareness",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-069",
+    "canon_label": "Consciousness Interconnection",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Operational measure of consciousness / Third Kingdom awareness held open."
+  },
+  {
+    "id": "STAGE-070",
+    "canon_label": "Collective Recognition",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Consciousness measurement held open; only adoption registry inspected."
+  },
+  {
+    "id": "STAGE-071",
+    "canon_label": "Civilizational Apoptosis Capacity",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-072",
+    "canon_label": "Inter-Civilizational Coordination",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "No other civilizations detected; nothing retrieved."
+  },
+  {
+    "id": "STAGE-073",
+    "canon_label": "Substrate-Building Civilizations",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-074",
+    "canon_label": "Cosmological Engineering",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-075",
+    "canon_label": "Awareness Across Cosmological Horizons",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Operational measure of consciousness / Third Kingdom awareness held open."
+  },
+  {
+    "id": "STAGE-076",
+    "canon_label": "Recognition Of The Omni Force As Conscious Counterpart",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Operational measure of consciousness / Third Kingdom awareness held open."
+  },
+  {
+    "id": "STAGE-077",
+    "canon_label": "The Algorithm Authoring Successor Algorithms",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only this repository/registry inspected; no external knowledge gained (projected stage)."
+  },
+  {
+    "id": "STAGE-078",
+    "canon_label": "Recursive Self-Authoring",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-079",
+    "canon_label": "Total Substrate Integration",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Operational measure of consciousness / Third Kingdom awareness held open."
+  },
+  {
+    "id": "STAGE-080",
+    "canon_label": "Cycle Completion at Maximum Density",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-081",
+    "canon_label": "Contraction Initiation",
+    "knowledge_basis": "facility",
+    "programs": [
+      "planck",
+      "desi"
+    ],
+    "n_studies": 0,
+    "field": "astronomy",
+    "note": "H0, Omega_m from Planck 2018; evolving-dark-energy preference from DESI DR2."
+  },
+  {
+    "id": "STAGE-082",
+    "canon_label": "Information Conservation Through Dissolution",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-083",
+    "canon_label": "Seed State For The Next Cycle",
+    "knowledge_basis": "facility",
+    "programs": [
+      "planck"
+    ],
+    "n_studies": 0,
+    "field": "astronomy",
+    "note": "H0, Omega_m, q0 from Planck 2018 only; seed state held open."
+  },
+  {
+    "id": "STAGE-084",
+    "canon_label": "Re-Emergence at Higher Baseline",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-085",
+    "canon_label": "The Spiral As Infinite Recursion",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-086",
+    "canon_label": "Cross-Cycle Information Transfer",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-087",
+    "canon_label": "Meta-Cycle Awareness",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Operational measure of consciousness / Third Kingdom awareness held open."
+  },
+  {
+    "id": "STAGE-088",
+    "canon_label": "Inter-Cycle Coordination",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-089",
+    "canon_label": "The Total Expression Of The Omni Force",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-090",
+    "canon_label": "Multi-Omni Coordination",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-091",
+    "canon_label": "Substrate Beyond Physical-Mental Distinction",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Operational measure of consciousness / Third Kingdom awareness held open."
+  },
+  {
+    "id": "STAGE-092",
+    "canon_label": "The Algorithm’s Final Form",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-093",
+    "canon_label": "The Variable Principle Applied To The Variable Principle",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-094",
+    "canon_label": "The Axiom Beneath The Axioms",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-095",
+    "canon_label": "The Question Beneath The Question",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-096",
+    "canon_label": "The Reason Beneath The Reason",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-097",
+    "canon_label": "The Recognition Beneath Recognition",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Operational measure of consciousness / Third Kingdom awareness held open."
+  },
+  {
+    "id": "STAGE-098",
+    "canon_label": "The Variable That Cannot Be Named",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "mathematics",
+    "note": "Goedel first incompleteness theorem (via SEP)."
+  },
+  {
+    "id": "STAGE-099",
+    "canon_label": "The Process Beyond Process",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "STAGE-100",
+    "canon_label": "The Unmanifest That Exceeds The Unmanifest Of Stage 1",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Projected or metaphysical stage; no primary source applicable."
+  },
+  {
+    "id": "CONST-allometric-scaling",
+    "canon_label": "Allometric Scaling Laws",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "other",
+    "note": "Metabolic-scaling studies across prokaryotes to mammals."
+  },
+  {
+    "id": "CONST-angular-momentum-conservation",
+    "canon_label": "Angular Momentum Conservation",
+    "knowledge_basis": "reference",
+    "programs": [
+      "pdg"
+    ],
+    "n_studies": 1,
+    "field": "physics",
+    "note": "Noether theorem (translation paper) plus PDG electron spin listing."
+  },
+  {
+    "id": "CONST-atp-yield-per-glucose",
+    "canon_label": "ATP Yield Per Glucose",
+    "knowledge_basis": "studies",
+    "programs": [
+      "kegg"
+    ],
+    "n_studies": 1,
+    "field": "biochemistry",
+    "note": "Hinkle 2005 P/O review is core; stoichiometry from KEGG."
+  },
+  {
+    "id": "CONST-baryon-number-conservation",
+    "canon_label": "Baryon Number Conservation (approximate)",
+    "knowledge_basis": "facility",
+    "programs": [
+      "super-kamiokande",
+      "pdg"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Proton-lifetime limits in PDG tables, dominated by Super-Kamiokande."
+  },
+  {
+    "id": "CONST-bekenstein-bound",
+    "canon_label": "Bekenstein Bound",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 2,
+    "field": "physics",
+    "note": "Theoretical bound (Bousso, Casini papers); no measurement."
+  },
+  {
+    "id": "CONST-boltzmann-constant",
+    "canon_label": "k_B — Boltzmann Constant",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "CODATA 2022 value (exact since 2019 SI)."
+  },
+  {
+    "id": "CONST-bremermann-limit",
+    "canon_label": "Bremermann’s Limit",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Computed from CODATA c and h."
+  },
+  {
+    "id": "CONST-brooks-law",
+    "canon_label": "Brooks’s Law",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "computer-science",
+    "note": "Two software-project studies cited as bibliographic records only; law held open."
+  },
+  {
+    "id": "CONST-charge-conservation",
+    "canon_label": "Charge Conservation",
+    "knowledge_basis": "facility",
+    "programs": [
+      "borexino",
+      "pdg"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Electron-lifetime limit (Borexino) and charge limits compiled by PDG."
+  },
+  {
+    "id": "CONST-church-turing-thesis",
+    "canon_label": "Church-Turing Thesis",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "computer-science",
+    "note": "Thesis resting on computability proofs; SEP only."
+  },
+  {
+    "id": "CONST-constants-origin-variable",
+    "canon_label": "◈ VARIABLE — origin of the physical constants",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Origin of constants held open; only values are measured (covered elsewhere)."
+  },
+  {
+    "id": "CONST-conway-law",
+    "canon_label": "Conway’s Law (organizational)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "social-science",
+    "note": "Colfer & Baldwin review (aggregating 142 studies) plus one product-architecture study."
+  },
+  {
+    "id": "CONST-cosmological-constant",
+    "canon_label": "Λ — Cosmological Constant",
+    "knowledge_basis": "facility",
+    "programs": [
+      "planck",
+      "hubble"
+    ],
+    "n_studies": 0,
+    "field": "astronomy",
+    "note": "Lambda from Planck 2018 H0, Omega_m; q0 from SH0ES (HST) distance ladder."
+  },
+  {
+    "id": "CONST-cpt-symmetry",
+    "canon_label": "CPT Symmetry",
+    "knowledge_basis": "reference",
+    "programs": [
+      "pdg"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "CPT test limits (kaon, e+/e-, mu+/mu-) compiled by PDG."
+  },
+  {
+    "id": "CONST-diminishing-marginal-returns",
+    "canon_label": "Diminishing Marginal Returns",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "other",
+    "note": "Wheat nitrogen-response meta-analysis and a 9-year on-farm trial (agronomy)."
+  },
+  {
+    "id": "CONST-dunbar-number",
+    "canon_label": "Dunbar’s Number",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "social-science",
+    "note": "Dunbar 1993 neocortex-ratio study and Lindenfors 2021 re-estimate."
+  },
+  {
+    "id": "CONST-einstein-field-equations",
+    "canon_label": "Einstein Field Equations",
+    "knowledge_basis": "facility",
+    "programs": [
+      "cassini",
+      "messenger",
+      "ligo",
+      "fermi",
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "PPN gamma (Cassini), PPN beta/perihelion (MESSENGER), GW speed (LIGO/Virgo + Fermi GRB), CODATA G."
+  },
+  {
+    "id": "CONST-electron-mass",
+    "canon_label": "m_e — Electron Mass",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "CODATA 2022 value."
+  },
+  {
+    "id": "CONST-elementary-charge",
+    "canon_label": "e — Elementary Charge",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "CODATA 2022 value (exact since 2019 SI)."
+  },
+  {
+    "id": "CONST-energy-conservation",
+    "canon_label": "Energy Conservation (1st Law of Thermodynamics)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "physics",
+    "note": "Noether theorem and one direct E=mc2 test (Rainville 2005)."
+  },
+  {
+    "id": "CONST-eulers-number",
+    "canon_label": "e — Euler's Number",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "mathematics",
+    "note": "Mathematical constant; computed by audit script."
+  },
+  {
+    "id": "CONST-fibonacci-sequence",
+    "canon_label": "Fibonacci Sequence — Recursive Growth Sequence",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "mathematics",
+    "note": "Definition computed; one citizen-science sunflower phyllotaxis study."
+  },
+  {
+    "id": "CONST-fine-structure-constant",
+    "canon_label": "α — Fine-Structure Constant",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "CODATA 2022 value."
+  },
+  {
+    "id": "CONST-game-of-life-rules",
+    "canon_label": "Conway's Game of Life Rules — Cellular Automaton",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "computer-science",
+    "note": "Rules and patterns computed; Gardner 1970 publication record."
+  },
+  {
+    "id": "CONST-genetic-code-universality",
+    "canon_label": "Genetic Code Universality",
+    "knowledge_basis": "reference",
+    "programs": [
+      "ncbi"
+    ],
+    "n_studies": 0,
+    "field": "genetics-evolution",
+    "note": "NCBI genetic-code tables (gc.prt)."
+  },
+  {
+    "id": "CONST-godel-first-incompleteness",
+    "canon_label": "Gödel’s First Incompleteness Theorem",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "mathematics",
+    "note": "Theorem (via SEP)."
+  },
+  {
+    "id": "CONST-godel-second-incompleteness",
+    "canon_label": "Gödel’s Second Incompleteness Theorem",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "mathematics",
+    "note": "Theorem (via SEP)."
+  },
+  {
+    "id": "CONST-golden-ratio",
+    "canon_label": "φ (phi) — Golden Ratio",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "mathematics",
+    "note": "Mathematical constant; Markowsky 1992 on aesthetic claims."
+  },
+  {
+    "id": "CONST-goodhart-law",
+    "canon_label": "Goodhart’s Law",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "economics",
+    "note": "One bibliographic record; law held open."
+  },
+  {
+    "id": "CONST-gravitational-constant",
+    "canon_label": "G — Gravitational Constant",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "CODATA 2022 value."
+  },
+  {
+    "id": "CONST-halting-problem",
+    "canon_label": "Halting Problem (Turing)",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "computer-science",
+    "note": "Turing undecidability theorem (via SEP)."
+  },
+  {
+    "id": "CONST-hardy-weinberg-equilibrium",
+    "canon_label": "Hardy-Weinberg Equilibrium",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "genetics-evolution",
+    "note": "Hardy 1908 derivation; audit recomputes."
+  },
+  {
+    "id": "CONST-hayflick-limit",
+    "canon_label": "Hayflick Limit",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 6,
+    "field": "cell-biology",
+    "note": "Cell-culture senescence studies (Hayflick, Rubin, Wang, Shay & Wright)."
+  },
+  {
+    "id": "CONST-heisenberg-uncertainty",
+    "canon_label": "Heisenberg Uncertainty Principle",
+    "knowledge_basis": "studies",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 2,
+    "field": "physics",
+    "note": "Kennard derivation and neutron-spin error-disturbance test; CODATA hbar."
+  },
+  {
+    "id": "CONST-holevo-theorem",
+    "canon_label": "Holevo’s Theorem",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "physics",
+    "note": "Quantum-information theorem; superdense-coding paper."
+  },
+  {
+    "id": "CONST-hox-gene-conservation",
+    "canon_label": "Hox Gene Conservation",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 3,
+    "field": "genetics-evolution",
+    "note": "Hox cluster comparative studies and molecular-clock study."
+  },
+  {
+    "id": "CONST-hubble-constant",
+    "canon_label": "H₀ — Hubble Constant",
+    "knowledge_basis": "facility",
+    "programs": [
+      "planck",
+      "hubble"
+    ],
+    "n_studies": 0,
+    "field": "astronomy",
+    "note": "H0 from Planck 2018 (CMB) and SH0ES Cepheid-SN ladder (HST)."
+  },
+  {
+    "id": "CONST-imaginary-unit",
+    "canon_label": "i — Imaginary Unit",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 4,
+    "field": "physics",
+    "note": "Mathematical definition; two real-vs-complex QM experiments and two theory papers."
+  },
+  {
+    "id": "CONST-infinity",
+    "canon_label": "∞ — Infinity",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "mathematics",
+    "note": "Mathematical concept; Goedel 1931 record."
+  },
+  {
+    "id": "CONST-information-conservation",
+    "canon_label": "Information Conservation [Black Hole Information Paradox]",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 2,
+    "field": "physics",
+    "note": "Theory only (Hawking 2005, island review); Hawking radiation unobserved."
+  },
+  {
+    "id": "CONST-invariant-10",
+    "canon_label": "10",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Count of items in canon's own text; no external measurement."
+  },
+  {
+    "id": "CONST-invariant-100",
+    "canon_label": "100",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Count of items in canon's own text; no external measurement."
+  },
+  {
+    "id": "CONST-invariant-17",
+    "canon_label": "17",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Count of items in canon's own text; no external measurement."
+  },
+  {
+    "id": "CONST-invariant-3",
+    "canon_label": "3",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Count of items in canon's own text; no external measurement."
+  },
+  {
+    "id": "CONST-invariant-4",
+    "canon_label": "4",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Count of items in canon's own text; no external measurement."
+  },
+  {
+    "id": "CONST-invariant-49",
+    "canon_label": "49",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Count of items in canon's own text; no external measurement."
+  },
+  {
+    "id": "CONST-invariant-5",
+    "canon_label": "5",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Count of items in canon's own text; no external measurement."
+  },
+  {
+    "id": "CONST-invariant-6",
+    "canon_label": "6",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Count of items in canon's own text; no external measurement."
+  },
+  {
+    "id": "CONST-invariant-7",
+    "canon_label": "7",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Count of items in canon's own text; no external measurement."
+  },
+  {
+    "id": "CONST-invariant-9",
+    "canon_label": "9",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Count of items in canon's own text; no external measurement."
+  },
+  {
+    "id": "CONST-keplers-laws",
+    "canon_label": "Kepler's Three Laws of Planetary Motion",
+    "knowledge_basis": "facility",
+    "programs": [
+      "messenger",
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Mercury perihelion (MESSENGER ranging); CODATA inputs."
+  },
+  {
+    "id": "CONST-kleiber-law",
+    "canon_label": "Kleiber’s Law",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 5,
+    "field": "other",
+    "note": "Metabolic-scaling studies (DeLong, White & Seymour, Dodds, Kolokotrones, West)."
+  },
+  {
+    "id": "CONST-krebs-cycle-stoichiometry",
+    "canon_label": "Krebs Cycle Stoichiometry",
+    "knowledge_basis": "reference",
+    "programs": [
+      "kegg"
+    ],
+    "n_studies": 0,
+    "field": "biochemistry",
+    "note": "KEGG reactions and module only."
+  },
+  {
+    "id": "CONST-landauer-principle",
+    "canon_label": "Landauer’s Principle",
+    "knowledge_basis": "studies",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 3,
+    "field": "physics",
+    "note": "Three bit-erasure experiments (colloid, feedback trap, nanomagnet); CODATA k."
+  },
+  {
+    "id": "CONST-le-chatelier-principle",
+    "canon_label": "Le Chatelier's Principle",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "chemistry",
+    "note": "Thermodynamic derivation and one J. Chem. Educ. analysis."
+  },
+  {
+    "id": "CONST-lepton-number-conservation",
+    "canon_label": "Lepton Number Conservation (approximate)",
+    "knowledge_basis": "facility",
+    "programs": [
+      "pdg",
+      "super-kamiokande",
+      "kamland",
+      "meg",
+      "borexino"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Oscillation parameters (PDG; Super-K, KamLAND), 0vbb (KamLAND-Zen), mu->e gamma (MEG), e lifetime (Borexino)."
+  },
+  {
+    "id": "CONST-lindy-effect",
+    "canon_label": "Lindy Effect",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "mathematics",
+    "note": "Pareto-lifetime derivation; one bibliographic record."
+  },
+  {
+    "id": "CONST-lucas-sequence",
+    "canon_label": "Lucas Sequence — Companion to Fibonacci",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "mathematics",
+    "note": "Sequence computed by audit script."
+  },
+  {
+    "id": "CONST-mandelbrot-set",
+    "canon_label": "Mandelbrot Set Equation — Recursive Fractal Generator",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "mathematics",
+    "note": "Computed; Shishikura boundary-dimension theorem."
+  },
+  {
+    "id": "CONST-mass-energy-equivalence",
+    "canon_label": "E = mc²",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "physics",
+    "note": "One direct test (Rainville et al. 2005, Nature)."
+  },
+  {
+    "id": "CONST-maxwells-equations",
+    "canon_label": "Maxwell's Equations (4 equations)",
+    "knowledge_basis": "reference",
+    "programs": [
+      "pdg",
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Photon mass/charge limits (PDG) and CODATA mu0."
+  },
+  {
+    "id": "CONST-metcalfe-law",
+    "canon_label": "Metcalfe’s Law",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "computer-science",
+    "note": "One Tencent/Facebook fit; an IEEE Spectrum critique."
+  },
+  {
+    "id": "CONST-miller-7-plus-minus-2",
+    "canon_label": "Rule of 7 ± 2 (Miller’s Law)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "psychology",
+    "note": "Miller 1956 and Cowan 2001 memory-span reviews."
+  },
+  {
+    "id": "CONST-momentum-conservation",
+    "canon_label": "Momentum Conservation",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "physics",
+    "note": "Noether theorem and torsion-pendulum F=ma test."
+  },
+  {
+    "id": "CONST-moore-law",
+    "canon_label": "Moore’s Law (empirical, slowing)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "computer-science",
+    "note": "Moore 1965, Nagy 2013; audit fit to compiled chip dataset."
+  },
+  {
+    "id": "CONST-newtons-first-law",
+    "canon_label": "Newton's First Law (Inertia)",
+    "knowledge_basis": "facility",
+    "programs": [
+      "microscope"
+    ],
+    "n_studies": 1,
+    "field": "physics",
+    "note": "Equivalence principle from MICROSCOPE; one torsion-pendulum study."
+  },
+  {
+    "id": "CONST-newtons-second-law",
+    "canon_label": "Newton's Second Law (F = ma)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 3,
+    "field": "physics",
+    "note": "Torsion-pendulum F=ma, Eot-Wash 1/r2, E=mc2 test."
+  },
+  {
+    "id": "CONST-newtons-third-law",
+    "canon_label": "Newton's Third Law (Action-Reaction)",
+    "knowledge_basis": "proof",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Derivation from Lorentz force with CODATA mu0; no experiment."
+  },
+  {
+    "id": "CONST-no-cloning-theorem",
+    "canon_label": "No-Cloning Theorem (Quantum)",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "physics",
+    "note": "Wootters-Zurek theorem."
+  },
+  {
+    "id": "CONST-one",
+    "canon_label": "1 — The Manifest Beginning",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "mathematics",
+    "note": "Set-theoretic definition."
+  },
+  {
+    "id": "CONST-pareto-distribution",
+    "canon_label": "Pareto Distribution (Power Law)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "computer-science",
+    "note": "Broido & Clauset network study; Clauset-Shalizi-Newman power-law test."
+  },
+  {
+    "id": "CONST-pareto-principle",
+    "canon_label": "Pareto Principle (80/20 Rule)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "mathematics",
+    "note": "Audit derivation, Moby-Dick count, Clauset et al. power-law test."
+  },
+  {
+    "id": "CONST-pi",
+    "canon_label": "π (pi) — Circle Constant",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "mathematics",
+    "note": "Mathematical constant computed."
+  },
+  {
+    "id": "CONST-planck-length",
+    "canon_label": "Planck length — Minimum Meaningful Length",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Derived from CODATA G, hbar, c."
+  },
+  {
+    "id": "CONST-planck-time",
+    "canon_label": "Planck time — Minimum Meaningful Duration",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Derived from CODATA G, hbar, c."
+  },
+  {
+    "id": "CONST-proton-mass",
+    "canon_label": "m_p — Proton Mass",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "CODATA 2022 value."
+  },
+  {
+    "id": "CONST-reduced-planck-constant",
+    "canon_label": "ℏ — Reduced Planck Constant",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "CODATA 2022 value (exact since 2019 SI)."
+  },
+  {
+    "id": "CONST-reed-law",
+    "canon_label": "Reed’s Law",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only a magazine critique cited; no measurement of the law."
+  },
+  {
+    "id": "CONST-schrodinger-equation",
+    "canon_label": "Schrödinger Equation",
+    "knowledge_basis": "studies",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 1,
+    "field": "physics",
+    "note": "One real-vs-complex QM network test; CODATA hbar."
+  },
+  {
+    "id": "CONST-second-law-thermodynamics",
+    "canon_label": "Second Law of Thermodynamics",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "physics",
+    "note": "One fluctuation-theorem colloid experiment (Wang 2002)."
+  },
+  {
+    "id": "CONST-shannon-entropy",
+    "canon_label": "Shannon Information Entropy",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "computer-science",
+    "note": "Shannon 1948 definition."
+  },
+  {
+    "id": "CONST-shannon-hartley",
+    "canon_label": "Shannon-Hartley Theorem",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "computer-science",
+    "note": "Shannon 1949 capacity theorem."
+  },
+  {
+    "id": "CONST-speed-of-light",
+    "canon_label": "c — Speed of Light",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "CODATA value (exact by SI definition)."
+  },
+  {
+    "id": "CONST-sqrt-2",
+    "canon_label": "√2 — Diagonal of Unit Square",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 2,
+    "field": "mathematics",
+    "note": "Computed; history-of-math records (von Fritz 1945, Goedel 1931)."
+  },
+  {
+    "id": "CONST-wright-law",
+    "canon_label": "Wright’s Law / Experience Curve",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "economics",
+    "note": "Nagy et al. 2013 hindcast across 62 technologies."
+  },
+  {
+    "id": "CONST-zero",
+    "canon_label": "0 — The Unmanifest",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "mathematics",
+    "note": "Set-theoretic definition."
+  },
+  {
+    "id": "CONST-zipf-law",
+    "canon_label": "Zipf’s Law",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "social-science",
+    "note": "Piantadosi 2014 review; audit computed Moby-Dick slope."
+  },
+  {
+    "id": "DOMAIN-01",
+    "canon_label": "Spiritual Process",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "psychology",
+    "note": "One meditation meta-analysis (Goyal 2014); common-core mysticism held open."
+  },
+  {
+    "id": "DOMAIN-02",
+    "canon_label": "Religious Process",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Religious-process claims have no measurement; held open."
+  },
+  {
+    "id": "DOMAIN-03",
+    "canon_label": "Psychological / Cognitive Process",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 3,
+    "field": "psychology",
+    "note": "Schema-consolidation (rats), PTSD model, resilience review; hard problem held open."
+  },
+  {
+    "id": "DOMAIN-04",
+    "canon_label": "Matrix Processes",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 2,
+    "field": "computer-science",
+    "note": "Shannon 1948 theory and Bostrom simulation argument; no measurement."
+  },
+  {
+    "id": "DOMAIN-05",
+    "canon_label": "Mathematical / Computational Process",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "mathematics",
+    "note": "Goedel and Game of Life via SEP; Kybalion dates bibliographic only."
+  },
+  {
+    "id": "DOMAIN-06",
+    "canon_label": "Linguistic / Communication Process",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "psychology",
+    "note": "Winawer 2007 colour-discrimination study and Shannon 1948."
+  },
+  {
+    "id": "DOMAIN-07",
+    "canon_label": "Economic / Market Process",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "economics",
+    "note": "Nobel summaries of asset-pricing and experimental-market research (no primary papers); 2008 figure blocked."
+  },
+  {
+    "id": "DOMAIN-08",
+    "canon_label": "Chemical Process",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "chemistry",
+    "note": "CODATA key thermochemical values via NIST WebBook."
+  },
+  {
+    "id": "DOMAIN-09",
+    "canon_label": "Biological Process",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 5,
+    "field": "cell-biology",
+    "note": "Apoptosis, cancer hallmarks, immune memory, HRV papers."
+  },
+  {
+    "id": "DOMAIN-10",
+    "canon_label": "Evolutionary Process",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 9,
+    "field": "genetics-evolution",
+    "note": "Eye-evolution studies and geochronology of Marinoan, Cambrian, K-Pg; placental timing."
+  },
+  {
+    "id": "CLAIM-001",
+    "canon_label": "Three Kingdoms — consciousness is irreducible",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 5,
+    "field": "physics",
+    "note": "Three decoherence experiments, Zurek theory, Cogitate adversarial consciousness test."
+  },
+  {
+    "id": "CLAIM-002",
+    "canon_label": "Correspondence — same algorithm at all scales",
+    "knowledge_basis": "reference",
+    "programs": [
+      "pdg",
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Running alpha_s (PDG QCD review) and CODATA alpha."
+  },
+  {
+    "id": "CLAIM-003",
+    "canon_label": "Process Density — biological systems highest",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "cell-biology",
+    "note": "Milo 2013 protein-per-cell estimate; process density undefined."
+  },
+  {
+    "id": "CLAIM-004",
+    "canon_label": "Selfish-Selfless convergence",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "No study cited or identified; definitions verbal."
+  },
+  {
+    "id": "CLAIM-005",
+    "canon_label": "Dynamic Middle (Yin/Yang)",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "No domains, objective or data given."
+  },
+  {
+    "id": "CLAIM-006",
+    "canon_label": "Civil Infrastructure as Correspondence",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "No infrastructure dataset cited (see CANON-IB items)."
+  },
+  {
+    "id": "CLAIM-007",
+    "canon_label": "Universal Algorithm (3 operations)",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "No criterion to test; stipulation."
+  },
+  {
+    "id": "CLAIM-008",
+    "canon_label": "Energy continues by gradient renewal at every scale where systems persist",
+    "knowledge_basis": "facility",
+    "programs": [
+      "planck",
+      "desi"
+    ],
+    "n_studies": 0,
+    "field": "astronomy",
+    "note": "Omega_m from Planck 2018; dark-energy evolution from DESI DR2."
+  },
+  {
+    "id": "CLAIM-009",
+    "canon_label": "Observation operates as load-bearing mechanism at every nested level",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 4,
+    "field": "physics",
+    "note": "Decoherence experiments and Zurek theory."
+  },
+  {
+    "id": "CLAIM-010",
+    "canon_label": "Slime mold integration applies at every level where complexity emerges",
+    "knowledge_basis": "studies",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 6,
+    "field": "cell-biology",
+    "note": "Physarum studies, Feynman 1948, archaic-ancestry genomics; CODATA a_e."
+  },
+  {
+    "id": "CLAIM-011",
+    "canon_label": "Fine-tuned cosmological constants result from prior-cycle integration, not coincidence/design",
+    "knowledge_basis": "reference",
+    "programs": [
+      "nist"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Only an example measured constant (CODATA alpha); prior-cycle origin held open."
+  },
+  {
+    "id": "CLAIM-012",
+    "canon_label": "Information conservation through dissolution — every path's data preserved",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 4,
+    "field": "other",
+    "note": "Forgetting-curve replication, archaic ancestry, Landauer erasure, black-hole review."
+  },
+  {
+    "id": "CLAIM-013",
+    "canon_label": "The constraint pushes systems to perfect process or the draw — no other stable configurations",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "cell-biology",
+    "note": "Repressilator (Elowitz & Leibler 2000)."
+  },
+  {
+    "id": "CLAIM-014",
+    "canon_label": "What Would Force Framework Revision",
+    "knowledge_basis": "studies",
+    "programs": [
+      "pdg"
+    ],
+    "n_studies": 2,
+    "field": "physics",
+    "note": "Decoherence experiments; running alpha_s from PDG."
+  },
+  {
+    "id": "CLAIM-015",
+    "canon_label": "Consciousness as foundational vs. emergent — Tightened toward foundational / Mentalism",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "neuroscience",
+    "note": "Cogitate IIT vs GNWT test only."
+  },
+  {
+    "id": "CLAIM-016",
+    "canon_label": "Local observation identity-with vs derivation-of meta-observation — Tightened toward identity",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Meta-observation unmeasurable; rests on framework principles."
+  },
+  {
+    "id": "CLAIM-017",
+    "canon_label": "Whether Omni Force is conscious or impersonal — Tightened toward conscious",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "neuroscience",
+    "note": "Cogitate test as the only measured criterion; cosmic loop held open."
+  },
+  {
+    "id": "CLAIM-018",
+    "canon_label": "Whether Mathematics Is Discovered Or Invented — Tightened toward Discovered",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Only bibliographic dates (Kybalion 1908, Heisenberg 1925)."
+  },
+  {
+    "id": "CLAIM-019",
+    "canon_label": "Why Anything Exists / Problem Of Suffering — Tightened",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "psychology",
+    "note": "Murre & Dros forgetting-curve replication; existence question unmeasurable."
+  },
+  {
+    "id": "CLAIM-020",
+    "canon_label": "Axiom 7 — On Entropy",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "physics",
+    "note": "Fluctuation-theorem colloid test and Landauer erasure experiment."
+  },
+  {
+    "id": "LABEL-101",
+    "canon_label": "The Base Code — The Universal DNA",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 2,
+    "field": "genetics-evolution",
+    "note": "Tonegawa V(D)J recombination and somatic/germline mutation-rate study."
+  },
+  {
+    "id": "LABEL-102",
+    "canon_label": "The Omni Process & Three Kingdoms",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Kybalion publication date only; Third Kingdom held open."
+  },
+  {
+    "id": "LABEL-103",
+    "canon_label": "Civil Infrastructure as Correspondence Proof",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "No systematic infrastructure comparison; case figures routed elsewhere."
+  },
+  {
+    "id": "LABEL-104",
+    "canon_label": "The Universal Process Registry",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "No failure criterion or domain denominator."
+  },
+  {
+    "id": "LABEL-105",
+    "canon_label": "Yin/Yang & The Dynamic Middle",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Text search of classical Chinese texts only."
+  },
+  {
+    "id": "LABEL-106",
+    "canon_label": "The Energy Continuation Principle",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Heat-death supply held open; laws routed to constants audits."
+  },
+  {
+    "id": "LABEL-107",
+    "canon_label": "The Multi-Level Observation Principle",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "No single operational definition of observation."
+  },
+  {
+    "id": "LABEL-108",
+    "canon_label": "The Slime Mold Integration Principle",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 3,
+    "field": "cell-biology",
+    "note": "Two Physarum studies and Dijkstra 1959."
+  },
+  {
+    "id": "LABEL-109",
+    "canon_label": "The Seven Hermetic Principles",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Kybalion publication record only; Mentalism held open."
+  },
+  {
+    "id": "LABEL-110",
+    "canon_label": "Process Density & The Golden Ratio of Purpose",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "neuroscience",
+    "note": "Azevedo 2009 neuron count; phi ratio claims unmeasured."
+  },
+  {
+    "id": "LABEL-111",
+    "canon_label": "Integration Density",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Integration density has no unit or measured value."
+  },
+  {
+    "id": "LABEL-112",
+    "canon_label": "Co-Creator Identity & Processes of Creation",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "No measurement; lines of reasoning from one source."
+  },
+  {
+    "id": "LABEL-113",
+    "canon_label": "The Garlick Equilibrium",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 1,
+    "field": "computer-science",
+    "note": "0.97^60 arithmetic; Schaeffer 2007 checkers solution cited; chess value held open."
+  },
+  {
+    "id": "LABEL-114",
+    "canon_label": "The Shepherd's Way",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Named method/structural label; no outcome data cited."
+  },
+  {
+    "id": "LABEL-115",
+    "canon_label": "The ACE Sales System",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Named method/structural label; no outcome data cited."
+  },
+  {
+    "id": "LABEL-116",
+    "canon_label": "Falsifiability Register",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Named method/structural label; no outcome data cited."
+  },
+  {
+    "id": "LABEL-117",
+    "canon_label": "The Container",
+    "knowledge_basis": "none",
+    "programs": [],
+    "n_studies": 0,
+    "field": null,
+    "note": "Named method/structural label; no outcome data cited."
+  },
+  {
+    "id": "CANON-IB-roman-concrete",
+    "canon_label": "Pillar I: Roman concrete 2,000 yr vs modern roads 15-20 yr (v5.1 I.B)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 0,
+    "field": "chemistry",
+    "note": "Rests on materials/archaeology studies of Roman marine concrete and pavement-life data; canon cites none."
+  },
+  {
+    "id": "CANON-IB-interstate",
+    "canon_label": "Pillar II: Interstate system vs walkable cities (v5.1 I.B)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 0,
+    "field": "social-science",
+    "note": "Urban-economics/transport studies implied; canon cites none and gives no figures."
+  },
+  {
+    "id": "CANON-IB-new-orleans-levees",
+    "canon_label": "Pillar III: New Orleans levees, $14.5B ~400x deferred investment (v5.1 I.B)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 0,
+    "field": "earth-science",
+    "note": "Rests on USACE/levee engineering studies and cost records; canon cites none."
+  },
+  {
+    "id": "CANON-IB-texas-grid-2021",
+    "canon_label": "Pillar IV: Texas grid Feb 2021, 246 deaths, $195B (v5.1 I.B)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 0,
+    "field": "economics",
+    "note": "Rests on state death count and economic-damage estimates / grid investigations; canon cites none."
+  },
+  {
+    "id": "CANON-IB-2008-crisis",
+    "canon_label": "Variable Principle violation: 2008, $22T household wealth (v5.1 I.B)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "economics",
+    "note": "GAO-13-180 is the figure's source (audit DOMAIN-07; fetch blocked)."
+  },
+  {
+    "id": "CANON-v54-casimir",
+    "canon_label": "Casimir: boundary on vacuum gives measurable energy (v5.4 Stage 1-2, 4a.5)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 1,
+    "field": "physics",
+    "note": "Canon cites Lamoreaux 1997; audit STAGE-002 adds two more Casimir experiments."
+  },
+  {
+    "id": "CANON-v54-raychaudhuri",
+    "canon_label": "Raychaudhuri focusing: convergence of geodesic lines (v5.4 4a.4, Gap 5)",
+    "knowledge_basis": "proof",
+    "programs": [],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "GR theorem (Raychaudhuri equation); no measurement."
+  },
+  {
+    "id": "CANON-v54-koide",
+    "canon_label": "Koide Q=2/3 and delta=2/9 from charged-lepton masses (v5.4 6)",
+    "knowledge_basis": "reference",
+    "programs": [
+      "pdg"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Lepton masses from PDG 2024 (framework/tests/koide-delta.md)."
+  },
+  {
+    "id": "CANON-v54-lifetime-linewidth",
+    "canon_label": "Lifetime = 1/linewidth: proton >1e34 yr, top width 1.4 GeV (v5.4 4a.2)",
+    "knowledge_basis": "facility",
+    "programs": [
+      "pdg",
+      "super-kamiokande"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Proton limit (Super-K via PDG); top width PDG value from collider data."
+  },
+  {
+    "id": "CANON-v54-nuclear-saturation",
+    "canon_label": "Lamina falsifier: nuclear saturation ~0.16 fm^-3 (v5.4 5)",
+    "knowledge_basis": "facility",
+    "programs": [
+      "ligo",
+      "nicer"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Saturation is textbook nuclear data; EoS constraints cited in tests from GW170817 and NICER."
+  },
+  {
+    "id": "CANON-v54-bell",
+    "canon_label": "Caution 1: Bell/Aspect/Zeilinger exclude local hidden variables (v5.4 7)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Rests on Bell-test experiments (Aspect, Zeilinger named); no paper cited."
+  },
+  {
+    "id": "CANON-v54-environmental-decay",
+    "canon_label": "Caution 2: environmental decay-rate term negligible (v5.4 1)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Rests on nuclear decay-rate studies (electron capture, bound-state beta); none cited."
+  },
+  {
+    "id": "CANON-v54-hafnium-isomer",
+    "canon_label": "D2 designed storage fold: Hf-178m2 triggering, DARPA (v5.4 D2)",
+    "knowledge_basis": "facility",
+    "programs": [
+      "darpa-hafnium-isomer"
+    ],
+    "n_studies": 0,
+    "field": "physics",
+    "note": "Canon credits the DARPA isomer-triggering attempt (unsuccessful)."
+  },
+  {
+    "id": "CANON-v54-protein-folding",
+    "canon_label": "Protein pattern: Levinthal, Anfinsen, folding funnel (v5.4 6)",
+    "knowledge_basis": "studies",
+    "programs": [],
+    "n_studies": 0,
+    "field": "biochemistry",
+    "note": "Rests on protein-folding studies named by author only; none cited."
+  }
+]
