@@ -18,5 +18,8 @@
 | P-03 | **Fixed-rate conversion.** One energy store is converted to another at a fixed integer ratio. | Run 01 | — | Held open |
 | P-04 | **Ratio vs. ceiling trade-off.** Units moved per unit of fuel trade against the maximum gradient that can be held. | Run 01 (measured variant in brine shrimp) | — | Held open |
 | P-05 | **Self-loading output.** The output changes the cost of the next cycle. | Run 01 | — | Held open |
+| P-06 | **Cleaning sets the variation rate.** The same error-correction pipeline that keeps the record clean sets how much variation reaches selection. | [Information](information/README.md) B1 → F1 (N1–N3) | — | Canon's "optimal mutation rate" (IG-04) — held open |
+| P-07 | **Threshold memory.** A weak or brief input does not flip the switch; a strong one flips it and the new state outlasts the input. | Information A1 / D2 (N7) | — | Reality Filter item 8, *weak observations cannot force change* — candidate fit |
+| P-08 | **Recycle the material, erase the information.** Degradation returns building blocks while the item's state is lost. | Information C1–C2 (N9; recycling detail *source pending*) | — | Bears on Layer I.G — IG-01 |
 
 The correspondence column stays empty until Deep-Lens step K (correspondence check) runs. That step comes after the step-E blocker (see [run 01](membrane/run-01-na-k-pump.md)).

@@ -30,6 +30,7 @@ Each run ends with:
 | Area | Inventory | Runs done |
 | --- | --- | --- |
 | Plasma membrane | [`membrane/README.md`](membrane/README.md) · gaps: [`membrane/gaps.md`](membrane/gaps.md) | L0 mapped; 11 L1 categories queued; 1 L4 pilot (out of order) |
+| **Function area:** information — filter, keep, erase, update | [`information/README.md`](information/README.md) · gaps: [`information/gaps.md`](information/gaps.md) | L0 mapped; 6 L1 categories queued |
 | *(next: cytoskeleton, nucleus, ER, Golgi, mitochondria, lysosome, …)* | — | — |
 
 ## Files
