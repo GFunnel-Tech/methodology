@@ -264,6 +264,26 @@ EDITORIAL = [
 for ag_, txt, src in EDITORIAL:
     TEAM_R.append((ag_, f"EDITORIAL:{ag_}:{src}", txt, f"Editorial & Email team (derived) — {src}", "v5.1 L3004–3023", "Per issue / send", "Brief or draft received", "Step output", "CON-T1", ""))
 
+OPLAYER = [
+ ("O-23","Send the Owner Daily Brief: gates waiting, blocked items, today's priorities, new proposals, crisis flags — one screen.","Communication step 5 (density the receiver can hold)","Daily"),
+ ("O-23","Send the Owner Weekly Report: per-hub status, critical-path projects, funnel and channel numbers, decisions made, proposals to approve.","Communication; Layer V","Weekly"),
+ ("O-23","Keep the approvals inbox: every Human Gate arrives with its decision brief; present options, the dynamic middle and the falsifier, never a pre-made choice.","Decision-Making steps 1–7; Cannot-Supply item 1","Continuous"),
+ ("O-23","Record every Owner decision with its expected outcome in the decision log and relay it to the requesting agent.","Decision-Making step 9","Per decision"),
+ ("O-23","Turn each Owner request into a work item via O-01 and confirm receipt the same day.","Layer 0 step 1","Per request"),
+ ("O-23","Escalate a confirmed crisis to the Owner immediately, outside the brief cycle.","Crisis Response step 3","Per crisis"),
+ ("O-24","Scan signals weekly: BEAS lowest cell, stalled projects (O-08), lowest-conversion funnel step (SAL-12), clients' next Fibonacci step (CS-10), risks (STR-05), patterns (O-20), open variables (G-03).","Layer V step 5; Layer I.E step 8; Layer VII step 6","Weekly"),
+ ("O-24","Write each proposal as a card: project, problem, proposed work, owning team lead, expected outcome, falsifier, effort, dependency order, open variables.","Decision-Making steps 7 and 9; Layer ◇","Per proposal"),
+ ("O-24","Rank proposals by dependency order (socks before shoes), not by excitement.","Shepherd's Way Step 04; Project Management step 4","Weekly"),
+ ("O-24","Never propose growth that outruns infrastructure: check the Four Pillars before any scale proposal.","Layer I.B","Per proposal"),
+ ("O-24","After delivery, compare actual vs expected outcome for each approved proposal and send the gap to O-10.","Decision-Making step 10; Layer I.G","Per completed proposal"),
+ ("O-25","Keep one board for all work: every item has an owner team lead, a Shepherd's Way step, a due date and blockers.","Layer VI; Project Management step 2","Continuous"),
+ ("O-25","Dispatch approved items to the owning team lead; nothing is dispatched straight to a task agent.","Derived (chain of command)","Per item"),
+ ("O-25","Collect daily status from team leads and publish the blocked-items list; a blocked item is the location of the work.","How To Run An Algorithm","Daily"),
+ ("O-25","Flag items that skipped Shepherd's Way steps (e.g. Create before Organize) to O-03.","Layer VI failure modes","Daily"),
+ ("O-25","Feed status and completion data to O-23 for the Owner briefs.","Database step","Daily"),
+]
+for ag_, txt, src, cad in OPLAYER:
+    TEAM_R.append((ag_, f"OPS-LAYER:{ag_}:{src}", txt, f"Operating layer (derived) — {src}", "Derived", cad, "Cadence or event", "Report / item / proposal", "O-23" if ag_ != "O-23" else "G-00", "Owner decides" if ag_ in ("O-23","O-24") else ""))
 DELIV = [
  # (deliverable, accountable, doers, algorithm/process, cadence, human gate)
  ("Newsletter issue","CON-T1","CON-09, CON-06, CON-10, CON-11, CON-12, CON-13, CON-14","Writing Algorithm (split across team)","Per editorial calendar","Claims about results → G-00"),
@@ -339,6 +359,38 @@ DELIV = [
  ("Founder weekly time and energy review","G-07","—","Time / Energy Management","Weekly","All personal choices"),
 ]
 
+DELIV += [
+ ("Owner Daily Brief","O-23","O-25 (status), O-24 (proposals), all team leads","Communication; Decision-Making","Daily","—"),
+ ("Owner Weekly Report","O-23","All hub leads, SAL-12, MKT-03, OPS-03, O-25","Communication; Layer V","Weekly","—"),
+ ("Approvals inbox and decision log","O-23","Every agent raising a Human Gate","Decision-Making steps 8–9","Continuous","Every decision"),
+ ("Work proposals (suggested next work)","O-T3","O-24 (signals from O-04, O-08, SAL-12, CS-10, STR-05, O-20)","Layer V step 5; Layer I.E step 8","Weekly","Approval"),
+ ("Company work board","O-25","All team leads","Shepherd's Way; Project Management","Continuous","Re-prioritisation"),
+]
+RHYTHM = [
+ # (cadence, report or channel, from, to, contents, anchor)
+ ("Continuous","Human Gate request","Any agent","O-23 → Owner","Decision brief: options, variables measured vs open, dynamic middle, falsifier, recommended option","v5.1 L168–181; L2698–2719"),
+ ("Continuous","Owner request","Owner","O-23 → O-01 → O-02 → O-25","Request turned into a work item with owner team lead, outcome and due date","Layer 0; Shepherd's Way Step 01"),
+ ("Continuous","Crisis alert","O-19","Owner (immediately, via O-23)","Confirmed crisis, impact, triage status, decision needed","v5.1 L3383–3402"),
+ ("Per deliverable","Same-day recap","O-15","Client and work board","What was done, value delivered, time spent","v5.1 L1548–1557"),
+ ("Daily","Stand-up status","Task agents","Their team lead (on the board)","Done / doing / blocked, current Shepherd's Way step","Derived; v5.1 L96–111"),
+ ("Daily","Board update + blocked list","Team leads","O-25","Item states, blockers, items needing a gate","Derived"),
+ ("Daily","Owner Daily Brief","O-23","Owner","Gates waiting, blockers, today's priorities, new proposals, crisis flags (one screen)","Derived"),
+ ("Weekly","Team report","Team leads","Hub lead","Deliverables shipped, cycle notes, retro and integrated failures","v5.1 L1560–1569"),
+ ("Weekly","Hub report","Hub leads","O-23","Hub status, risks, asks of the Owner","Derived"),
+ ("Weekly","Funnel and channel numbers","SAL-12, MKT-03","O-23","Conversion per stage, lowest step, channel ROI","v5.1 L2523–2535"),
+ ("Weekly","Work proposals digest","O-24 → O-T3","O-23 → Owner","Proposed work with outcome, falsifier, effort; Owner approves / defers / declines","Derived; Layer V step 5"),
+ ("Weekly","Owner Weekly Report","O-23","Owner","Per-hub status, projects on critical path, numbers, decisions made, proposals","Derived"),
+ ("Weekly","Owner time and energy review","G-07","Owner","Intended vs actual time by Kingdom","v5.1 L3579–3614"),
+ ("Monthly","Company BEAS scorecard","O-04","Owner (via O-23)","45-point score, band, quadrant balance, lowest cell and the dispatched fix","v5.1 L2478–2495"),
+ ("Monthly","Financial report + forecast","FIN-04, FIN-03","Owner (via O-23)","P&L, cash, forecast vs actual","v5.1 L3749–3768"),
+ ("Monthly","Client BEAS + results reports","CS-06","Each client","Results from systems built (the upsell trigger)","v5.1 L1649"),
+ ("Monthly","Risk and vendor review","STR-05, OPS-04","Owner (via O-23)","Top risks, downgrade paths, vendor performance","v5.1 L3489–3506; L3445–3462"),
+ ("Quarterly","Strategic plan","STR-03","Owner","Plan with assumptions, held-open variables, falsifiers","v5.1 L2744–2765"),
+ ("Quarterly","Immersion reviews","CS-10","Each client","Updated blueprint, next Fibonacci step","v5.1 L2693"),
+ ("Quarterly","Compliance review","HRC-10","Owner","Compliance register status","v5.1 L3509–3526"),
+ ("Per change","Agent alignment review","G-05","Owner","New or expanded agents: purpose, observation, downgrade path","v5.1 L3933–3954"),
+]
+
 # ── 4. Workflows ──
 WF = [
  ("W01","Lead-to-Cash (ACE Acquisition → Creation)",[("O-01","Input arrives (ad, form, referral)"),("MKT-03","Capture in Lead Connector; tag source/campaign/hot buttons"),("SAL-01","Instant automated first contact (Flows AI) → Contacted"),("SAL-02","Short-survey qualification → Qualified"),("SAL-04","Book and confirm call → Appointment Set / Show"),("SAL-05","Pre-call brief; human closer runs 7-step script"),("SAL-06","I.A.C.E. on objections"),("SAL-07","Present three-tier stack; prospect self-selects"),("SAL-08","Draft proposal/contract from notes → Proposal"),("G-00","Human approves and signs"),("SAL-11","Closed Won → handoff package with full context"),("FIN-07","Invoice and record payment"),("FIN-05","Calculate commission"),("SAL-12","Update step conversion; lowest step → O-03")]),
@@ -356,6 +408,9 @@ WF = [
  ("W13","Content propagation (Five Modes)",[("CON-02","Mode 2 — capture demonstration/case study"),("CON-03","Mode 3 — document as SOP/course material"),("TEC-02","Mode 4 — automate"),("CON-05","Mode 1 — teach via University"),("HRC-05","Mode 5 — embed in culture/community"),("MKT-05","Distribute")]),
  ("W14","Quarterly strategy & compliance review",[("STR-01","Re-filter initiatives against the convergence point"),("STR-04","Market cycle phase and positioning"),("STR-03","Quarterly plan with falsifiers"),("FIN-02","Budget"),("HRC-10","Compliance review (quarterly minimum)"),("G-05","Agent alignment review at any capability change"),("G-00","Approve plan")]),
  ("W16","Newsletter issue (Editorial & Email team)",[("CON-T1","Direct: set the issue's reader outcome and done-criterion"),("CON-09","Plan the issue; pull proof, University and research items; brief writers"),("CON-06","Write feature / long-form sections"),("CON-10","Write emails, subject lines and calls to action"),("CON-11","Subtractive edit; fact-check; read-aloud test"),("CON-12","Brand voice + claims check + attribution"),("CON-T1","Approve"),("CON-13","Build segments, test send, schedule in Lead Connector"),("CON-14","Report at 48 h and 7 days; name the weakest step"),("CON-T1","Document what worked; retro; next issue starts higher")]),
+ ("W17","Owner request → done",[("G-00","Owner sends a request (message, email or meeting note)"),("O-23","Acknowledge; clarify the outcome if unclear"),("O-01","Name the input; locate its Kingdom"),("O-02","Route to an algorithm and owning team"),("O-25","Create the board item; dispatch to the team lead"),("Team lead","Direct and Guide; assign the team"),("Task agents","Gather → Organize → Create; daily status on the board"),("Team lead","Approve against the done-criterion"),("O-15","Document; same-day recap"),("O-23","Report completion in the next brief")]),
+ ("W18","Work suggestion loop",[("O-04","Publish BEAS lowest cell"),("O-08","Flag stalled projects and the next gradient"),("SAL-12","Report lowest-conversion funnel step"),("CS-10","Report each client's next Fibonacci step"),("O-24","Turn signals into Work Proposal cards (outcome, falsifier, effort, owner)"),("O-T3","Check and rank by dependency order"),("O-23","Put proposals in the Owner Weekly Report"),("G-00","Approve / defer / decline"),("O-25","Approved → board, dispatched to team lead"),("O-16","After delivery: compare actual vs expected outcome"),("O-10","Integrate the gap; feed the next scan")]),
+ ("W19","Reporting ladder",[("Task agents","Daily status on the board"),("Team lead","Daily board update; weekly team report"),("Hub lead","Weekly hub report"),("O-25","Daily blocked-items list"),("O-23","Owner Daily Brief; Owner Weekly Report"),("G-00","Reads, decides gates, sends requests back")]),
  ("W15","Agent fleet change",[("HRC-06","Propose new/changed agent role"),("G-06","Decision rights + autonomy level"),("G-05","Alignment review; downgrade path; instrumentation"),("G-00","Approve deployment"),("TEC-05","Deploy with logging + fallback"),("G-04","Audit first runs")]),
 ]
 
@@ -430,6 +485,7 @@ wb = Workbook()
 readme = wb.active; readme.title = "README"
 org = wb.create_sheet("Org Chart")
 deliv = wb.create_sheet("Deliverables")
+rhy = wb.create_sheet("Operating Rhythm")
 roster = wb.create_sheet("Agent Roster")
 resp = wb.create_sheet("Responsibilities")
 algc = wb.create_sheet("Algorithm Coverage")
@@ -478,7 +534,7 @@ lines = [
  ("Status", "DERIVATION — not canon. Built under AGENTS.md rules 4 & 7: the roles are derived from canon; nothing here is a primary algorithm of the methodology, and nothing here changes the base code DETECT → PROCESS → RESPOND."),
  ("Sources read", "v5.1 (full operational sections: Layers IV–VII, ◇, Master Meta-Algorithm, all per-layer, domain and extended algorithms, self-audit, cannot-supply), v5.2 (Deep-Lens protocol; Runs 4–5), v5.3 (Meta-Tier ⊙). v5.4 deliberately excluded: its constructs are not business operations and it states zero novel predictions."),
  ("How it was built", "build_agent_map.py parses all 77 algorithms (662 numbered steps) straight from versions/v5.1 so each step becomes an owned responsibility; operational tables (pipeline, script, I.A.C.E., Immersion, BEAS, Five Modes, pillars, self-audit, Forcing Test, Deep-Lens) were transcribed row by row. Re-run the script to regenerate."),
- ("Tabs", "Deliverables — 'I need X done': each deliverable's accountable manager agent and the team that does it.\nOrg Chart — the reporting hierarchy as an indented tree: level, solid reporting line, dotted line, direct reports, reporting path.\nAgent Roster — every agent with mission, DETECT/PROCESS/RESPOND, hand-offs, tools named in canon, KPIs, human gate, autonomy, source.\nResponsibilities — every atomic responsibility, one row each, with owner, source line, cadence, trigger, output, hand-off.\nAlgorithm Coverage — all 77 algorithms → owner, status, steps mapped vs steps in canon.\nCanon Element Coverage — every operational table row → mapped responsibility.\nBEAS Accountability — 45-cell scoring tool with the accountable agent per cell.\nWorkflows — 16 end-to-end hand-off chains (W16 = a newsletter issue through the Editorial & Email team).\nHuman Gates — what agents must never decide.\nHeld-Open Variables — what canon does not supply (never filled with assumption).\nGap Check — live formulas proving no responsibility is unowned and no agent is idle."),
+ ("Tabs", "Deliverables — 'I need X done': each deliverable's accountable manager agent and the team that does it.\nOrg Chart — the reporting hierarchy as an indented tree: level, solid reporting line, dotted line, direct reports, reporting path.\nAgent Roster — every agent with mission, DETECT/PROCESS/RESPOND, hand-offs, tools named in canon, KPIs, human gate, autonomy, source.\nResponsibilities — every atomic responsibility, one row each, with owner, source line, cadence, trigger, output, hand-off.\nAlgorithm Coverage — all 77 algorithms → owner, status, steps mapped vs steps in canon.\nCanon Element Coverage — every operational table row → mapped responsibility.\nBEAS Accountability — 45-cell scoring tool with the accountable agent per cell.\nWorkflows — 19 end-to-end hand-off chains (W16 newsletter issue; W17 Owner request → done; W18 work suggestion loop; W19 reporting ladder).\nOperating Rhythm — every report and channel to the Owner: cadence, from, to, contents.\nHuman Gates — what agents must never decide.\nHeld-Open Variables — what canon does not supply (never filled with assumption).\nGap Check — live formulas proving no responsibility is unowned and no agent is idle."),
  ("Tiers", "0 · Human authority / Governance (meta-tier)  ·  1 · Orchestration & diagnostics  ·  2 · Department leads (the Nine Hubs)  ·  3 · Team leads (accountable for deliverables, manage a team)  ·  4 · Task agents"),
  ("Autonomy codes (derived)", "\n".join(f"{k} = {v}" for k, v in AUTONOMY.items())),
  ("Status labels", "Canon algorithm step / Canon table = transcribed from canon · Derived = placement or charter chosen for this map · Human-reserved = no agent executes · Held open = canon does not supply the value."),
@@ -668,6 +724,15 @@ for i, (d_, acc, doers, alg, cad, gate) in enumerate(DELIV, 5):
             f"=IFERROR(INDEX('Agent Roster'!$D:$D,MATCH(C{i},'Agent Roster'!$A:$A,0)),\"UNASSIGNED\")", doers, alg, cad, gate]
     body(deliv, i, vals)
 NDEL = len(DELIV) + 4
+
+# ── Operating Rhythm ──
+rhy["A1"] = "Operating Rhythm — reporting and communication with the Owner"; rhy["A1"].font = TITLE
+rhy["A2"] = "Everything reaches the Owner through one channel (O-23 Owner Liaison). Cadences are derived; exact send times and channels are held open for the Owner to set."; rhy["A2"].font = Font(name=F, size=9, italic=True)
+cols = ["Cadence","Report / Channel","From","To","Contents","Canon anchor"]
+header(rhy, 4, cols, [14,30,24,28,70,30])
+rhy.freeze_panes = "C5"
+for i, row in enumerate(RHYTHM, 5):
+    body(rhy, i, list(row))
 
 # ── Gap Check ──
 gap["A1"] = "Gap Check — live proof of 'no gaps'"; gap["A1"].font = TITLE

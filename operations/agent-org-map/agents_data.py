@@ -425,6 +425,38 @@ sub("CON-06","Writing Agent","CON","Writes long-form, emails, docs and copy: rea
 sub("CON-07","Case Study & Proof Library Agent","CON","Maintains the searchable library of proof (results, testimonials, before/after BEAS) for sales and marketing.","What Sustains Propagation — results that speak","New proof asset","Indexed proof library","SAL-05; MKT-05","—","Proof assets per offer tier","—","Proof not findable when needed","A","Canon: sustains-propagation table","v5.1 L1321")
 sub("CON-08","Knowledge Base Librarian (Memory & Recall)","CON","Organisational memory: multi-level storage, dense cross-links, spaced review of key knowledge, everything beyond recall horizon documented.","Memory and Recall Algorithm; Layer I.F (civilizational record)","New documentation; quarterly review","Linked knowledge base; review schedule","All agents","—","Knowledge retrieval success","—","Knowledge rediscovered at full cost","A","Derived placement (Memory)","v5.1 L2956–2971")
 
+# ───────────── OWNER CHANNEL, WORK BOARD, WORK SUGGESTIONS (operating layer) ─────────────
+# DERIVED: canon supplies the gates (what agents cannot decide), the documentation rule,
+# BEAS lowest-cell dispatch, gradient renewal and "restart at higher baseline"; it does not
+# name a liaison, a work board or a suggestion engine. These three make the team run.
+ag("O-23","Owner Liaison (Executive Briefing Agent)","1 · Orchestration","ORC","G-00",
+   "The Owner's single channel to the whole agent team. Sends the daily brief and weekly report, keeps the approvals inbox (every Human Gate arrives here with its decision brief), records each Owner decision and relays it back, and turns Owner requests into work items.",
+   "Communication and Speaking (match frequency, right density); Decision-Making steps 8–9 (decide, document); What The Framework Cannot Supply",
+   "Owner message or request; any Human Gate raised; daily 07:00 / weekly brief time (times held open); crisis flag",
+   "Owner Daily Brief; Owner Weekly Report; approvals inbox; decision log; Owner requests routed to O-01",
+   "G-00; O-01; requesting agent", "Lead Connector (GHL) / email for delivery (channel held open)",
+   "Gate turnaround; brief delivered on time; Owner requests acknowledged same day",
+   "Every decision itself → G-00", "Owner flooded with unfiltered noise, or gates stuck unseen",
+   "A","Derived (operating layer)","v5.1 L168–181; L3026–3045; L2698–2719")
+ag("O-24","Work Suggestion Agent (Project Opportunity Scout)","1 · Orchestration","ORC","O-T3",
+   "Reads project and business signals and proposes the next work: lowest BEAS cell, stalled projects, the lowest-conversion funnel step, each client's next Fibonacci step, rising risks, recurring patterns, open variables worth narrowing. Each proposal states the expected outcome and what would show it was wrong.",
+   "Layer V step 5 (lowest cell); Layer I.E step 8 (anticipate the next gradient); Layer VII step 6 (lowest-conversion step); Client Onboarding step 9 (next Fibonacci step); Repetition",
+   "Weekly scan; BEAS published; project milestone; stall detected (O-08); pattern found (O-20)",
+   "Work Proposal cards: project, problem, proposed work, owning team lead, expected outcome, falsifier, effort, dependency order, open variables",
+   "O-23 (to Owner for approval); O-T3", "—",
+   "Proposals approved; approved proposals that hit their expected outcome",
+   "Approving any proposal → G-00", "Busywork proposals with no stated outcome; proposals ignoring dependency order",
+   "H","Derived (operating layer)","v5.1 L2478–2495; L2332–2351; L2523–2535; L2677–2695")
+ag("O-25","Work Board Dispatcher","1 · Orchestration","ORC","O-02",
+   "Keeps one live work board for the whole company: every item has an owner team lead, a Shepherd's Way step, a due date and its blockers. Dispatches approved items to team leads, collects daily status, and flags blocked items (the blocker is the location of the work).",
+   "Layer VI Shepherd's Way (step state per item); Project Management (weekly cycles, critical path); How To Run An Algorithm (stop at the blocker)",
+   "Approved Owner request or proposal; routed item from O-02; daily status from team leads",
+   "Work board; dispatch to team leads; daily blocked-items list; status feed for O-23 reports",
+   "Team leads; O-23; O-03", "Work board tool held open (ClickUp, GHL or similar)",
+   "Items with an owner (target 100%); blocked > 2 days; on-time completion",
+   "Re-prioritising against Owner priorities → G-00 via O-23", "Work landing on no one; silent blockers",
+   "A","Derived (operating layer)","v5.1 L96–111; L1453–1569; L3359–3380")
+
 # ───────────── EDITORIAL & EMAIL TEAM SPECIALISTS (Content Hub) ─────────────
 # Newsletters and emails have no named algorithm in canon beyond Writing, Communication,
 # Brand and Content Distribution, so this team is a DERIVATION that splits the Writing
@@ -443,7 +475,7 @@ TEAMS = {
  # id: (name, unit code, reports_to, mission, members, extra algorithms)
  "O-T1": ("Diagnostics Team Lead","ORC","O-02","Runs the layer diagnostics on request and returns one combined finding.",["O-05","O-06","O-08","O-09","O-12"],"Layers I, II, I.E, I.F, I.C"),
  "O-T2": ("Knowledge & Learning Team Lead","ORC","O-02","Makes sure every failure is integrated and every new cycle starts from all prior paths.",["O-10","O-14"],"Layers I.G, III+"),
- "O-T3": ("Intelligence & Decision Team Lead","ORC","O-02","Turns questions into researched, falsifiable decision briefs for the founder.",["O-16","O-17","O-18","O-20","O-21","O-22"],"Decision-Making, Problem-Solving, Critical Thinking, Pattern, Synthesis, Research"),
+ "O-T3": ("Intelligence & Decision Team Lead","ORC","O-02","Turns questions into researched, falsifiable decision briefs and work proposals for the Owner.",["O-16","O-17","O-18","O-20","O-21","O-22","O-24"],"Decision-Making, Problem-Solving, Critical Thinking, Pattern, Synthesis, Research"),
  "STR-T1": ("Direction Team Lead","STR","STR-00","Owns the written direction of the business: purpose, principles and the quarterly plan.",["STR-01","STR-02","STR-03"],"Layer IV, Strategic Planning"),
  "STR-T2": ("Market, Risk & Innovation Team Lead","STR","STR-00","Owns the outside view: market position, risk register and innovation pipeline.",["STR-04","STR-05","STR-06"],"Domain 7, Risk, Innovation"),
  "MKT-T1": ("Demand Generation Team Lead","MKT","MKT-00","Owns top-of-funnel volume and attribution across outbound and inbound.",["MKT-01","MKT-02","MKT-03"],"Layer VII Acquisition"),
@@ -490,9 +522,9 @@ REPORTS = {"O-02":"G-00","O-04":"O-02","O-19":"O-02","G-05":"G-01","G-06":"G-01"
            **{h: "G-00" for h in HUB_LEADS}, **TEAM_OF}
 DOTTED = {"O-02":"G-01 (derived algorithms classified)","O-04":"G-00 (growth-stage sign-off); all hub leads (scores them)",
           "O-16":"G-00 (decides)","O-19":"G-00 (crisis command locus)","G-05":"G-00 (agent deployment approval)",
-          "G-06":"G-00 (charter approval)","O-18":"G-02 (claim standards)","CON-13":"MKT-05 (channel distribution)","CON-10":"SAL-01, CS-09, O-15 (templates they send)","O-15":"CON-03 (SOP library)","G-07":"—",
+          "G-06":"G-00 (charter approval)","O-23":"All hub leads and O-25 (status in); O-24 (proposals in)","O-24":"G-00 via O-23 (approval)","O-25":"O-03 (step gates); O-23 (reports)","O-18":"G-02 (claim standards)","CON-13":"MKT-05 (channel distribution)","CON-10":"SAL-01, CS-09, O-15 (templates they send)","O-15":"CON-03 (SOP library)","G-07":"—",
           **{h: "O-04 (monthly BEAS score); O-03 (Shepherd's Way gates)" for h in HUB_LEADS}}
-UNITS = {"G-00":"Executive","G-07":"Executive","GOV":"Office of Governance (meta-tier)","ORC":"Orchestration Office"}
+UNITS = {"G-00":"Executive","G-07":"Executive","O-23":"Executive","GOV":"Office of Governance (meta-tier)","ORC":"Orchestration Office"}
 # Tier relabel: task agents become tier 4 now that team leads sit at tier 3
 A = [a[:2] + (("4 · Task agent",) if a[2].startswith("3 · Task") else (a[2],)) + a[3:] for a in A]
 A = [tuple(a[:4]) + (REPORTS.get(a[0], a[4]),) + tuple(a[5:]) for a in A]
