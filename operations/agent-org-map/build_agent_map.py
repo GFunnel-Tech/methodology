@@ -17,7 +17,7 @@ from openpyxl.formatting.rule import FormulaRule, CellIsRule
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 sys.path.insert(0, HERE)
-from agents_data import A as AGENTS, DEPTS, AUTONOMY
+from agents_data import A as AGENTS, DEPTS, AUTONOMY, DOTTED, UNITS, TEAMS
 
 CANON = os.path.join(ROOT, "versions/v5.1/GFunnel-Methodology-v5.1.md")
 OUT = os.path.join(HERE, "GFunnel-Agent-Org-Map.xlsx")
@@ -86,7 +86,7 @@ OWN = {
  "Critical Thinking": ("O-18","Scientific & cognitive","Assigned","Per relied-on claim"),
  "Memory and Recall": ("CON-08","Scientific & cognitive","Assigned","Quarterly review"),
  "Creative Work": ("CON-01","Creative & communication","Assigned","Per asset"),
- "Writing Algorithm": ("CON-06","Creative & communication","Assigned","Per writing task"),
+ "Writing Algorithm": ({"1":"CON-T1","2":"CON-T1","3":"CON-09","4":"CON-10","5":"CON-10","6":"CON-10","7":"CON-11","8":"CON-11","9":"CON-T1"},"Creative & communication","Assigned (split across the Editorial & Email team)","Per writing task"),
  "Communication and Speaking": ("MKT-06","Creative & communication","Assigned","Per communication"),
  "Teaching and Mentoring": ("CON-05","Creative & communication","Assigned","Per course / mentoring cycle"),
  "Domain 1 —": ("G-00","Universal process domain","Human-reserved","—"),
@@ -231,6 +231,114 @@ for k,txt in [("Measured","Label measured / empirically settled values."),("Deri
     t(f"VAR:{k}","G-03","Variable Register — "+txt,"Variable Principle / Registers","v5.1 L223–263","Continuous","New value or assumption","Register row","G-01","Measurements → G-00")
 t("UPDATE:Protocol","G-01","Document Update Protocol: when evidence narrows a business variable, record the narrowing, the newly opened variables, and load it as substrate for the next cycle (never silently overwrite).","Document Update Protocol","v5.1 L204–222","Per narrowing","Evidence arrives","Iteration entry","G-03","")
 
+# ── 3b. Team-lead responsibilities (DERIVED: Shepherd's Way at team scale) ──
+TEAM_DUTIES = [
+ ("Direct", "Accept each deliverable request and state its outcome, owner and done-criterion in one sentence before any work starts.", "v5.1 L1488–1497"),
+ ("Guide", "Brief and assign: split the deliverable across team members by role and set the intake (inputs, sources, deadlines).", "v5.1 L1500–1509"),
+ ("Organize", "Sequence the team's work by dependency (socks before shoes) and keep the team queue visible.", "v5.1 L1524–1533"),
+ ("Approve", "Check every deliverable against its done-criterion before it leaves the team (Correctness pillar).", "v5.1 L1364"),
+ ("Database", "Confirm each finished item is documented (SOP, recording, recap) before it is closed.", "v5.1 L1548–1557"),
+ ("Repetition", "Run a short retro per cycle: integrate failures (Layer I.G) and raise the team's baseline.", "v5.1 L1560–1569; L2374–2391"),
+ ("Escalate", "Escalate anything above the team's autonomy, and every Human Gate, to the hub lead or G-00.", "Human Gates tab"),
+ ("BEAS evidence", "Supply the team's evidence for its hub's four-pillar BEAS row each month.", "v5.1 L1396–1404"),
+]
+TEAM_R = []
+for tid, (tname, code, boss, mission, members, algs) in TEAMS.items():
+    for k, txt, ln in TEAM_DUTIES:
+        TEAM_R.append((tid, f"TEAM:{tid}:{k}", f"Team lead — {k}: {txt} Team: {', '.join(members)}.", "Shepherd's Way at team scale (derived)", ln, "Per deliverable / weekly", "Deliverable request" if k in ("Direct","Guide") else "Team cycle", f"{k} complete", boss if k in ("Escalate","BEAS evidence") else ", ".join(members), "Above-autonomy items" if k == "Escalate" else ""))
+EDITORIAL = [
+ ("CON-09","Plan each issue: one reader outcome, sections, sources (proof library, University, research), length.","Writing step 1–3"),
+ ("CON-09","Assemble the issue from approved pieces and hand the complete draft to the editor.","Writing step 3"),
+ ("CON-10","Maintain the email template set other agents send (instant reply, follow-ups, referral ask, recap) in the brand voice.","Writing steps 4–6"),
+ ("CON-10","Write each email around one specific reader action (Influence: be specific about the shift).","Influence steps 1–2"),
+ ("CON-06","Write long-form pieces (articles, guides, issue features) from the issue brief.","Writing step 6; Domain 6"),
+ ("CON-11","Fact-check names, numbers, links and dates; nothing goes out unverified.","Variable Principle"),
+ ("CON-12","Check that every quoted result is measured and every promise is falsifiable; reject unsupported claims.","Layer ◇; Critical Thinking"),
+ ("CON-12","Check brand voice and visual conformance against the brand standards (Correspondence across touchpoints).","Brand step 6"),
+ ("CON-12","Carry CC BY 4.0 attribution whenever the methodology is quoted or closely paraphrased.","LICENSE; ATTRIBUTION.md"),
+ ("CON-13","Keep the editorial calendar on a steady cadence (Rhythm); avoid clashing sends across hubs.","Communication step 7"),
+ ("CON-13","Build, segment and schedule sends in Lead Connector; run a test send before every live send.","Pillar I Correctness"),
+ ("CON-14","Report each send against its intended action at 48 h and 7 days; name the weakest step.","Creative Work step 9; Layer VII step 6"),
+ ("CON-14","Feed recurring patterns to the Pattern Recognition Agent and the next issue brief.","Pattern Recognition"),
+]
+for ag_, txt, src in EDITORIAL:
+    TEAM_R.append((ag_, f"EDITORIAL:{ag_}:{src}", txt, f"Editorial & Email team (derived) — {src}", "v5.1 L3004–3023", "Per issue / send", "Brief or draft received", "Step output", "CON-T1", ""))
+
+DELIV = [
+ # (deliverable, accountable, doers, algorithm/process, cadence, human gate)
+ ("Newsletter issue","CON-T1","CON-09, CON-06, CON-10, CON-11, CON-12, CON-13, CON-14","Writing Algorithm (split across team)","Per editorial calendar","Claims about results → G-00"),
+ ("Marketing / nurture email sequence","CON-T1","CON-10, CON-11, CON-12, CON-13, CON-14 (with MKT-T1 for targeting)","Writing; Influence","Per campaign","Full-list sends"),
+ ("Automated email templates (instant reply, follow-up, referral ask, recap)","CON-T1","CON-10, CON-11, CON-12 → used by SAL-01, CS-09, O-15","Writing","Quarterly refresh","—"),
+ ("Articles, guides and long-form copy","CON-T1","CON-06, CON-11, CON-12","Writing","Per calendar","Publication of claims"),
+ ("Same-day client recap email","O-03","O-15 (templates from CON-10)","Shepherd's Way Step 06","Every client session","—"),
+ ("Social posts and channel distribution","MKT-T2","MKT-05, MKT-04","Five Modes (Mode 2); Communication","Per schedule","—"),
+ ("Webinar or talk","MKT-T2","MKT-06 (script copy from CON-T1)","Public Speaking","Per event","Delivery is human"),
+ ("Outbound campaign","MKT-T1","MKT-01, MKT-03","ACE Acquisition (Yang)","Weekly","Targeting / compliance"),
+ ("Inbound funnel or landing page","MKT-T1","MKT-02, TEC-T2","ACE Acquisition (Yin); Shepherd's Way","Per campaign","Spend"),
+ ("Channel ROI report","MKT-T1","MKT-03","Layer VII step 1","Weekly","Budget reallocation"),
+ ("Lead response and qualification","SAL-T1","SAL-01, SAL-02, SAL-04","Sales Algorithm steps 1–2","Per lead","—"),
+ ("Clean pipeline (no lead without a trigger)","SAL-T1","SAL-03","ACE GHL pipeline","Daily","—"),
+ ("Sales call brief and QA","SAL-T2","SAL-05, SAL-09","7-Step Script","Per call","Call is human-led"),
+ ("Objection library","SAL-T2","SAL-06","I.A.C.E.","Continuous","—"),
+ ("Proposal and contract","SAL-T3","SAL-08 (legal check HRC-10)","Sales step 10","Per deal","Signature"),
+ ("Three-tier offer stack","SAL-T3","SAL-07, FIN-06","ACE Offer Architecture","Quarterly","Offer changes"),
+ ("Sales-to-onboarding handoff package","SAL-T3","SAL-11","Sales step 11","Per Closed Won","—"),
+ ("Funnel conversion report","SAL-00","SAL-12","Layer VII step 6","Weekly","—"),
+ ("Immersion day and 48-hour blueprint","CS-T1","CS-01, CS-02, CS-03","Immersion Model","Per new client","Blueprint approval"),
+ ("Quarterly Immersion review","CS-T1","CS-10","Client Onboarding step 9","Quarterly","—"),
+ ("Client build per roadmap","OPS-T1","OPS-05, OPS-01, OPS-02","Immersion Build Phase","Per roadmap","—"),
+ ("Project plan and weekly cycle","OPS-T2","OPS-03","Project Management","Per project","Scope changes"),
+ ("Vendor scorecard and downgrade path","OPS-T2","OPS-04","Vendor Management","Monthly","Contracting"),
+ ("Monthly client BEAS and results report","CS-T3","CS-06","ACE Retention Architecture","Monthly","—"),
+ ("Referral and upgrade campaign","CS-T3","CS-09 (copy from CON-10)","ACE Expansion","After first result","Upsells above threshold"),
+ ("Churn save ($297 downgrade path)","CS-T3","CS-08","ACE Expansion","Per risk signal","Concessions"),
+ ("Community programme","CS-T3","CS-11","Movement Building","Monthly","—"),
+ ("Support ticket resolution","CS-T2","CS-05","Customer Service","Per ticket","Refunds/credits"),
+ ("NPS survey and feedback themes","CS-T2","CS-07","Layer I.F","Quarterly / milestones","—"),
+ ("Budget","FIN-T1","FIN-02","Financial Decisions","Quarterly","Approval"),
+ ("Forecast","FIN-T1","FIN-03","Forecasting","Monthly","—"),
+ ("Monthly financial report","FIN-T1","FIN-04","Database / Layer I.F","Monthly","—"),
+ ("Invoices and collections","FIN-T2","FIN-07","Treasury (civil map)","Per invoice","Write-offs"),
+ ("Commission statements","FIN-T2","FIN-05","Database","Per pay period","Payouts"),
+ ("Price book","FIN-T2","FIN-06","Domain 7","Quarterly","Price changes"),
+ ("Capital decision brief","FIN-00","FIN-01","Financial Decisions","Per decision","Capital deployment"),
+ ("New hire","HRC-T1","HRC-01, HRC-02, HRC-03","Hiring","Per role","Hire and compensation"),
+ ("30/60/90 review","HRC-T2","HRC-04","Hiring step 10","Per hire","Employment decisions"),
+ ("Learning plan","HRC-T2","HRC-07","Learning; Skill Acquisition","Per gap","—"),
+ ("Meeting agenda and minutes","HRC-T2","HRC-09","Group Facilitation","Per meeting","—"),
+ ("Team rituals and culture norms","HRC-T3","HRC-05","Ritual Design","Per ritual","—"),
+ ("Org chart and role charters (this map)","HRC-T3","HRC-06","Governance Design","Per growth step","Structure changes"),
+ ("Compliance register","HRC-T3","HRC-10","Compliance and Legal","Quarterly","Legal positions"),
+ ("Conflict resolution record","HRC-T3","HRC-08","Conflict Resolution","Per conflict","Acceptance by parties"),
+ ("Architecture document","TEC-T1","TEC-01","System Architecture","Per system","Major choices"),
+ ("Custom software release","TEC-T1","TEC-07, OPS-02","Software Development","Per release","Production deploy"),
+ ("n8n automation","TEC-T2","TEC-02","Propagation Mode 4","Per SOP","—"),
+ ("CRM configuration change","TEC-T2","TEC-03","ACE GHL architecture","Per request","—"),
+ ("New or changed AI agent","TEC-T2","TEC-05 (review by G-05)","AI Alignment","Per change","Deployment"),
+ ("Security review","TEC-T3","TEC-06","Risk Management","Quarterly","Sensitive access"),
+ ("Monitoring and alerts","TEC-T3","TEC-08","System Architecture step 8","Continuous","—"),
+ ("SOP","CON-T3","CON-03 (capture by O-15)","Propagation Mode 3","Per process","—"),
+ ("GFunnel University course","CON-T3","CON-05","Teaching and Mentoring","Per course","—"),
+ ("Case study or testimonial","CON-T2","CON-02, CON-07","Propagation Mode 2","Per client result","Client consent"),
+ ("Brand standards","CON-T4","CON-04","Brand and Identity","Per review","Brand changes"),
+ ("New IP (framework, product, course concept)","CON-T4","CON-01","Creative Work","Per plan","Publication"),
+ ("Quarterly plan","STR-T1","STR-03, STR-01","Strategic Planning","Quarterly","Approval"),
+ ("Values and governing principles","STR-T1","STR-02","Governance Design","Annual","Changes"),
+ ("Positioning brief","STR-T2","STR-04","Domain 7","Quarterly","Positioning choice"),
+ ("Risk register","STR-T2","STR-05","Risk Management","Monthly","Risk appetite"),
+ ("MVP experiment","STR-T2","STR-06","Innovation and R&D","Per cycle","Investment"),
+ ("Monthly company BEAS scorecard","O-04","O-07, O-11, O-13 + all hub leads","Layer V","Monthly","Stage sign-off"),
+ ("Diagnosis of a stuck process","O-T1","O-05, O-06, O-08, O-09, O-12","Layers I, II, I.E, I.F, I.C","Per request","—"),
+ ("Post-mortem / integration record","O-T2","O-10, O-14","Layer I.G","Per failure","—"),
+ ("Decision brief","O-T3","O-16, O-17, G-02","Decision-Making","Per decision","The choice"),
+ ("Research memo","O-T3","O-22, O-21, O-20","Investigation and Research","Per question","—"),
+ ("Crisis log and response","O-19","G-00 (command), MKT-06, O-15","Crisis Response","Per crisis","Command locus"),
+ ("Derived algorithm / new SOP for an unnamed problem","O-02","G-01, G-04, CON-03","Master Meta-Algorithm","Per problem","Adoption as SOP"),
+ ("Variable register","G-01","G-03","Variable Principle","Continuous","Measurements"),
+ ("Agent alignment review","G-01","G-05, G-06","AI Alignment","Per capability change","Deployment"),
+ ("Founder weekly time and energy review","G-07","—","Time / Energy Management","Weekly","All personal choices"),
+]
+
 # ── 4. Workflows ──
 WF = [
  ("W01","Lead-to-Cash (ACE Acquisition → Creation)",[("O-01","Input arrives (ad, form, referral)"),("MKT-03","Capture in Lead Connector; tag source/campaign/hot buttons"),("SAL-01","Instant automated first contact (Flows AI) → Contacted"),("SAL-02","Short-survey qualification → Qualified"),("SAL-04","Book and confirm call → Appointment Set / Show"),("SAL-05","Pre-call brief; human closer runs 7-step script"),("SAL-06","I.A.C.E. on objections"),("SAL-07","Present three-tier stack; prospect self-selects"),("SAL-08","Draft proposal/contract from notes → Proposal"),("G-00","Human approves and signs"),("SAL-11","Closed Won → handoff package with full context"),("FIN-07","Invoice and record payment"),("FIN-05","Calculate commission"),("SAL-12","Update step conversion; lowest step → O-03")]),
@@ -247,6 +355,7 @@ WF = [
  ("W12","Vendor onboarding & review",[("OPS-04","Gradient; Correctness / Complexity / Resilience checks"),("STR-05","Confirm downgrade path"),("HRC-10","Contract review; ambiguous terms held open"),("G-00","Contract approval"),("OPS-04","Instrument performance; monthly review")]),
  ("W13","Content propagation (Five Modes)",[("CON-02","Mode 2 — capture demonstration/case study"),("CON-03","Mode 3 — document as SOP/course material"),("TEC-02","Mode 4 — automate"),("CON-05","Mode 1 — teach via University"),("HRC-05","Mode 5 — embed in culture/community"),("MKT-05","Distribute")]),
  ("W14","Quarterly strategy & compliance review",[("STR-01","Re-filter initiatives against the convergence point"),("STR-04","Market cycle phase and positioning"),("STR-03","Quarterly plan with falsifiers"),("FIN-02","Budget"),("HRC-10","Compliance review (quarterly minimum)"),("G-05","Agent alignment review at any capability change"),("G-00","Approve plan")]),
+ ("W16","Newsletter issue (Editorial & Email team)",[("CON-T1","Direct: set the issue's reader outcome and done-criterion"),("CON-09","Plan the issue; pull proof, University and research items; brief writers"),("CON-06","Write feature / long-form sections"),("CON-10","Write emails, subject lines and calls to action"),("CON-11","Subtractive edit; fact-check; read-aloud test"),("CON-12","Brand voice + claims check + attribution"),("CON-T1","Approve"),("CON-13","Build segments, test send, schedule in Lead Connector"),("CON-14","Report at 48 h and 7 days; name the weakest step"),("CON-T1","Document what worked; retro; next issue starts higher")]),
  ("W15","Agent fleet change",[("HRC-06","Propose new/changed agent role"),("G-06","Decision rights + autonomy level"),("G-05","Alignment review; downgrade path; instrumentation"),("G-00","Approve deployment"),("TEC-05","Deploy with logging + fallback"),("G-04","Audit first runs")]),
 ]
 
@@ -299,7 +408,7 @@ H_FILL = PatternFill("solid", fgColor="1F3864"); H_FONT = Font(name=F, bold=True
 BODY = Font(name=F, size=9); BOLD = Font(name=F, size=9, bold=True)
 TITLE = Font(name=F, size=14, bold=True, color="1F3864")
 INPUT = PatternFill("solid", fgColor="FFFF00")
-TIER_FILL = {"0":"E2EFDA","1":"DDEBF7","2":"FFF2CC","3":"FFFFFF"}
+TIER_FILL = {"0":"E2EFDA","1":"DDEBF7","2":"FFF2CC","3":"FCE4D6","4":"FFFFFF"}
 thin = Side(style="thin", color="BFBFBF"); BORDER = Border(left=thin, right=thin, top=thin, bottom=thin)
 WRAP = Alignment(wrap_text=True, vertical="top")
 
@@ -319,6 +428,8 @@ def body(ws, r, vals, fill=None):
 
 wb = Workbook()
 readme = wb.active; readme.title = "README"
+org = wb.create_sheet("Org Chart")
+deliv = wb.create_sheet("Deliverables")
 roster = wb.create_sheet("Agent Roster")
 resp = wb.create_sheet("Responsibilities")
 algc = wb.create_sheet("Algorithm Coverage")
@@ -351,6 +462,10 @@ for (key, ag_, txt, src, lines, cad, trig, out, hand, gate) in T:
     n += 1
     R.append((f"R-{n:04d}", ag_, key, txt, "Canon table / protocol", src, lines, cad, trig, out, hand, gate, "Canon table" if not src.startswith("v5.3") else "Canon (v5.3 meta-tier)"))
 
+for (ag_, key, txt, src, lines_, cad, trig, out, hand, gate) in TEAM_R:
+    n += 1
+    R.append((f"R-{n:04d}", ag_, key, txt, "Team layer (derived)", src, lines_, cad, trig, out, hand, gate, "Derived (team layer)"))
+
 # Every agent must own ≥1 responsibility: add a charter responsibility per agent (mission).
 for a in AGENTS:
     n += 1
@@ -363,8 +478,8 @@ lines = [
  ("Status", "DERIVATION — not canon. Built under AGENTS.md rules 4 & 7: the roles are derived from canon; nothing here is a primary algorithm of the methodology, and nothing here changes the base code DETECT → PROCESS → RESPOND."),
  ("Sources read", "v5.1 (full operational sections: Layers IV–VII, ◇, Master Meta-Algorithm, all per-layer, domain and extended algorithms, self-audit, cannot-supply), v5.2 (Deep-Lens protocol; Runs 4–5), v5.3 (Meta-Tier ⊙). v5.4 deliberately excluded: its constructs are not business operations and it states zero novel predictions."),
  ("How it was built", "build_agent_map.py parses all 77 algorithms (662 numbered steps) straight from versions/v5.1 so each step becomes an owned responsibility; operational tables (pipeline, script, I.A.C.E., Immersion, BEAS, Five Modes, pillars, self-audit, Forcing Test, Deep-Lens) were transcribed row by row. Re-run the script to regenerate."),
- ("Tabs", "Agent Roster — every agent with mission, DETECT/PROCESS/RESPOND, hand-offs, tools named in canon, KPIs, human gate, autonomy, source.\nResponsibilities — every atomic responsibility, one row each, with owner, source line, cadence, trigger, output, hand-off.\nAlgorithm Coverage — all 77 algorithms → owner, status, steps mapped vs steps in canon.\nCanon Element Coverage — every operational table row → mapped responsibility.\nBEAS Accountability — 45-cell scoring tool with the accountable agent per cell.\nWorkflows — 15 end-to-end hand-off chains.\nHuman Gates — what agents must never decide.\nHeld-Open Variables — what canon does not supply (never filled with assumption).\nGap Check — live formulas proving no responsibility is unowned and no agent is idle."),
- ("Tiers", "0 · Human authority / Governance (meta-tier)  ·  1 · Orchestration & diagnostics  ·  2 · Department leads (the Nine Hubs)  ·  3 · Task agents"),
+ ("Tabs", "Deliverables — 'I need X done': each deliverable's accountable manager agent and the team that does it.\nOrg Chart — the reporting hierarchy as an indented tree: level, solid reporting line, dotted line, direct reports, reporting path.\nAgent Roster — every agent with mission, DETECT/PROCESS/RESPOND, hand-offs, tools named in canon, KPIs, human gate, autonomy, source.\nResponsibilities — every atomic responsibility, one row each, with owner, source line, cadence, trigger, output, hand-off.\nAlgorithm Coverage — all 77 algorithms → owner, status, steps mapped vs steps in canon.\nCanon Element Coverage — every operational table row → mapped responsibility.\nBEAS Accountability — 45-cell scoring tool with the accountable agent per cell.\nWorkflows — 16 end-to-end hand-off chains (W16 = a newsletter issue through the Editorial & Email team).\nHuman Gates — what agents must never decide.\nHeld-Open Variables — what canon does not supply (never filled with assumption).\nGap Check — live formulas proving no responsibility is unowned and no agent is idle."),
+ ("Tiers", "0 · Human authority / Governance (meta-tier)  ·  1 · Orchestration & diagnostics  ·  2 · Department leads (the Nine Hubs)  ·  3 · Team leads (accountable for deliverables, manage a team)  ·  4 · Task agents"),
  ("Autonomy codes (derived)", "\n".join(f"{k} = {v}" for k, v in AUTONOMY.items())),
  ("Status labels", "Canon algorithm step / Canon table = transcribed from canon · Derived = placement or charter chosen for this map · Human-reserved = no agent executes · Held open = canon does not supply the value."),
  ("Editable cells", "Yellow cells on 'BEAS Accountability' are inputs (0, 0.5 or 1; coordination 0–1). Everything else is reference; totals and checks are formulas."),
@@ -378,17 +493,17 @@ r0 = len(lines) + 4
 readme.cell(row=r0, column=1, value="Live totals").font = BOLD
 tot = [("Agents", "=COUNTA('Agent Roster'!A:A)-1"), ("Responsibilities", "=COUNTA(Responsibilities!A:A)-1"),
        ("Algorithms covered", "=COUNTA('Algorithm Coverage'!A:A)-1"), ("Canon elements covered", "=COUNTA('Canon Element Coverage'!A:A)-1"),
-       ("Gap Check status", "='Gap Check'!B12")]
+       ("Gap Check status", "='Gap Check'!B14")]
 for i, (k, f) in enumerate(tot, r0 + 1):
     readme.cell(row=i, column=1, value=k).font = BODY
     c = readme.cell(row=i, column=2, value=f); c.font = BOLD; c.alignment = Alignment(horizontal="left")
 
 # ── Agent Roster ──
-cols = ["Agent ID","Agent Name","Tier","Hub / Department","Reports To","Kingdom (3K)","Yin/Yang Phase","Mission","Primary Algorithm(s)","DETECT — Triggers","RESPOND — Outputs","Hands Off To","Tools Named in Canon","KPIs / Observation Signals","Human Gate","Failure Mode Guarded","Autonomy","Role Basis","Canon Source","# Responsibilities"]
-header(roster, 1, cols, [9,34,16,22,10,9,16,60,36,34,34,20,20,32,26,30,9,28,24,10])
+cols = ["Agent ID","Agent Name","Tier","Hub / Department","Reports To","Kingdom (3K)","Yin/Yang Phase","Mission","Primary Algorithm(s)","DETECT — Triggers","RESPOND — Outputs","Hands Off To","Tools Named in Canon","KPIs / Observation Signals","Human Gate","Failure Mode Guarded","Autonomy","Role Basis","Canon Source","# Responsibilities","Dotted Line To"]
+header(roster, 1, cols, [9,34,16,22,10,9,16,60,36,34,34,20,20,32,26,30,9,28,24,10,30])
 for i, a in enumerate(AGENTS, 2):
     d = DEPTS[a[3]]
-    vals = [a[0], a[1], a[2], d[0], a[4], d[1], d[2], a[5], a[6], a[7], a[8], a[9], a[10], a[11], a[12], a[13], a[14], a[15], a[16], f"=COUNTIF(Responsibilities!$B:$B,A{i})"]
+    vals = [a[0], a[1], a[2], d[0], a[4], d[1], d[2], a[5], a[6], a[7], a[8], a[9], a[10], a[11], a[12], a[13], a[14], a[15], a[16], f"=COUNTIF(Responsibilities!$B:$B,A{i})", DOTTED.get(a[0], "—")]
     body(roster, i, vals, TIER_FILL[a[2][0]])
     roster.cell(row=i, column=1).font = BOLD
 NROST = len(AGENTS) + 1
@@ -493,6 +608,67 @@ header(ho, 1, cols, [8,60,50,50,22])
 for i, h in enumerate(HELD, 2):
     body(ho, i, list(h))
 
+# ── Org Chart (hierarchy) ──
+from collections import defaultdict
+BY = {a[0]: a for a in AGENTS}
+KIDS = defaultdict(list)
+for a in AGENTS:
+    KIDS[a[4]].append(a[0])
+def unit(a):
+    return UNITS.get(a[0]) or UNITS.get(a[3]) or DEPTS[a[3]][0]
+org["A1"] = "Org Chart — reporting hierarchy (solid lines); dotted lines listed alongside"; org["A1"].font = TITLE
+org["A2"] = "Derived structure: canon names the nine hubs and the layer algorithms, not who reports to whom. Redraw freely; responsibilities do not move with the boxes."; org["A2"].font = Font(name=F, size=9, italic=True)
+cols = ["Level","Org Chart","Agent ID","Unit","Reports To","Dotted Line To","Autonomy","Direct Reports","Responsibilities","Reporting Path"]
+header(org, 4, cols, [7,58,9,30,10,40,9,10,12,40])
+org.freeze_panes = "C5"
+ORDER = []
+def walk(node, depth, path):
+    a = BY[node]; ORDER.append((depth, node, path))
+    kids = KIDS[node]
+    # leaders before individual contributors; keep roster order otherwise
+    kids = sorted(kids, key=lambda k: (0 if KIDS[k] else 1))
+    for k in kids:
+        walk(k, depth + 1, path + [node])
+walk("G-00", 0, [])
+assert len(ORDER) == len(AGENTS), "every agent must sit in the tree"
+LEVEL_FILL = ["1F3864", "2F5597", "BDD7EE", "DDEBF7", "F2F2F2", "FFFFFF"]
+for i, (depth, node, path) in enumerate(ORDER, 5):
+    a = BY[node]
+    label = ("    " * depth) + ("└─ " if depth else "") + a[1]
+    vals = [depth, label, node, unit(a), a[4], DOTTED.get(node, "—"), a[14],
+            f"=COUNTIF('Agent Roster'!$E:$E,C{i})", f"=COUNTIF(Responsibilities!$B:$B,C{i})",
+            " → ".join(path + [node])]
+    body(org, i, vals, LEVEL_FILL[min(depth, 5)] if depth > 1 else None)
+    c = org.cell(row=i, column=2)
+    if depth == 0:
+        for col in range(1, len(cols) + 1):
+            org.cell(row=i, column=col).fill = PatternFill("solid", fgColor=LEVEL_FILL[0]); org.cell(row=i, column=col).font = Font(name=F, size=10, bold=True, color="FFFFFF")
+    elif depth == 1:
+        for col in range(1, len(cols) + 1):
+            org.cell(row=i, column=col).fill = PatternFill("solid", fgColor=LEVEL_FILL[1]); org.cell(row=i, column=col).font = Font(name=F, size=9, bold=True, color="FFFFFF")
+    elif KIDS[node]:
+        c.font = BOLD
+NORG = len(ORDER) + 4
+r2 = NORG + 2
+org.cell(row=r2, column=2, value="Span of control (direct reports per manager)").font = BOLD
+mgrs = [n for _, n, _ in ORDER if KIDS[n]]
+for j, m in enumerate(mgrs, r2 + 1):
+    org.cell(row=j, column=2, value=BY[m][1]).font = BODY
+    org.cell(row=j, column=3, value=m).font = BODY
+    org.cell(row=j, column=8, value=f"=COUNTIF('Agent Roster'!$E:$E,C{j})").font = BOLD
+
+# ── Deliverables ──
+deliv["A1"] = "Deliverables — 'I need X done: who owns it?'"; deliv["A1"].font = TITLE
+deliv["A2"] = "Each deliverable has one accountable manager agent; the doers are the team that performs the steps. Ownership is derived (canon names functions, not deliverable owners)."; deliv["A2"].font = Font(name=F, size=9, italic=True)
+cols = ["ID","Deliverable","Accountable Agent ID","Accountable Agent","Hub","Doers (team)","Algorithm / Process","Cadence","Human Gate"]
+header(deliv, 4, cols, [8,44,11,36,22,52,34,22,24])
+deliv.freeze_panes = "C5"
+for i, (d_, acc, doers, alg, cad, gate) in enumerate(DELIV, 5):
+    vals = [f"D-{i-4:03d}", d_, acc, f"=IFERROR(INDEX('Agent Roster'!$B:$B,MATCH(C{i},'Agent Roster'!$A:$A,0)),\"UNASSIGNED\")",
+            f"=IFERROR(INDEX('Agent Roster'!$D:$D,MATCH(C{i},'Agent Roster'!$A:$A,0)),\"UNASSIGNED\")", doers, alg, cad, gate]
+    body(deliv, i, vals)
+NDEL = len(DELIV) + 4
+
 # ── Gap Check ──
 gap["A1"] = "Gap Check — live proof of 'no gaps'"; gap["A1"].font = TITLE
 checks = [
@@ -504,26 +680,28 @@ checks = [
  ("Algorithm steps in canon", f"=SUM('Algorithm Coverage'!C2:C{NALG})", "—"),
  ("Algorithm steps unmapped", f"=SUM('Algorithm Coverage'!E2:E{NALG})", "must be 0"),
  ("Canon table elements uncovered", f"=COUNTIF('Canon Element Coverage'!G2:G{NEL},\"GAP\")", "must be 0"),
+ ("Agents outside the org chart", f"=COUNTA('Agent Roster'!A2:A{NROST})-COUNTA('Org Chart'!C5:C{NORG})", "must be 0"),
+ ("Deliverables with no valid accountable agent", f"=COUNTIF(Deliverables!D5:D{NDEL},\"UNASSIGNED\")", "must be 0"),
  ("Workflow steps with unknown agent", f"=COUNTIF(Workflows!E2:E{r-1},\"(group / any)\")", "group steps (Hub leads / Any agent) are intentional"),
 ]
 for c, h in enumerate(["Check","Value","Rule"], 1):
     cell = gap.cell(row=2, column=c, value=h); cell.font, cell.fill = H_FONT, H_FILL
 for i, (k, f, rule) in enumerate(checks, 3):
     gap.cell(row=i, column=1, value=k).font = BODY; gap.cell(row=i, column=2, value=f).font = BOLD; gap.cell(row=i, column=3, value=rule).font = BODY
-gap["A12"] = "OVERALL"; gap["A12"].font = BOLD
-gap["B12"] = '=IF(AND(B4=0,B6=0,B9=0,B10=0),"NO GAPS — every responsibility owned, every agent active, every canon step mapped","GAPS FOUND — see red cells")'
-gap["B12"].font = Font(name=F, bold=True, size=11, color="006100")
+gap["A14"] = "OVERALL"; gap["A12"].font = BOLD
+gap["B14"] = '=IF(AND(B4=0,B6=0,B9=0,B10=0,B11=0,B12=0),"NO GAPS — every responsibility owned, every agent active, every canon step mapped","GAPS FOUND — see red cells")'
+gap["B14"].font = Font(name=F, bold=True, size=11, color="006100")
 gap.column_dimensions["A"].width = 40; gap.column_dimensions["B"].width = 70; gap.column_dimensions["C"].width = 50
-gap.cell(row=14, column=1, value="Agents by tier").font = BOLD
-for i, tier in enumerate(["0","1","2","3"], 15):
+gap.cell(row=16, column=1, value="Agents by tier").font = BOLD
+for i, tier in enumerate(["0","1","2","3","4"], 17):
     gap.cell(row=i, column=1, value=f"Tier {tier}").font = BODY
     gap.cell(row=i, column=2, value=f"=COUNTIF('Agent Roster'!C2:C{NROST},\"{tier}*\")").font = BODY
-gap.cell(row=20, column=1, value="Agents by autonomy").font = BOLD
-for i, (k, v) in enumerate(AUTONOMY.items(), 21):
+gap.cell(row=23, column=1, value="Agents by autonomy").font = BOLD
+for i, (k, v) in enumerate(AUTONOMY.items(), 24):
     gap.cell(row=i, column=1, value=v).font = BODY
     gap.cell(row=i, column=2, value=f"=COUNTIF('Agent Roster'!Q2:Q{NROST},\"{k}\")").font = BODY
-gap.cell(row=26, column=1, value="Responsibilities per hub").font = BOLD
-for i, code in enumerate(DEPTS, 27):
+gap.cell(row=29, column=1, value="Responsibilities per hub").font = BOLD
+for i, code in enumerate(DEPTS, 30):
     gap.cell(row=i, column=1, value=DEPTS[code][0]).font = BODY
     gap.cell(row=i, column=2, value=f"=COUNTIF(Responsibilities!D2:D{NRESP},A{i})").font = BODY
 

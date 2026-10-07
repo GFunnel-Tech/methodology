@@ -424,3 +424,75 @@ sub("CON-05","GFunnel University Curriculum Agent","CON","Builds courses and men
 sub("CON-06","Writing Agent","CON","Writes long-form, emails, docs and copy: reader, gradient, structure before prose, precise words, subtractive edit, read-aloud test; precise communication.","Writing Algorithm; Domain 6 Linguistic / Communication","Writing request","Drafts and edited copy","Requester; CON-04","—","Edit pass rate","Publication of claims → G-00","Writing that fails through addition","H","Derived placement (Writing)","v5.1 L3004–3023; L3178–3195")
 sub("CON-07","Case Study & Proof Library Agent","CON","Maintains the searchable library of proof (results, testimonials, before/after BEAS) for sales and marketing.","What Sustains Propagation — results that speak","New proof asset","Indexed proof library","SAL-05; MKT-05","—","Proof assets per offer tier","—","Proof not findable when needed","A","Canon: sustains-propagation table","v5.1 L1321")
 sub("CON-08","Knowledge Base Librarian (Memory & Recall)","CON","Organisational memory: multi-level storage, dense cross-links, spaced review of key knowledge, everything beyond recall horizon documented.","Memory and Recall Algorithm; Layer I.F (civilizational record)","New documentation; quarterly review","Linked knowledge base; review schedule","All agents","—","Knowledge retrieval success","—","Knowledge rediscovered at full cost","A","Derived placement (Memory)","v5.1 L2956–2971")
+
+# ───────────── EDITORIAL & EMAIL TEAM SPECIALISTS (Content Hub) ─────────────
+# Newsletters and emails have no named algorithm in canon beyond Writing, Communication,
+# Brand and Content Distribution, so this team is a DERIVATION that splits the Writing
+# Algorithm's steps across specialists (see build_agent_map.py, OWN["Writing Algorithm"]).
+sub("CON-09","Newsletter Producer","CON","Plans and assembles each newsletter issue: picks the reader outcome for the issue, pulls proof from the case-study library, University lessons and research, and briefs the copywriters.","Writing Algorithm steps 1–3 (reader, gradient, blueprint before prose); Communication and Speaking","Editorial calendar slot; Team Lead brief","Issue outline + content brief","CON-10; CON-06","Lead Connector (GHL)","Issues shipped on schedule","Issue themes that make claims → G-00","Issues with no stated reader outcome","H","Derived (team layer)","v5.1 L3004–3023; L3026–3045")
+sub("CON-10","Email Copywriter","CON","Writes campaign, nurture and announcement emails and the templates other agents send (instant replies, referral asks, recaps), each with one reader and one desired action.","Writing Algorithm steps 4–6; Influence step 1–2 (the specific shift)","Brief from CON-09 or a requesting hub","Draft emails and sequence copy","CON-11","Lead Connector (GHL); Flows AI","Drafts passing edit first time","—","Writing that fails through addition","A","Derived (team layer)","v5.1 L3004–3023; L3839–3858")
+sub("CON-11","Editor & Proofreader","CON","Edits by removing whatever does not move the reader, reads aloud for where the reader would lose the thread, checks facts, links and grammar.","Writing Algorithm steps 7–8 (subtractive edit; falsifiability of intent)","Draft submitted","Edited, approved-for-review copy","CON-12","—","Defects found after send (target 0)","—","Unedited sends","A","Derived (team layer)","v5.1 L3004–3023")
+sub("CON-12","Brand Voice & Claims Checker","CON","Checks every piece against brand standards and checks every claim: results quoted are measured, nothing promised is unfalsifiable, CC BY attribution carried when the methodology is quoted.","Brand and Identity step 6 (Correspondence across touchpoints); Layer ◇ Falsifiability; Critical Thinking","Edited copy","Pass / revise verdict with reasons","CON-13; G-02","—","Claims with evidence (target 100%)","Publishing a claim about results → G-00","Promises without proof; off-brand touchpoints","A","Derived (team layer)","v5.1 L3405–3422; L2538–2555")
+sub("CON-13","Editorial Calendar & Send Scheduler","CON","Keeps the editorial calendar on a steady rhythm, builds sends in Lead Connector, segments lists, checks deliverability and send times.","Rhythm (Communication step 7); Content Distribution","Approved copy; calendar date","Scheduled sends; calendar","CON-14; MKT-05","Lead Connector (GHL)","Sends on schedule; bounce/spam rates (threshold held open)","Sends to the full list → human","Off-rhythm or duplicate sends","A","Derived (team layer)","v5.1 L3026–3045; L1379")
+sub("CON-14","Email Performance Analyst","CON","Measures each send against its intended effect (opens, clicks, replies, conversions), finds the weakest step and feeds patterns back to the team.","Writing step 8 / Creative Work step 9 (did it produce the intended effect?); Layer VII step 6 (lowest-conversion step)","48 h and 7 days after each send","Send report; next-issue recommendations","CON-T1; O-20","Lead Connector (GHL)","Click-to-action rate per send (target held open)","—","Sending without learning","A","Derived (team layer)","v5.1 L2978–3001; L2523–2535")
+
+# ───────────── TEAM LEADS (managers between hub leads and task agents) ─────────────
+# Every deliverable has one accountable manager agent whose team performs the steps.
+# DERIVED: canon names hubs and functions, not teams.
+TEAMS = {
+ # id: (name, unit code, reports_to, mission, members, extra algorithms)
+ "O-T1": ("Diagnostics Team Lead","ORC","O-02","Runs the layer diagnostics on request and returns one combined finding.",["O-05","O-06","O-08","O-09","O-12"],"Layers I, II, I.E, I.F, I.C"),
+ "O-T2": ("Knowledge & Learning Team Lead","ORC","O-02","Makes sure every failure is integrated and every new cycle starts from all prior paths.",["O-10","O-14"],"Layers I.G, III+"),
+ "O-T3": ("Intelligence & Decision Team Lead","ORC","O-02","Turns questions into researched, falsifiable decision briefs for the founder.",["O-16","O-17","O-18","O-20","O-21","O-22"],"Decision-Making, Problem-Solving, Critical Thinking, Pattern, Synthesis, Research"),
+ "STR-T1": ("Direction Team Lead","STR","STR-00","Owns the written direction of the business: purpose, principles and the quarterly plan.",["STR-01","STR-02","STR-03"],"Layer IV, Strategic Planning"),
+ "STR-T2": ("Market, Risk & Innovation Team Lead","STR","STR-00","Owns the outside view: market position, risk register and innovation pipeline.",["STR-04","STR-05","STR-06"],"Domain 7, Risk, Innovation"),
+ "MKT-T1": ("Demand Generation Team Lead","MKT","MKT-00","Owns top-of-funnel volume and attribution across outbound and inbound.",["MKT-01","MKT-02","MKT-03"],"Layer VII Acquisition"),
+ "MKT-T2": ("Brand & Communications Team Lead","MKT","MKT-00","Owns awareness, distribution of content, and talks/announcements.",["MKT-04","MKT-05","MKT-06"],"Brand, Communication, Public Speaking"),
+ "SAL-T1": ("Lead Response & Pipeline Team Lead","SAL","SAL-00","Owns every lead from first contact to a showed-up appointment.",["SAL-01","SAL-02","SAL-03","SAL-04"],"Sales Algorithm steps 1–2; ACE pipeline"),
+ "SAL-T2": ("Conversion Team Lead","SAL","SAL-00","Owns call enablement: script, objections, QA and negotiation support for the human closers.",["SAL-05","SAL-06","SAL-09","SAL-10"],"7-Step Script, I.A.C.E., Negotiation"),
+ "SAL-T3": ("Deal Desk Team Lead","SAL","SAL-00","Owns offers, proposals, contracts and the clean handoff to onboarding.",["SAL-07","SAL-08","SAL-11"],"Offer Architecture; Sales steps 8, 10, 11"),
+ "OPS-T1": ("Delivery Team Lead","OPS","OPS-00","Owns client builds and fulfilment through quality control.",["OPS-01","OPS-05","OPS-02"],"Immersion Build Phase; Pillar I"),
+ "OPS-T2": ("Projects & Vendors Team Lead","OPS","OPS-00","Owns project plans, critical paths and the vendors that feed them.",["OPS-03","OPS-04"],"Project Management, Vendor Management"),
+ "FIN-T1": ("Planning & Analysis Team Lead","FIN","FIN-00","Owns budgets, forecasts and monthly reporting.",["FIN-02","FIN-03","FIN-04"],"Forecasting; Financial Decisions"),
+ "FIN-T2": ("Revenue & Treasury Team Lead","FIN","FIN-00","Owns pricing, commissions, invoicing and collections.",["FIN-05","FIN-06","FIN-07"],"Domain 7 price mechanism; Treasury"),
+ "HRC-T1": ("Talent Acquisition Team Lead","HRC","HRC-00","Owns every hire from role definition to day one.",["HRC-01","HRC-02","HRC-03"],"Hiring Algorithm"),
+ "HRC-T2": ("People Development Team Lead","HRC","HRC-00","Owns performance reviews, learning plans and meeting facilitation.",["HRC-04","HRC-07","HRC-09"],"Learning, Skill Acquisition, Group Facilitation"),
+ "HRC-T3": ("Culture & Standards Team Lead","HRC","HRC-00","Owns culture, org design, dispute resolution and compliance.",["HRC-05","HRC-06","HRC-08","HRC-10"],"Ritual Design, Conflict Resolution, Compliance"),
+ "TEC-T1": ("Platform & Engineering Team Lead","TEC","TEC-00","Owns architecture, custom software and integrations.",["TEC-01","TEC-07","TEC-04"],"System Architecture, Software Development"),
+ "TEC-T2": ("Automation & AI Team Lead","TEC","TEC-00","Owns n8n automations, the CRM and AI workflows (including these agents).",["TEC-02","TEC-03","TEC-05"],"Propagation Mode 4"),
+ "TEC-T3": ("Security & Reliability Team Lead","TEC","TEC-00","Owns security and monitoring.",["TEC-06","TEC-08"],"Risk (Resilience); Layer I.F"),
+ "CS-T1": ("Onboarding & Immersion Team Lead","CS","CS-00","Owns every new client from handoff to approved blueprint, and the quarterly re-immersion.",["CS-01","CS-02","CS-03","CS-10"],"Immersion Model; Client Onboarding"),
+ "CS-T2": ("Account & Support Team Lead","CS","CS-00","Owns day-to-day client relationships, support and feedback.",["CS-04","CS-05","CS-07"],"Customer Service"),
+ "CS-T3": ("Retention & Growth Team Lead","CS","CS-00","Owns results reporting, churn saves, expansion and community.",["CS-06","CS-08","CS-09","CS-11"],"ACE Expansion; Movement Building"),
+ "CON-T1": ("Editorial & Email Team Lead","CON","CON-00","Owns newsletters, emails and written content end to end: sets the reader outcome, assigns the team, approves, and documents what worked.",["CON-06","CON-09","CON-10","CON-11","CON-12","CON-13","CON-14"],"Writing Algorithm (owns steps 1, 2, 9); Communication"),
+ "CON-T2": ("Media & Proof Team Lead","CON","CON-00","Owns recordings, case studies, testimonials and the proof library.",["CON-02","CON-07"],"Propagation Mode 2"),
+ "CON-T3": ("Knowledge & Education Team Lead","CON","CON-00","Owns SOPs, the knowledge base and GFunnel University.",["CON-03","CON-05","CON-08"],"Propagation Modes 1 and 3; Memory"),
+ "CON-T4": ("Brand & IP Team Lead","CON","CON-00","Owns brand standards and new intellectual property.",["CON-01","CON-04"],"Brand and Identity; Creative Work"),
+}
+for tid, (tname, code, boss, mission, members, algs) in TEAMS.items():
+    ag(tid, tname, "3 · Team lead", code, boss,
+       mission + " Accountable for the team's deliverables: takes the request, runs the Shepherd's Way at team scale, assigns members, checks quality, and closes each item with documentation.",
+       "Layer VI Shepherd's Way (team cycle); " + algs,
+       "Deliverable request from hub lead, O-02 or another team; member escalation",
+       "Assigned work; approved deliverables; team status; Database entries",
+       boss + "; requesting team", "—",
+       "Team deliverables on time; members' self-audit pass rate (G-04)",
+       "Anything above the team's autonomy → " + boss, "Work landing on no one; members working out of step order",
+       "H", "Derived (team layer)", "Derived — v5.1 L1453–1569 applied at team scale")
+TEAM_OF = {m: tid for tid, t in TEAMS.items() for m in t[4]}
+
+# ───────────── HIERARCHY (solid reporting lines) + DOTTED LINES ─────────────
+# Solid line = chain of command for the org chart. Dotted line = audit, gate or
+# escalation relationships that cut across it. Both are DERIVED (canon names the
+# departments, not a reporting structure); the operator may redraw them.
+HUB_LEADS = ["STR-00","MKT-00","SAL-00","OPS-00","FIN-00","HRC-00","TEC-00","CS-00","CON-00"]
+REPORTS = {"O-02":"G-00","O-04":"O-02","O-19":"O-02","G-05":"G-01","G-06":"G-01",
+           **{h: "G-00" for h in HUB_LEADS}, **TEAM_OF}
+DOTTED = {"O-02":"G-01 (derived algorithms classified)","O-04":"G-00 (growth-stage sign-off); all hub leads (scores them)",
+          "O-16":"G-00 (decides)","O-19":"G-00 (crisis command locus)","G-05":"G-00 (agent deployment approval)",
+          "G-06":"G-00 (charter approval)","O-18":"G-02 (claim standards)","CON-13":"MKT-05 (channel distribution)","CON-10":"SAL-01, CS-09, O-15 (templates they send)","O-15":"CON-03 (SOP library)","G-07":"—",
+          **{h: "O-04 (monthly BEAS score); O-03 (Shepherd's Way gates)" for h in HUB_LEADS}}
+UNITS = {"G-00":"Executive","G-07":"Executive","GOV":"Office of Governance (meta-tier)","ORC":"Orchestration Office"}
+# Tier relabel: task agents become tier 4 now that team leads sit at tier 3
+A = [a[:2] + (("4 · Task agent",) if a[2].startswith("3 · Task") else (a[2],)) + a[3:] for a in A]
+A = [tuple(a[:4]) + (REPORTS.get(a[0], a[4]),) + tuple(a[5:]) for a in A]

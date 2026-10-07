@@ -2,12 +2,14 @@
 
 > **Status: derivation, not canon** (AGENTS.md rules 4 and 7). This map turns the methodology into an operating structure of AI agents and human gates. Nothing here is a primary algorithm, and nothing here changes the base code `DETECT → PROCESS → RESPOND`.
 
-**[`GFunnel-Agent-Org-Map.xlsx`](GFunnel-Agent-Org-Map.xlsx)** — 112 agents · 956 owned responsibilities · all 77 v5.1 algorithms (662 steps) mapped · 182 operational-table elements mapped · 15 end-to-end workflows · 21 human gates · 14 held-open variables.
+**[`GFunnel-Agent-Org-Map.xlsx`](GFunnel-Agent-Org-Map.xlsx)** — 145 agents (incl. 27 team leads) · 1,218 owned responsibilities · all 77 v5.1 algorithms (662 steps) mapped · 182 operational-table elements mapped · 16 end-to-end workflows · 75 deliverables with an accountable manager · 21 human gates · 14 held-open variables.
 
 | Tab | What it holds |
 | --- | --- |
 | README | Scope, sources, legend, attribution, live totals |
-| Agent Roster | Every agent: mission, DETECT triggers, RESPOND outputs, hand-offs, tools named in canon, KPIs, human gate, failure mode guarded, autonomy, canon source |
+| Deliverables | "I need X done" → the accountable manager agent and the team that does it (e.g. Newsletter issue → CON-T1 Editorial & Email Team Lead) |
+| Org Chart | The reporting hierarchy as an indented tree: level, solid line, dotted line, direct reports, reporting path, span of control |
+| Agent Roster | Every agent (now with a Dotted Line column): mission, DETECT triggers, RESPOND outputs, hand-offs, tools named in canon, KPIs, human gate, failure mode guarded, autonomy, canon source |
 | Responsibilities | One row per atomic responsibility: owner, source algorithm/table, canon line, cadence, trigger, output, hand-off |
 | Algorithm Coverage | All 77 algorithms → owner, coverage status, steps in canon vs steps mapped |
 | Canon Element Coverage | Every row of the operational tables (nine hubs' functions, Shepherd's Way, Immersion, ACE, pipeline, 7-step script, I.A.C.E., offer tiers, Four Pillars, BEAS, Five Modes, self-audit, Forcing Test, Deep-Lens…) → mapped responsibility |
@@ -17,19 +19,26 @@
 | Held-Open Variables | What canon does not supply — KPI thresholds, BEAS band calibration, whether the co-creator proof holds for AI, etc. Never filled with assumption |
 | Gap Check | Live formulas: agents with no responsibility, unowned responsibilities, unmapped algorithm steps, uncovered table elements — all must be 0 |
 
+**[`org-chart.html`](org-chart.html)** — interactive org chart (search a deliverable to find its owner; select an agent for its full card). Rebuild with `build_org_chart.py` after the workbook is recalculated.
+
 ## Structure
 
 - **Tier 0 — Governance & meta-tier:** the human Founder/Operator (G-00), Container/Forcing Test (⊙), Falsifiability (◇), Variable Registry, Compliance Auditor, AI Alignment (applied to this fleet), Governance Designer, Founder Performance.
-- **Tier 1 — Orchestration & diagnostics:** Layer 0 intake, Master Meta-Algorithm router, Shepherd's Way controller, BEAS auditor, one agent per layer algorithm (I, I.B–I.G, II, III, III+), Database/Documentation, plus the cross-functional cognitive algorithms (Decision, Problem-Solving, Critical Thinking, Crisis, Pattern, Synthesis, Research).
-- **Tier 2 — the Nine Hubs' leads** (v5.1 Layer V): Strategy, Marketing, Sales, Operations, Finance, HR & Culture, Technology, Client Success, Content.
-- **Tier 3 — task agents:** one per canonical department function and per operational table role (e.g. Instant Response, Lead Qualification, Pipeline, Call Copilot, I.A.C.E. Coach, Offer Architect, Pre-Immersion Prep, Blueprint, Churn Prevention, Expansion & Referral…).
+- **Tier 1 — Orchestration & diagnostics:** headed by the Algorithm Router (chief-of-staff role); Layer 0 intake, Master Meta-Algorithm router, Shepherd's Way controller, BEAS auditor, one agent per layer algorithm (I, I.B–I.G, II, III, III+), Database/Documentation, plus the cross-functional cognitive algorithms (Decision, Problem-Solving, Critical Thinking, Crisis, Pattern, Synthesis, Research).
+- **Tier 2 — the Nine Hubs' leads** (v5.1 Layer V), reporting directly to the founder, with dotted lines to the BEAS Auditor and the Shepherd's Way controller: Strategy, Marketing, Sales, Operations, Finance, HR & Culture, Technology, Client Success, Content.
+- **Tier 3 — team leads (27):** every deliverable has one accountable manager agent that takes the request, runs the Shepherd's Way at team scale, assigns its team, approves the output and closes it with documentation. Example: the **Editorial & Email Team Lead (CON-T1)** manages a Newsletter Producer, Email Copywriter, Writing Agent, Editor & Proofreader, Brand Voice & Claims Checker, Editorial Calendar & Send Scheduler and Email Performance Analyst, and the team runs the Writing Algorithm between them (the lead owns steps 1, 2 and 9).
+- **Tier 4 — task agents:** one per canonical department function and per operational table role (e.g. Instant Response, Lead Qualification, Pipeline, Call Copilot, I.A.C.E. Coach, Offer Architect, Pre-Immersion Prep, Blueprint, Churn Prevention, Expansion & Referral…).
 
 Life-domain, contemplative and care algorithms (Health, Relationships, Parenting, Grief, Major Life Transition, Meditation, Spiritual, Religious, Psychological) are **human-reserved**, not delegated to agents. Domains 8–10 are kept as a Correspondence reference library for the Process Cartographer. v5.4 is excluded: its constructs are not business operations, and it states zero novel predictions.
+
+Reporting lines, teams and deliverable owners are **derived** (canon names hubs and functions, not who reports to whom); redraw them freely in `agents_data.py`.
 
 ## Regenerate
 
 ```bash
-python3 operations/agent-org-map/build_agent_map.py
+python3 operations/agent-org-map/build_agent_map.py   # workbook
+# recalculate the workbook (open and save in Excel/LibreOffice), then:
+python3 operations/agent-org-map/build_org_chart.py    # org-chart.html
 ```
 
 The builder reads `versions/v5.1` directly, so every algorithm step is pulled from canon rather than retyped. The roster lives in `agents_data.py`. openpyxl writes formulas without cached values, so recalculate after a rebuild (for example, open the file in Excel or LibreOffice and save it) before reading totals programmatically.
