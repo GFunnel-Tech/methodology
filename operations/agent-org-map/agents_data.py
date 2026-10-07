@@ -429,31 +429,31 @@ sub("CON-08","Knowledge Base Librarian (Memory & Recall)","CON","Organisational 
 # DERIVED: canon supplies the gates (what agents cannot decide), the documentation rule,
 # BEAS lowest-cell dispatch, gradient renewal and "restart at higher baseline"; it does not
 # name a liaison, a work board or a suggestion engine. These three make the team run.
-ag("O-23","Owner Liaison (Executive Briefing Agent)","1 · Orchestration","ORC","G-00",
-   "The Owner's single channel to the whole agent team. Sends the daily brief and weekly report, keeps the approvals inbox (every Human Gate arrives here with its decision brief), records each Owner decision and relays it back, and turns Owner requests into work items.",
-   "Communication and Speaking (match frequency, right density); Decision-Making steps 8–9 (decide, document); What The Framework Cannot Supply",
-   "Owner message or request; any Human Gate raised; daily 07:00 / weekly brief time (times held open); crisis flag",
-   "Owner Daily Brief; Owner Weekly Report; approvals inbox; decision log; Owner requests routed to O-01",
-   "G-00; O-01; requesting agent", "Lead Connector (GHL) / email for delivery (channel held open)",
-   "Gate turnaround; brief delivered on time; Owner requests acknowledged same day",
-   "Every decision itself → G-00", "Owner flooded with unfiltered noise, or gates stuck unseen",
-   "A","Derived (operating layer)","v5.1 L168–181; L3026–3045; L2698–2719")
+ag("O-23","Owner Liaison (Real-Time Executive Channel)","1 · Orchestration","ORC","G-00",
+   "The Owner's single channel to the whole agent team, delivered inside GFunnel as close to instantly as possible. Routes every event by priority tier: P0 interrupts (crisis), P1 pushes now (decisions, blockers, proposals, Owner-request receipts), P2 streams to the live feed (status, completions), P3 rolls up into on-demand and scheduled digests. Keeps the approvals inbox with one-tap decisions, records each decision and relays it back the moment it is made.",
+   "Communication and Speaking (step 5: density the receiver can hold; step 7: rhythm); Decision-Making steps 8–9; ACE Acquisition 'zero lag'; What The Framework Cannot Supply",
+   "Any event on the GFunnel event bus; Owner message or request; any Human Gate raised; Owner asks 'brief me now'",
+   "Tiered push / feed / digest in GFunnel; approvals inbox with one-tap decisions; decision log; Owner requests turned into board items",
+   "G-00; O-01; requesting agent", "GFunnel: Lead Connector (GHL) mobile + in-app notifications, conversations; Flows AI; n8n",
+   "Event→Owner latency per tier (targets held open until measured); gate turnaround; pushes the Owner marks as noise",
+   "Every decision itself → G-00", "Owner flooded with unfiltered pushes, or a decision stuck unseen",
+   "A","Derived (operating layer)","v5.1 L168–181; L3026–3045; L2698–2719; L1595")
 ag("O-24","Work Suggestion Agent (Project Opportunity Scout)","1 · Orchestration","ORC","O-T3",
-   "Reads project and business signals and proposes the next work: lowest BEAS cell, stalled projects, the lowest-conversion funnel step, each client's next Fibonacci step, rising risks, recurring patterns, open variables worth narrowing. Each proposal states the expected outcome and what would show it was wrong.",
+   "Watches project and business signals continuously and proposes the next work the moment a signal changes: lowest BEAS cell, a stalled project, the lowest-conversion funnel step, a client's next Fibonacci step, a rising risk, a recurring pattern, an open variable worth narrowing. Each proposal states the expected outcome and what would show it was wrong, and lands in the Owner's inbox as a one-tap approve / defer / decline.",
    "Layer V step 5 (lowest cell); Layer I.E step 8 (anticipate the next gradient); Layer VII step 6 (lowest-conversion step); Client Onboarding step 9 (next Fibonacci step); Repetition",
-   "Weekly scan; BEAS published; project milestone; stall detected (O-08); pattern found (O-20)",
+   "Signal-change events on the GFunnel event bus (BEAS published, stall flagged by O-08, conversion drop from SAL-12, client milestone, risk change, pattern found)",
    "Work Proposal cards: project, problem, proposed work, owning team lead, expected outcome, falsifier, effort, dependency order, open variables",
-   "O-23 (to Owner for approval); O-T3", "—",
-   "Proposals approved; approved proposals that hit their expected outcome",
-   "Approving any proposal → G-00", "Busywork proposals with no stated outcome; proposals ignoring dependency order",
+   "O-23 (P1 push to Owner); O-T3", "GFunnel event bus; Lead Connector (GHL)",
+   "Signal→proposal latency; proposals approved; approved proposals that hit their expected outcome",
+   "Approving any proposal → G-00", "Busywork proposals with no stated outcome; duplicate proposals for one signal",
    "H","Derived (operating layer)","v5.1 L2478–2495; L2332–2351; L2523–2535; L2677–2695")
 ag("O-25","Work Board Dispatcher","1 · Orchestration","ORC","O-02",
-   "Keeps one live work board for the whole company: every item has an owner team lead, a Shepherd's Way step, a due date and its blockers. Dispatches approved items to team leads, collects daily status, and flags blocked items (the blocker is the location of the work).",
-   "Layer VI Shepherd's Way (step state per item); Project Management (weekly cycles, critical path); How To Run An Algorithm (stop at the blocker)",
-   "Approved Owner request or proposal; routed item from O-02; daily status from team leads",
-   "Work board; dispatch to team leads; daily blocked-items list; status feed for O-23 reports",
-   "Team leads; O-23; O-03", "Work board tool held open (ClickUp, GHL or similar)",
-   "Items with an owner (target 100%); blocked > 2 days; on-time completion",
+   "Keeps one live work board inside GFunnel: every item has an owner team lead, a Shepherd's Way step, a due time and its blockers. Dispatches approved items to the owning team lead the instant they are approved, streams every state change to the live feed, and escalates a blocked item immediately (the blocker is the location of the work).",
+   "Layer VI Shepherd's Way (step state per item); Project Management (critical path); How To Run An Algorithm (stop at the blocker)",
+   "Approval event; routed item from O-02; state-change events from team leads and task agents",
+   "Live board; instant dispatch; blocked-item escalations (P1); state-change stream (P2)",
+   "Team leads; O-23; O-03", "GFunnel work board (custom object / pipeline in Lead Connector, or built)",
+   "Approval→dispatch latency; items with an owner (target 100%); time items sit blocked",
    "Re-prioritising against Owner priorities → G-00 via O-23", "Work landing on no one; silent blockers",
    "A","Derived (operating layer)","v5.1 L96–111; L1453–1569; L3359–3380")
 
@@ -467,6 +467,8 @@ sub("CON-11","Editor & Proofreader","CON","Edits by removing whatever does not m
 sub("CON-12","Brand Voice & Claims Checker","CON","Checks every piece against brand standards and checks every claim: results quoted are measured, nothing promised is unfalsifiable, CC BY attribution carried when the methodology is quoted.","Brand and Identity step 6 (Correspondence across touchpoints); Layer ◇ Falsifiability; Critical Thinking","Edited copy","Pass / revise verdict with reasons","CON-13; G-02","—","Claims with evidence (target 100%)","Publishing a claim about results → G-00","Promises without proof; off-brand touchpoints","A","Derived (team layer)","v5.1 L3405–3422; L2538–2555")
 sub("CON-13","Editorial Calendar & Send Scheduler","CON","Keeps the editorial calendar on a steady rhythm, builds sends in Lead Connector, segments lists, checks deliverability and send times.","Rhythm (Communication step 7); Content Distribution","Approved copy; calendar date","Scheduled sends; calendar","CON-14; MKT-05","Lead Connector (GHL)","Sends on schedule; bounce/spam rates (threshold held open)","Sends to the full list → human","Off-rhythm or duplicate sends","A","Derived (team layer)","v5.1 L3026–3045; L1379")
 sub("CON-14","Email Performance Analyst","CON","Measures each send against its intended effect (opens, clicks, replies, conversions), finds the weakest step and feeds patterns back to the team.","Writing step 8 / Creative Work step 9 (did it produce the intended effect?); Layer VII step 6 (lowest-conversion step)","48 h and 7 days after each send","Send report; next-issue recommendations","CON-T1; O-20","Lead Connector (GHL)","Click-to-action rate per send (target held open)","—","Sending without learning","A","Derived (team layer)","v5.1 L2978–3001; L2523–2535")
+
+sub("TEC-09","Real-Time Event & Notification Engineer","TEC","Builds and runs the GFunnel event bus and notification router that make delivery near-instant: every agent action emits a typed event; the router applies the Owner's priority tiers; latency is measured end to end and reported.","System Architecture steps 2, 5, 8 (flows, no single point of failure, observability); Layer I.F","New event type; latency breach; delivery failure","Event schema; routing rules; latency dashboard; fallback paths","O-23; TEC-08","GFunnel: Lead Connector (GHL) workflows, webhooks, notifications; n8n; Flows AI","Measured event→device latency per tier; delivery failures (target 0)","Changing what interrupts the Owner → G-00","Silent delivery failure; one channel with no fallback","H","Derived (operating layer)","v5.1 L3529–3548; L2354–2371")
 
 # ───────────── TEAM LEADS (managers between hub leads and task agents) ─────────────
 # Every deliverable has one accountable manager agent whose team performs the steps.
@@ -491,7 +493,7 @@ TEAMS = {
  "HRC-T2": ("People Development Team Lead","HRC","HRC-00","Owns performance reviews, learning plans and meeting facilitation.",["HRC-04","HRC-07","HRC-09"],"Learning, Skill Acquisition, Group Facilitation"),
  "HRC-T3": ("Culture & Standards Team Lead","HRC","HRC-00","Owns culture, org design, dispute resolution and compliance.",["HRC-05","HRC-06","HRC-08","HRC-10"],"Ritual Design, Conflict Resolution, Compliance"),
  "TEC-T1": ("Platform & Engineering Team Lead","TEC","TEC-00","Owns architecture, custom software and integrations.",["TEC-01","TEC-07","TEC-04"],"System Architecture, Software Development"),
- "TEC-T2": ("Automation & AI Team Lead","TEC","TEC-00","Owns n8n automations, the CRM and AI workflows (including these agents).",["TEC-02","TEC-03","TEC-05"],"Propagation Mode 4"),
+ "TEC-T2": ("Automation & AI Team Lead","TEC","TEC-00","Owns n8n automations, the CRM, AI workflows (including these agents) and the real-time event and notification layer.",["TEC-02","TEC-03","TEC-05","TEC-09"],"Propagation Mode 4"),
  "TEC-T3": ("Security & Reliability Team Lead","TEC","TEC-00","Owns security and monitoring.",["TEC-06","TEC-08"],"Risk (Resilience); Layer I.F"),
  "CS-T1": ("Onboarding & Immersion Team Lead","CS","CS-00","Owns every new client from handoff to approved blueprint, and the quarterly re-immersion.",["CS-01","CS-02","CS-03","CS-10"],"Immersion Model; Client Onboarding"),
  "CS-T2": ("Account & Support Team Lead","CS","CS-00","Owns day-to-day client relationships, support and feedback.",["CS-04","CS-05","CS-07"],"Customer Service"),
@@ -522,7 +524,7 @@ REPORTS = {"O-02":"G-00","O-04":"O-02","O-19":"O-02","G-05":"G-01","G-06":"G-01"
            **{h: "G-00" for h in HUB_LEADS}, **TEAM_OF}
 DOTTED = {"O-02":"G-01 (derived algorithms classified)","O-04":"G-00 (growth-stage sign-off); all hub leads (scores them)",
           "O-16":"G-00 (decides)","O-19":"G-00 (crisis command locus)","G-05":"G-00 (agent deployment approval)",
-          "G-06":"G-00 (charter approval)","O-23":"All hub leads and O-25 (status in); O-24 (proposals in)","O-24":"G-00 via O-23 (approval)","O-25":"O-03 (step gates); O-23 (reports)","O-18":"G-02 (claim standards)","CON-13":"MKT-05 (channel distribution)","CON-10":"SAL-01, CS-09, O-15 (templates they send)","O-15":"CON-03 (SOP library)","G-07":"—",
+          "G-06":"G-00 (charter approval)","O-23":"All hub leads and O-25 (status in); O-24 (proposals in)","O-24":"G-00 via O-23 (approval)","TEC-09":"O-23 (routing rules); TEC-08 (monitoring)","O-25":"O-03 (step gates); O-23 (reports)","O-18":"G-02 (claim standards)","CON-13":"MKT-05 (channel distribution)","CON-10":"SAL-01, CS-09, O-15 (templates they send)","O-15":"CON-03 (SOP library)","G-07":"—",
           **{h: "O-04 (monthly BEAS score); O-03 (Shepherd's Way gates)" for h in HUB_LEADS}}
 UNITS = {"G-00":"Executive","G-07":"Executive","O-23":"Executive","GOV":"Office of Governance (meta-tier)","ORC":"Orchestration Office"}
 # Tier relabel: task agents become tier 4 now that team leads sit at tier 3
