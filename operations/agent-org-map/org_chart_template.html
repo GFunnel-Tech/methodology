@@ -1,0 +1,213 @@
+<title>GFunnel Agent Org Chart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: founder node on top, a trunk line, then 12 branches (one per direct report) in a wrapping grid; detail drawer on the right (bottom sheet on phones). Colour = BEAS quadrant. */
+:root{
+  --bg:#f3f5f8; --surface:#ffffff; --surface-2:#e9edf3; --ink:#18202c; --muted:#5b6678; --line:#c9d1dc;
+  --gov:#2b3a55; --orc:#4d5f7a; --yang:#c26a12; --yin:#1f7a8c; --bridge:#5f7f22;
+  --gov-soft:#e3e8f1; --orc-soft:#e6ebf1; --yang-soft:#fbeedf; --yin-soft:#ddf0f3; --bridge-soft:#ebf2dd;
+  --focus:#2463eb; --hl:#fff1a8;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",Arial,sans-serif;
+  --f-body:"IBM Plex Sans",Arial,Helvetica,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#11151c; --surface:#1a2029; --surface-2:#232b36; --ink:#e6eaf0; --muted:#9aa5b5; --line:#33404f;
+  --gov:#9fb3d9; --orc:#a9b8cc; --yang:#f0a254; --yin:#5cc3d4; --bridge:#a7c96a;
+  --gov-soft:#222c3d; --orc-soft:#232b37; --yang-soft:#33261a; --yin-soft:#16303a; --bridge-soft:#253019;
+  --focus:#7aa2ff; --hl:#5a4b10; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11151c; --surface:#1a2029; --surface-2:#232b36; --ink:#e6eaf0; --muted:#9aa5b5; --line:#33404f;
+  --gov:#9fb3d9; --orc:#a9b8cc; --yang:#f0a254; --yin:#5cc3d4; --bridge:#a7c96a;
+  --gov-soft:#222c3d; --orc-soft:#232b37; --yang-soft:#33261a; --yin-soft:#16303a; --bridge-soft:#253019;
+  --focus:#7aa2ff; --hl:#5a4b10; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.45}
+.wrap{max-width:1500px;margin:0 auto;padding-inline:16px;padding-block:20px 48px}
+header.top{display:grid;gap:12px;margin-bottom:18px}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(24px,3vw,32px);letter-spacing:.01em;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:0;max-width:75ch}
+.stats{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.stats b{color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.controls input{font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);min-width:0;width:min(320px,100%)}
+.chipset{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--f-mono);font-size:11.5px;padding:4px 8px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:10px;height:10px;border-radius:2px;display:inline-block}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+.root{display:flex;flex-direction:column;align-items:center}
+.ceo{background:var(--gov);color:var(--bg);border:0;border-radius:8px;padding:12px 18px;text-align:center;cursor:pointer;font:inherit;max-width:100%}
+.ceo .nm{font-family:var(--f-display);font-weight:700;font-size:18px}
+.ceo .meta{font-family:var(--f-mono);font-size:11.5px;opacity:.85}
+.trunk{width:2px;height:22px;background:var(--line)}
+.rail{height:2px;background:var(--line);width:100%;margin-bottom:0}
+.branches{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px 14px;width:100%;padding-top:16px;border-top:2px solid var(--line)}
+.branch{min-width:0;display:flex;flex-direction:column;gap:6px;position:relative}
+.branch::before{content:"";position:absolute;top:-18px;left:22px;width:2px;height:16px;background:var(--line)}
+.lead{border-radius:7px;padding:10px 11px;cursor:pointer;text-align:left;font:inherit;color:var(--ink);border:1px solid transparent;background:var(--soft);border-top:4px solid var(--c)}
+.lead .unit{font-family:var(--f-display);font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--c)}
+.lead .nm{font-weight:600;font-size:14px;margin-top:2px}
+.lead .dot{font-size:11.5px;color:var(--muted);margin-top:4px}
+.kids{list-style:none;margin:0;padding:0 0 0 12px;border-left:2px solid var(--line);display:flex;flex-direction:column;gap:4px;margin-left:21px}
+.kids .kids{margin-left:12px;margin-top:4px}
+.card{display:flex;gap:8px;align-items:flex-start;width:100%;text-align:left;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:6px 8px;cursor:pointer;position:relative}
+.card::before{content:"";position:absolute;left:-14px;top:14px;width:12px;height:2px;background:var(--line)}
+.card:hover,.lead:hover{border-color:var(--c)}
+.card .id,.lead .id{font-family:var(--f-mono);font-size:11px;color:var(--muted);white-space:nowrap}
+.card .nm{font-size:12.5px;flex:1;min-width:0}
+.card.mgr .nm{font-weight:600}
+.badge{font-family:var(--f-mono);font-size:10.5px;padding:1px 5px;border-radius:4px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.badge.R{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.dim{opacity:.28}
+.match{background:var(--hl)!important}
+.sel{outline:2px solid var(--c);outline-offset:1px}
+.q-gov{--c:var(--gov);--soft:var(--gov-soft)} .q-orc{--c:var(--orc);--soft:var(--orc-soft)}
+.q-yang{--c:var(--yang);--soft:var(--yang-soft)} .q-yin{--c:var(--yin);--soft:var(--yin-soft)} .q-bridge{--c:var(--bridge);--soft:var(--bridge-soft)}
+
+aside.drawer{position:fixed;top:env(safe-area-inset-top,0px);right:0;bottom:0;width:min(440px,100%);background:var(--surface);border-left:1px solid var(--line);box-shadow:-8px 0 24px rgb(0 0 0 / .12);overflow:auto;padding:18px 18px calc(24px + env(safe-area-inset-bottom,0px));z-index:5}
+.drawer h2{font-family:var(--f-display);font-size:21px;margin:4px 0 2px;text-wrap:balance}
+.drawer .idl{font-family:var(--f-mono);font-size:12px;color:var(--c)}
+.drawer dl{display:grid;grid-template-columns:1fr;gap:2px 0;margin:14px 0 0}
+.drawer dt{font-family:var(--f-display);font-weight:600;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.drawer dd{margin:0;min-width:0;overflow-wrap:anywhere;white-space:pre-line}
+.drawer .close{position:sticky;top:0;float:right;font:inherit;background:var(--surface-2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 10px;cursor:pointer}
+.linkid{font-family:var(--f-mono);font-size:12px;background:none;border:0;padding:0;color:var(--focus);cursor:pointer;text-decoration:underline}
+.foot{margin-top:28px;font-size:12px;color:var(--muted);max-width:90ch}
+@media (max-width:640px){aside.drawer{top:auto;height:72%;width:100%;border-left:0;border-top:1px solid var(--line);border-radius:12px 12px 0 0}}
+@media (prefers-reduced-motion:no-preference){.card,.lead{transition:border-color .12s}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>GFunnel Agent Org Chart</h1>
+    <p class="sub">Reporting hierarchy for the task-specific agents that run a business on the GFunnel Methodology. Solid lines are chain of command. Dotted lines (audit, gates, escalation) are listed on each agent's card. Search for a deliverable to find the manager accountable for it. Select any agent to see its full role and team.</p>
+    <div class="stats" id="stats"></div>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--gov)"></i>Governance</span>
+      <span><i class="sw" style="background:var(--orc)"></i>Orchestration</span>
+      <span><i class="sw" style="background:var(--yang)"></i>High Yang hubs (Marketing, Sales, Operations)</span>
+      <span><i class="sw" style="background:var(--yin)"></i>High Yin hubs (Strategy, Finance, HR &amp; Culture, Content)</span>
+      <span><i class="sw" style="background:var(--bridge)"></i>Bridging hubs (Technology, Client Success)</span>
+    </div>
+    <div class="controls">
+      <label for="q" class="sr" hidden>Search agents</label>
+      <input id="q" type="search" placeholder="Search a deliverable, agent or tool (try: newsletter)" aria-label="Search agents">
+      <div class="chipset" id="autofilter" role="group" aria-label="Filter by autonomy"></div>
+    </div>
+  </header>
+
+  <div class="root">
+    <button class="ceo" id="ceo" type="button"></button>
+    <div class="trunk"></div>
+    <div class="branches" id="branches"></div>
+  </div>
+
+  <p class="foot">Derivation, not canon: the methodology names the nine hubs, their functions and the algorithms; the reporting lines and autonomy levels are this map's choices and can be redrawn without moving any responsibility. Source: GFunnel Methodology (Omni Process) v5.1–v5.3, Cameron Garlick / GFunnel, github.com/GFunnel-Tech/methodology, CC BY 4.0. Adapted into an agent org map; the adaptation is not endorsed by the author.</p>
+</div>
+
+<aside class="drawer" id="drawer" hidden aria-live="polite"></aside>
+
+<script>
+const D = /*__DATA__*/null;
+const byId = Object.fromEntries(D.agents.map(a => [a.id, a]));
+const kids = {}; D.agents.forEach(a => (kids[a.reports] ||= []).push(a.id));
+const AUTO_SHORT = {A:"Autonomous", H:"Human-in-loop", L:"Human-led", R:"Human-reserved"};
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const count = (id) => (kids[id] || []).reduce((n, k) => n + 1 + count(k), 0);
+
+document.getElementById("stats").innerHTML =
+  `<span><b>${D.agents.length}</b> agents</span><span><b>${D.total_resp}</b> responsibilities</span>` +
+  `<span><b>${(kids["G-00"]||[]).length}</b> direct reports to the founder</span><span><b>9</b> hubs</span><span><b>${D.agents.filter(a=>a.tier.startsWith("3")).length}</b> team leads</span>` +
+  Object.keys(AUTO_SHORT).map(k => `<span><b>${D.agents.filter(a=>a.auto===k).length}</b> ${AUTO_SHORT[k].toLowerCase()}</span>`).join("");
+
+const ceo = byId["G-00"];
+const ceoBtn = document.getElementById("ceo");
+ceoBtn.className = "ceo q-gov"; ceoBtn.dataset.id = "G-00";
+ceoBtn.innerHTML = `<div class="nm">${esc(ceo.name)}</div><div class="meta">G-00 · ${count("G-00")} agents in the chain · human authority</div>`;
+
+const ORDER = ["G-01","O-02","STR-00","MKT-00","SAL-00","OPS-00","FIN-00","HRC-00","TEC-00","CS-00","CON-00","G-07"];
+const direct = (kids["G-00"]||[]).slice().sort((a,b)=>ORDER.indexOf(a)-ORDER.indexOf(b));
+
+function cardHTML(id){
+  const a = byId[id], ks = kids[id] || [];
+  const mgr = ks.length ? " mgr" : "";
+  const sub = ks.length ? `<ul class="kids">${ks.slice().sort((x,y)=>(kids[y]?1:0)-(kids[x]?1:0)).map(k=>`<li>${cardHTML(k)}</li>`).join("")}</ul>` : "";
+  return `<button type="button" class="card q-${a.quad}${mgr}" data-id="${id}"><span class="id">${id}</span><span class="nm">${esc(a.name)}${ks.length?` <span class="badge">${ks.length} reports</span>`:""}</span><span class="badge ${a.auto}" title="${esc(D.autonomy[a.auto])}">${a.auto}</span></button>${sub}`;
+}
+document.getElementById("branches").innerHTML = direct.map(id => {
+  const a = byId[id], ks = kids[id] || [];
+  const team = count(id);
+  return `<section class="branch q-${a.quad}" data-branch="${id}">
+    <button type="button" class="lead" data-id="${id}">
+      <div class="unit">${esc(a.unit)}</div>
+      <div class="nm">${esc(a.name)}</div>
+      <div class="dot"><span class="id">${id}</span> · ${team} agent${team===1?"":"s"} · autonomy ${a.auto}${a.dotted && a.dotted!=="—" ? `<br>Dotted line: ${esc(a.dotted)}`:""}</div>
+    </button>
+    ${ks.length ? `<ul class="kids">${ks.slice().sort((x,y)=>(kids[y]?1:0)-(kids[x]?1:0)).map(k=>`<li>${cardHTML(k)}</li>`).join("")}</ul>` : ""}
+  </section>`;
+}).join("");
+
+// autonomy filter
+const active = new Set(Object.keys(AUTO_SHORT));
+const af = document.getElementById("autofilter");
+af.innerHTML = Object.entries(AUTO_SHORT).map(([k,v]) => `<button type="button" class="chip" aria-pressed="true" data-auto="${k}">${k} · ${v}</button>`).join("");
+af.addEventListener("click", e => {
+  const b = e.target.closest("[data-auto]"); if (!b) return;
+  const k = b.dataset.auto;
+  active.has(k) ? active.delete(k) : active.add(k);
+  b.setAttribute("aria-pressed", active.has(k));
+  apply();
+});
+const q = document.getElementById("q");
+q.addEventListener("input", apply);
+function apply(){
+  const term = q.value.trim().toLowerCase();
+  document.querySelectorAll("[data-id]").forEach(el => {
+    const a = byId[el.dataset.id];
+    const hay = [a.id,a.name,a.unit,a.mission,a.algs,a.tools,a.triggers,a.outputs,a.owns.join(" ")].join(" ").toLowerCase();
+    const okAuto = active.has(a.auto);
+    const hit = term && hay.includes(term);
+    el.classList.toggle("dim", !okAuto || (term && !hit));
+    el.classList.toggle("match", !!hit && okAuto);
+  });
+}
+
+// detail drawer
+const drawer = document.getElementById("drawer");
+let selEl = null;
+function chain(id){ const p=[]; let c=byId[id]; while(c && c.reports && byId[c.reports]){ c=byId[c.reports]; p.unshift(c.id);} return p; }
+function idLinks(text){ return esc(text).replace(/\b(G-0\d|O-\d\d|(?:STR|MKT|SAL|OPS|FIN|HRC|TEC|CS|CON)-\d\d)\b/g, m => byId[m] ? `<button type="button" class="linkid" data-go="${m}">${m}</button>` : m); }
+function open(id){
+  const a = byId[id]; if (!a) return;
+  if (selEl) selEl.classList.remove("sel");
+  selEl = document.querySelector(`[data-id="${id}"]`); if (selEl){ selEl.classList.add("sel"); selEl.scrollIntoView({block:"nearest",behavior:"smooth"}); }
+  const reps = kids[id] || [];
+  const rows = [
+    ["Mission", a.mission],
+    ["Accountable for", a.owns.length ? a.owns.join("\n") : "—"], ["Reports to", a.reports==="—"?"— (top of the chart)":a.reports],
+    ["Reporting path", chain(id).concat(id).join(" → ")], ["Dotted line to", a.dotted],
+    ["Direct reports", reps.length ? reps.join(", ") : "None"],
+    ["Primary algorithm(s)", a.algs], ["DETECT — triggers", a.triggers], ["RESPOND — outputs", a.outputs],
+    ["Hands off to", a.handoff], ["Tools named in canon", a.tools], ["KPIs / observation", a.kpis],
+    ["Human gate", a.gate], ["Failure mode guarded", a.guard],
+    ["Autonomy", `${a.auto} — ${D.autonomy[a.auto]}`], ["Responsibilities", `${a.resp} rows on the Responsibilities tab`],
+    ["Kingdom · Yin/Yang", `${a.kingdom} · ${a.yy}`], ["Role basis", a.basis], ["Canon source", a.source]];
+  drawer.className = `drawer q-${a.quad}`;
+  drawer.innerHTML = `<button type="button" class="close" id="close">Close</button>
+    <div class="idl">${a.id} · ${esc(a.unit)}</div><h2>${esc(a.name)}</h2>
+    <dl>${rows.map(([k,v]) => `<dt>${k}</dt><dd>${idLinks(v)}</dd>`).join("")}</dl>`;
+  drawer.hidden = false;
+  document.getElementById("close").focus({preventScroll:true});
+}
+document.addEventListener("click", e => {
+  const go = e.target.closest("[data-go]"); if (go) { open(go.dataset.go); return; }
+  if (e.target.id === "close") { drawer.hidden = true; if (selEl){ selEl.classList.remove("sel"); selEl.focus(); } return; }
+  const n = e.target.closest("[data-id]"); if (n) open(n.dataset.id);
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !drawer.hidden) document.getElementById("close").click(); });
+</script>
