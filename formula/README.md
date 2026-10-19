@@ -103,7 +103,11 @@ TERMINATE is the Reality Audit's correction F-066. Canon's loop has no stopping 
 3. **Categorical variables** (species, region, plan tier) are not yet channels.
 4. **Cross-table Correspondence.** Analogues are drawn only from the same table. Borrowing from another table with a shared scale is the literal form of "as above, so below", and it is untested.
 
-## 5 · Use
+## 5 · The living version: the Gap Ledger
+
+The formula is also run continuously on open scientific questions (the Hubble tension, neutron lifetime, primordial lithium, W mass, and the Big Bang boundary). New evidence narrows each gap or exposes a conflict. Every movement is logged, and the ledger seals and scores its own predictions. See [`LEDGER.md`](LEDGER.md) and the live [`ledger/REPORT.md`](ledger/REPORT.md).
+
+## 6 · Use
 
 ```python
 from formula.omni_gap import OmniGap

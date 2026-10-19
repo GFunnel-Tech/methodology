@@ -1,0 +1,546 @@
+{
+ "_meta": {
+  "status": "derivation, not canon",
+  "retrieved": "2026-10-19",
+  "rule": "Every evidence value was checked against the cited paper's abstract (or, where noted, a review citing it) on the retrieval date. Symmetric sigma = quadrature sum of stat and syst; asymmetric errors are symmetrized to the larger side.",
+  "grades": "measured-single = one published result; theory = a prediction computed from an accepted model, entered as its own witness"
+ },
+ "gaps": [
+  {
+   "id": "G-001",
+   "question": "What is the expansion rate of the universe today (H0)?",
+   "quantity": "Hubble constant H0",
+   "unit": "km/s/Mpc",
+   "kind": "measurement",
+   "route": "Layer ◇ (falsifiability) + Correspondence: early-universe and late-universe readings of one quantity",
+   "bounds": null,
+   "held_open": [
+    "Planck's value is inferred assuming base ΛCDM; a conflict here may sit in the model linking early to late times, not in any measurement. The formula cannot tell which from these numbers alone."
+   ],
+   "narrowing_routes": [
+    "independent late-universe ladders (TRGB, JAGB, gravitational-wave standard sirens, strong-lens time delays)",
+    "early-universe measurements that do not use the CMB (BAO + BBN)"
+   ],
+   "evidence": [
+    {
+     "id": "G-001-E01",
+     "value": 67.4,
+     "sigma": 0.5,
+     "method": "CMB (Planck 2018, ΛCDM)",
+     "kind": "measurement",
+     "source": "Planck Collaboration, Planck 2018 results VI, A&A 641, A6 (2020)",
+     "url": "https://arxiv.org/abs/1807.06209",
+     "date": "2018-07-17",
+     "grade": "measured-single"
+    },
+    {
+     "id": "G-001-E02",
+     "value": 69.8,
+     "sigma": 1.88,
+     "method": "TRGB distance ladder",
+     "kind": "measurement",
+     "source": "Freedman et al. 2019, ApJ 882, 34 (69.8 ± 0.8 stat ± 1.7 sys)",
+     "url": "https://arxiv.org/abs/1907.05922",
+     "date": "2019-07-12",
+     "grade": "measured-single"
+    },
+    {
+     "id": "G-001-E03",
+     "value": 73.04,
+     "sigma": 1.04,
+     "method": "Cepheid distance ladder (SH0ES)",
+     "kind": "measurement",
+     "source": "Riess et al. 2022, ApJL 934, L7",
+     "url": "https://arxiv.org/abs/2112.04510",
+     "date": "2021-12-08",
+     "grade": "measured-single"
+    }
+   ],
+   "predictions": [
+    {
+     "sealed": "2018-12-31",
+     "interval": [
+      66.57757318652428,
+      68.22242681347574
+     ],
+     "status_at_seal": "live (single witness)",
+     "sha256": "47fc38e19e425c415f5fc8f108174f80b11cb03e00880bd10e5722382a1c69b1",
+     "backtest": true,
+     "scored": {
+      "G-001-E02": "hit",
+      "G-001-E03": "miss"
+     },
+     "ratios": {
+      "G-001-E02": 0.75,
+      "G-001-E03": 2.9714
+     }
+    },
+    {
+     "sealed": "2019-12-31",
+     "interval": [
+      66.76374792326226,
+      68.35334329331107
+     ],
+     "status_at_seal": "narrowed (corroborated)",
+     "sha256": "51ba57768a6790b5d37f7baf9100b609f8d949f27c8afcc32bf6b9a041ad5006",
+     "backtest": true,
+     "scored": {
+      "G-001-E03": "miss"
+     },
+     "ratios": {
+      "G-001-E03": 2.906
+     }
+    },
+    {
+     "sealed": "2026-10-19",
+     "interval": [
+      66.01568071031515,
+      71.04780427302067
+     ],
+     "status_at_seal": "conflict",
+     "sha256": "c0b2f7597474d5264260b174b63ae33ad5a9e025e255561757d318b724cefd1c",
+     "backtest": false
+    }
+   ],
+   "state": {
+    "channels": [
+     {
+      "method": "CMB (Planck 2018, ΛCDM)",
+      "value": 67.4,
+      "sigma": 0.5,
+      "n": 1,
+      "kind": "measurement"
+     },
+     {
+      "method": "TRGB distance ladder",
+      "value": 69.8,
+      "sigma": 1.88,
+      "n": 1,
+      "kind": "measurement"
+     },
+     {
+      "method": "Cepheid distance ladder (SH0ES)",
+      "value": 73.04,
+      "sigma": 1.04,
+      "n": 1,
+      "kind": "measurement"
+     }
+    ],
+    "n_channels": 3,
+    "combined": 68.53174249166791,
+    "combined_sigma": 0.438213539215551,
+    "chi2": 24.369493385059993,
+    "dof": 2,
+    "p": 5.10777488142527e-06,
+    "tension": 4.887561225309663,
+    "pair": [
+     "CMB (Planck 2018, ΛCDM)",
+     "Cepheid distance ladder (SH0ES)"
+    ],
+    "status": "conflict",
+    "value": null,
+    "scale_factor": 3.4906656517819057,
+    "interval": [
+     66.01568071031515,
+     71.04780427302067
+    ],
+    "note": "Independent methods disagree: 4.9 sigma between CMB (Planck 2018, ΛCDM) and Cepheid distance ladder (SH0ES) (p = 5.1e-06).",
+    "restores_consistency_if_removed": [
+     {
+      "method": "Cepheid distance ladder (SH0ES)",
+      "p_without": 0.21731136766908443,
+      "value_without": 67.55854560828666,
+      "sigma_without": 0.4832026825982453
+     },
+     {
+      "method": "CMB (Planck 2018, ΛCDM)",
+      "p_without": 0.13154495721972304,
+      "value_without": 72.28081802426344,
+      "sigma_without": 0.9100354041144596
+     }
+    ],
+    "next_measurement": "An independent method with sigma <= 1.33 km/s/Mpc would separate CMB (Planck 2018, ΛCDM) from Cepheid distance ladder (SH0ES) at 3 sigma."
+   }
+  },
+  {
+   "id": "G-002",
+   "question": "How long does a free neutron live?",
+   "quantity": "neutron lifetime τn",
+   "unit": "s",
+   "kind": "measurement",
+   "route": "Layer I.E / v5.4 §4a (lifetime = closure): one quantity read by two independent methods",
+   "bounds": null,
+   "held_open": [
+    "Whether the beam–bottle gap is an unknown systematic or new physics (e.g. a decay channel the beam method does not count)."
+   ],
+   "narrowing_routes": [
+    "a third method independent of both (space-based neutron counting)",
+    "new beam measurements with reduced neutron-flux systematics"
+   ],
+   "evidence": [
+    {
+     "id": "G-002-E01",
+     "value": 887.7,
+     "sigma": 2.25,
+     "method": "beam (cold-neutron, proton counting)",
+     "kind": "measurement",
+     "source": "Yue et al. 2013, PRL 111, 222501 (887.7 ± 1.2 stat ± 1.9 syst)",
+     "url": "https://arxiv.org/abs/1309.2623",
+     "date": "2013-09-10",
+     "grade": "measured-single"
+    },
+    {
+     "id": "G-002-E02",
+     "value": 877.75,
+     "sigma": 0.36,
+     "method": "bottle (UCNτ, magneto-gravitational trap)",
+     "kind": "measurement",
+     "source": "Gonzalez et al. 2021, PRL 127, 162501 (877.75 ± 0.28 stat +0.22/−0.16 syst)",
+     "url": "https://arxiv.org/abs/2106.10375",
+     "date": "2021-06-19",
+     "grade": "measured-single"
+    }
+   ],
+   "predictions": [
+    {
+     "sealed": "2013-12-31",
+     "interval": [
+      883.9990793393592,
+      891.4009206606408
+     ],
+     "status_at_seal": "live (single witness)",
+     "sha256": "a65b3e327a093d689517abf49226e8ead69b8f6cc9698e9d2924b0772611fc9a",
+     "backtest": true,
+     "scored": {
+      "G-002-E02": "miss"
+     },
+     "ratios": {
+      "G-002-E02": 2.6548
+     }
+    },
+    {
+     "sealed": "2026-10-19",
+     "interval": [
+      875.4451180049662,
+      880.5516058639887
+     ],
+     "status_at_seal": "conflict",
+     "sha256": "a463fa3242814252ea832fa859b1bb37d32476e69bf90a67f62e8817f33a000b",
+     "backtest": false
+    }
+   ],
+   "state": {
+    "channels": [
+     {
+      "method": "beam (cold-neutron, proton counting)",
+      "value": 887.7,
+      "sigma": 2.25,
+      "n": 1,
+      "kind": "measurement"
+     },
+     {
+      "method": "bottle (UCNτ, magneto-gravitational trap)",
+      "value": 877.75,
+      "sigma": 0.36,
+      "n": 1,
+      "kind": "measurement"
+     }
+    ],
+    "n_channels": 2,
+    "combined": 877.9983619344774,
+    "combined_sigma": 0.3554786274900139,
+    "chi2": 19.067910864582906,
+    "dof": 1,
+    "p": 1.261482334907693e-05,
+    "tension": 4.366681905587228,
+    "pair": [
+     "beam (cold-neutron, proton counting)",
+     "bottle (UCNτ, magneto-gravitational trap)"
+    ],
+    "status": "conflict",
+    "value": null,
+    "scale_factor": 4.366681905587228,
+    "interval": [
+     875.4451180049662,
+     880.5516058639887
+    ],
+    "note": "Independent methods disagree: 4.4 sigma between beam (cold-neutron, proton counting) and bottle (UCNτ, magneto-gravitational trap) (p = 1.3e-05).",
+    "restores_consistency_if_removed": [],
+    "next_measurement": "An independent method with sigma <= 2.35 s would separate beam (cold-neutron, proton counting) from bottle (UCNτ, magneto-gravitational trap) at 3 sigma."
+   }
+  },
+  {
+   "id": "G-003",
+   "question": "How much lithium-7 did the Big Bang make?",
+   "quantity": "primordial 7Li/H",
+   "unit": "×10⁻¹⁰",
+   "kind": "measurement",
+   "route": "Appendix A stages 4–8 (nucleosynthesis): a theory witness against an observation witness",
+   "bounds": null,
+   "held_open": [
+    "The observed plateau measures lithium at the surface of old stars, not primordial lithium directly. If stars destroyed lithium, the two witnesses read different quantities; the formula flags the conflict but cannot assign it."
+   ],
+   "narrowing_routes": [
+    "lithium measured in a gas that no star has processed (interstellar gas in metal-poor galaxies)",
+    "stellar-depletion models tested against stars of known history"
+   ],
+   "evidence": [
+    {
+     "id": "G-003-E01",
+     "value": 1.6,
+     "sigma": 0.3,
+     "method": "halo-star Spite plateau (observed)",
+     "kind": "measurement",
+     "source": "Sbordone et al. 2010 / Ryan et al. 2000, as adopted in Fields, Olive, Yeh & Young 2020, JCAP 03, 010, Eq. 6",
+     "url": "https://arxiv.org/abs/1912.01132",
+     "date": "2010-03-23",
+     "grade": "measured-reproduced"
+    },
+    {
+     "id": "G-003-E02",
+     "value": 4.72,
+     "sigma": 0.72,
+     "method": "standard BBN + Planck baryon density (theory)",
+     "kind": "theory",
+     "source": "Fields, Olive, Yeh & Young 2020, JCAP 03, 010, Eq. 25",
+     "url": "https://arxiv.org/abs/1912.01132",
+     "date": "2019-12-03",
+     "grade": "theory"
+    }
+   ],
+   "predictions": [
+    {
+     "sealed": "2026-10-19",
+     "interval": [
+      0.23954675168452355,
+      3.8835301713923993
+     ],
+     "status_at_seal": "conflict",
+     "sha256": "ef4f057c01c70518def44f941ef4c4521da5f04d506d7b42e920864ebc690c9f",
+     "backtest": false
+    }
+   ],
+   "state": {
+    "channels": [
+     {
+      "method": "halo-star Spite plateau (observed)",
+      "value": 1.6,
+      "sigma": 0.3,
+      "n": 1,
+      "kind": "measurement"
+     },
+     {
+      "method": "standard BBN + Planck baryon density (theory)",
+      "value": 4.72,
+      "sigma": 0.72,
+      "n": 1,
+      "kind": "theory"
+     }
+    ],
+    "n_channels": 2,
+    "combined": 2.0615384615384613,
+    "combined_sigma": 0.27692307692307694,
+    "chi2": 16.0,
+    "dof": 1,
+    "p": 6.33424836662398e-05,
+    "tension": 4.0,
+    "pair": [
+     "halo-star Spite plateau (observed)",
+     "standard BBN + Planck baryon density (theory)"
+    ],
+    "status": "conflict",
+    "value": null,
+    "scale_factor": 4.0,
+    "interval": [
+     0.23954675168452355,
+     3.8835301713923993
+    ],
+    "note": "Independent methods disagree: 4.0 sigma between halo-star Spite plateau (observed) and standard BBN + Planck baryon density (theory) (p = 6.3e-05).",
+    "restores_consistency_if_removed": [],
+    "next_measurement": "An independent method with sigma <= 0.735 ×10⁻¹⁰ would separate halo-star Spite plateau (observed) from standard BBN + Planck baryon density (theory) at 3 sigma."
+   }
+  },
+  {
+   "id": "G-004",
+   "question": "What is the mass of the W boson?",
+   "quantity": "W boson mass mW",
+   "unit": "MeV",
+   "kind": "measurement",
+   "route": "v5.4 §6 (mass spectrum) read as measurement only; the Standard Model fit enters as a theory witness",
+   "bounds": null,
+   "held_open": [
+    "Whether the CDF value reflects a detector/modelling systematic or physics beyond the Standard Model."
+   ],
+   "narrowing_routes": [
+    "further LHC measurements (ATLAS/CMS/LHCb) with independent systematics",
+    "a CDF–LHC combination with common parton-distribution treatment"
+   ],
+   "evidence": [
+    {
+     "id": "G-004-E01",
+     "value": 80353.0,
+     "sigma": 6.0,
+     "method": "Standard Model electroweak fit (theory)",
+     "kind": "theory",
+     "source": "as quoted by CERN, 'CMS experiment at CERN weighs W boson mass' (2024)",
+     "url": "https://home.cern/cms-experiment-cern-weighs-w-boson-mass/",
+     "date": "2024-09-17",
+     "grade": "theory"
+    },
+    {
+     "id": "G-004-E02",
+     "value": 80433.5,
+     "sigma": 9.4,
+     "method": "CDF II (Tevatron)",
+     "kind": "measurement",
+     "source": "CDF Collaboration, Science 376, 170 (2022)",
+     "url": "https://www.osti.gov/biblio/1915434",
+     "date": "2022-04-07",
+     "grade": "measured-single"
+    },
+    {
+     "id": "G-004-E03",
+     "value": 80366.5,
+     "sigma": 15.9,
+     "method": "ATLAS (LHC 7 TeV reanalysis)",
+     "kind": "measurement",
+     "source": "ATLAS Collaboration 2024, Eur. Phys. J. C",
+     "url": "https://arxiv.org/abs/2403.15085",
+     "date": "2024-03-22",
+     "grade": "measured-single"
+    },
+    {
+     "id": "G-004-E04",
+     "value": 80360.2,
+     "sigma": 9.9,
+     "method": "CMS (LHC 13 TeV)",
+     "kind": "measurement",
+     "source": "CMS Collaboration 2024",
+     "url": "https://arxiv.org/abs/2412.13872",
+     "date": "2024-12-18",
+     "grade": "measured-single"
+    }
+   ],
+   "predictions": [
+    {
+     "sealed": "2022-12-31",
+     "interval": [
+      80418.03837590666,
+      80448.96162409334
+     ],
+     "status_at_seal": "live (single witness)",
+     "sha256": "dde83c4f47778fa7732996ca82e800614b9e7c9eb8fe86fbf86dc506a3dfce75",
+     "backtest": true,
+     "scored": {
+      "G-004-E03": "miss",
+      "G-004-E04": "miss"
+     },
+     "ratios": {
+      "G-004-E03": 2.2053,
+      "G-004-E04": 3.2643
+     }
+    },
+    {
+     "sealed": "2026-10-19",
+     "interval": [
+      80342.14866389964,
+      80402.8310680084
+     ],
+     "status_at_seal": "conflict",
+     "sha256": "4d15c34e2057b9c021dc66431213bb42ce9efa8eec6096487a7dcd7bb3f8d107",
+     "backtest": false
+    }
+   ],
+   "state": {
+    "channels": [
+     {
+      "method": "Standard Model electroweak fit (theory)",
+      "value": 80353.0,
+      "sigma": 6.0,
+      "n": 1,
+      "kind": "theory"
+     },
+     {
+      "method": "CDF II (Tevatron)",
+      "value": 80433.5,
+      "sigma": 9.4,
+      "n": 1,
+      "kind": "measurement"
+     },
+     {
+      "method": "ATLAS (LHC 7 TeV reanalysis)",
+      "value": 80366.5,
+      "sigma": 15.899999999999999,
+      "n": 1,
+      "kind": "measurement"
+     },
+     {
+      "method": "CMS (LHC 13 TeV)",
+      "value": 80360.2,
+      "sigma": 9.9,
+      "n": 1,
+      "kind": "measurement"
+     }
+    ],
+    "n_channels": 4,
+    "combined": 80372.48986595402,
+    "combined_sigma": 4.33336350946441,
+    "chi2": 54.36032726051227,
+    "dof": 3,
+    "p": 9.400816511610875e-12,
+    "tension": 7.218642326701687,
+    "pair": [
+     "Standard Model electroweak fit (theory)",
+     "CDF II (Tevatron)"
+    ],
+    "status": "conflict",
+    "value": null,
+    "scale_factor": 4.256772144106074,
+    "interval": [
+     80342.14866389964,
+     80402.8310680084
+    ],
+    "note": "Independent methods disagree: 7.2 sigma between Standard Model electroweak fit (theory) and CDF II (Tevatron) (p = 9.4e-12).",
+    "restores_consistency_if_removed": [
+     {
+      "method": "CDF II (Tevatron)",
+      "p_without": 0.6485431528568725,
+      "value_without": 80356.02510003354,
+      "sigma_without": 4.883201489064682
+     }
+    ],
+    "next_measurement": "An independent method with sigma <= 19 MeV would separate Standard Model electroweak fit (theory) from CDF II (Tevatron) at 3 sigma."
+   }
+  },
+  {
+   "id": "G-005",
+   "question": "What happened at t → 0 — the Big Bang's first moment?",
+   "quantity": "the state of the universe before the Planck time (~10⁻⁴³ s)",
+   "unit": "",
+   "kind": "boundary",
+   "route": "v5.4 Gap 1 (first boundary, proven-open), Gap 4 (floor vs asymptote, proven-open), §4a.3 Planck ceiling",
+   "bounds": null,
+   "held_open": [
+    "No law tested at that scale holds there (General Relativity predicts its own breakdown), there are no analogous cases (one universe), and there is nothing to calibrate against. Any value entered here would be assumption, so none is.",
+    "Canon classifies the first boundary as proven-open (v5.4 §12)."
+   ],
+   "narrowing_routes": [
+    "the measurable side, pushed earlier: primordial gravitational waves (CMB B-modes) constrain the inflation epoch",
+    "a quantum-gravity theory that yields a tested prediction (v5.4's own bar: the tension law)"
+   ],
+   "evidence": [],
+   "predictions": [],
+   "state": {
+    "channels": [],
+    "n_channels": 0,
+    "status": "held-open",
+    "interval": [
+     null,
+     null
+    ],
+    "value": null,
+    "note": "No evidence. The range is held open, not filled."
+   }
+  }
+ ]
+}
