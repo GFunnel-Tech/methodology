@@ -68,7 +68,7 @@ TERMINATE is the Reality Audit's correction F-066. Canon's loop has no stopping 
 
 ## 2 · Does it beat known methods? (measured)
 
-`python3 formula/benchmark.py` runs the test. For each table it hides 20% of the **measured** cells at random, fills them with every method, and scores the fills against the hidden truth. The scores are averaged over five masks. NRMSE is error divided by the column's standard deviation; lower is better, and 1.0 means "no better than the average".
+`python3 formulas/benchmark.py` runs the test. For each table it hides 20% of the **measured** cells at random, fills them with every method, and scores the fills against the hidden truth. The scores are averaged over five masks. NRMSE is error divided by the column's standard deviation; lower is better, and 1.0 means "no better than the average".
 
 | Table | mean | k-NN | ridge | chained (MICE-style) | **omni** | omni vs best baseline |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -84,7 +84,7 @@ TERMINATE is the Reality Audit's correction F-066. Canon's loop has no stopping 
 - On the P&L it filled 65% of the gaps (64% forced, which are exact). On those cells its error was 0.024 sd, against 0.049–0.428 for the baselines.
 - On the penguins table it filled **nothing**. Four body measurements do not pin each other down to within half a standard deviation, and the formula said so rather than guessing.
 
-`python3 formula/example.py` runs the formula on six gaps nobody created: cars whose horsepower was never recorded in the UCI table. At a ±10 hp decision tolerance it narrows each one by 69% against the base rate. It emits no point value, because its calibrated interval is ±17.5 hp.
+`python3 formulas/example.py` runs the formula on six gaps nobody created: cars whose horsepower was never recorded in the UCI table. At a ±10 hp decision tolerance it narrows each one by 69% against the base rate. It emits no point value, because its calibrated interval is ±17.5 hp.
 
 ---
 
@@ -110,7 +110,7 @@ The formula is also run continuously on open scientific questions (the Hubble te
 ## 6 · Use
 
 ```python
-from formula.omni_gap import OmniGap
+from formulas.omni_gap import OmniGap
 og = OmniGap(columns, rows,                      # rows: lists of float or None
              identities=[({"revenue": 1, "cogs": -1, "gross": -1}, 0.0)],
              bounds={"revenue": (0, None)},

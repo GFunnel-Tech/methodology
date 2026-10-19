@@ -14,6 +14,7 @@ This is the **map** into the canonical methodology. Every link below points into
 | **[Registers](registers.md)** | The Variable Registry, Falsifiability Register, and Iteration Ledger — the framework's honesty apparatus. |
 | **[Gaps](gaps.md)** | The gap numbering v5.4 reports against, reconstructed from canon. |
 | **[Tests](tests/README.md)** | Executed runs from v5.4 §14, with reproducible scripts and honest verdicts. |
+| **[Formulas](../formulas/README.md)** | Every formula in the repository — canon, registry, tests, audit and derivations — with where it is written, its status, and whether it has been run. |
 
 ## The three orientations (from the document's own "How To Use")
 

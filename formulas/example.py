@@ -4,7 +4,7 @@ example.py — the formula run on gaps nobody created: the six cars whose
 horsepower is genuinely missing from the UCI auto-mpg table, plus a P&L with
 holes. Prints every RESPOND record in full.
 
-Run:  python3 formula/example.py
+Run:  python3 formulas/example.py
 """
 
 import os

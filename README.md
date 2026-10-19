@@ -51,6 +51,10 @@ methodology/
 │   ├── gaps.md               ← the gap numbering v5.4 reports against
 │   └── tests/                ← executed runs from v5.4 §14 (scripts + verdicts)
 │
+├── formulas/                 ← every formula in the repo, indexed (README.md)
+│   ├── OMNI-GAP.md           ← the Omni Gap Formula: calibrated gap-filling (derivation)
+│   └── LEDGER.md             ← the Gap Ledger: open questions narrowed as evidence arrives
+│
 ├── docs/                     ← guides
 │   ├── how-to-use.md         ← for humans
 │   ├── ai-integration.md     ← for AI builders (RAG, agents, system prompts)

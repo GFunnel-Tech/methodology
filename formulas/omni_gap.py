@@ -6,7 +6,7 @@ Status: DERIVATION, not canon (AGENTS.md rule 4). Derived from the Master
 Meta-Algorithm, the Variable Principle, Layer I.G (Capsule), Layer II
 (Correspondence), Layer ◇ and Layer ⊙ (Forcing Test, Anti-Operation), with the
 Reality Audit's corrections carried (TERMINATE, F-066; operational falsifiers,
-F-042/F-043; "no-signal" as its own outcome, VERDICT.md). See formula/README.md.
+F-042/F-043; "no-signal" as its own outcome, VERDICT.md). See formulas/OMNI-GAP.md.
 
 What it does, for every empty cell x[i][j] of a table:
 

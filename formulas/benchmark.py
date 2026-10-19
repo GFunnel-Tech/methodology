@@ -15,7 +15,7 @@ Methods compared
   chained   MICE-style iterative regression: every gap starts at the mean and is
             re-predicted from all other columns, including other fills, 10 rounds
             (the standard statistical imputation method)
-  omni      formula/omni_gap.py
+  omni      formulas/omni_gap.py
 
 Scores
   NRMSE     root-mean-square error / column sd, averaged over columns (lower = better;
@@ -25,7 +25,7 @@ Scores
   filled vs held open  error on the cells omni agreed to fill, vs each baseline
             on the SAME cells; and how wrong it would have been on the cells it refused
 
-Run:  python3 formula/benchmark.py            (standard library only, ~1-2 min)
+Run:  python3 formulas/benchmark.py            (standard library only, ~1-2 min)
 """
 
 from __future__ import annotations

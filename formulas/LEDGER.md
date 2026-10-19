@@ -42,12 +42,12 @@ The ledger was replayed through the evidence as it arrived: 2013 → 2018 → 20
 ## Keeping it alive
 
 ```bash
-python3 formula/ledger.py add G-001 --value 70.4 --sigma 1.9 --method "TRGB (JWST)" \
+python3 formulas/ledger.py add G-001 --value 70.4 --sigma 1.9 --method "TRGB (JWST)" \
     --source "Author et al. YYYY, Journal" --url https://arxiv.org/abs/XXXX.XXXXX --date YYYY-MM-DD
-python3 formula/ledger.py run          # re-evaluate, log movements, rewrite REPORT.md
-python3 formula/ledger.py seal G-001   # freeze a new prediction, then commit before adding more evidence
-python3 formula/ledger.py new G-006 "question" --quantity "..." --unit "..."
-python3 formula/ledger.py run --as-of 2019-12-31   # replay what was known on a date
+python3 formulas/ledger.py run          # re-evaluate, log movements, rewrite REPORT.md
+python3 formulas/ledger.py seal G-001   # freeze a new prediction, then commit before adding more evidence
+python3 formulas/ledger.py new G-006 "question" --quantity "..." --unit "..."
+python3 formulas/ledger.py run --as-of 2019-12-31   # replay what was known on a date
 ```
 
 Rules that keep it honest:
