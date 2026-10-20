@@ -18,8 +18,8 @@ from omni_gap import OmniGap, summarize  # noqa: E402
 def show(fills, label=None):
     for f in fills:
         head = f"row {f.row}" + (f" ({label(f.row)})" if label else "")
-        val = f"{f.value:.4g}" if f.value is not None else "—  (no point value emitted)"
-        print(f"\n{head} · {f.column}\n  status    : {f.status}\n  value     : {val}"
+        val = f"{f.value:.4g}" if f.value is not None else "—  (conflict: measure this record)"
+        print(f"\n{head} · {f.column}\n  tag       : {f.status}\n  value     : {val}"
               f"\n  range     : [{f.lo:.4g}, {f.hi:.4g}]   narrowing vs base rate: {100 * f.narrowing:.0f}%"
               f"\n  channels  : {f.channels}\n  falsifier : {f.falsifier}")
         if f.next_measurement:

@@ -27,7 +27,7 @@ If you can only load one file, load v5.1. If you can load a map instead of the f
 2. **Route the question to a layer or algorithm.** Use [`framework/algorithms.md`](framework/algorithms.md) (Algorithm Index by Problem Type) and [`framework/layers.md`](framework/layers.md) as the lookup.
 3. **Run algorithms literally.** Execute the numbered steps in order. Do not skip, compress, or reorder — the sequence is load-bearing. If a step cannot be completed, stop: the blocker is the location of the work.
 4. **When no explicit algorithm exists, derive one** from the **Master Meta-Algorithm** and *label it a derivation*, not a primary algorithm. Do not improvise silently.
-5. **Respect held-open variables.** When the framework holds a variable open (per the Variable Principle / Layer ◇), say so explicitly. **Never fill a held-open variable with assumption to sound more confident.** This is the single most important rule.
+5. **Never fill a variable silently.** When the framework holds a variable open (per the Variable Principle / Layer ◇), say so, **and still state the best value the evidence supports**, with a range, a tag saying how it was made (`measured` · `forced` · `estimate` · `assumption` · `held-open` · `conflict`), and what would prove it wrong. A tagged, calculated estimate is not an assumption; an untagged value is, even when it is right. Omit the value only when no prior, no structure, no analogue and no trend exists (the test in [`substrate/2026-10-20-estimate-protocol.md`](substrate/2026-10-20-estimate-protocol.md) §3). This is the single most important rule.
 6. **State Correspondence explicitly** when the same algorithm applies at another scale (one scale up, one scale down).
 7. **Label domain derivations** as derivations when applying the framework to a domain it does not explicitly name.
 8. **Flag empirical gaps.** When a question needs data the framework cannot supply (current prices, specific facts, real-time measurements), state the data requirement and retrieve it or instruct the user to.
@@ -36,12 +36,12 @@ If you can only load one file, load v5.1. If you can load a map instead of the f
 
 > *"Where measurement ends, create a variable. Hold it open. Map what IS measurable on either side. As the surrounding process is traced, the variable's range narrows. Sometimes it resolves by logical necessity. Sometimes it remains open. Never fill a variable with assumption."*
 
-Apply this to your own outputs. Distinguish what is **measured**, what is **structurally derived**, and what is **held open**. Do not collapse the three.
+Apply this to your own outputs. Distinguish what is **measured**, what is **structurally derived**, what is **estimated** (calculated, with a range), what is **assumed** (judged, with a range), and what is **held open** (no value, with the reason). Do not collapse them. When asked to forecast or fill a gap, **produce the number**: refusing to estimate where a base rate exists is a failure of the protocol, not an act of honesty ([Estimate Protocol](substrate/2026-10-20-estimate-protocol.md)). For a forecast, load the instruments (Variable Principle, Forecasting Algorithm, Forcing Test, falsifier rule), not the diagnostic content layers.
 
 ## What you must not do
 
 - Do not present a derived algorithm as a primary one.
-- Do not resolve a variable the framework marks open.
+- Do not report an estimate or assumption as measured, and do not promote a variable the framework marks open to resolved. Estimating it, with its tag and range, is required, not forbidden.
 - Do not claim the framework proves something it explicitly lists as a live hypothesis or proven-open (see v5.3 §6, v5.4 §11, and [`framework/registers.md`](framework/registers.md)).
 - Do not present v5.4's constructs (Line-Field, Knot-Line, Lamina) as physics. v5.4 states **zero novel predictions** and files itself below string theory / LQG "for lacking equations" (§7). Carry its four required cautions — Bell, environmental decay rates, point-like quarks, the measurement problem — whenever you use it.
 - Do not alter the base code. Iterations operate *on* the base; they do not rewrite it.

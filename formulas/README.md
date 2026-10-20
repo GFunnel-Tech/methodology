@@ -57,7 +57,7 @@ These are canon's structural rules. None of them computes a number. They are lis
 | ID | Name | Form | Where | Kind | Status |
 | --- | --- | --- | --- | --- | --- |
 | EQ-001 | Base code | `DETECT → PROCESS → RESPOND` (recursive; restarts at a higher baseline) | v5.1:264–318 | canon | Bounded per canon. The audit graded it `fails` on cross-cycle behaviour (`audit/VERDICT.md`) and proposed adding TERMINATE (F-066). |
-| EQ-002 | Variable Principle | `UNMEASURED → CREATE VARIABLE → MAP SURROUNDINGS → NARROW RANGE → RESOLVE OR HOLD` | v5.1:223–233 | canon | The audit rates it the framework's strongest element. |
+| EQ-002 | Variable Principle | `UNMEASURED → CREATE VARIABLE → MAP SURROUNDINGS → NARROW RANGE → RESOLVE OR HOLD` | v5.1:223–233 | canon | The audit rates it the framework's strongest element. **Operating-protocol amendment 2026-10-20:** "hold" now means *state the best tagged value and range while keeping it visibly open*; see the [Estimate Protocol](../substrate/2026-10-20-estimate-protocol.md). |
 | EQ-003 | Master Meta-Algorithm | 12 ordered steps, Identify domain → Restart at higher baseline | v5.1:2178–2205 | canon | Graded `not-applicable` on a bacterium. |
 | EQ-004 | Forcing Test | Tests A Ground · B Uniqueness · C Direction · D Falsifiability, giving four outcomes: forced-fill / live / stipulation / proven-open | v5.3:21–37 | canon | Graded `works-forced`, the best single result in the audit. |
 | EQ-005 | Anti-Operation | each fill's conjugate returns the next gap | v5.3:48–67 | canon | **live** (it holds only under involutive structure). |
@@ -197,6 +197,7 @@ Derivation, not canon. These are the only formulas in the repository built to **
 | EQ-145 | Inverse-variance combination | **μ = Σ(v/σ²) / Σ(1/σ²)**, **σ = (Σ 1/σ²)^(−½)**, **χ² = Σ((v − μ)/σ)²** | [`ledger.py`](ledger.py) `combine` | ✅ |
 | EQ-146 | Conflict test and tension | conflict if **p(χ², dof) < 0.01**; **tension = \|a − b\| / √(σₐ² + σ_b²)**; scale factor **S = √(χ²/dof)** | `ledger.py` `evaluate` | ✅ H₀ 4.9σ · neutron lifetime 4.4σ · lithium-7 4.0σ · W mass 7.2σ |
 | EQ-147 | Decisive next measurement | **σ_next ≤ \|a − b\| / (3√2)** | `ledger.py` `evaluate` | ✅ e.g. H₀ needs σ ≤ 1.33 km/s/Mpc |
+| EQ-149 | **Forecast test harness** | two arms × every metric; each row: value, low, high, tag ∈ {measured, forced, estimate, assumption, held-open}, falsifier; scored as **hit = low ≤ actual ≤ high**, **scaled error = \|value − actual\| / tolerance**, per arm and per tag | [`forecast.py`](forecast.py); protocol in [`substrate/2026-10-20-estimate-protocol.md`](../substrate/2026-10-20-estimate-protocol.md) | Harness validated on an illustrative fill. No real run scored yet. |
 | EQ-148 | Prediction score and learned widening | **r = \|x − mid\| / √(half² + (Zσ)²)**, hit if r ≤ 1; **widening = conformal quantile of r**, applied once n ≥ 9 | `ledger.py` `required_widening`, `learned_factor` | ✅ Backtest hit rate 17% (stated 90%); learned widening ×3.26 from 6 cases, not yet applied. Real seals placed 2026-10-19. |
 
 ## 9 · Operations: the BEAS spreadsheet

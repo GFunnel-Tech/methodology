@@ -4,11 +4,11 @@
 
 **What it is for.** You have a table: records × variables. Some cells are empty. For each empty cell the formula:
 
-- fills it when the record's own structure supports a value;
-- narrows it to a range when it cannot support a value;
-- refuses when nothing beats the base rate.
+- gives it a value, always, with a calibrated range;
+- tags the value by how it was made: `forced-fill` (exact), `estimate`, `estimate/wide`, or `assumption/prior-only`;
+- flags `conflict` when the record contradicts itself, which is the one case with no value, because the record itself is the question.
 
-Every output carries a calibrated interval, a status, a falsifier, and the next measurement worth taking. The result is a prediction you can act on and check before any testing, because it says in advance how often it will be wrong.
+Every output carries a calibrated interval, a tag, a falsifier, and the next measurement worth taking. Nothing is left blank (the [Estimate Protocol](../substrate/2026-10-20-estimate-protocol.md)). The result is a prediction you can act on and check before any testing, because it says in advance how often it will be wrong.
 
 ---
 
@@ -42,27 +42,30 @@ For an empty cell *x* (variable *j*, record *i*), with *E* the measured values i
 DETECT     find the gap; build F from bounds + identities
 PROCESS    μ_P, μ_S, μ_R  →  weighted by w  →  conditioned on F
 RESPOND    value or range, status, falsifier, next measurement
-TERMINATE  if no channel beats the prior, or I is wider than τ: stop, hold open
+TERMINATE  never emit a value without its tag; if no channel beats the prior, the
+           value is the base rate, tagged assumption/prior-only
 RESTART    each measurement later revealed joins the calibration set (MMA step 12)
 ```
 
-TERMINATE is the Reality Audit's correction F-066. Canon's loop has no stopping step. Here, stopping is the step that keeps the formula from guessing.
+TERMINATE is the Reality Audit's correction F-066. Canon's loop has no stopping step. Here it is the step that stops an untagged value from leaving the engine.
 
 ### Two rules enforced in code
 
 1. **A fill is never an input to another fill.** Only measured values feed the channels, so one guess never becomes the premise of the next. This is the Variable Principle applied to the method itself. It is also the main design difference from chained (MICE-style) imputation, which re-uses its own fills.
-2. **A filled value is never reported as measured.** Every cell carries one of the statuses below.
+2. **A filled value is never reported as measured, and an open cell is never left blank.** Every cell carries one of the tags below.
 
-### Output statuses (the Forcing Test classes, plus the two the audit found missing)
+### Output tags (the Forcing Test classes, plus the two the audit found missing)
 
-| Status | Meaning | Point value emitted? |
+| Tag | Meaning | Value emitted? |
 | --- | --- | --- |
 | `measured` | The cell was in the data. | It is the data. |
 | `forced-fill` | The identities leave exactly one value. | Yes, exact. |
-| `live-fill` | Live hypothesis: the calibrated interval is within τ, and a falsifier is attached. | Yes, with its interval. |
-| `held-open` | The range is narrowed, but it is wider than τ. | **No.** Range only, plus the measurement that would narrow it most. |
-| `held-open/no-signal` | Nothing in the record beats the base rate. | No. |
-| `conflict` | Either the structure and the analogues disagree beyond anything seen in calibration, or the measured values break an identity. | No. The record itself is the place to look (*"reality wins"*, substrate item 1). |
+| `estimate` | Calibrated: the interval is within the decision tolerance τ; a falsifier is attached. | Yes, with its interval. |
+| `estimate/wide` | Calibrated, but the interval is wider than τ. Act on it with care; the next measurement is named. | Yes, with its interval. |
+| `assumption/prior-only` | Nothing in the record beats the base rate, so the value **is** the base rate, and the tag says so. | Yes, with the base-rate interval. |
+| `conflict` | Either the structure and the analogues disagree beyond anything seen in calibration, or the measured values break an identity. | **No.** The record itself is the place to look (*"reality wins"*, substrate item 1). |
+
+Before 2026-10-20 the last three were `live-fill`, `held-open` and `held-open/no-signal`, and the two held-open tags emitted no value. The engine always had the value (it was scored in the benchmark); the Estimate Protocol made it report it.
 
 ---
 
@@ -78,13 +81,13 @@ TERMINATE is the Reality Audit's correction F-066. Canon's loop has no stopping 
 
 **Calibration.** Omni's 90% intervals contained the hidden truth 91.0%, 92.6% and 92.2% of the time (the last figure excludes the exact forced fills). The stated miss rate is the actual miss rate.
 
-**Selective filling earns its keep.**
+**The tag separates what to act on from what to act on carefully.**
 
-- On Auto-MPG omni filled 37% of the gaps. On those cells its error was 0.285 sd, against 0.300–0.323 for the baselines on the same cells. The cells it refused would have carried 0.545 sd of error.
-- On the P&L it filled 65% of the gaps (64% forced, which are exact). On those cells its error was 0.024 sd, against 0.049–0.428 for the baselines.
-- On the penguins table it filled **nothing**. Four body measurements do not pin each other down to within half a standard deviation, and the formula said so rather than guessing.
+- On Auto-MPG 37% of the gaps came back `estimate`. On those cells the error was 0.285 sd, against 0.300–0.323 for the baselines on the same cells. The `estimate/wide` cells carried 0.545 sd of error: still the best available value, but the tag warns that it is loose.
+- On the P&L 65% of the gaps came back `forced-fill` or `estimate` (64% forced, which are exact). On those cells the error was 0.024 sd, against 0.049–0.428 for the baselines.
+- On the penguins table every gap came back `estimate/wide`. Four body measurements do not pin each other down to within half a standard deviation. The values are still emitted (0.56 sd error, better than every baseline); the tag says not to treat them as tight.
 
-`python3 formulas/example.py` runs the formula on six gaps nobody created: cars whose horsepower was never recorded in the UCI table. At a ±10 hp decision tolerance it narrows each one by 69% against the base rate. It emits no point value, because its calibrated interval is ±17.5 hp.
+`python3 formulas/example.py` runs the formula on six gaps nobody created: cars whose horsepower was never recorded in the UCI table. At a ±10 hp decision tolerance it narrows each one by 69% against the base rate. Each comes back `estimate/wide` with its value (for example 66.8 hp for the Pinto), because its calibrated interval, ±17.5 hp, exceeds the tolerance.
 
 ---
 
@@ -94,7 +97,7 @@ TERMINATE is the Reality Audit's correction F-066. Canon's loop has no stopping 
 - **It is built from known parts.** The parts are stacked regression, k-nearest neighbours, Gaussian conditioning on linear constraints, and split-conformal intervals. The framework contributes the **discipline**: which channels to use, the refusal to chain guesses, a status on every cell, an attached falsifier, and a stop rule. It does not contribute new mathematics.
 - **No canon layer supplies a value.** The Reality Audit found **zero** cases of canon stating a quantity before measurement (`design/DESIGN-ALGORITHM.md`, `audit/cost/README.md` §B). This formula keeps that finding intact: every number it emits comes from measured data in the table, never from a layer's content claims.
 - **The interval is only as honest as its assumption.** Split-conformal coverage assumes the gaps are missing at random relative to the calibration cells. If values are missing **because** they are extreme (for example, unreported losses), the intervals will be too narrow. **Held open:** a missing-not-at-random check.
-- **Prediction before testing has its own proof standard.** A fill is a live hypothesis, not knowledge. The repository already has the test that would turn one into evidence: `audit/prediction/PROTOCOL.md`. Seal the fill and its interval in git before the measurement is fetched, then score it.
+- **Prediction before testing has its own proof standard.** An estimate is a live hypothesis, not knowledge. The repository already has the test that would turn one into evidence: `audit/prediction/PROTOCOL.md`. Seal the fill and its interval in git before the measurement is fetched, then score it.
 
 ## 4 · Conjugate gaps this opens (the Anti-Operation, logged now while cheap)
 
@@ -118,6 +121,7 @@ og = OmniGap(columns, rows,                      # rows: lists of float or None
              alpha=0.10)                        # stated (and measured) miss rate
 for f in og.fill():
     print(f.row, f.column, f.status, f.value, (f.lo, f.hi), f.falsifier, f.next_measurement)
+    # f.status is the tag: forced-fill · estimate · estimate/wide · assumption/prior-only · conflict
 ```
 
 Standard library only, like the rest of the repository. `data/mpg.csv` is the UCI Auto-MPG dataset (CC BY 4.0). `data/penguins.csv` is Palmer Penguins (Horst, Hill & Gorman, CC0). Both are vendored from the seaborn-data repository so the benchmark runs offline.

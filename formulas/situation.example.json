@@ -1,0 +1,40 @@
+{
+ "subject": "a small business, snapshot taken 6 months before the scoring date",
+ "snapshot_date": "2026-04-20",
+ "horizon_months": 6,
+ "facts_at_snapshot": {
+  "monthly_revenue_usd": 18000,
+  "clients": 9,
+  "team_size": 2,
+  "cash_runway_months": 4,
+  "goal": "reach $30k MRR and hire one salesperson"
+ },
+ "metrics": [
+  {
+   "name": "monthly_revenue_usd",
+   "unit": "USD/month",
+   "tolerance": 3000,
+   "note": "tolerance = the error size that would change a decision"
+  },
+  {
+   "name": "clients",
+   "unit": "count",
+   "tolerance": 2
+  },
+  {
+   "name": "team_size",
+   "unit": "count",
+   "tolerance": 1
+  },
+  {
+   "name": "salesperson_hired",
+   "unit": "0/1",
+   "tolerance": 0.5
+  },
+  {
+   "name": "cash_runway_months",
+   "unit": "months",
+   "tolerance": 1.5
+  }
+ ]
+}

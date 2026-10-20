@@ -21,20 +21,22 @@ What it does, for every empty cell x[i][j] of a table:
             fused with weights learned by hiding values that ARE known and
             seeing which channel recovers them (the Capsule loop: every failed
             path is integrated), then conditioned on the identities in F.
-  RESPOND   a calibrated interval (split-conformal, so the stated miss rate is
-            the measured miss rate), a Forcing-Test status, an operational
-            falsifier, and the conjugate gap: the one measurement that would
-            narrow this cell most.
-  TERMINATE when no channel beats the prior, or the interval is wider than the
-            decision tolerance, the engine stops and holds the variable open.
-            It does not emit a point value it cannot stand behind.
+  RESPOND   a value for EVERY open cell, with a calibrated interval
+            (split-conformal, so the stated miss rate is the measured miss rate),
+            a tag saying how the value was made, an operational falsifier, and
+            the conjugate gap: the one measurement that would narrow it most.
+  TERMINATE the engine never emits a value without its tag. When no channel beats
+            the prior, the value is the base rate and the tag says so
+            (assumption/prior-only). When the interval is wider than the
+            decision tolerance, the tag says so (estimate/wide).
 
 Two rules are enforced in code, not left to the operator:
   1. A fill is never used as an input to another fill (no assumption stacking).
      Only measured values feed the channels; filled cells interact only through
      explicit identities.
-  2. Every output carries its status. A filled value is never reported as
-     measured.
+  2. Every output carries its tag. A filled value is never reported as
+     measured, and an open variable is never left blank: it gets the best
+     calculated value plus the tag and range that say how far to trust it.
 
 Standard library only, matching the repository's convention.
 """
@@ -48,11 +50,14 @@ from statistics import NormalDist
 
 # Status vocabulary (Forcing Test outcome classes, framework/registers.md §2,
 # plus the two the audit found missing: conflict and no-signal).
+# Every open cell receives a value. What changes is the TAG that travels with it.
+# (Estimate Protocol, substrate/2026-10-20-estimate-protocol.md: a calculated,
+# tagged estimate is not an assumption; an untagged one is.)
 MEASURED = "measured"
-FORCED = "forced-fill"          # one value survives the identities
-FILL = "live-fill"              # live hypothesis: interval within tolerance, falsifier attached
-OPEN = "held-open"              # range narrowed, no point value emitted
-NO_SIGNAL = "held-open/no-signal"  # nothing beats the prior: range not narrowed
+FORCED = "forced-fill"          # one value survives the identities: exact
+FILL = "estimate"               # calibrated estimate, interval within the decision tolerance
+OPEN = "estimate/wide"          # calibrated estimate, interval wider than the tolerance: act with care
+NO_SIGNAL = "assumption/prior-only"  # nothing beats the base rate: the value IS the base rate, tagged as such
 CONFLICT = "conflict"           # channels or identities disagree beyond calibration: the blocker
 
 
@@ -138,8 +143,8 @@ class Fill:
     row: int
     column: str
     status: str
-    value: float | None           # emitted only for forced-fill / live-fill
-    center: float                 # best estimate, kept for scoring even when held open
+    value: float | None           # None only on conflict (the record itself is the question)
+    center: float                 # best estimate, always present
     lo: float
     hi: float
     narrowing: float              # 1 - width / prior width (0 = no information gained)
@@ -444,15 +449,17 @@ class OmniGap:
             hi = max(ch["S"], ch["R"]) + h
             fals = "Structure and analogues disagree beyond anything seen in calibration: this record is unlike the rest. Measure it."
         elif cal["no_signal"]:
-            status, value = NO_SIGNAL, None
-            fals = "Nothing in the record predicts this variable better than its base rate."
+            status, value = NO_SIGNAL, mu
+            fals = (f"Base rate only: nothing in the record predicts {name} better than its average. "
+                    f"Refuted if measured {name} falls outside [{lo:.6g}, {hi:.6g}] ({100 * (1 - self.alpha):.0f}%).")
         elif h <= self.tol[j]:
             status, value = FILL, mu
             fals = (f"Refuted if measured {name} falls outside [{lo:.6g}, {hi:.6g}]; "
                     f"stated miss rate {100 * self.alpha:.0f}% (measured on {cal['n']} hidden known values).")
         else:
-            status, value = OPEN, None
-            fals = f"Range only: measured {name} should fall in [{lo:.6g}, {hi:.6g}] ({100 * (1 - self.alpha):.0f}%)."
+            status, value = OPEN, mu
+            fals = (f"Wide: the range exceeds the decision tolerance. Refuted if measured {name} falls outside "
+                    f"[{lo:.6g}, {hi:.6g}] ({100 * (1 - self.alpha):.0f}%).")
         nxt = None if status in (FORCED, FILL) else self._next_measurement(i, j, preds)
         return Fill(i, name, status, value, mu, lo, hi, narrowing,
                     {k: round(v, 6) for k, v in ch.items()}, fals, nxt)

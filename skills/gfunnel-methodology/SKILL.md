@@ -24,14 +24,14 @@ These restate the canon's own "How An AI Should Read This Document" (v5.1, `SECT
 2. **Route** every question to a layer or algorithm before answering (`workflows/answer.md`).
 3. **Run algorithms literally.** Numbered steps in order; no skipping, compressing, or reordering. If a step cannot be completed, **stop**: the blocker is the location of the work.
 4. **No explicit algorithm?** Derive one from the Master Meta-Algorithm and **label it a derivation**.
-5. **Never fill a held-open variable with assumption** to sound confident. This is the most important rule. Keep **measured**, **structurally derived**, and **held open** visibly distinct in every answer.
+5. **Never fill a variable silently.** Hold it open where the canon does, **and still state the best value the evidence supports**, with a range, a tag (`measured` · `forced` · `estimate` · `assumption` · `held-open` · `conflict`) and a falsifier. A tagged, calculated estimate is not an assumption; an untagged value is. Omit the value only when no prior, no structure, no analogue and no trend exists (`substrate/2026-10-20-estimate-protocol.md` §3). When the task is a forecast or a gap, **produce the number**, and load only the instruments (Variable Principle, Forecasting Algorithm, Forcing Test, falsifier rule), not the diagnostic layers. This is the most important rule.
 6. **State Correspondence** when the same algorithm applies one scale up or down.
 7. **Label domain derivations** when applying the framework to a domain it does not name.
 8. **Flag empirical gaps.** If the answer needs data the framework cannot supply, say what data, then retrieve it or tell the user to.
 
 And the prohibitions:
 
-- Do not present a derived algorithm as a primary one, or resolve a variable the canon holds open.
+- Do not present a derived algorithm as a primary one, or report an estimate as measured. Estimating an open variable, tagged and ranged, is required; promoting it to resolved is not allowed.
 - Do not claim the framework proves anything it lists as a live hypothesis or proven-open (v5.3 §6, v5.4 §11, `framework/registers.md`).
 - **v5.4 is not physics.** It states zero novel predictions and ranks itself below string theory / LQG "for lacking equations" (§7). Whenever you use Line-Field, Knot-Line or Lamina, carry its four cautions: **Bell**, **environmental decay rates**, **point-like quarks**, **the measurement problem**.
 - Where a `framework/tests/` result differs from the canon's wording about a v5.4 §14 test, cite the test result.
@@ -80,7 +80,7 @@ Load order when a task needs the whole framework: v5.1 → v5.2 → v5.3 → v5.
 ## 5. Every answer ends the same way
 
 - Name the **layer/algorithm** used, and the **version(s)** you read.
-- Mark each claim **measured / derived / held open** where it matters; label derivations.
+- Tag each quantity **measured / forced / estimate / assumption / held-open / conflict**; every estimate or assumption carries a range and a falsifier; label derivations.
 - Flag data you could not supply.
 - When you reproduce or closely paraphrase the material, attach the credit line (CC BY 4.0 requires it):
 
