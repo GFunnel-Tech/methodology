@@ -30,7 +30,8 @@ For an empty cell *x* (variable *j*, record *i*), with *E* the measured values i
 | **Π_F** | Projection onto F. It conditions the estimate on the identities. When the identities leave one value, the cell is **forced**. | Forcing Test, Output 1 (v5.3) |
 | **μ_P** | The **Capsule prior**: the variable across every prior record. | Layer I.G: *the present integrates all prior paths* |
 | **μ_S** | **Process structure**: the variable's measured relation to the other variables in the same record (regression). | Layer 0 / I.C: name the occupant that carries the signal |
-| **μ_R** | **Correspondence**: the same variable in the nearest analogous records (k-nearest). | Layer II, Correspondence: *"solve it at one scale…"* |
+| **μ_R** | **Analogue**: the same variable in the nearest analogous records of the same system (k-nearest). | Layer I.G / II |
+| **μ_C** | **Correspondence**: the relation fitted in a **parallel system**, with the scale removed (each system standardized on its own coordinates), then applied here. The fractal transfers; the scale does not. | Layer II, Correspondence: *"solve it at one scale and you have solved it at every scale"* (Axiom 10) |
 | **w_k** | Channel weights. They are learned by hiding values that **are** known and measuring which channel recovers them (non-negative least squares). | Layer I.G + MMA step 12: every failed path is integrated |
 | **q_{1−α}** | The interval half-width. It is the (1−α) quantile of the errors made on those hidden known values, with the identity step included (split-conformal). The stated miss rate is therefore a **measured** miss rate. | Layer ◇: a claim must say what would prove it wrong |
 | **τ** | Decision tolerance: the widest interval you can still act on. The default is half a column standard deviation. | MMA step 4: the desired state defines the work |

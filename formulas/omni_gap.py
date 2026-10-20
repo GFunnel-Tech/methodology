@@ -16,8 +16,10 @@ What it does, for every empty cell x[i][j] of a table:
               P  Capsule prior        — every prior record of this variable
               S  Process structure    — the variable's measured relation to the
                                         other variables in the same record
-              R  Correspondence       — the same pattern in the nearest analogous
-                                        records ("as above, so below")
+              R  Analogue             — the nearest analogous records in the same system
+              C  Correspondence       — the same relation fitted in a PARALLEL system,
+                                        scale removed, applied here ("as above, so below":
+                                        the fractal transfers, the scale does not)
             fused with weights learned by hiding values that ARE known and
             seeing which channel recovers them (the Capsule loop: every failed
             path is integrated), then conditioned on the identities in F.
@@ -154,6 +156,45 @@ class Fill:
     note: str = ""
 
 
+@dataclass
+class Correspondence:
+    """A parallel system whose relations may transfer to the target.
+
+    columns / rows   the source system's table (floats or None)
+    mapping          {target column: source column} — which variables correspond
+    name             label used in reports
+
+    Transfer is scale-free: the relation is fitted on the source's own
+    standardized coordinates (each column centred and scaled within the source)
+    and applied to the target's standardized coordinates. Same shape, different
+    scale. Whether the shape really transfers is not assumed: the channel earns
+    weight only by recovering hidden known values in the target, like every
+    other channel, and the calibration reports whether Correspondence held.
+    Log-transform columns beforehand when the relation is a power law.
+    """
+    name: str
+    columns: list
+    rows: list
+    mapping: dict
+
+    def __post_init__(self):
+        self.ci = {c: i for i, c in enumerate(self.columns)}
+        self.stats = [_mean_sd([r[j] for r in self.rows if r[j] is not None]) for j in range(len(self.columns))]
+        self._models = {}
+
+    def model(self, src_j, src_preds):
+        key = (src_j, src_preds)
+        if key not in self._models:
+            T = [r for r in self.rows if r[src_j] is not None and all(r[c] is not None for c in src_preds)]
+            if len(T) < max(12, 3 * len(src_preds) + 5):
+                self._models[key] = None
+            else:
+                Z = [[(r[c] - self.stats[c][0]) / self.stats[c][1] for c in src_preds] for r in T]
+                zy = [(r[src_j] - self.stats[src_j][0]) / self.stats[src_j][1] for r in T]
+                self._models[key] = _Ridge(Z, zy)
+        return self._models[key]
+
+
 # --------------------------------------------------------------------------- #
 # The engine
 # --------------------------------------------------------------------------- #
@@ -169,7 +210,8 @@ class OmniGap:
     """
 
     def __init__(self, columns, rows, identities=(), bounds=None, tolerance=None,
-                 alpha=0.10, k=7, folds=5, calib_per_column=300, seed=0):
+                 alpha=0.10, k=7, folds=5, calib_per_column=300, seed=0, correspondences=()):
+        self.correspondences = list(correspondences)
         self.cols = list(columns)
         self.ci = {c: i for i, c in enumerate(self.cols)}
         self.rows = [list(r) for r in rows]
@@ -212,7 +254,26 @@ class OmniGap:
         mean_j = _mean_sd([r[j] for k_, r in enumerate(self.rows)
                            if r[j] is not None and self.fold_of[k_] != hold])[0]
         out = {"P": mean_j}
-        preds = tuple(c for c in range(self.p) if c != j and row[c] is not None)
+        known = tuple(c for c in range(self.p) if c != j and row[c] is not None)
+        # C: the relation from each parallel system, on standardized coordinates
+        if self.correspondences:
+            sd_j = _mean_sd([r[j] for k_, r in enumerate(self.rows)
+                             if r[j] is not None and self.fold_of[k_] != hold])[1]
+            for n_, co in enumerate(self.correspondences):
+                tj = self.cols[j]
+                if tj not in co.mapping:
+                    continue
+                mapped = tuple(c for c in known if self.cols[c] in co.mapping)
+                if not mapped:
+                    continue
+                src_j = co.ci[co.mapping[tj]]
+                src_preds = tuple(co.ci[co.mapping[self.cols[c]]] for c in mapped)
+                m = co.model(src_j, src_preds)
+                if m is None:
+                    continue
+                zx = [(row[c] - self.stats[c][0]) / self.stats[c][1] for c in mapped]
+                out[f"C{n_ + 1}"] = mean_j + m.predict(zx) * sd_j
+        preds = known
         # drop predictors until there is enough shared data to fit (fewest-missing kept)
         while preds and self._model(j, preds, hold) is None:
             miss = {c: sum(r[c] is None for r in self.rows) for c in preds}
@@ -246,6 +307,14 @@ class OmniGap:
                 ch, _ = self._channels(i, j, hold=self.fold_of[i])
                 recs.append((ch, self.rows[i][j]))
             w = self._stack_weights(recs)
+            corr = None
+            if self.correspondences:
+                cn = [n for n in w if n.startswith("C")]
+                w0 = self._stack_weights(recs, exclude=[f"C{k_ + 1}" for k_ in range(len(self.correspondences))])
+                sse = lambda ww: sum((y - self._combine(ch, ww)) ** 2 for ch, y in recs)
+                gain = 1 - math.sqrt(sse(w) / max(sse(w0), 1e-300))
+                corr = {"weights": {n: round(w[n], 3) for n in cn}, "error_reduction": gain,
+                        "verdict": "held" if cn and gain > 0.02 else "not supported here"}
             res, prior_res, disagree = [], [], []
             for ch, y in recs:
                 res.append(abs(y - self._combine(ch, w)))
@@ -263,6 +332,7 @@ class OmniGap:
                 "n": len(recs),
                 "rmse": math.sqrt(sum(e * e for e in res) / max(1, len(res))),
                 "no_signal": q >= 0.95 * q0,
+                "correspondence": corr,
                 "cases": known,
             }
         if self.identities:
@@ -294,11 +364,11 @@ class OmniGap:
                                          else cal["prior_halfwidth"])
 
     @staticmethod
-    def _stack_weights(recs):
-        """Non-negative least squares over channel subsets (exact for <=3 channels)."""
-        names = ["P", "S", "R"]
+    def _stack_weights(recs, exclude=()):
+        """Non-negative least squares over channel subsets (exact: all subsets tried)."""
+        names = sorted({n for ch, _ in recs for n in ch} - set(exclude), key=lambda n: (n[0] != "P", n))
         best, best_sse = {"P": 1.0}, float("inf")
-        for mask in range(1, 8):
+        for mask in range(1, 1 << len(names)):
             sub = [n for b, n in enumerate(names) if mask >> b & 1]
             data = [(ch, y) for ch, y in recs if all(n in ch for n in sub)]
             if len(data) < len(sub) + 5:
