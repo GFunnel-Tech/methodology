@@ -18,7 +18,7 @@ For an empty cell *x* (variable *j*, record *i*), with *E* the measured values i
 
 ```
                 ┌                                   ┐
-   x* =  Π_F    │   Σ_k  w_k · μ_k(x | E)           │          k ∈ { P, S, R }
+   x* =  Π_F    │   Σ_k  w_k · μ_k(x | E)           │          k ∈ { P, S, R, C }
                 └                                   ┘
    I  =  x* ± q_{1-α}
    σ  =  FT( F, I, τ )
@@ -41,7 +41,7 @@ For an empty cell *x* (variable *j*, record *i*), with *E* the measured values i
 
 ```
 DETECT     find the gap; build F from bounds + identities
-PROCESS    μ_P, μ_S, μ_R  →  weighted by w  →  conditioned on F
+PROCESS    μ_P, μ_S, μ_R, μ_C  →  weighted by w  →  conditioned on F
 RESPOND    value or range, status, falsifier, next measurement
 TERMINATE  never emit a value without its tag; if no channel beats the prior, the
            value is the base rate, tagged assumption/prior-only
@@ -92,6 +92,27 @@ Before 2026-10-20 the last three were `live-fill`, `held-open` and `held-open/no
 
 ---
 
+## 2b · Correspondence: using a parallel system to calculate this one (measured)
+
+`python3 formulas/correspondence_test.py`. In each pair the target system is cut to 20 records and half of one variable is hidden, so its own structure is too thin to fit. Three ways to recover the hidden truth are compared: the target's own data; the target plus the Correspondence channel from the source; and the source's regression applied naively in raw units.
+
+| Pair | Source → target | own data | **+ correspondence** | naive transfer | C weight | engine verdict |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Mammal brain mass: 42 small-bodied species → 20 largest (log–log power law) | 1.038 | **0.600** | 0.629 | 0.99 | held 20/20 |
+| 2 | Penguins: Adelie + Chinstrap → Gentoo, body mass | 1.054 | **0.715** | 2.981 | 0.96 | held 20/20 |
+| 3 | Cars: USA → Japan, fuel economy | 1.081 | 1.101 | 1.032 | 0.64 | held 18/20 |
+| 4 | Arbitrary mapping, sign preserved: cars → penguins | 1.054 | **0.751** | 4.730 | 0.69 | held 20/20 |
+| 5 | **True negative control**, sign reversed: penguin mass ← car mpg | 1.054 | 1.054 | 10.065 | **0.00** | **not supported 20/20** |
+
+(NRMSE on the hidden cells, 20 random masks; lower is better; 1.0 = no better than the average.)
+
+What this measures:
+
+- **The fractal transfers; the scale does not.** Pair 1 is the textbook case: the brain–body power law fitted on small mammals recovers large-mammal brain mass three orders of magnitude away (error 1.04 → 0.60). Pair 2 shows why scale removal matters: the naive transfer in raw units is off by 3 sd because Gentoos are bigger; standardized, the relation carries.
+- **Correspondence is a claim the engine tests, not one it assumes.** The channel earns weight only by recovering hidden known values in the target. On the sign-reversed mapping it earns **zero** and reports *not supported here*. Canon's "ten domains mapped, zero exceptions" becomes, per pair, a measured number.
+- **What transfers is mostly the sign and strength of a relation.** Pair 4 was written as a negative control and turned out not to be one: an arbitrary pairing that happens to preserve sign (bigger engine → heavier car; longer flipper → heavier penguin) genuinely helped. That is a finding about Correspondence itself: in standardized coordinates, "as above, so below" carries the *direction and rough magnitude* of relations, and that is already enough to narrow a gap.
+- **It does not always help.** Pair 3 (USA → Japan cars) gained nothing; the engine still called it "held" in 18/20 runs on a 2% threshold. The threshold is a stipulation, held open below.
+
 ## 3 · What it does not do (held open, not filled)
 
 - **It is not "better than any known metric".** It beat four standard methods on three tables by 4–9%. That is real, modest, and specific to these tables. No method can beat the best possible inference from the same information; gains come only from **more structure**: identities, analogues, and calibrated restraint. Stronger learners (gradient-boosted trees, Gaussian processes, deep imputers) were not tested and may beat it. **Held open until run.**
@@ -105,7 +126,7 @@ Before 2026-10-20 the last three were `live-fill`, `held-open` and `held-open/no
 1. **Rhythm channel (T).** Records ordered in time should add a trend channel. It is not built.
 2. **Correlated channel errors under identities.** These are handled by measuring the width end-to-end, not by modelling the correlation. A joint model could make tighter, still-honest intervals.
 3. **Categorical variables** (species, region, plan tier) are not yet channels.
-4. **Cross-table Correspondence.** Analogues are drawn only from the same table. Borrowing from another table with a shared scale is the literal form of "as above, so below", and it is untested.
+4. ~~Cross-table Correspondence~~ **Built** (§2b, the C channel). What it opened: (a) the "held" threshold (2% error reduction) is a stipulation, and pair 3 shows it can call a useless transfer "held"; (b) transfer is linear in standardized coordinates, so a relation whose *shape* differs between systems (not just its scale) will not carry; (c) the engine cannot propose the mapping, only test one.
 
 ## 5 · The living version: the Gap Ledger
 

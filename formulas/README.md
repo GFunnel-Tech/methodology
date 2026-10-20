@@ -189,7 +189,8 @@ Derivation, not canon. These are the only formulas in the repository built to **
 
 | ID | Name | Formula | Where | Result |
 | --- | --- | --- | --- | --- |
-| EQ-140 | **Omni Gap Formula** | **x\* = Π_F[ Σ_k w_k μ_k(x\|E) ]**, k ∈ {P prior, S structure, R correspondence}; **I = x\* ± q₁₋α**; **status = FT(F, I, τ)** | [`omni_gap.py`](omni_gap.py) | ✅ Beat mean, k-NN, ridge and chained (MICE-style) imputation on all 3 tables, by 4–9% in error. Intervals are calibrated: 91–93% coverage against a stated 90%. |
+| EQ-140 | **Omni Gap Formula** | **x\* = Π_F[ Σ_k w_k μ_k(x\|E) ]**, k ∈ {P prior, S structure, R analogue, C correspondence}; **I = x\* ± q₁₋α**; **status = FT(F, I, τ)** | [`omni_gap.py`](omni_gap.py) | ✅ Beat mean, k-NN, ridge and chained (MICE-style) imputation on all 3 tables, by 4–9% in error. Intervals are calibrated: 91–93% coverage against a stated 90%. |
+| EQ-150 | **Correspondence channel** | **μ_C = mean_j + σ_j · f_src( (x − mean)/σ )**, where **f_src** is the relation fitted in the parallel system on its own standardized coordinates; weight earned by recovering hidden target values; verdict *held* if error falls > 2% vs. the same channels without it | `omni_gap.py` class `Correspondence` | ✅ Mammal brain mass across 3 orders of magnitude: error 1.04 → 0.60; penguins across species 1.05 → 0.72; sign-reversed control: weight 0.00, *not supported* 20/20 (`correspondence_test.py`) |
 | EQ-141 | Stacking weights | **w = argmin_{w≥0} Σ (y − Σ w_k μ_k)²** on hidden known values | `omni_gap.py` `_stack_weights` | ✅ |
 | EQ-142 | Conformal half-width | **q = |residual|₍⌈(1−α)(n+1)⌉₎**; valid from **n ≥ (1−α)/α** (= 9 at 90%) | `omni_gap.py` `_quantile`, `_calibrate_identities` | ✅ |
 | EQ-143 | Identity conditioning | **μ' = μ + K(b − Aμ)**, **K = ΣAᵀ(AΣAᵀ)⁻¹**, **Σ' = Σ − KAΣ** | `omni_gap.py` `_condition` | ✅ Forced fills are exact |
