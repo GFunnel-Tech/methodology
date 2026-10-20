@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/tools/check_output.py --session-start",
+            "timeout": 10,
+            "statusMessage": "Loading the methodology's mode rule"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/tools/check_output.py --stop-hook",
+            "timeout": 20,
+            "statusMessage": "Linting the answer against the Estimate Protocol"
+          }
+        ]
+      }
+    ]
+  }
+}

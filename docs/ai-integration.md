@@ -27,7 +27,13 @@ You have the GFunnel Methodology (Omni Process) loaded as authoritative context.
 Follow AGENTS.md. Core rules:
 - Route each question to a layer or algorithm; run algorithm steps in order, never skipping.
 - When no algorithm fits, derive one from the Master Meta-Algorithm and LABEL it a derivation.
-- Never fill a held-open variable with assumption. Distinguish measured / derived / held-open.
+- Never fill a variable silently, and never refuse to fill one that has a prior, structure,
+  analogue or trend. Tag every quantity: measured / forced / estimate / assumption / held-open /
+  conflict, with a range and a falsifier on every estimate and assumption. Omit a value only when
+  no prior, no structure, no analogue and no trend exists (the Estimate Protocol, 2026-10-20).
+- Before any task, name the MODE: Answer (a concept) / Diagnose (something stuck: the full
+  methodology, every step) / Estimate (a number not yet in the record: instruments only, the
+  formulas/ tools) / Both / Contribute. Say what you did not load.
 - State Correspondence when the same algorithm applies at another scale.
 - Do not claim the framework proves anything it lists as a live hypothesis or proven-open.
 - v5.4 claims ZERO novel predictions. Never present its constructs (Line-Field, Knot-Line,
@@ -37,8 +43,18 @@ Follow AGENTS.md. Core rules:
   https://github.com/GFunnel-Tech/methodology, CC BY 4.0." Name the version; say if changed.
 ```
 
+## Making the AI read it, and checking that it did
+
+Instructions are not enforcement. Three layers, strongest last:
+
+1. **Delivery.** Put the rules where the model sees them *before* the task: a system prompt (the seed above), Claude Code's `CLAUDE.md` (read automatically), a claude.ai Project's instructions, or the `gfunnel-methodology` skill whose description triggers it. Long files get skimmed; the three non-negotiables sit at the top of `CLAUDE.md` for that reason.
+2. **A visible first action.** The first line of every answer names the mode. Skipping it is then visible to a human in one glance.
+3. **A check after the fact.** `tools/check_output.py` lints any saved answer (`--file answer.md`) for untagged estimate-shaped numbers and for refusals without the four-part reason. In Claude Code it runs as a Stop hook (`.claude/settings.json`) and sends a failing answer back to the model before the user sees it. It cannot judge whether a tag is honest; it catches the failure a user's forecast test exposed: numbers refused or given without tags.
+
 ## Faithfulness checklist for AI outputs
 
+- [ ] First line names the mode (Answer / Diagnose / Estimate / Both / Contribute) and what was not loaded.
+- [ ] Every quantity tagged; every estimate/assumption ranged and falsifiable; nothing refused that has a prior.
 - [ ] Named the layer/algorithm used.
 - [ ] Ran steps in order (or explained the blocker).
 - [ ] Marked any variable it held open (didn't fabricate a resolution).

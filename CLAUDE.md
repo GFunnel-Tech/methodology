@@ -1,5 +1,10 @@
 # CLAUDE.md — How an AI operates in this repository
 
+> **FIRST, before anything else — three lines you must act on:**
+> 1. **Pick the mode and say it** in your first line: `Mode: Answer | Diagnose | Estimate | Both | Contribute` (§1). Diagnose = full methodology, every step. Estimate = instruments only, route to `formulas/`.
+> 2. **Every quantity carries a tag**: `measured` · `forced` · `estimate` · `assumption` · `held-open` · `conflict`, with a range and a falsifier on every estimate/assumption (§2). A value may be omitted only when no prior, no structure, no analogue and no trend exists.
+> 3. **Your answer is linted on Stop** (`tools/check_output.py`, wired in `.claude/settings.json`). An estimate-shaped answer with untagged numbers, or a refusal without the four-part reason, is sent back to you before the user sees it.
+
 Read [`AGENTS.md`](AGENTS.md) first; it is the canonical protocol and this file does not replace it. This file adds the **runbook**: which mode to work in, which tool to run, and the exact commands. The packaged form is the `gfunnel-methodology` skill ([`skills/gfunnel-methodology/SKILL.md`](skills/gfunnel-methodology/SKILL.md)); when it is available, invoke it and follow its workflow files.
 
 ## 1. Pick the mode before reading anything else
