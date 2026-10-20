@@ -210,8 +210,9 @@ class OmniGap:
     """
 
     def __init__(self, columns, rows, identities=(), bounds=None, tolerance=None,
-                 alpha=0.10, k=7, folds=5, calib_per_column=300, seed=0, correspondences=()):
+                 alpha=0.10, k=7, folds=5, calib_per_column=300, seed=0, correspondences=(), memory=None):
         self.correspondences = list(correspondences)
+        self.memory = memory          # formulas/memory.py Memory, or None
         self.cols = list(columns)
         self.ci = {c: i for i, c in enumerate(self.cols)}
         self.rows = [list(r) for r in rows]
@@ -315,6 +316,11 @@ class OmniGap:
                 gain = 1 - math.sqrt(sse(w) / max(sse(w0), 1e-300))
                 corr = {"weights": {n: round(w[n], 3) for n in cn}, "error_reduction": gain,
                         "verdict": "held" if cn and gain > 0.02 else "not supported here"}
+            chan_counts = {}
+            for ch, _ in recs:
+                key = "+".join(sorted(ch))
+                chan_counts[key] = chan_counts.get(key, 0) + 1
+            expression = max(chan_counts, key=chan_counts.get) if chan_counts else "P"
             res, prior_res, disagree = [], [], []
             for ch, y in recs:
                 res.append(abs(y - self._combine(ch, w)))
@@ -334,10 +340,60 @@ class OmniGap:
                 "no_signal": q >= 0.95 * q0,
                 "correspondence": corr,
                 "cases": known,
+                "source": "this run",
+                "expression": expression,
             }
+            self._pool_with_memory(j)
         if self.identities:
             self._calibrate_identities()
+        self._remember()
         return self.calibration
+
+    # ---- memory: the Capsule. Prior runs on the same variable pool their calibration
+    # into this one when this run's own calibration rests on few cases. Memory never
+    # replaces a measurement: the pooled width is weighted by cases, the source is named.
+
+    POOL_BELOW = 30   # pool when this run calibrated on fewer cases than this
+
+    def _pool_with_memory(self, j):
+        if not self.memory:
+            return
+        cal = self.calibration[j]
+        if cal["n"] >= self.POOL_BELOW:
+            return
+        # pool only with runs that used the SAME expression on this variable: a width
+        # learned with structure+analogue channels does not describe a prior-only estimate
+        past = self.memory.recall(self.cols[j], cal["expression"], cal["n"])
+        if not past:
+            cal["source"] = "this run (memory holds no run with the same expression and size regime)"
+            return
+        sd = self.stats[j][1]
+        n_now, n_past = cal["n"], past["cases"]
+        pooled = (cal["halfwidth"] / sd * n_now + past["halfwidth_sd"] * n_past) / (n_now + n_past)
+        cal["halfwidth_own"] = cal["halfwidth"]
+        cal["halfwidth"] = pooled * sd
+        if n_now < 12:                       # too few to have learned weights worth keeping
+            cal["weights"] = dict(past["weights"])
+            cal["no_signal"] = past["no_signal"]
+        cal["source"] = f"pooled with memory ({past['runs']} prior run(s), {n_past} cases, same expression and size regime)"
+
+    def _remember(self):
+        if not self.memory:
+            return
+        from memory import fingerprint
+        cols = {}
+        for j, c in enumerate(self.cols):
+            cal = self.calibration[j]
+            cols[c] = {"weights": {k: round(v, 4) for k, v in cal["weights"].items()},
+                       "halfwidth_sd": round(cal.get("halfwidth_own", cal["halfwidth"]) / self.stats[j][1], 4),
+                       "n": cal["n"], "no_signal": cal["no_signal"], "expression": cal["expression"],
+                       "correspondence": ({"verdict": cal["correspondence"]["verdict"],
+                                           "error_reduction": round(cal["correspondence"]["error_reduction"], 4)}
+                                          if cal.get("correspondence") else None),
+                       "source": "this run" if cal["source"].startswith("this run") else cal["source"]}
+        self._memory_record = {"columns": cols, "identities": len(self.identities), "alpha": self.alpha,
+                               "correspondences": [c.name for c in self.correspondences]}
+        self._fingerprint = fingerprint(self.cols, self.rows)
 
     def _calibrate_identities(self):
         """Second pass of the Capsule loop: run the WHOLE pipeline, identities
@@ -431,6 +487,18 @@ class OmniGap:
                 if j in touched and not forced.get(j):
                     h[j] = self.calibration[j]["halfwidth_identity"]
                 fills.append(self._respond(i, j, mu[j], h[j], info[j], forced.get(j, False)))
+        if self.memory:
+            tags = {}
+            nxt = {}
+            for f in fills:
+                tags[f.status] = tags.get(f.status, 0) + 1
+                if f.next_measurement:
+                    nxt[f.next_measurement] = nxt.get(f.next_measurement, 0) + 1
+            conj = max(nxt, key=nxt.get) if nxt else None
+            self.memory.record("omni-gap", self._fingerprint, self._memory_record,
+                               {"cells": len(fills), "tags": tags,
+                                "mean_narrowing": round(sum(f.narrowing for f in fills) / max(1, len(fills)), 4)},
+                               conjugate=conj)
         return fills
 
     def _estimate_row(self, i, gaps, hold=None):
@@ -531,8 +599,9 @@ class OmniGap:
             fals = (f"Wide: the range exceeds the decision tolerance. Refuted if measured {name} falls outside "
                     f"[{lo:.6g}, {hi:.6g}] ({100 * (1 - self.alpha):.0f}%).")
         nxt = None if status in (FORCED, FILL) else self._next_measurement(i, j, preds)
+        note = "" if cal["source"] == "this run" else f"calibration {cal['source']}"
         return Fill(i, name, status, value, mu, lo, hi, narrowing,
-                    {k: round(v, 6) for k, v in ch.items()}, fals, nxt)
+                    {k: round(v, 6) for k, v in ch.items()}, fals, nxt, note)
 
     def _check_measured_identities(self, i, fills):
         row = self.rows[i]

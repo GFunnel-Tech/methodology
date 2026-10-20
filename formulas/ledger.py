@@ -282,6 +282,18 @@ def cmd_run(args):
                 moves.append(row)
     save(data)
     write_report(data)
+    # memory: scored ledger ranges become records (formulas/memory.py)
+    try:
+        from memory import Memory
+        mem = Memory()
+        for gap in data["gaps"]:
+            scored = [{"metric": gap["id"], "tag": "ledger-range", "hit": v == "hit", "ratio": pr.get("ratios", {}).get(k)}
+                      for pr in gap.get("predictions", []) if not pr.get("backtest")
+                      for k, v in pr.get("scored", {}).items()]
+            if scored:
+                mem.record("ledger", gap["id"], {"gap": gap["id"], "status": gap["state"]["status"]}, {"scored": scored})
+    except Exception as e:
+        print(f"(memory not updated: {e})")
     for m in moves:
         print(describe_move(m))
     if not moves:

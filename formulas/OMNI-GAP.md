@@ -115,6 +115,12 @@ What this measures:
 - **What transfers is mostly the sign and strength of a relation.** Pair 4 was written as a negative control and turned out not to be one: an arbitrary pairing that happens to preserve sign (bigger engine → heavier car; longer flipper → heavier penguin) genuinely helped. That is a finding about Correspondence itself: in standardized coordinates, "as above, so below" carries the *direction and rough magnitude* of relations, and that is already enough to narrow a gap.
 - **It does not always help.** Pair 3 (USA → Japan cars) gained nothing; the engine still called it "held" in 18/20 runs on a 2% threshold. The threshold is a stipulation, held open below.
 
+## 2c · Memory without a memory layer (measured)
+
+Every run records itself: a fingerprint of the inputs (never the data), the expression it used per variable, its calibration in sd units, its outputs and the conjugate gap it named (`memory.py`; [`memory/README.md`](memory/README.md)). The log is the memory; what the system "remembers" is recomputed from it. A later run on a thin table pools its calibration with prior runs **of the same expression in the same size regime**, and says so in the output.
+
+The test (`memory_test.py`) is mostly a record of what did *not* work: keyed by variable alone, memory drove coverage to **66%** at a stated 90%; keyed by expression, to 71.5%. Calibration belongs to the calculation and its regime, and carrying it across regimes is an assumption. Keyed by expression and regime it never hurts (91–92%) and in the legitimate regime, many small tables of the same variables, it tightens ranges by about 4%. A modest gain, kept because the controls are now built in.
+
 ## 3 · What it does not do (held open, not filled)
 
 - **It is not "better than any known metric".** It beat four standard methods on three tables by 4–9%. That is real, modest, and specific to these tables. No method can beat the best possible inference from the same information; gains come only from **more structure**: identities, analogues, and calibrated restraint. Stronger learners (gradient-boosted trees, Gaussian processes, deep imputers) were not tested and may beat it. **Held open until run.**

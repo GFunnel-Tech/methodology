@@ -181,6 +181,21 @@ def cmd_score(args):
         }
     sheet["scores"] = report
     _dump(args[0], sheet)
+    # memory: the scores become the record (formulas/memory.py); no separate store
+    try:
+        from memory import Memory
+        scored = []
+        for arm, r in report.items():
+            for s in r["rows"]:
+                if s["result"] in ("hit", "miss"):
+                    half = (s["high"] - s["low"]) / 2
+                    scored.append({"arm": arm, "metric": s["metric"], "tag": s["tag"], "hit": s["result"] == "hit",
+                                   "ratio": round(abs(s["value"] - s["actual"]) / half, 4) if half > 0 else None})
+        Memory().record("forecast", sheet["phase_a_sha256"][:16],
+                        {"arms": list(report), "metrics": sorted({s["metric"] for s in scored})},
+                        {"scored": scored, "summary": {a: {k: v for k, v in r.items() if k != "rows"} for a, r in report.items()}})
+    except Exception as e:  # memory is a by-product; scoring must not fail because of it
+        print(f"(memory not updated: {e})")
     print(f"{'arm':<16}{'scored':>7}{'hit rate':>10}{'stated':>8}{'err/tol':>9}{'in-tol':>8}{'open':>6}")
     for arm, r in report.items():
         f = lambda v, pct=True: ("—" if v is None else (f"{100*v:.0f}%" if pct else f"{v:.2f}"))

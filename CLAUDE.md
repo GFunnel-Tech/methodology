@@ -40,6 +40,7 @@ All in [`formulas/`](formulas/README.md). Standard-library Python; nothing to in
 | a situation and a request to predict its metrics | `formulas/forecast.py` — `new` → fill → commit → `score` | a sealed two-arm sheet, every metric tagged; later a scored hit rate and error per tag |
 | two systems that may correspond, one thin | `OmniGap(..., correspondences=[Correspondence(...)])`; pattern in `formulas/correspondence_test.py` | estimates in the thin system from the rich one, and a verdict per column: correspondence **held** / **not supported here** |
 | a question in conversation, no file | the protocol by hand: `workflows/estimate.md` §3 | the same card, written out |
+| what has already been computed, and how reliable each tag has been | `formulas/memory.py show` (every run records itself; pass `memory=Memory()` to `OmniGap` to pool calibration with prior runs of the same expression and size) | earned calibration per variable; hit rate and required widening per tag; the conjugate gaps past runs named |
 
 Exact invocations, with the arguments explained: `workflows/estimate.md` §2. The visual of the whole pipeline and this router: [`formulas/diagrams/`](formulas/diagrams/README.md).
 
