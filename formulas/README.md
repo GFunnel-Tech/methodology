@@ -50,6 +50,8 @@ The derivations in §8 produce values only from measured inputs.
 
 ---
 
+**Visual:** [`diagrams/`](diagrams/README.md) — the formula pipeline, the router (when to run what), the output card and the Gap Ledger loop, as a four-page draw.io file with SVG previews. **Runbook for AI:** [`CLAUDE.md`](../CLAUDE.md) and the skill workflow [`estimate.md`](../skills/gfunnel-methodology/workflows/estimate.md).
+
 ## 1 · The base and meta-tier
 
 These are canon's structural rules. None of them computes a number. They are listed here because every formula below runs inside them.

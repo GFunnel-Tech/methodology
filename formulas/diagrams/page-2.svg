@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" font-family="Helvetica, Arial, sans-serif">
+<rect width="1600" height="1000" fill="#FFFFFF"/>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#5B6678"/></marker></defs>
+<line x1="300" y1="127" x2="380" y2="118" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="300" y1="161" x2="380" y2="174" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="228" y1="170" x2="423" y2="270" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="206" y1="170" x2="480" y2="400" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="198" y1="170" x2="482" y2="470" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="640" y1="105" x2="720" y2="105" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="640" y1="195" x2="720" y2="195" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="640" y1="315" x2="720" y2="315" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="640" y1="425" x2="720" y2="425" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="640" y1="500" x2="720" y2="500" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="860" y1="400" x2="860" y2="240" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)" stroke-dasharray="6,4"/>
+<line x1="860" y1="400" x2="860" y2="375" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)" stroke-dasharray="6,4"/>
+<line x1="320" y1="640" x2="350" y2="640" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="910" y1="640" x2="940" y2="640" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="320" y1="702" x2="350" y2="702" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="910" y1="702" x2="940" y2="702" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="320" y1="764" x2="350" y2="764" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="910" y1="764" x2="940" y2="764" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="320" y1="826" x2="350" y2="826" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="910" y1="826" x2="940" y2="826" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="320" y1="888" x2="350" y2="888" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="910" y1="888" x2="940" y2="888" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="38" y="38" font-size="18" text-anchor="start" fill="#18202C" font-weight="bold">When to run what — the decision an AI makes before loading anything (CLAUDE.md §1, §3)</text>
+<rect x="40" y="110" width="260" height="60" rx="8" fill="#2B3A55" stroke="#2B3A55" stroke-width="2"/>
+<text x="170" y="145" font-size="13" text-anchor="middle" fill="#FFFFFF" font-weight="bold">What does the user want?</text>
+<rect x="380" y="80" width="260" height="50" rx="8" fill="#DDF0F3" stroke="#1F7A8C" stroke-width="1"/>
+<text x="510" y="109" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Understand a concept, layer, term</text>
+<rect x="380" y="160" width="260" height="70" rx="8" fill="#DDF0F3" stroke="#1F7A8C" stroke-width="2"/>
+<text x="510" y="192" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Diagnose why something is stuck or</text>
+<text x="510" y="206" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">failing; run a named algorithm</text>
+<rect x="380" y="270" width="260" height="90" rx="8" fill="#DDF0F3" stroke="#1F7A8C" stroke-width="2"/>
+<text x="510" y="305" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Estimate — a number not yet in the record:</text>
+<text x="510" y="319" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">fill gaps, forecast, compare, narrow,</text>
+<text x="510" y="333" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">calculate one system from another</text>
+<rect x="380" y="400" width="260" height="50" rx="8" fill="#DDF0F3" stroke="#1F7A8C" stroke-width="1"/>
+<text x="510" y="429" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Both: diagnose, then put numbers on it</text>
+<rect x="380" y="470" width="260" height="60" rx="8" fill="#DDF0F3" stroke="#1F7A8C" stroke-width="1"/>
+<text x="510" y="504" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Contribute / audit / integrate</text>
+<rect x="720" y="75" width="280" height="60" rx="8" fill="#EBF2DD" stroke="#5F7F22" stroke-width="1"/>
+<text x="860" y="95" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Answer mode</text>
+<text x="860" y="109" font-size="11" text-anchor="middle" fill="#18202C">load the one section (SECTIONS.md)</text>
+<text x="860" y="123" font-size="11" text-anchor="middle" fill="#18202C">workflows/answer.md</text>
+<rect x="720" y="150" width="280" height="90" rx="8" fill="#FBEEDF" stroke="#C26A12" stroke-width="2"/>
+<text x="860" y="170" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Full methodology</text>
+<text x="860" y="185" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">v5.1 by framework/algorithms.md → layer →</text>
+<text x="860" y="199" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">algorithm, run literally, every step</text>
+<text x="860" y="213" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">workflows/run-algorithm.md (derive.md if none</text>
+<text x="860" y="227" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">fits)</text>
+<rect x="720" y="255" width="280" height="120" rx="8" fill="#FBEEDF" stroke="#C26A12" stroke-width="2"/>
+<text x="860" y="276" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Instruments only</text>
+<text x="860" y="290" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Variable Principle · Forecasting Algorithm ·</text>
+<text x="860" y="305" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Layer ◇ step 2 · Forcing Test outcomes ·</text>
+<text x="860" y="319" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Estimate Protocol</text>
+<text x="860" y="333" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">workflows/estimate.md</text>
+<text x="860" y="347" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">do NOT load Layers I–VII content: 3–4× the</text>
+<text x="860" y="362" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">time, no accuracy</text>
+<rect x="720" y="400" width="280" height="50" rx="8" fill="#FBEEDF" stroke="#C26A12" stroke-width="1"/>
+<text x="860" y="422" font-size="11" text-anchor="middle" fill="#18202C">run-algorithm.md, then estimate.md for every</text>
+<text x="860" y="436" font-size="11" text-anchor="middle" fill="#18202C">number the diagnosis leaves open</text>
+<rect x="720" y="465" width="280" height="70" rx="8" fill="#EBF2DD" stroke="#5F7F22" stroke-width="1"/>
+<text x="860" y="482" font-size="11" text-anchor="middle" fill="#18202C">CONTRIBUTING.md · audit/ ·</text>
+<text x="860" y="497" font-size="11" text-anchor="middle" fill="#18202C">docs/ai-integration.md</text>
+<text x="860" y="511" font-size="11" text-anchor="middle" fill="#18202C">workflows/iterate.md · reality-audit.md ·</text>
+<text x="860" y="525" font-size="11" text-anchor="middle" fill="#18202C">integrate.md</text>
+<text x="48" y="593" font-size="13" text-anchor="start" fill="#18202C" font-weight="bold">Estimate mode → which tool, by the shape of the input (all in formulas/, standard library)</text>
+<rect x="40" y="615" width="280" height="50" rx="8" fill="#DDF0F3" stroke="#1F7A8C" stroke-width="1"/>
+<text x="48" y="644" font-size="11" text-anchor="start" fill="#18202C">a table with empty cells</text>
+<rect x="350" y="615" width="560" height="50" rx="8" fill="#FBEEDF" stroke="#C26A12" stroke-width="1"/>
+<text x="358" y="644" font-size="11" text-anchor="start" fill="#18202C">omni_gap.py — OmniGap(cols, rows, identities, bounds, tolerance).fill()</text>
+<rect x="940" y="615" width="620" height="50" rx="8" fill="#EBF2DD" stroke="#5F7F22" stroke-width="1"/>
+<text x="948" y="644" font-size="11" text-anchor="start" fill="#18202C">per cell: value · range · tag · falsifier · next measurement</text>
+<rect x="40" y="677" width="280" height="50" rx="8" fill="#DDF0F3" stroke="#1F7A8C" stroke-width="1"/>
+<text x="48" y="699" font-size="11" text-anchor="start" fill="#18202C">one quantity, several measurements that may</text>
+<text x="48" y="713" font-size="11" text-anchor="start" fill="#18202C">disagree</text>
+<rect x="350" y="677" width="560" height="50" rx="8" fill="#FBEEDF" stroke="#C26A12" stroke-width="1"/>
+<text x="358" y="706" font-size="11" text-anchor="start" fill="#18202C">ledger.py — new / add / run / seal</text>
+<rect x="940" y="677" width="620" height="50" rx="8" fill="#EBF2DD" stroke="#5F7F22" stroke-width="1"/>
+<text x="948" y="699" font-size="11" text-anchor="start" fill="#18202C">per gap: narrowed · conflict · held-open; the witness whose removal restores agreement; the</text>
+<text x="948" y="713" font-size="11" text-anchor="start" fill="#18202C">precision a decisive measurement needs</text>
+<rect x="40" y="739" width="280" height="50" rx="8" fill="#DDF0F3" stroke="#1F7A8C" stroke-width="1"/>
+<text x="48" y="761" font-size="11" text-anchor="start" fill="#18202C">a situation and a request to predict its</text>
+<text x="48" y="775" font-size="11" text-anchor="start" fill="#18202C">metrics</text>
+<rect x="350" y="739" width="560" height="50" rx="8" fill="#FBEEDF" stroke="#C26A12" stroke-width="1"/>
+<text x="358" y="768" font-size="11" text-anchor="start" fill="#18202C">forecast.py — new → fill every row → commit (the seal) → score</text>
+<rect x="940" y="739" width="620" height="50" rx="8" fill="#EBF2DD" stroke="#5F7F22" stroke-width="1"/>
+<text x="948" y="768" font-size="11" text-anchor="start" fill="#18202C">two arms, every metric tagged; later: hit rate vs stated coverage, error per tag</text>
+<rect x="40" y="801" width="280" height="50" rx="8" fill="#DDF0F3" stroke="#1F7A8C" stroke-width="1"/>
+<text x="48" y="830" font-size="11" text-anchor="start" fill="#18202C">two systems that may correspond, one thin</text>
+<rect x="350" y="801" width="560" height="50" rx="8" fill="#FBEEDF" stroke="#C26A12" stroke-width="1"/>
+<text x="358" y="823" font-size="11" text-anchor="start" fill="#18202C">OmniGap(..., correspondences=[Correspondence(name, cols, rows, mapping)]) — pattern in</text>
+<text x="358" y="837" font-size="11" text-anchor="start" fill="#18202C">correspondence_test.py</text>
+<rect x="940" y="801" width="620" height="50" rx="8" fill="#EBF2DD" stroke="#5F7F22" stroke-width="1"/>
+<text x="948" y="830" font-size="11" text-anchor="start" fill="#18202C">estimates in the thin system from the rich one; per column: held / not supported here</text>
+<rect x="40" y="863" width="280" height="50" rx="8" fill="#DDF0F3" stroke="#1F7A8C" stroke-width="1"/>
+<text x="48" y="892" font-size="11" text-anchor="start" fill="#18202C">a question in conversation, no file</text>
+<rect x="350" y="863" width="560" height="50" rx="8" fill="#FBEEDF" stroke="#C26A12" stroke-width="1"/>
+<text x="358" y="892" font-size="11" text-anchor="start" fill="#18202C">the protocol by hand — estimate.md §3</text>
+<rect x="940" y="863" width="620" height="50" rx="8" fill="#EBF2DD" stroke="#5F7F22" stroke-width="1"/>
+<text x="948" y="892" font-size="11" text-anchor="start" fill="#18202C">the same card, written out</text>
+<rect x="1040" y="75" width="520" height="110" rx="8" fill="#FFF2CC" stroke="#B8860B" stroke-width="1"/>
+<text x="1048" y="112" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">Rule on every output (rule 5, amended 2026-10-20): never fill a variable silently;</text>
+<text x="1048" y="127" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">never refuse to fill one that has a prior, structure, analogue or trend. Tag:</text>
+<text x="1048" y="141" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">measured · forced · estimate · assumption · held-open · conflict. 'held-open'</text>
+<text x="1048" y="155" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">without a value only when all four are absent.</text>
+<rect x="1040" y="205" width="520" height="80" rx="8" fill="#FFFFFF" stroke="#9AA5B5" stroke-width="1"/>
+<text x="1048" y="235" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">Diagnose mode loads what the Estimate mode skips: Three Kingdoms, Hermetic</text>
+<text x="1048" y="249" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">principles, dynamic middle, gradient. They locate why a process is stuck. They do</text>
+<text x="1048" y="263" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">not produce numbers.</text>
+<text x="38" y="954" font-size="9" text-anchor="start" fill="#5B6678">Derivation, not canon. Source: GFunnel Methodology (Omni Process) v5.1–v5.4, Cameron Garlick / GFunnel, github.com/GFunnel-Tech/methodology, CC BY 4.0. The formula is an adaptation; not endorsed by the author.</text>
+</svg>

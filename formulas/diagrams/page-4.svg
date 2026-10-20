@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820" font-family="Helvetica, Arial, sans-serif">
+<rect width="1600" height="820" fill="#FFFFFF"/>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#5B6678"/></marker></defs>
+<line x1="320" y1="135" x2="350" y2="135" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="630" y1="135" x2="660" y2="135" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="940" y1="135" x2="970" y2="135" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="1250" y1="135" x2="1280" y2="135" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="715" y1="180" x2="565" y2="260" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="630" y1="300" x2="660" y2="300" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="940" y1="300" x2="970" y2="300" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="970" y1="263" x2="630" y2="172" stroke="#5B6678" stroke-width="1.5" marker-end="url(#a)" stroke-dasharray="6,4"/>
+<rect x="762" y="208" width="77" height="16" fill="#FFFFFF" opacity="0.9"/>
+<text x="800" y="220" font-size="10" text-anchor="middle" fill="#5B6678">re-calibrate</text>
+<text x="38" y="38" font-size="18" text-anchor="start" fill="#18202C" font-weight="bold">The Gap Ledger — the formula run continuously on open questions (formulas/ledger.py, LEDGER.md)</text>
+<rect x="40" y="90" width="280" height="90" rx="8" fill="#DDF0F3" stroke="#1F7A8C" stroke-width="2"/>
+<text x="180" y="125" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">add evidence</text>
+<text x="180" y="139" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">value · σ · independent method · source URL ·</text>
+<text x="180" y="153" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">publication date</text>
+<rect x="350" y="90" width="280" height="90" rx="8" fill="#FBEEDF" stroke="#C26A12" stroke-width="2"/>
+<text x="490" y="117" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">run</text>
+<text x="490" y="132" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">group by independent method (one witness</text>
+<text x="490" y="146" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">each) · combine by precision · χ² consistency</text>
+<text x="490" y="160" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">test</text>
+<rect x="660" y="90" width="280" height="90" rx="8" fill="#EBF2DD" stroke="#5F7F22" stroke-width="2"/>
+<text x="800" y="125" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">status per gap</text>
+<text x="800" y="139" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">held-open (no evidence) · live (single</text>
+<text x="800" y="153" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">witness) · narrowed (corroborated) · conflict</text>
+<rect x="970" y="90" width="280" height="90" rx="8" fill="#F8DCDC" stroke="#A33A3A" stroke-width="2"/>
+<text x="1110" y="117" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">on conflict</text>
+<text x="1110" y="132" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">tension in σ · which witness, removed,</text>
+<text x="1110" y="146" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">restores agreement · the precision a decisive</text>
+<text x="1110" y="160" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">measurement needs</text>
+<rect x="1280" y="90" width="280" height="90" rx="8" fill="#E3E8F1" stroke="#2B3A55" stroke-width="2"/>
+<text x="1420" y="125" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">movement logged</text>
+<text x="1420" y="139" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">history.jsonl → REPORT.md: the Iteration</text>
+<text x="1420" y="153" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">Ledger written by the formula</text>
+<rect x="350" y="260" width="280" height="80" rx="8" fill="#FFF2CC" stroke="#B8860B" stroke-width="2"/>
+<text x="490" y="290" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">seal</text>
+<text x="490" y="304" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">freeze the current range as a prediction</text>
+<text x="490" y="318" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">(date + hash); commit before adding evidence</text>
+<rect x="660" y="260" width="280" height="80" rx="8" fill="#FFF2CC" stroke="#B8860B" stroke-width="2"/>
+<text x="800" y="290" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">score</text>
+<text x="800" y="304" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">later measurements (publication date after</text>
+<text x="800" y="318" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">the seal; never theory) score hit / miss</text>
+<rect x="970" y="260" width="280" height="80" rx="8" fill="#E3E8F1" stroke="#2B3A55" stroke-width="2"/>
+<text x="1110" y="282" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">learn</text>
+<text x="1110" y="297" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">every scored case says how wide the range</text>
+<text x="1110" y="311" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">should have been; the widening factor is</text>
+<text x="1110" y="325" font-size="11" text-anchor="middle" fill="#18202C" font-weight="bold">applied once n ≥ 9</text>
+<rect x="40" y="400" width="760" height="150" rx="8" fill="#F5F6F8" stroke="#9AA5B5" stroke-width="1"/>
+<text x="48" y="443" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">Seeded gaps (verified against the primary papers)</text>
+<text x="48" y="457" font-size="11" text-anchor="start" fill="#18202C">G-001 Hubble constant — conflict 4.9σ; removing either the CMB value or the Cepheid ladder restores agreement</text>
+<text x="48" y="472" font-size="11" text-anchor="start" fill="#18202C">G-002 neutron lifetime — conflict 4.4σ, beam vs bottle</text>
+<text x="48" y="486" font-size="11" text-anchor="start" fill="#18202C">G-003 primordial lithium-7 — conflict 4.0σ, theory vs halo stars</text>
+<text x="48" y="500" font-size="11" text-anchor="start" fill="#18202C">G-004 W boson mass — conflict 7.2σ; removing CDF alone restores agreement (p = 0.65)</text>
+<text x="48" y="515" font-size="11" text-anchor="start" fill="#18202C">G-005 the Big Bang's first moment — held-open by the four-part test (v5.4 Gap 1, proven-open)</text>
+<rect x="830" y="400" width="730" height="150" rx="8" fill="#FFFFFF" stroke="#9AA5B5" stroke-width="1"/>
+<text x="838" y="457" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">What the replay measured</text>
+<text x="838" y="472" font-size="11" text-anchor="start" fill="#18202C">Backtest seals at past dates held only 17% of later results against a stated 90%: published uncertainties at these</text>
+<text x="838" y="486" font-size="11" text-anchor="start" fill="#18202C">frontiers understate real error by ~3.3× so far (6 cases). Real seals placed 2026-10-19; predictive power stays held</text>
+<text x="838" y="500" font-size="11" text-anchor="start" fill="#18202C">open until they are scored.</text>
+<rect x="40" y="580" width="760" height="80" rx="8" fill="#FFF2CC" stroke="#B8860B" stroke-width="1"/>
+<text x="48" y="617" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">Boundary gaps (no prior, no structure, no analogue, no trend) are narrowed only from their measurable side. The ledger</text>
+<text x="48" y="631" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">never fills them. That is the one place 'held-open' without a value is the correct output.</text>
+<rect x="830" y="580" width="730" height="80" rx="8" fill="#E3E8F1" stroke="#2B3A55" stroke-width="1"/>
+<text x="838" y="617" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">Keeping it alive: ledger.py add … → run → seal → commit. Evidence date = publication date. Theory never scores a seal.</text>
+<text x="838" y="631" font-size="11" text-anchor="start" fill="#18202C" font-weight="bold">One witness = one independent method.</text>
+<text x="38" y="769" font-size="9" text-anchor="start" fill="#5B6678">Derivation, not canon. Source: GFunnel Methodology (Omni Process) v5.1–v5.4, Cameron Garlick / GFunnel, github.com/GFunnel-Tech/methodology, CC BY 4.0. The formula is an adaptation; not endorsed by the author.</text>
+</svg>

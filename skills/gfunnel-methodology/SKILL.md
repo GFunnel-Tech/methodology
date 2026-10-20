@@ -44,9 +44,12 @@ And the prohibitions:
 | Ask what the framework says, or understand a concept, layer, domain or term | `workflows/answer.md` |
 | Diagnose something stuck or failing, or run a named algorithm on their situation | `workflows/run-algorithm.md` |
 | Apply the framework to a domain or problem it has no algorithm for | `workflows/derive.md` |
+| **Get a number that is not yet in the record**: fill gaps in a table, forecast, compare datasets, narrow an open question, calculate one system from a parallel one | **`workflows/estimate.md`** — loads the instruments only, not the diagnostic layers; routes to `formulas/` |
 | Propose an iteration, log variable evidence, run a §14 test, or open an issue/PR | `workflows/iterate.md` |
 | Work on the Reality Audit (`audit/`), its predictions, the Cell Atlas (`tasks/cell-atlas/`), or knowledge containers (`containers/`) | `workflows/reality-audit.md` |
 | Quote, publish, build a product/prompt/RAG index on the framework, or register an integration | `workflows/integrate.md` |
+
+**Decide first whether the task is a diagnosis (full methodology, `run-algorithm.md`) or an estimate (instruments only, `estimate.md`).** Loading the diagnostic layers onto an estimate costs 3–4× the time and adds no accuracy (`audit/VERDICT.md`). Say which you chose.
 
 Load only the workflow you need. Several may apply in one task (e.g. a diagnosis that ends in a publishable write-up: `workflows/run-algorithm.md` then `workflows/integrate.md`).
 
@@ -68,6 +71,8 @@ Load only the workflow you need. Several may apply in one task (e.g. a diagnosis
 | Variable Registry, outcome classes, Falsifiability, Iteration Ledger | `framework/registers.md` |
 | v5.4 gap numbering | `framework/gaps.md` |
 | Executed §14 tests + scripts | `framework/tests/` (`README.md` first) |
+| Every formula in the repo, indexed; the Omni Gap Formula, Gap Ledger, forecast harness, Correspondence channel | `formulas/README.md`, `formulas/OMNI-GAP.md`, `formulas/LEDGER.md`, `formulas/diagrams/` |
+| Estimate Protocol (rule 5 as amended) | `substrate/2026-10-20-estimate-protocol.md` |
 | Glossary / human how-to / AI integration | `docs/glossary.md`, `docs/how-to-use.md`, `docs/ai-integration.md` |
 | Iteration Protocol; issue and PR templates | `CONTRIBUTING.md`, `.github/ISSUE_TEMPLATE/`, `.github/PULL_REQUEST_TEMPLATE.md` |
 | Reality Audit (work in progress, **not canon**) | `tasks/reality-audit/TASK.md`, `audit/` (incl. `audit/RUNBOOK.md`, `audit/VERDICT.md`, `audit/prediction/`), `containers/`, `substrate/`, `tools/` |

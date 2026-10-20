@@ -12,6 +12,8 @@ Every output carries a calibrated interval, a tag, a falsifier, and the next mea
 
 ---
 
+**Visual:** [`diagrams/page-1.svg`](diagrams/page-1.svg) (editable: [`diagrams/omni-gap-formula.drawio`](diagrams/omni-gap-formula.drawio)). **When to run it:** [`CLAUDE.md`](../CLAUDE.md) §1 and §3.
+
 ## 1 · The formula
 
 For an empty cell *x* (variable *j*, record *i*), with *E* the measured values in that record:
