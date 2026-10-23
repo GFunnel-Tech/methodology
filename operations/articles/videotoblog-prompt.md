@@ -34,7 +34,7 @@ and the checklist in [`README.md`](README.md) before it goes anywhere a reader c
 
 **Held open:** how many characters the custom-instructions field accepts. `estimate`:
 2,000–10,000 characters (the vendor documents the feature and a 3,000-word post cap and
-states no instruction limit). Section A is 6,867 characters and section B is 2,593
+states no instruction limit). Section A is 6,867 characters and section B is 2,180
 (`measured`). The field accepted 7,058 uncut on the first run (`measured`), so A now sits
 below the known floor by design; the 10,620-character version that preceded it produced a
 draft that obeyed none of the structure, which is what a cut prompt looks like.
