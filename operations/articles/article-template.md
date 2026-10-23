@@ -89,6 +89,9 @@ Watch the original: <video link>
 - The words guaranteed, proven, unlock, supercharge, game-changer, skyrocket, 10x, secret, hack.
 - An application presented as the methodology's own position.
 - A missing or altered credit line.
+- The speaker's voice: any sentence in the first person, or the video retold as a post.
+- A link or resource the transcript did not name (run 2 added two).
+- A banned word in any form, negated included ("not guaranteed" is still the word).
 
 Anything a reader is asked to do about **their** business is tagged for them by the section
 it sits in: canon reproduces, "Applied, not canon" applies, "Not covered in this video" holds

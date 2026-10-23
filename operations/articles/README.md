@@ -137,8 +137,19 @@ block the writer took the fallback "steps as given in the video" and presented t
 the speaker's sentences as a numbered algorithm, so the article taught GaryVee and the
 methodology appeared only as the three-beat vocabulary. That fallback is removed; the
 no-block output is now a candidate paragraph, and the lens mode above is what that video
-needed (Co-Creator Identity, with the Five Modes close behind). H-2 is still open: no
-block has yet been run through, so the verbatim-steps behaviour is unmeasured.
+needed (Co-Creator Identity, with the Five Modes close behind). 
+**Run 2, same video, the 10,620-character prompt plus the Co-Creator Identity block.** The
+seven steps arrived verbatim (`measured`, diffed against the canon), which is the thing run 1
+could not test. Everything else failed: the draft was a first-person blog in the speaker's
+voice, carried none of the H2 structure, no "Applied, not canon", no Correspondence lines,
+no DETECT / PROCESS / RESPOND, used "guaranteed" and "guarantee" three times (negated, but
+the ban is on the word), added two external resources the transcript did not contain, and
+dropped the block in near the end as "a companion framework". The credit line was present.
+That is what a prompt that never reached the writer whole looks like, and run 1's 7,058
+characters had reached it. So the full prompt is rewritten to 6,867 characters with the
+most load-bearing instruction first ("this is not a blog version of the video, no first
+person"), the banned words extended to the negated forms, and external resources forbidden
+outright. H-1 and H-2 both moved; see the register.
 
 ## What this pipeline does not do, on purpose
 
@@ -154,8 +165,8 @@ block has yet been run through, so the verbatim-steps behaviour is unmeasured.
 
 | # | Variable | Best value now | What closes it |
 | --- | --- | --- | --- |
-| H-1 | How many characters Video to Blog's custom-instructions field accepts | `estimate`: 2,000–10,000 characters. Prior: the vendor documents the feature and a 3,000-word post cap and states no instruction limit; analogue: comparable AI writing tools cap free-text instructions in that band. Section A is 10,620 characters and section B is 2,434 (`measured`), so A sits at the top of the range and B inside it. The first run accepted the 7,058-character version uncut (`measured`), which raises the floor to 7,058. Falsifier: paste the new A once; if it is cut, the limit is between 7,058 and 10,620 and B is the prompt. | One paste |
-| H-2 | Whether a first draft keeps the steps verbatim without editing | `assumption`: it will on most runs and fail on some, because the prompt makes copying the only allowed path and a model still paraphrases under length pressure. Falsifier: three drafts checked line by line against their SOURCE BLOCKs; one mismatch means the editor's first checklist item stays load-bearing, zero in three means it can be sampled. | The first three drafts |
+| H-1 | How many characters Video to Blog's custom-instructions field accepts | `estimate`: 7,058–10,620 characters. Run 1 (7,058, `measured`) arrived whole; run 2 (10,620 plus a block) produced a draft that obeyed none of the structure, which is the shape of a cut prompt and is the likeliest of three causes (the others: the block pasted in place of the prompt, or the tool's own blog-of-the-video default overriding it). Section A is now 6,867 characters and B is 2,593 (`measured`), both under the floor. Falsifier: run 3 with the 6,867-character A and a block; structure returning confirms the cut, structure still absent points at the tool's default. | Run 3 |
+| H-2 | Whether a draft keeps the steps verbatim once a block is supplied | **Narrowed by run 2** (`measured`): all seven Co-Creator Identity steps came through character for character; the list numbering was lost somewhere between the tool and the paste. The prompt now says "numbered". The editor's first checklist item stays until three runs in a row pass it. | Two more drafts |
 | H-3 | Where a draft is stored and approved on the platform | Not a quantity. The platform's `docs/supabase-articles-filter-spec.md` holds it open (I-1, I-7). | The owner's decision there |
 | H-4 | Whether readers act on an article, and what happens when they do | Not a quantity yet; nothing measures it, so every article promises nothing. | A follow-up mechanism the platform does not have |
 
