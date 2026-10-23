@@ -175,7 +175,10 @@ video as research"**, is the tool's own version of this pipeline's lens mode. Tw
 explain all four runs. The earlier reading that the block's presence flips the tool is
 withdrawn. The exemplar in [`examples/`](examples/) was written by hand from run 4's draft
 and the block, to the template, so the first article exists and the editor has the shape
-to check against.
+to check against. It is reader-facing prose, so the protocol's tags are carried by its
+section labels (canon / "Applied, not canon" / "Not covered in this video") rather than by
+tag tokens, and `check_output.py`, which lints AI answers, is not its judge; the checklist
+above is.
 
 ### The tool's settings (measured off the Regenerate screen)
 
