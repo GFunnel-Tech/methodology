@@ -199,7 +199,14 @@ the author.
 
 ## D. The per-video addendum
 
-Under the prompt, **in the same field**, for each video, paste the output of:
+Three things the tool's own screen settles (measured off it, 2026-10-23). **Pick "Original
+Article"** ("for other videos: a new article using this video as research") for an outside
+speaker, and "Companion Article" only for a video of Cameron teaching; Companion is "a
+written version of your video", the speaker's voice by design. **The prompt goes in the
+custom-instructions box first and the block under it, in the same box**: runs 2 and 4 had
+the block alone in the box, so the writer never had the rules. **Turn External links off**
+and FAQs to Never; the full settings table is in `README.md`. Save the lot as a template so
+the block is the only thing that changes per video. For each video, the block is the output of:
 
 ```bash
 python3 tools/canon_pack.py "Shepherd" --compact   # or any algorithm / section name

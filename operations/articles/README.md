@@ -162,6 +162,38 @@ that pairing the tool gained `--compact`, the same canon text with no blank line
 editor header: prompt plus compact block is 8,327 characters (`measured`), inside the band
 H-1 still holds open, and run 4 is what tests it.
 
+**Run 4, same video, intended as prompt plus compact block.** The steps arrived verbatim and
+numbered, the credit line arrived, and the rest was run 2's shape again: a first-person blog
+in the speaker's voice with the block placed near the end as "a supplementary exercise".
+**Then the operator sent screenshots of the tool, and they settle it** (`measured`,
+2026-10-23): the custom-instructions box contained ONLY the SOURCE BLOCK, so in runs 2 and 4
+the block had replaced the prompt rather than sitting under it, and the writer never had the
+rules at all. And the generator was set to **Companion Article, "for your own videos: a
+written version of your video"**, which is the tool's name for the first-person blog we kept
+getting; the other option, **Original Article, "for other videos: a new article using this
+video as research"**, is the tool's own version of this pipeline's lens mode. Two settings
+explain all four runs. The earlier reading that the block's presence flips the tool is
+withdrawn. The exemplar in [`examples/`](examples/) was written by hand from run 4's draft
+and the block, to the template, so the first article exists and the editor has the shape
+to check against.
+
+### The tool's settings (measured off the Regenerate screen)
+
+| Setting | Value | Why |
+| --- | --- | --- |
+| What do you want to create? | **Original Article** for an outside speaker; **Companion Article** only for a video of Cameron teaching | Companion is "a written version of your video", the speaker's voice by design |
+| Custom instructions | the prompt (§A) FIRST, then the compact block under it, both in the one box | the box is a textarea and holds both; the block alone is not an instruction |
+| Links → External links | **off** | runs 2 and 4 added an FTC page and a YouTube resource page the transcript never named |
+| Links → Internal links | on, `www.gfunnel.com` | the library's own pages |
+| Links → from video description, Custom links | off | nothing the transcript did not say |
+| Content block | Never | |
+| Table of contents, Key takeaways | Never | the template has its own spine |
+| FAQs | **Never** | the template's "Questions this video answers" already is the FAQ; Always would duplicate it |
+| Embed video, Featured image (video thumbnail), Screenshots | Always | the prompt says to caption an inserted frame |
+| Length | Long | the template's 1,500–2,500 words |
+| Format, Writing sample, Keyword optimization | Auto | held open: pasting the exemplar as the Writing sample is the obvious next test |
+| Templates (top right) | save all of the above as one template | so the block is the only thing that changes per video |
+
 ## What this pipeline does not do, on purpose
 
 - **It publishes nothing by itself.** The draft is the tool's output; the gate is a person.
@@ -176,9 +208,10 @@ H-1 still holds open, and run 4 is what tests it.
 
 | # | Variable | Best value now | What closes it |
 | --- | --- | --- | --- |
-| H-1 | How many characters Video to Blog's custom-instructions field accepts | `estimate`: 7,058–10,620 characters. Run 1 (7,058) and run 3 (6,867, the tail section demonstrably read) arrived whole (`measured`); run 2 (10,620 plus a block) produced a draft that obeyed none of the structure, the shape of a cut prompt. Prompt plus compact block is 8,327 (`measured`), inside the band. Falsifier: run 4 with that pairing; the structure returning with the steps verbatim puts the limit above 8,327, the blog-shaped draft returning puts it between 7,058 and 8,327 and the block then goes in the tool's template field instead. | Run 4 |
+| H-1 | How many characters Video to Blog's custom-instructions field accepts | `estimate`: above 8,327. Runs 1 and 3 arrived whole at 7,058 and 6,867 (`measured`); runs 2 and 4 are no evidence of a cut, since the screenshots show the box held only the block. The box is a resizable textarea with no visible counter. Falsifier: paste prompt plus block (8,327) and run as Original Article; the structure returning puts the cap above it. | Run 5 |
 | H-2 | Whether a draft keeps the steps verbatim once a block is supplied | **Narrowed by run 2** (`measured`): all seven Co-Creator Identity steps came through character for character; the list numbering was lost somewhere between the tool and the paste. The prompt now says "numbered". The editor's first checklist item stays until three runs in a row pass it. | Two more drafts |
 | H-3 | Where a draft is stored and approved on the platform | Not a quantity. The platform's `docs/supabase-articles-filter-spec.md` holds it open (I-1, I-7). | The owner's decision there |
+| H-5 | Whether Video to Blog writes the article in the template's shape once set to Original Article with the prompt in the box | `assumption`: yes, because runs 1 and 3 obeyed the whole prompt with the prompt alone, and Original Article is the tool's own mode for "a new article using this video as research". Falsifier: run 5 under the settings table above; a first-person blog returning means the tool's mode overrides instructions and the two-stage path (its blog, then a second model on this prompt, which is how the exemplar was made) is the pipeline. | Run 5 |
 | H-4 | Whether readers act on an article, and what happens when they do | Not a quantity yet; nothing measures it, so every article promises nothing. | A follow-up mechanism the platform does not have |
 
 Attribution for anything this directory produces: `../../AGENTS.md` → Attribution, and
