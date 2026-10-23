@@ -70,6 +70,9 @@ methodology/
 ├── adoption/                 ← opt-in registry of who uses the methodology
 │   ├── README.md
 │   └── registry.md
+├── operations/               ← running GFunnel on the methodology (not canon)
+│   ├── agent-org-map/        ← the agent operating system map
+│   └── articles/             ← the canon → article pipeline: Video to Blog prompt, template, catalogue
 │
 │   ── Reality Audit: derivation / work-in-progress, NOT canon ──
 ├── tasks/reality-audit/      ← the standing brief for the audit
