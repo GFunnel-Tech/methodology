@@ -10,11 +10,11 @@ Not covered in this video), not by tag tokens, so tools/check_output.py is not i
 
 Title: How to Build a Business That Is Yours (Co-Creator Identity Algorithm)
 
-Meta: Pick a business you will keep working on with no budget. The methodology's Co-Creator Identity Algorithm, with GaryVee's jigsaw-puzzle example as the worked case.
+Meta: Pick a business you will keep working on with no budget: the methodology's Co-Creator Identity Algorithm, with GaryVee's puzzle example.
 
 ## The problem this solves
 
-You want to start something. You have a job, no money to hire anyone, and an idea you keep putting off because you think you need more resources first. When you do sit down to choose what to build, you reach for whatever category people say the money is in, and a month later you are tired of it and have not started.
+You have a job, no money to hire anyone, and an idea you keep putting off because you think you need more resources first. When you do sit down to choose what to build, you reach for whatever category people say the money is in, and a month later you are tired of it and have not started.
 
 The methodology's Co-Creator Identity Algorithm is for exactly this. Use when: identifying purpose, work, or contribution that is structurally yours rather than culturally assigned. Read through the methodology, GaryVee's advice in "How I'd Grow a Business With $0 in 2026" is this algorithm run on one person's business: start from an interest you already have, find where it meets something other people want, and let that meeting point decide what you make.
 
@@ -32,7 +32,7 @@ Layer IV, the Co-Creator Identity Algorithm. Use when: identifying purpose, work
 
 ## How to run it in your business
 
-Applied, not canon: the steps above are the methodology's. What follows is one way to run them when you are alone, after work, with no budget. Each step is read as DETECT (notice the signal), PROCESS (do the work), RESPOND (act on the result).
+Applied, not canon: one way to run the steps when you are alone, after work, with no budget. Each is read as DETECT (notice the signal), PROCESS (do the work), RESPOND (act on the result).
 
 ### Step 1 - Identify your most selfish creative desire
 
@@ -46,15 +46,15 @@ DETECT: notice what you already spend evenings on with no reward attached. PROCE
 
 Correspondence (this article's reading): Gary addresses half of this step. "Build toward a business that fits you" and "create something other people want" is the service side; he does not frame it as the thing that does not exist yet but should. That part is the methodology's, and it is what makes the step more than market research.
 
-What you do: for the interests left from step 1, write what you could make possible for people who share them, and specifically what nobody is making for them yet. The methodology says creative, not merely sacrificial: not "give my time away" but "make the thing". What it produces: one sentence per interest naming a gap. Who does it: you, and this is the step where you can ask the people who share the interest what they wish existed.
+What you do: for each interest left from step 1, write what you could make possible for people who share it, and specifically what nobody is making for them yet. Creative, not merely sacrificial: not "give my time away" but "make the thing". What it produces: one sentence per interest naming a gap. Who does it: you, after asking the people who share the interest what they wish existed.
 
 DETECT: notice what people in that interest say is missing. PROCESS: name the thing you could make that fills it. RESPOND: write it beside the step 1 desire.
 
 ### Step 3 - Find their convergence
 
-Correspondence (this article's reading): Gary's puzzle-and-microbrews example is the closest thing in the video to this step, with one difference worth saying. His convergence is of two interests of yours ("the combination might become the thing people remember"); the methodology's is of what you want to make and what others need made. His point holds for the step: the overlap is more distinctive than either side alone.
+Correspondence (this article's reading): Gary's puzzle-and-microbrews example is the closest thing in the video to this step, with one difference. His convergence is of two interests of yours ("the combination might become the thing people remember"); the methodology's is of what you want to make and what others need made. His point holds: the overlap is more distinctive than either side alone.
 
-What you do: lay the step 1 list beside the step 2 list and look for the pair that is the same thing described twice. The methodology says, per Polarity (the principle that genuine opposites are two ends of one thing), that if both desires are genuine extremes they must converge. If nothing converges, one list is not honest yet. What it produces: one sentence naming a thing you want to make that others need. Who does it: you.
+What you do: lay the two lists side by side and look for the pair that is the same thing described twice. Per Polarity (the principle that genuine opposites are two ends of one thing), two honest extremes must converge; if nothing does, one list is not honest yet. What it produces: one sentence naming a thing you want to make that others need. Who does it: you.
 
 DETECT: notice where the two lists describe the same thing in different words. PROCESS: write that thing in one sentence. RESPOND: if there is no such sentence, return to step 1 or 2 rather than forcing one.
 
@@ -96,7 +96,7 @@ Applied, not canon: the video is about one person's content business. The algori
 
 ### In operations
 
-Not covered in this video. Gary's food-maker anecdote mentions shipping nationally and nothing about how. To run the algorithm on operations you would apply step 6 to every process decision: does this hire, tool or extra step compound toward the convergence point? The decision you would have to make first is what the point is for the operation, which is steps 1 to 5 run on the business rather than on you. Your first artifact is that one sentence.
+Not covered in this video. Gary's food-maker anecdote mentions shipping nationally and nothing about how. To run the algorithm here you would apply step 6 to every process decision: does this hire, tool or extra step compound toward the convergence point? First you would have to say what the point is for the operation, which is steps 1 to 5 run on the business rather than on you. Your first artifact is that sentence.
 
 ### In marketing
 
@@ -136,12 +136,12 @@ Applied, not canon: tonight, do step 1 only. Write down the three things you spe
 - Generative, not consumptive: making something rather than only taking something in; the test step 1 applies to a desire.
 - Convergence: the point where your selfish and selfless creative desires turn out to describe one thing.
 - Polarity: the principle that genuine opposites are two ends of one thing, which is why two honest extremes converge.
-- Five Modes of Propagation: the five ways a process outlasts its creator, from teaching one person to becoming a community's assumption.
-- DETECT, PROCESS, RESPOND: the methodology's one shape for every process: notice the signal, do the work, act on the result.
+- Five Modes of Propagation: the five ways a process outlasts its creator.
+- DETECT, PROCESS, RESPOND: the methodology's one shape for every process.
 
 ## Questions this video answers
 
-How can I start a business with no money to hire anyone? Gary's answer is to publish around something you already do, before any team exists. He names a food maker who began posting on Instagram and TikTok and, he says, was two years later taking home $750,000 a year shipping her product nationally; he calls it one person's story, not a forecast.
+How can I start a business with no money to hire anyone? Gary's answer is to publish around something you already do, before any team exists. He names a food maker who began posting on Instagram and TikTok and, he says, two years later was taking home $750,000 a year; he calls it one person's story, not a forecast.
 
 What if my interest is too ordinary to build on? Gary uses jigsaw puzzles as the example on purpose. The interest does not have to be impressive; it has to be one you will keep returning to and can show.
 
@@ -149,7 +149,7 @@ How much could a hobby business make? Gary gives two illustrations and calls bot
 
 How do I stand out when everyone is on social media? Gary says to get more specific, not to wait for an empty platform, and to let real secondary interests show.
 
-Do I need to be good at the thing first? Gary says liking something and being skilled at it are different, that he ranked 243 out of 251 in his high school class and builds businesses anyway, and that you can get better at what you enjoy.
+Do I need to be good at the thing first? Gary says liking something and being skilled at it are different, that he ranked 243 out of 251 in his high school class and builds businesses anyway, and that you can get better.
 
 ## Source
 
