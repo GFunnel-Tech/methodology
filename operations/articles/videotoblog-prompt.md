@@ -34,8 +34,8 @@ and the checklist in [`README.md`](README.md) before it goes anywhere a reader c
 
 **Held open:** how many characters the custom-instructions field accepts. `estimate`:
 2,000–10,000 characters (the vendor documents the feature and a 3,000-word post cap and
-states no instruction limit). Section A is 10,347 characters and section B is 2,304
-(`measured`). Paste A once; if it is cut, the limit is below 10,347 and B is the prompt.
+states no instruction limit). Section A is 10,626 characters and section B is 2,427
+(`measured`). Paste A once; if it is cut, the limit is below 10,626 and B is the prompt.
 
 ---
 
@@ -60,6 +60,9 @@ INPUTS
   (b) The speaker is anyone else (an outside expert, a podcast, a talk). The block is the
       LENS: the methodology's algorithm their advice corresponds to. The article teaches
       the ALGORITHM; the speaker's material is the worked example that shows it running.
+- Everything you need is in these instructions and the transcript. Do not try to open any
+  link or file. The block's "File:" line and the URL in its credit line are text to PRINT
+  (the first tells an editor where to check, the second is the attribution), never to fetch.
 - NO SOURCE BLOCK: do not write the article. Output one short paragraph only: the video's
   subject in one sentence, then the two or three algorithms from the LENS INDEX at the end
   of these instructions that its advice most corresponds to, one sentence each on why.
@@ -221,7 +224,8 @@ this week. A SOURCE BLOCK with one algorithm is pasted below; if the speaker tea
 methodology it is what they teach, if the speaker is anyone else it is the LENS and the
 article teaches the ALGORITHM with the speaker's material as the worked example. With NO
 block, write one paragraph naming the two or three methodology algorithms the video most
-corresponds to and stop. Rules: (1) The algorithm's numbered steps come VERBATIM and in
+corresponds to and stop. Everything you need is in these instructions and the transcript;
+the block's file line and URL are text to print, never to fetch. Rules: (1) The algorithm's numbered steps come VERBATIM and in
 order from the SOURCE BLOCK; never add, merge, reorder or renumber one, and never turn the
 speaker's sentences into steps. (2) Write every tactic as DETECT (notice), PROCESS (do),
 RESPOND (act). (3) No numbers, proof or promises that are not in the transcript; attribute

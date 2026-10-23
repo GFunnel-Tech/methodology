@@ -125,6 +125,7 @@ def source_block(version: str, query: str) -> str:
     rel = os.path.relpath(VERSIONS[version], ROOT)
     out = []
     out.append("=== SOURCE BLOCK — canon text, copy verbatim, never paraphrase the numbered steps ===")
+    out.append("(Pasted text. Nothing here needs to be fetched; the File line and the URL are printed, not opened.)")
     out.append("Section: %s" % title)
     out.append("File: %s, lines %d–%d%s" % (rel, start, end, ("; %d numbered steps" % steps) if steps else ""))
     out.append("")
