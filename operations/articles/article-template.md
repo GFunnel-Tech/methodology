@@ -27,7 +27,9 @@ Meta:   <one sentence: the result and the method>                       ≤ 155 
 
 ## How to run it in your business
 Applied, not canon:
-### Step 1 - <step name>
+### Step 1 - <step name>                                            (120–200 words each)
+Correspondence (this article's reading): <what the speaker said that matches this step>
+                                           (outside speakers only; else "The speaker does not address this step.")
 What you do · What it produces · Who does it
 DETECT: ... PROCESS: ... RESPOND: ...
 ### Step 2 - ...
@@ -68,7 +70,7 @@ Watch the original: <video link>
 | --- | --- | --- |
 | The problem this solves | The reader finds themselves before they find the method. | `framework/algorithms.md` routes by symptom ("If you are…"), not by layer name. |
 | What the methodology says | The canon, reproduced, so the reader can run the real thing and so the credit is earned. | AGENTS.md rules 1 and 3: authoritative text, steps run literally and in order. |
-| How to run it in your business | Each step becomes an action with an artifact. | Layer VI step 6 (Database): if it is not written, it does not exist as a process. |
+| How to run it in your business | Each step becomes an action with an artifact. For an outside speaker, each step first says what they said that corresponds to it, as a reading. | Layer VI step 6 (Database): if it is not written, it does not exist as a process. AGENTS.md rule 6: a Correspondence is stated explicitly, never implied. |
 | Three places to use it this week | The same algorithm at three scales of the business. | Hermetic Correspondence (AGENTS.md rule 6); each is labelled an application, never canon (rule 7). |
 | How you will know it is working / not | The falsifier. | Layer ◇ step 2: a claim nothing could falsify is a belief, not a claim. |
 | Common mistakes | Only what the speaker said. | Rule 5: never fill a variable silently. |
@@ -80,7 +82,10 @@ Watch the original: <video link>
 ## What an article may never contain
 
 - A number, percentage, dollar figure, timeframe or testimonial the speaker did not state.
-- A step the SOURCE BLOCK does not carry, or the canon's steps in a different order.
+- A step the SOURCE BLOCK does not carry, the canon's steps in a different order, or the
+  speaker's own sentences presented as steps.
+- An outside speaker's advice presented as the methodology's position, or a step bent to
+  fit what the speaker said.
 - The words guaranteed, proven, unlock, supercharge, game-changer, skyrocket, 10x, secret, hack.
 - An application presented as the methodology's own position.
 - A missing or altered credit line.

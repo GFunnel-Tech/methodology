@@ -52,6 +52,42 @@ python3 tools/canon_pack.py --catalogue            # regenerate catalogue.md
 python3 tools/canon_pack.py --selftest
 ```
 
+## Two kinds of video, one SOURCE BLOCK
+
+The block is never optional, and it means a different thing depending on who is speaking:
+
+| The speaker is… | The SOURCE BLOCK is… | The article… |
+| --- | --- | --- |
+| Cameron, teaching an algorithm | the algorithm taught | reproduces it and shows how to run it |
+| anyone else (GaryVee, a podcast guest, a conference talk) | the **lens**: the algorithm their advice corresponds to | teaches the algorithm, with the speaker's material as the worked example, each match labelled "Correspondence (this article's reading)" |
+
+The second kind is how the methodology "pulls" tactics out of content it did not produce:
+the canon supplies the structure and the steps, the speaker supplies the examples, the
+stories and the numbers, and the article says plainly which is which. Without a block the
+prompt refuses to write the article and instead names the two or three algorithms the video
+most corresponds to, so the operator can paste the right one and run again.
+
+### Picking the lens
+
+One judgement per video. Start from what the speaker is really advising, not the title.
+
+| The speaker is advising… | Paste |
+| --- | --- |
+| what business, product or niche to build; "follow your passion", "your niche is you" | `canon_pack.py "Co-Creator Identity"` |
+| documenting, posting, showing the work, building an audience | `canon_pack.py "Five Modes"` (a section, not an algorithm) or `"ACE System"` for the acquisition half |
+| how to build, fix or systemise a process, an onboarding, an SOP | `canon_pack.py "Shepherd"` |
+| sales conversations, closing, objections, referrals | `canon_pack.py "ACE System"` or `"Sales Algorithm"` |
+| hiring, firing, delegating | `canon_pack.py "Hiring"` |
+| burnout, overwork, or stalling and not shipping | `canon_pack.py "Dynamic Middle"` |
+| a failure, a pivot, a loss | `canon_pack.py "Slime Mold"` |
+| planning, goals, strategy | `canon_pack.py "Strategic Planning"` |
+| money, pricing, investing | `canon_pack.py "Financial Decisions"` |
+| brand, positioning, reputation | `canon_pack.py "Brand and Identity"` |
+| "is this business healthy" | `canon_pack.py "Garlick Equilibrium"` |
+| anything else | `canon_pack.py --list`, or run the video with no block and read the prompt's candidate paragraph |
+
+A video that genuinely spans two algorithms gets two articles, not one with two blocks.
+
 ## Why the generator is handed the text and not trusted to know it
 
 An article that teaches an algorithm must carry the steps **verbatim, in order**. That is the
@@ -89,6 +125,21 @@ a person, never through.
       teaches (the generator will happily write the Sales Algorithm over a Shepherd's Way
       transcript if the wrong block was pasted).
 
+## What the first run showed (2026-10-23)
+
+The prompt was run once, before the lens mode existed, on an outside speaker's video
+(GaryVee, "How I'd Grow a Business With $0 in 2026") with **no SOURCE BLOCK**. Measured on
+the draft: 2,210 words (inside the 1,500–2,500 range), zero banned words, all five dollar
+figures attributed to the speaker and marked hypothetical or anecdotal, "Not covered in this
+video" used for operations, the falsifier marked as the article's own, the credit line
+honestly reported absent. **The five rules held.** What failed was the design: with no
+block the writer took the fallback "steps as given in the video" and presented three of
+the speaker's sentences as a numbered algorithm, so the article taught GaryVee and the
+methodology appeared only as the three-beat vocabulary. That fallback is removed; the
+no-block output is now a candidate paragraph, and the lens mode above is what that video
+needed (Co-Creator Identity, with the Five Modes close behind). H-2 is still open: no
+block has yet been run through, so the verbatim-steps behaviour is unmeasured.
+
 ## What this pipeline does not do, on purpose
 
 - **It publishes nothing by itself.** The draft is the tool's output; the gate is a person.
@@ -103,7 +154,7 @@ a person, never through.
 
 | # | Variable | Best value now | What closes it |
 | --- | --- | --- | --- |
-| H-1 | How many characters Video to Blog's custom-instructions field accepts | `estimate`: 2,000–10,000 characters. Prior: the vendor documents the feature and a 3,000-word post cap and states no instruction limit; analogue: comparable AI writing tools cap free-text instructions in that band. Section A is 7,058 characters and section B is 1,807 (`measured`), so A fits the upper half of the range and B fits all of it. Falsifier: paste A once; if it is cut, the limit is below 7,058 and B is the prompt. | One paste |
+| H-1 | How many characters Video to Blog's custom-instructions field accepts | `estimate`: 2,000–10,000 characters. Prior: the vendor documents the feature and a 3,000-word post cap and states no instruction limit; analogue: comparable AI writing tools cap free-text instructions in that band. Section A is 10,347 characters and section B is 2,304 (`measured`), so A sits at the top of the range and B inside it. The first run accepted the 7,058-character version uncut (`measured`), which raises the floor to 7,058. Falsifier: paste the new A once; if it is cut, the limit is between 7,058 and 10,347 and B is the prompt. | One paste |
 | H-2 | Whether a first draft keeps the steps verbatim without editing | `assumption`: it will on most runs and fail on some, because the prompt makes copying the only allowed path and a model still paraphrases under length pressure. Falsifier: three drafts checked line by line against their SOURCE BLOCKs; one mismatch means the editor's first checklist item stays load-bearing, zero in three means it can be sampled. | The first three drafts |
 | H-3 | Where a draft is stored and approved on the platform | Not a quantity. The platform's `docs/supabase-articles-filter-spec.md` holds it open (I-1, I-7). | The owner's decision there |
 | H-4 | Whether readers act on an article, and what happens when they do | Not a quantity yet; nothing measures it, so every article promises nothing. | A follow-up mechanism the platform does not have |
