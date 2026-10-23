@@ -34,8 +34,8 @@ and the checklist in [`README.md`](README.md) before it goes anywhere a reader c
 
 **Held open:** how many characters the custom-instructions field accepts. `estimate`:
 2,000–10,000 characters (the vendor documents the feature and a 3,000-word post cap and
-states no instruction limit). Section A is 10,626 characters and section B is 2,427
-(`measured`). Paste A once; if it is cut, the limit is below 10,626 and B is the prompt.
+states no instruction limit). Section A is 10,620 characters and section B is 2,434
+(`measured`). Paste A once; if it is cut, the limit is below 10,620 and B is the prompt.
 
 ---
 
