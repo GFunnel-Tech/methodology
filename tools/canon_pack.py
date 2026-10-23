@@ -99,7 +99,7 @@ def credit(version: str) -> str:
             "%s, CC BY 4.0." % (version, REPO_URL))
 
 
-def source_block(version: str, query: str) -> str:
+def source_block(version: str, query: str, compact: bool = False) -> str:
     lines = read_lines(version)
     hs = headings(lines)
     hits = find(lines, query)
@@ -124,6 +124,18 @@ def source_block(version: str, query: str) -> str:
     steps = sum(1 for ln in lines[start - 1:end] if STEP_RE.match(ln))
     rel = os.path.relpath(VERSIONS[version], ROOT)
     out = []
+    if compact:
+        # The same canon text with every blank line and the editor-facing header
+        # dropped, so prompt + block stay inside a capped instructions field.
+        # Nothing a reader of the article needs is removed: the heading, the
+        # "Use when" line, every numbered step and the credit line are all here.
+        body_lines = [ln for ln in lines[start - 1:end] if ln.strip()]
+        out.append("SOURCE BLOCK (copy the numbered steps verbatim; nothing here is to be fetched)")
+        out.append("Section: %s (%s, lines %d–%d)" % (title, rel, start, end))
+        out.extend(body_lines[1:])  # the heading line is already given as Section
+        out.append("Credit line, print verbatim: " + credit(version))
+        out.append("END SOURCE BLOCK")
+        return "\n".join(out)
     out.append("=== SOURCE BLOCK — canon text, copy verbatim, never paraphrase the numbered steps ===")
     out.append("(Pasted text. Nothing here needs to be fetched; the File line and the URL are printed, not opened.)")
     out.append("Section: %s" % title)
@@ -216,6 +228,11 @@ def selftest() -> int:
     mma = source_block("5.1", "The Master Meta-Algorithm")
     if "12. Restart at higher baseline." not in mma or "## Per-Layer Algorithms" in mma:
         errors.append("Master Meta-Algorithm block wrong (should include step 12 and stop before Per-Layer Algorithms)")
+    compact = source_block("5.1", "Shepherd", compact=True)
+    if "7. Repetition." not in compact or "\n\n" in compact or credit("5.1") not in compact:
+        errors.append("compact block must keep every step and the credit line and carry no blank line")
+    if len(compact) >= len(block):
+        errors.append("compact block should be shorter than the full one")
     rows = algorithm_rows("5.1")
     if len(rows) < 70:
         errors.append("expected 70+ algorithm headings in v5.1, found %d" % len(rows))
@@ -240,6 +257,7 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("query", nargs="?", help="substring of the heading to extract")
     ap.add_argument("--version", default="5.1", choices=sorted(VERSIONS), help="canon version file (default 5.1)")
+    ap.add_argument("--compact", action="store_true", help="the same block without blank lines or the editor header, for a capped field")
     ap.add_argument("--list", action="store_true", help="list every algorithm heading with its 'Use when' line")
     ap.add_argument("--catalogue", action="store_true", help="rewrite operations/articles/catalogue.md")
     ap.add_argument("--selftest", action="store_true")
@@ -259,7 +277,7 @@ def main(argv=None) -> int:
     if not a.query:
         ap.print_help()
         return 2
-    print(source_block(a.version, a.query))
+    print(source_block(a.version, a.query, compact=a.compact))
     return 0
 
 

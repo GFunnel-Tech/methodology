@@ -199,11 +199,17 @@ the author.
 
 ## D. The per-video addendum
 
-Under the prompt, for each video, paste the output of:
+Under the prompt, **in the same field**, for each video, paste the output of:
 
 ```bash
-python3 tools/canon_pack.py "Shepherd"          # or any algorithm / section name
+python3 tools/canon_pack.py "Shepherd" --compact   # or any algorithm / section name
 ```
+
+`--compact` is the same canon text with the blank lines and the editor header removed, so
+the prompt and the block together stay small (6,867 + about 1,500 characters). Run 3 showed
+the block must be in the field the writer reads: pasted anywhere else, the writer sees no
+block and correctly stops at the candidate paragraph. The full form below is for an editor
+checking a draft; it says the same things with more air in them.
 
 It looks like this (shortened):
 

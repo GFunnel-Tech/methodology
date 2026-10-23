@@ -47,6 +47,7 @@ And one tool, [`../../tools/canon_pack.py`](../../tools/canon_pack.py):
 ```bash
 python3 tools/canon_pack.py --list                 # the 77 algorithms, with "Use when" and step counts
 python3 tools/canon_pack.py "Shepherd"             # the SOURCE BLOCK to paste under the prompt
+python3 tools/canon_pack.py "Shepherd" --compact   # the same, no blank lines or header: use this with Video to Blog
 python3 tools/canon_pack.py "Five Modes"           # any canon section, not only algorithms
 python3 tools/canon_pack.py --catalogue            # regenerate catalogue.md
 python3 tools/canon_pack.py --selftest
@@ -151,6 +152,16 @@ most load-bearing instruction first ("this is not a blog version of the video, n
 person"), the banned words extended to the negated forms, and external resources forbidden
 outright. H-1 and H-2 both moved; see the register.
 
+**Run 3, same video, the 6,867-character prompt, no block.** The writer produced exactly the
+no-block paragraph the prompt asks for and stopped: Co-Creator Identity first (the lens the
+operator had picked), then Energy Continuation and Brand and Identity, each with a reason
+from the transcript (`measured`). Two facts follow. The prompt arrived whole, lens index
+included, because the names it chose are in the prompt's last section. And the SOURCE BLOCK
+did not reach the writer, so the block has to sit under the prompt in the same field. For
+that pairing the tool gained `--compact`, the same canon text with no blank lines and no
+editor header: prompt plus compact block is 8,327 characters (`measured`), inside the band
+H-1 still holds open, and run 4 is what tests it.
+
 ## What this pipeline does not do, on purpose
 
 - **It publishes nothing by itself.** The draft is the tool's output; the gate is a person.
@@ -165,7 +176,7 @@ outright. H-1 and H-2 both moved; see the register.
 
 | # | Variable | Best value now | What closes it |
 | --- | --- | --- | --- |
-| H-1 | How many characters Video to Blog's custom-instructions field accepts | `estimate`: 7,058–10,620 characters. Run 1 (7,058, `measured`) arrived whole; run 2 (10,620 plus a block) produced a draft that obeyed none of the structure, which is the shape of a cut prompt and is the likeliest of three causes (the others: the block pasted in place of the prompt, or the tool's own blog-of-the-video default overriding it). Section A is now 6,867 characters and B is 2,180 (`measured`), both under the floor. Falsifier: run 3 with the 6,867-character A and a block; structure returning confirms the cut, structure still absent points at the tool's default. | Run 3 |
+| H-1 | How many characters Video to Blog's custom-instructions field accepts | `estimate`: 7,058–10,620 characters. Run 1 (7,058) and run 3 (6,867, the tail section demonstrably read) arrived whole (`measured`); run 2 (10,620 plus a block) produced a draft that obeyed none of the structure, the shape of a cut prompt. Prompt plus compact block is 8,327 (`measured`), inside the band. Falsifier: run 4 with that pairing; the structure returning with the steps verbatim puts the limit above 8,327, the blog-shaped draft returning puts it between 7,058 and 8,327 and the block then goes in the tool's template field instead. | Run 4 |
 | H-2 | Whether a draft keeps the steps verbatim once a block is supplied | **Narrowed by run 2** (`measured`): all seven Co-Creator Identity steps came through character for character; the list numbering was lost somewhere between the tool and the paste. The prompt now says "numbered". The editor's first checklist item stays until three runs in a row pass it. | Two more drafts |
 | H-3 | Where a draft is stored and approved on the platform | Not a quantity. The platform's `docs/supabase-articles-filter-spec.md` holds it open (I-1, I-7). | The owner's decision there |
 | H-4 | Whether readers act on an article, and what happens when they do | Not a quantity yet; nothing measures it, so every article promises nothing. | A follow-up mechanism the platform does not have |
