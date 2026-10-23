@@ -18,6 +18,7 @@ Everything in the methodology is one of two kinds of work. Decide which the task
 | **a number that is not yet in the record**: fill gaps in a table, forecast, compare datasets, narrow an open question, calculate one system from another | **Estimate — the instruments only** | the Variable Principle · the Forecasting Algorithm · Layer ◇ step 2 · the Forcing Test outcomes · the Estimate Protocol | **`workflows/estimate.md`** |
 | both (diagnose, then put numbers on it) | Diagnose, then Estimate | as above, in that order | both |
 | to contribute, audit, or integrate | — | `CONTRIBUTING.md`, `audit/`, `docs/ai-integration.md` | `workflows/iterate.md`, `reality-audit.md`, `integrate.md` |
+| **to turn an algorithm into an article** (a video, a prompt for an AI writer, a how-to for a business) | Contribute (tooling) | `operations/articles/README.md`; the algorithm's own section via `tools/canon_pack.py` | paste the prompt + SOURCE BLOCK, then the editor's checklist |
 
 **Say which mode you chose and what you did not load.** A forecast that cites the Hermetic principles is a routing error. A diagnosis that skips the Three Kingdoms is also one.
 
@@ -41,6 +42,7 @@ All in [`formulas/`](formulas/README.md). Standard-library Python; nothing to in
 | two systems that may correspond, one thin | `OmniGap(..., correspondences=[Correspondence(...)])`; pattern in `formulas/correspondence_test.py` | estimates in the thin system from the rich one, and a verdict per column: correspondence **held** / **not supported here** |
 | a question in conversation, no file | the protocol by hand: `workflows/estimate.md` §3 | the same card, written out |
 | what has already been computed, and how reliable each tag has been | `formulas/memory.py show` (every run records itself; pass `memory=Memory()` to `OmniGap` to pool calibration with prior runs of the same expression and size) | earned calibration per variable; hit rate and required widening per tag; the conjugate gaps past runs named |
+| a video that teaches one algorithm, and a request for an article about it | `formulas`-free: `tools/canon_pack.py "<algorithm>"` → the SOURCE BLOCK, pasted under `operations/articles/videotoblog-prompt.md` | a draft in the shape of `operations/articles/article-template.md`, approved by a person against the checklist in `operations/articles/README.md` |
 
 Exact invocations, with the arguments explained: `workflows/estimate.md` §2. The visual of the whole pipeline and this router: [`formulas/diagrams/`](formulas/diagrams/README.md).
 
