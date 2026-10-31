@@ -7,6 +7,7 @@ These are **variable-evidence contributions**, not a new version. They narrow or
 | §14 | Test | Status | Result |
 | --- | --- | --- | --- |
 | 1 | Koide prediction — δ = 2/9, trefoil form | ✅ **run** | [koide-delta.md](koide-delta.md) — **passes** at 0.42σ; all three lepton masses to ≤0.0031% from one scale. Caveat: Koide's 2/3 is built into the form, so the whole test is one number. |
+| 1b | Koide prediction — neutrinos ("…then neutrinos") | ✅ **run** | [koide-neutrino.md](koide-neutrino.md) — exact form **forced-no** (positive-root window cannot reach the measured splitting ratio); one-sign-flipped form predicts **NO, Σm_ν ≈ 0.059 eV**, IO excluded by DESI DR2. Backward closure ↔ Majorana filed as live hypothesis. |
 | 2 | Meson 1/3 test (two-fold partition) | ⛔ **not runnable as written** | [not-runnable.md](not-runnable.md) — no observable is specified. |
 | 3 | Lamina falsifier vs nuclear-density data | ◐ **partially run** | [lamina-falsifier.md](lamina-falsifier.md) — one genuine plateau confirmed; the falsifier as stated is not currently decidable. |
 | 4 | Test partition = phase (§4a reframing) | ⛔ **held open** | [not-runnable.md](not-runnable.md) — better posed than "strand ≠ generation", and integer harmonics are now **forced-no**; but *why three phases* still needs the tension law. |
