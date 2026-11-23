@@ -10,6 +10,14 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 These entries change how the work is published, not what it claims. **No version, no base code, and no variable is affected.**
 
+### 2026-11-23 — Merged the 2026-10-31 container branch; corrected the neutrino record
+
+Merges `substrate/2026-10-31-container-superposition` (author frame: everything is a container; the neutrino half of the Koide run, first done 2026-10-31). Both branches had added `framework/tests/koide-neutrino.md` and `koide_neutrino.py`; the 2026-10-31 files keep those names, and the 2026-11-23 rerun becomes test 1c, `koide-neutrino-weights.md` + `koide_neutrino_weights.py` (the version sealed with PRED-005 stays recoverable as `git show 168156c:framework/tests/koide_neutrino.py`). **Correction:** the entries below say the neutrino step was "previously held as not runnable"; that was true of the default branch only. It had been run on 2026-10-31, with newer inputs, and reached the same result. With the newer inputs (DESI DR2 cap 0.064 eV) the weight on normal ordering rises from ≈95% to ≈97%. Substrate files dated 2026-11-23 are not edited. **No released file edited; base code unchanged.**
+
+### 2026-11-23 — PRED-005 and the process audit (prediction + substrate, no version)
+
+The neutrino prediction is filed under the prediction protocol as [`audit/prediction/PRED-005.md`](audit/prediction/PRED-005.md) (Phase A, sealed): tolerance and decision rule fixed in advance, paired branches with weights, the ordering part graded non-discriminating and the contamination risk high. `framework/tests/koide_neutrino.py` gains the branch-weighting step. [`substrate/2026-11-23-process-audit.md`](substrate/2026-11-23-process-audit.md) grades the session's process against the canon's procedures. Three canon problems added to `formulas/README.md` §10 (rows 11–13). Ledger rows 25–26. **No released file edited; base code unchanged.**
+
 ### 2026-11-23 — Neutrino prediction and the reach audit (test + substrate, no version)
 
 `framework/tests/koide-neutrino.md` + `koide_neutrino.py` run v5.4 §14's "then neutrinos", previously held as not runnable: the Brannen form plus measured oscillation gaps gives normal ordering and Σ ≈ 0.059 eV, written down before JUNO reports. [`substrate/2026-11-23-convergence-and-reach.md`](substrate/2026-11-23-convergence-and-reach.md) records the bookkeeping-vs-dynamics split, four independent convergences, and the efficiency comparison. Ledger rows 23–24. **No released file edited; base code unchanged.**

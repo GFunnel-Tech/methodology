@@ -1,52 +1,72 @@
-# Test 1b — "Then neutrinos": the Koide form applied to neutrino masses
+# Test 1b — The Neutrino Half of the Koide Run
 
-**v5.4 §14, item 1** ends *"…then neutrinos."* [`koide-delta.md`](koide-delta.md) held this step open: *"not runnable — absolute neutrino masses are unmeasured."* **It is runnable.** The Brannen form forces Q = 2/3 for any δ; oscillation experiments measure two mass gaps; three masses under two gaps plus Q = 2/3 leave nothing free. This file runs it and writes the result down **before** the deciding data arrives.
+**v5.4 §14, item 1, second clause:** *"…then neutrinos."* The charged-lepton half is [`koide-delta.md`](koide-delta.md) (a hit, with four cautions). This file runs the neutrino half.
 
-Script: [`koide_neutrino.py`](koide_neutrino.py) · standard library only · NuFIT 5.3 (2024) oscillation fits · DESI 2024 cosmology limit.
+Script: [`koide_neutrino.py`](koide_neutrino.py) · standard library only · NuFIT 6.0 (2024) splittings · DESI DR2 (2025) cosmological bound.
 
-> **Status: live hypothesis, recorded as a dated prediction (2026-11-23).** Not canon. It is the framework's first candidate *novel* prediction: a number mainstream physics does not supply.
+*Run 2026-10-31 under the container frame of [`../../substrate/2026-10-31-container-superposition.md`](../../substrate/2026-10-31-container-superposition.md) (substrate, unclassified).*
 
 ---
 
-## Result
+## Inputs
 
-| | Normal ordering | Inverted ordering |
+| Quantity | Value | Tag |
 | --- | --- | --- |
-| Solution exists? | **yes**, with one negative root (signs −, +, +) | yes, with one negative root (signs +, +, −) |
-| m₁ / m₂ / m₃ (eV) | **3.6×10⁻⁴ / 8.6×10⁻³ / 5.01×10⁻²** | 4.93×10⁻² / 5.01×10⁻² / 2.9×10⁻³ |
-| Sum of masses | **0.0591 eV** | 0.102 eV |
-| Against cosmology (Σ < 0.072 eV, DESI 2024) | **allowed** | **excluded** |
-| δ (Brannen phase) | 0.478 rad | — |
+| Δm²₂₁ | 7.49 × 10⁻⁵ eV² | measured (NuFIT 6.0) |
+| Δm²₃₁ (NO) | +2.513 × 10⁻³ eV² | measured |
+| Δm²₃₂ (IO) | −2.484 × 10⁻³ eV² | measured |
+| Σm_ν bound | < 0.064 eV (95 %) | measured (DESI DR2 + CMB, 2025) |
 
-With all-positive roots there is **no** solution in either ordering. Propagating the 1σ oscillation errors:
+Absolute neutrino masses are **not** measured. The Brannen form has two free parameters (μ, δ); two splittings fix both. The form therefore *predicts* the absolute masses, with no freedom left.
 
-```
-m1    = 3.45e-4 … 3.75e-4 eV
-sum   = 0.0587 … 0.0595 eV      (normal-ordering floor with m1 = 0: 0.0587 eV)
-delta = 0.472 … 0.483 rad
-```
+---
 
-**Prediction:** normal ordering; lightest mass ≈ 3.6×10⁻⁴ eV; sum ≈ 0.059 eV.
+## Result A — the charged-lepton container does not hold the neutrinos (forced-no)
 
-## Cautions that travel with it
+With all three `√m` positive — the only case in which Koide's `Q = 2/3` holds exactly — every factor `1 + √2 cos(2πk/3 + δ)` must be positive, which confines δ to `|δ| < π/12`. Inside that window the μ-independent ratio `R = (m₃² − m₁²)/(m₂² − m₁²)` ranges over:
 
-1. **The negative root is a stipulation.** Nothing in canon forces which root carries the sign. It is the same freedom Brannen used (2006). Without it, the form fails for neutrinos outright, which is itself worth recording.
-2. **The prediction sits just above the normal-ordering floor** (0.0591 vs 0.0587 eV). Cosmology alone cannot separate "Koide" from "m₁ = 0" for years; the sharp discriminator is the **ordering**.
-3. **The phase does not repeat 2/9.** δ_ν ≈ 0.478 rad, not 2/9 = 0.222. It lies near Brannen's conjecture δ_ν = 2/9 + π/12 = 0.484 rad (just outside the 1σ band above). Whether the trefoil reading forces any offset is **open**; the canon's partition = phase reading (§4a.5) would need to say why neutrinos shift.
-4. **The form is not original to the framework** (Koide 1981; Brannen 2006). What the framework adds is the reading and the commitment to the number in advance.
+| Ordering | Available R | Measured R |
+| --- | --- | --- |
+| NO | [194.5, ∞) | 33.55 |
+| IO | [1.000, 1.005] | 33.16 |
 
-## Falsifiers (dated)
+**No δ reproduces either ordering.** The exact Koide form that fits the charged leptons at δ = 2/9 is forced-no for the neutrino triplet. [forced]
 
-- **JUNO reports inverted ordering** (expected around 2029–2032) → **forced-no.**
-- **Cosmology measures Σ outside ≈ 0.058–0.065 eV**, once Euclid + CMB reach ~±0.02 eV → forced-no.
-- **A direct measurement of m₁ well above 10⁻³ eV** → forced-no.
+## Result B — one root negative: one solution per ordering
+
+Allowing one `√m` negative (Brannen 2006; Q with positive roots is then ≠ 2/3) gives exactly one mass set per ordering:
+
+| Ordering | δ_ν (rad) | m₁, m₂, m₃ (meV) | Σm_ν | vs DESI DR2 |
+| --- | --- | --- | --- | --- |
+| NO | 0.4793 | 0.36 · 8.66 · 50.13 | **0.0592 eV** | survives (at the floor) |
+| IO | 1.0419 | 2.92 · 49.17 · 49.93 | 0.1020 eV | **excluded** |
+
+(The script reports each solution twice; the second root is the reflection δ ↦ 2π/3 − δ and yields the same masses.)
+
+**Prediction carried forward:** Σm_ν = 0.059 eV, lightest neutrino ≈ 0.4 meV, normal ordering. [estimate · range ±0.002 eV from splitting uncertainties · falsifiers: Σm_ν measured above ~0.07 eV (Euclid/DESI final), or JUNO establishing inverted ordering]
+
+Note δ_ν = 0.4793 against `2/9 + π/12 = 0.4840` — 1 % apart. Brannen's relation, not derived here. [conflict at 1 %; held-open]
+
+---
+
+## What the container frame adds (live hypothesis, not a derivation)
+
+v5.4 §4a.2 reads a negative-frequency mode as *the line run backward — the anti-container*. Under the substrate frame, the neutrino triplet is one line with three closures, **one of which runs backward**. A container with a backward closure is its own anti-container. The one fermion that may be its own antiparticle is the neutrino (Majorana). This is a correspondence between the sign Brannen needed and the Majorana question, which physics has not connected to Koide.
+
+- **Status:** live hypothesis.
+- **Falsifier:** 0νββ searches (KamLAND-Zen, LEGEND) pushing m_ββ below the value this mass set permits for any Majorana phases, or a Dirac-nature result.
+- **Not claimed:** that this derives the sign, the masses, or Majorana nature. Brannen's numbers are Brannen's. The reading is the only new line.
+
+---
+
+## Cautions
+
+1. **Result B's hit is not evidence for the form.** Two parameters fit two numbers exactly by construction; the content is the third number (Σm_ν) and the ordering it selects.
+2. **Result A is the stronger result** and it cuts against v5.4 §6: the "three generations as overtones of one knot" picture, as parametrized, does not transfer from charged leptons to neutrinos without a sign change. Gap 2 (the tension law) must produce that sign or the picture is two-pattern, not one.
+3. NuFIT central values only; no error propagation beyond the stated range.
 
 ## Ledger movement
 
-| Narrowed | Newly opened | Status |
-| --- | --- | --- |
-| §14 item 1 "then neutrinos" run: normal ordering, Σ ≈ 0.059 eV, positive-root form fails; inverted solution excluded by cosmology | why the negative root; why δ_ν ≠ 2/9 (offset ≈ π/12?) | ◐ live, dated |
-
----
-
-*Source: GFunnel Methodology (Omni Process) v5.4, Cameron Garlick / GFunnel, https://github.com/GFunnel-Tech/methodology, CC BY 4.0. The neutrino run is a derivation from it, not endorsed by the author.*
+| # | Narrowed | Newly opened | Status |
+| --- | --- | --- | --- |
+| 13 (Gap 2) | exact Koide form forced-no for neutrinos; signed form predicts NO, Σm_ν ≈ 0.059 eV | why one closure runs backward; backward closure ↔ Majorana | ◐ |

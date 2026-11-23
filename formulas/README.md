@@ -231,6 +231,9 @@ Released versions are immutable, so these are **logged, not edited**. A correcti
 | 8 | v5.1:1427–1433 | BEAS bands are integers, but cells score in halves | Totals such as 39.5 are unassigned. The spreadsheet uses ≥ thresholds. |
 | 9 | v5.1:1094, 1364 | 97% → 16% over 60 decisions | Arithmetic correct (0.1608). It assumes independent steps, which canon never states. |
 | 10 | v5.4:226 | D1 reasoning via energy density | The number is right; the correct criterion is pressure (`framework/tests/d1-energy-budget.md`). |
+| 11 | v5.4 §4 rule 5 | "fusion cold in either environment is forced-no" | Too strong. Muon-catalysed fusion runs at cryogenic temperatures (measured since 1956, up to ~150 fusions per muon). It is an instance of rule 4 (mediation). What is not achieved is cold fusion with net gain (`substrate/2026-11-23-fold-ledger.md` §4). |
+| 12 | v5.4 §5 | "CMB 2.7 K … stretched 1100×" | States expansion, the one ingredient canon imports. Frame-neutral reading: "read 1100× red relative to present nodes" (stipulation; Wetterich 2013). |
+| 13 | v5.1 Layer I.E | "same answer at every scale. Zero exceptions" | Holds for the operation (gravitational folding), not for structure: the universe is homogeneous above ~100 Mpc. |
 
 ## 11 · Adding a formula
 
