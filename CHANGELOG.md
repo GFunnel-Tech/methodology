@@ -10,6 +10,10 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 These entries change how the work is published, not what it claims. **No version, no base code, and no variable is affected.**
 
+### 2026-11-23 — Neutrino prediction and the reach audit (test + substrate, no version)
+
+`framework/tests/koide-neutrino.md` + `koide_neutrino.py` run v5.4 §14's "then neutrinos", previously held as not runnable: the Brannen form plus measured oscillation gaps gives normal ordering and Σ ≈ 0.059 eV, written down before JUNO reports. [`substrate/2026-11-23-convergence-and-reach.md`](substrate/2026-11-23-convergence-and-reach.md) records the bookkeeping-vs-dynamics split, four independent convergences, and the efficiency comparison. Ledger rows 23–24. **No released file edited; base code unchanged.**
+
 ### 2026-11-23 — The Fold Ledger (substrate, no version)
 
 A session that started from a public debate about black-hole evaporation produced fourteen classified results, an audit of what the canon cannot yet calculate, and three correction proposals against released wording. All logged in [`substrate/2026-11-23-fold-ledger.md`](substrate/2026-11-23-fold-ledger.md) so the next run loads them instead of re-deriving them. Proposed ledger rows 19–22 added to `framework/registers.md`. **No released file edited; base code unchanged.** `CLAUDE.md` §2 now states the tag syntax the Stop-hook linter accepts.

@@ -76,10 +76,12 @@ Each iteration appends rows here (mirroring the ledgers inside v5.2 §4, v5.3 §
 | 20 | substrate | **Lamina spacing** (R7) | First stated plateau spacing for the row-18 falsifier: ~10⁶ between electron and nuclear layers | does a third plateau (neutron-star core) keep the scaling? | ☐ |
 | 21 | substrate | **Consolidation vs expansion** (R10–R12) | Uniform case = **stipulation** (Wetterich frame); uneven case = **live** (backreaction/timescape) | node-frequency drift rate (row 15); sign distribution (Gap 3) | ☐ |
 | 22 | substrate | **Calculation audit** (§2) + three correction proposals (§4: rule 5 cold fusion; §5 'stretched'; I.E 'zero exceptions') | Canon behind on calculation, level on open items; catch-up equations named | tension law remains the only route to being ahead | ☐ |
+| 23 | v5.4 → test | **Koide → neutrinos** (§14 #1, second half) — [run](tests/koide-neutrino.md) | Dated prediction: normal ordering, Σ ≈ 0.059 eV; positive-root form fails; inverted excluded by cosmology | why the negative root; δ_ν ≈ 0.478 ≠ 2/9 (near 2/9 + π/12) | ◐ |
+| 24 | substrate | **Convergence and reach** ([substrate](../substrate/2026-11-23-convergence-and-reach.md)) | Canon level on bookkeeping, behind on dynamics (rates, thresholds, distances); four independent convergences with mainstream | can the tension law be stated in bookkeeping form? | ☐ |
 
 Legend: ✅ resolved/forced · ◐ partial · ☐ queued · ⊘ proven-open · a compound status (e.g. ✅ / ⊘) means the run forced its mechanism **and** opened a proven-open item
 
-> Rows 16–18 are **variable evidence**, not a version: executed tests from v5.4 §14, each with a reproducible script in [`tests/`](tests/README.md). Declaring a version from them is the maintainer's call. Rows 19–22 are **proposed** movements from substrate, not yet accepted.
+> Rows 16–18 are **variable evidence**, not a version: executed tests from v5.4 §14, each with a reproducible script in [`tests/`](tests/README.md). Declaring a version from them is the maintainer's call. Rows 19–22 and 24 are **proposed** movements from substrate, not yet accepted; row 23 is an executed test.
 
 > When you propose an iteration, add your row here **and** in the version document's own ledger, then follow [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
