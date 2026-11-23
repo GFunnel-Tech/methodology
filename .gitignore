@@ -19,3 +19,5 @@ _site/
 
 # Built skill bundle (python3 tools/build_skill.py)
 /dist/
+__pycache__/
+*.pyc
