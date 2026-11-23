@@ -344,12 +344,12 @@ Ranges are inclusive and nest: a `###` range sits inside its `##` range. Release
 | 117–180 | 4. Audit record |
 | 181–232 | 5. Container record (derivation: the container unit) |
 
-## `framework/registers.md` (114 lines)
+## `framework/registers.md` (115 lines)
 
 | Lines | Section |
 | --- | --- |
 | 11–29 | 1. The Variable Principle (the rule these registers enforce) |
 | 30–42 | 2. Outcome classes (from the Meta-Tier, v5.3) |
 | 43–48 | 2b. The Gap Register |
-| 49–92 | 3. The Iteration Ledger |
-| 93–114 | 4. What the framework explicitly does *not* claim |
+| 49–93 | 3. The Iteration Ledger |
+| 94–115 | 4. What the framework explicitly does *not* claim |
