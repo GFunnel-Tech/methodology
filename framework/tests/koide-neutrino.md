@@ -28,6 +28,19 @@ delta = 0.472 … 0.483 rad
 
 **Prediction:** normal ordering; lightest mass ≈ 3.6×10⁻⁴ eV; sum ≈ 0.059 eV.
 
+## Paired branches and their weights (added after the first commit)
+
+The formula ties ordering to the sum, so both branches are recorded, each with its own number:
+
+| Branch | Sum | Weight |
+| --- | --- | --- |
+| Normal | 0.0591 eV | ≈ 95% (91–99%) |
+| Inverted | 0.102 eV | ≈ 5% (1–9%) |
+
+Weights come from multiplying each branch by its compatibility with current measurements (cosmology cap ~6× for normal; oscillation data 1.7–23× for normal, the spread being the dataset dispute), then renormalising. The script prints them. The sealed record, with the tolerance fixed in advance, the framework-free default and the contamination grade, is [`../../audit/prediction/PRED-005.md`](../../audit/prediction/PRED-005.md).
+
+**Decision rule (fixed before data):** the prediction fails if inverted ordering is established at ≥5σ, or by ≥2 independent methods at ≥3σ each, unless the sum is then measured at 0.102 ± 0.01 eV. It is confirmed by the same bar for normal ordering together with a sum inside 0.055–0.065 eV.
+
 ## Cautions that travel with it
 
 1. **The negative root is a stipulation.** Nothing in canon forces which root carries the sign. It is the same freedom Brannen used (2006). Without it, the form fails for neutrinos outright, which is itself worth recording.

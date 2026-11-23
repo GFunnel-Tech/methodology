@@ -85,7 +85,30 @@ def main():
         print(f"  Q check={q_signed(m, signs):.10f}   delta={d:.5f} rad "
               f"(mod 2pi/3: {d % (2*math.pi/3):.5f}; 2/9={TWO_NINTHS:.5f})\n")
     floor = sum(masses_no(0.0))
-    print(f"Normal-ordering floor (m1 = 0): sum = {floor:.5f} eV")
+    print(f"Normal-ordering floor (m1 = 0): sum = {floor:.5f} eV\n")
+    branch_weights(found)
+
+
+def branch_weights(found, osc_sigmas=(1.0, 1.5, 2.5)):
+    """Weight the surviving branches against current measurements.
+
+    Each measurement multiplies a branch's weight by how compatible the branch is
+    with it, then the weights are renormalised (Bayesian updating; the same
+    arithmetic as environment-selection of stable states). Inputs, all stated:
+      - cosmology: one-sided 95% cap on the sum, read as a half-Gaussian at zero;
+      - oscillation data: a preference for normal ordering of `osc_sigmas`, read
+        as a likelihood ratio exp(s^2 / 2). The spread reflects the dataset dispute.
+    """
+    sigma = COSMO_SUM_LIMIT / 1.645
+    like = lambda total: math.exp(-total**2 / (2 * sigma**2))
+    sums = {name: sum(m) for name, _, m in found}
+    if not {"normal", "inverted"} <= sums.keys():
+        return
+    cosmo_lr = like(sums["normal"]) / like(sums["inverted"])
+    print(f"Branch weights (cosmology favours normal by {cosmo_lr:.1f}x):")
+    for s in osc_sigmas:
+        ratio = math.exp(s**2 / 2) * cosmo_lr
+        print(f"  oscillation preference {s:.1f} sigma -> P(normal) = {ratio / (1 + ratio):.3f}")
 
 
 if __name__ == "__main__":

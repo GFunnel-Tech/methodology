@@ -78,6 +78,8 @@ Each iteration appends rows here (mirroring the ledgers inside v5.2 §4, v5.3 §
 | 22 | substrate | **Calculation audit** (§2) + three correction proposals (§4: rule 5 cold fusion; §5 'stretched'; I.E 'zero exceptions') | Canon behind on calculation, level on open items; catch-up equations named | tension law remains the only route to being ahead | ☐ |
 | 23 | v5.4 → test | **Koide → neutrinos** (§14 #1, second half) — [run](tests/koide-neutrino.md) | Dated prediction: normal ordering, Σ ≈ 0.059 eV; positive-root form fails; inverted excluded by cosmology | why the negative root; δ_ν ≈ 0.478 ≠ 2/9 (near 2/9 + π/12) | ◐ |
 | 24 | substrate | **Convergence and reach** ([substrate](../substrate/2026-11-23-convergence-and-reach.md)) | Canon level on bookkeeping, behind on dynamics (rates, thresholds, distances); four independent convergences with mainstream | can the tension law be stated in bookkeeping form? | ☐ |
+| 25 | prediction | **PRED-005** sealed ([record](../audit/prediction/PRED-005.md)) | Neutrino prediction filed under the prediction protocol: tolerance fixed, ordering part non-discriminating, sum part discriminating, contamination high | verdict waits on JUNO / DUNE / cosmology | ☐ |
+| 26 | substrate | **Process audit** ([substrate](../substrate/2026-11-23-process-audit.md)) | Session within the methodology on honesty discipline; outside it on routing (Master Meta not run literally, no-import rule broken mid-session) | is mainstream theory admissible as Test D ground, or only its measurements? | ☐ |
 
 Legend: ✅ resolved/forced · ◐ partial · ☐ queued · ⊘ proven-open · a compound status (e.g. ✅ / ⊘) means the run forced its mechanism **and** opened a proven-open item
 
