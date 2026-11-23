@@ -10,6 +10,10 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 These entries change how the work is published, not what it claims. **No version, no base code, and no variable is affected.**
 
+### 2026-11-23 — The Fold Ledger (substrate, no version)
+
+A session that started from a public debate about black-hole evaporation produced fourteen classified results, an audit of what the canon cannot yet calculate, and three correction proposals against released wording. All logged in [`substrate/2026-11-23-fold-ledger.md`](substrate/2026-11-23-fold-ledger.md) so the next run loads them instead of re-deriving them. Proposed ledger rows 19–22 added to `framework/registers.md`. **No released file edited; base code unchanged.** `CLAUDE.md` §2 now states the tag syntax the Stop-hook linter accepts.
+
 ### 2026-10-20 — The Estimate Protocol (operating-protocol amendment, author decision)
 
 A user's test showed the methodology-loaded AI missing hard numbers and taking 3–4× longer on a six-month forecast. Root cause: rule 5 (*never fill a held-open variable with assumption*) gave no permitted form for a **calculated, tagged estimate**, so the AI refused to estimate. The rule is amended in `AGENTS.md` and the skill to **never fill a variable silently**: every open variable gets the best value the evidence supports, a range, a tag (`measured` · `forced` · `estimate` · `assumption` · `held-open` · `conflict`) and a falsifier; a value may be omitted only when no prior, structure, analogue or trend exists. Logged in [`substrate/2026-10-20-estimate-protocol.md`](substrate/2026-10-20-estimate-protocol.md) as a governance departure, not yet Forcing-Tested. Canon text is unchanged. `formulas/omni_gap.py` now emits a tagged value for every open cell; `formulas/forecast.py` adds the two-arm forecast test with per-tag scoring.
