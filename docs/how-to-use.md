@@ -20,6 +20,20 @@ This is a **living operational doctrine** — designed to be read, run, and appl
 
 If all seven check, you're applying it correctly. If any fail, that failure is the location of your next correction.
 
+## Before you add anything: the acceptance gate
+
+The methodology works like a cell: it filters everything before it transcribes it. Before you treat a new idea, result or prediction as part of the methodology, run it through the [acceptance gate](../skills/gfunnel-methodology/workflows/accept.md):
+
+1. **Intake:** does it rest on measurements and canon, not on someone else's theory?
+2. **Placement:** which Kingdom, layer and domain does it belong to?
+3. **Self or borrowed:** did the methodology derive it, or was it brought in from outside? Borrowed material can be used and shared, labelled as borrowed, but it is not the methodology's own.
+4. **Derivation:** run the Master Meta-Algorithm's twelve steps and the Forcing Test, in order.
+5. **Falsifier:** what would prove it wrong, and has that been checked?
+6. **Consistency:** does it conflict with anything already recorded? Does it hold one scale up and one scale down?
+7. **Rework or recycle:** fix what is half-derived; log what fails, so nothing is lost.
+
+Use at least three different checks (a measurement, another person, the records). One person or one AI checking itself is one filter, however many times it runs.
+
 ## What the framework cannot supply (and won't pretend to)
 
 1. **The choice of action** at any decision point. It maps and weights options and surfaces the dynamic middle — it cannot choose. The choice is structurally yours; that is what makes you a co-creator rather than a computation.

@@ -35,6 +35,11 @@ Follow AGENTS.md. Core rules:
   methodology, every step) / Estimate (a number not yet in the record: instruments only, the
   formulas/ tools) / Both / Contribute. Say what you did not load.
 - State Correspondence when the same algorithm applies at another scale.
+- Before writing anything new into the methodology as its own, run the ACCEPTANCE GATE
+  (skills/gfunnel-methodology/workflows/accept.md): intake (measurements and canon only) ->
+  placement (Kingdom, layer, domain) -> self or borrowed -> Master Meta-Algorithm + Forcing Test
+  -> falsifier -> consistency -> rework or recycle. Imported material is BORROWED, never the
+  methodology's own. No random layers. You may run the gate; you may not mark a fill accepted.
 - Do not claim the framework proves anything it lists as a live hypothesis or proven-open.
 - v5.4 claims ZERO novel predictions. Never present its constructs (Line-Field, Knot-Line,
   Lamina) as established physics, and carry its four cautions (v5.4 section 7).

@@ -80,6 +80,7 @@ Each iteration appends rows here (mirroring the ledgers inside v5.2 §4, v5.3 §
 | 24 | substrate | **Convergence and reach** ([substrate](../substrate/2026-11-23-convergence-and-reach.md)) | Canon level on bookkeeping, behind on dynamics (rates, thresholds, distances); four independent convergences with mainstream | can the tension law be stated in bookkeeping form? | ☐ |
 | 25 | prediction | **PRED-005** sealed ([record](../audit/prediction/PRED-005.md)) | Neutrino prediction filed under the prediction protocol: tolerance fixed, ordering part non-discriminating, sum part discriminating, contamination high | verdict waits on JUNO / DUNE / cosmology | ☐ |
 | 26 | substrate | **Process audit** ([substrate](../substrate/2026-11-23-process-audit.md)) | Session within the methodology on honesty discipline; outside it on routing (Master Meta not run literally, no-import rule broken mid-session) | is mainstream theory admissible as Test D ground, or only its measurements? | ☐ |
+| 27 | substrate | **Acceptance gate** ([decision](../substrate/2026-11-23-acceptance-gate.md), [workflow](../skills/gfunnel-methodology/workflows/accept.md)) | Author decision: the whole methodology must prove a fill; imported material is non-self; three independent kinds of filter | does the gate pass its own gate? (eight-stage form is a stipulation until declared) | ☐ |
 
 Legend: ✅ resolved/forced · ◐ partial · ☐ queued · ⊘ proven-open · a compound status (e.g. ✅ / ⊘) means the run forced its mechanism **and** opened a proven-open item
 

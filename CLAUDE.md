@@ -18,6 +18,7 @@ Everything in the methodology is one of two kinds of work. Decide which the task
 | **a number that is not yet in the record**: fill gaps in a table, forecast, compare datasets, narrow an open question, calculate one system from another | **Estimate — the instruments only** | the Variable Principle · the Forecasting Algorithm · Layer ◇ step 2 · the Forcing Test outcomes · the Estimate Protocol | **`workflows/estimate.md`** |
 | both (diagnose, then put numbers on it) | Diagnose, then Estimate | as above, in that order | both |
 | to contribute, audit, or integrate | — | `CONTRIBUTING.md`, `audit/`, `docs/ai-integration.md` | `workflows/iterate.md`, `reality-audit.md`, `integrate.md` |
+| **to accept anything new into the methodology** (a filled gap, result, prediction, correction, construct) | Contribute (gate) | the Container (v5.3 §3), the registers, the reality filter | **`workflows/accept.md`**: the eight-stage cell filter; imported material is non-self and stays quarantined; three independent kinds of filter before acceptance |
 | **to turn an algorithm into an article** (a video, a prompt for an AI writer, a how-to for a business) | Contribute (tooling) | `operations/articles/README.md`; the algorithm's own section via `tools/canon_pack.py` | paste the prompt + SOURCE BLOCK, then the editor's checklist |
 
 **Say which mode you chose and what you did not load.** A forecast that cites the Hermetic principles is a routing error. A diagnosis that skips the Three Kingdoms is also one.
@@ -51,6 +52,7 @@ Exact invocations, with the arguments explained: `workflows/estimate.md` §2. Th
 - Mode named; loaded and not-loaded named.
 - Every number tagged; every estimate ranged and falsifiable; nothing left blank that has a prior.
 - Derivations labelled; held-open items listed with the measurement that would close them.
+- **Every new claim run through the acceptance gate** (`skills/gfunnel-methodology/workflows/accept.md`) and its disposition stated. Nothing imported is presented as the methodology's own; an AI never marks a fill *accepted* on its own.
 - Canon text reproduced → credit line (`AGENTS.md` → Attribution).
 - Repository changed → `python3 tools/build_skill.py --check` passes; formulas touched → `python3 formulas/benchmark.py` and `python3 formulas/correspondence_test.py` still run; `formulas/README.md` has a row for any new formula.
 - Released files in `versions/` are never edited. Corrections to canon are logged (`formulas/README.md` §10, `CHANGELOG.md`), not applied.

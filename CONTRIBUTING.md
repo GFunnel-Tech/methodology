@@ -23,15 +23,17 @@ If your proposed change rewrites the base spine rather than operating *on* it, i
    - *Variable evidence* — you have evidence bearing on a held-open variable.
    - *Application / Usage report* — you used the framework and want to report how (also a usage signal).
    - *Transcription fix* — a canonical file diverges from the authored original.
-2. **Discuss and classify.** Use the Forcing Test outcome classes from [`framework/registers.md`](framework/registers.md): forced-fill · live hypothesis · stipulation · proven-open. Be honest about which one applies.
-3. **Do not edit released version files.** Versions in [`versions/`](versions/README.md) are immutable. A refinement becomes a **new** version directory (`vX.Y/`), which loads the prior as substrate. (The only edits to a released file are transcription fixes that bring it *closer* to the authored original — logged in `CHANGELOG.md`.)
-4. **Log the movement.** Add a row to the Iteration Ledger in [`framework/registers.md`](framework/registers.md) **and** the new version's own ledger: what narrowed, what stayed open, what newly opened, and confirmation the base code didn't change.
-5. **Open a pull request** referencing the issue. Fill in the PR template — especially the honesty checklist.
+2. **Run the acceptance gate** ([`skills/gfunnel-methodology/workflows/accept.md`](skills/gfunnel-methodology/workflows/accept.md)) on every fill: intake → placement → self/non-self → Master Meta-Algorithm and Forcing Test → falsifier → consistency → rework or recycle. Include the gate report in the issue.
+3. **Discuss and classify.** Use the Forcing Test outcome classes from [`framework/registers.md`](framework/registers.md): forced-fill · live hypothesis · stipulation · proven-open. Be honest about which one applies.
+4. **Do not edit released version files.** Versions in [`versions/`](versions/README.md) are immutable. A refinement becomes a **new** version directory (`vX.Y/`), which loads the prior as substrate. (The only edits to a released file are transcription fixes that bring it *closer* to the authored original — logged in `CHANGELOG.md`.)
+5. **Log the movement.** Add a row to the Iteration Ledger in [`framework/registers.md`](framework/registers.md) **and** the new version's own ledger: what narrowed, what stayed open, what newly opened, and confirmation the base code didn't change.
+6. **Open a pull request** referencing the issue. Fill in the PR template — especially the honesty checklist.
 
 ## Honesty checklist (every iteration PR must pass)
 
 - [ ] Loads the current version as substrate; nothing prior is lost or silently overwritten.
 - [ ] Classifies each movement (forced-fill / live hypothesis / stipulation / proven-open).
+- [ ] Each fill carries an acceptance-gate report; nothing imported is presented as the methodology's own.
 - [ ] Does **not** fill a held-open variable with assumption.
 - [ ] Does **not** claim more than is forced (no promoting a live hypothesis to a law).
 - [ ] Updates the Iteration Ledger and `CHANGELOG.md`.
