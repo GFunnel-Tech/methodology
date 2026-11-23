@@ -7,6 +7,7 @@ These are **variable-evidence contributions**, not a new version. They narrow or
 | §14 | Test | Status | Result |
 | --- | --- | --- | --- |
 | 1 | Koide prediction — δ = 2/9, trefoil form | ✅ **run** | [koide-delta.md](koide-delta.md) — **passes** at 0.42σ; all three lepton masses to ≤0.0031% from one scale. Caveat: Koide's 2/3 is built into the form, so the whole test is one number. |
+| 1b | Koide form → neutrinos ("then neutrinos") | ✅ **run** | [koide-neutrino.md](koide-neutrino.md) — **dated prediction (2026-11-23):** normal ordering, Σ ≈ 0.059 eV, m₁ ≈ 3.6×10⁻⁴ eV; needs one negative root (stipulation); inverted solution excluded by cosmology. Falsified by JUNO reporting inverted ordering. Supersedes the "not runnable" note in koide-delta.md. |
 | 2 | Meson 1/3 test (two-fold partition) | ⛔ **not runnable as written** | [not-runnable.md](not-runnable.md) — no observable is specified. |
 | 3 | Lamina falsifier vs nuclear-density data | ◐ **partially run** | [lamina-falsifier.md](lamina-falsifier.md) — one genuine plateau confirmed; the falsifier as stated is not currently decidable. |
 | 4 | Test partition = phase (§4a reframing) | ⛔ **held open** | [not-runnable.md](not-runnable.md) — better posed than "strand ≠ generation", and integer harmonics are now **forced-no**; but *why three phases* still needs the tension law. |
@@ -18,6 +19,7 @@ These are **variable-evidence contributions**, not a new version. They narrow or
 ```bash
 python3 framework/tests/koide_delta.py
 python3 framework/tests/d1_budget.py
+python3 framework/tests/koide_neutrino.py
 ```
 
 Standard library only; no dependencies. Physical constants and PDG masses are declared at the top of each script so a reader can see exactly what was assumed.

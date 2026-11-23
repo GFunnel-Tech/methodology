@@ -72,10 +72,16 @@ Each iteration appends rows here (mirroring the ledgers inside v5.2 §4, v5.3 §
 | 16 | v5.4 → test | **Koide δ = 2/9 prediction run** (§14 #1) — [run](tests/koide-delta.md) | **Passes at 0.42σ:** δ = 2/9 reproduces all three lepton masses to ≤3.1×10⁻⁵ from one scale | Koide's 2/3 shown built into the form (one test, not two); Test B still unmet; m_τ precision is the binding limit | ✅ |
 | 17 | v5.4 → test | **D1 energy budget** (§14 #5) — [run](tests/d1-energy-budget.md) | Quantified: ~105 T (small arms) → ~241 T (long rod) by the pressure criterion; plasma shown **forced**, not merely cheaper | dense-plasma confinement at ~4 GPa as D1's binding constraint (~4×10⁴ above precedent) | ◐ |
 | 18 | v5.4 → test | **Lamina falsifier** (§14 #3) — [run](tests/lamina-falsifier.md) | Nuclear saturation confirmed as one genuine plateau | falsifier not decidable as written; needs a stated plateau spacing or a dated observational bound | ☐ |
+| 19 | substrate | **Fold Ledger** — leak-driven fold, ratchet, fusion ledger ([substrate](../substrate/2026-11-23-fold-ledger.md) R1–R8) | **Forced (proposed):** one release-permits-fold operation at five scales; lightest-carrier rule; ratchet toward stability | does the ratchet have a bottom? (Gap 4) | ☐ |
+| 20 | substrate | **Lamina spacing** (R7) | First stated plateau spacing for the row-18 falsifier: ~10⁶ between electron and nuclear layers | does a third plateau (neutron-star core) keep the scaling? | ☐ |
+| 21 | substrate | **Consolidation vs expansion** (R10–R12) | Uniform case = **stipulation** (Wetterich frame); uneven case = **live** (backreaction/timescape) | node-frequency drift rate (row 15); sign distribution (Gap 3) | ☐ |
+| 22 | substrate | **Calculation audit** (§2) + three correction proposals (§4: rule 5 cold fusion; §5 'stretched'; I.E 'zero exceptions') | Canon behind on calculation, level on open items; catch-up equations named | tension law remains the only route to being ahead | ☐ |
+| 23 | v5.4 → test | **Koide → neutrinos** (§14 #1, second half) — [run](tests/koide-neutrino.md) | Dated prediction: normal ordering, Σ ≈ 0.059 eV; positive-root form fails; inverted excluded by cosmology | why the negative root; δ_ν ≈ 0.478 ≠ 2/9 (near 2/9 + π/12) | ◐ |
+| 24 | substrate | **Convergence and reach** ([substrate](../substrate/2026-11-23-convergence-and-reach.md)) | Canon level on bookkeeping, behind on dynamics (rates, thresholds, distances); four independent convergences with mainstream | can the tension law be stated in bookkeeping form? | ☐ |
 
 Legend: ✅ resolved/forced · ◐ partial · ☐ queued · ⊘ proven-open · a compound status (e.g. ✅ / ⊘) means the run forced its mechanism **and** opened a proven-open item
 
-> Rows 16–18 are **variable evidence**, not a version: executed tests from v5.4 §14, each with a reproducible script in [`tests/`](tests/README.md). Declaring a version from them is the maintainer's call.
+> Rows 16–18 are **variable evidence**, not a version: executed tests from v5.4 §14, each with a reproducible script in [`tests/`](tests/README.md). Declaring a version from them is the maintainer's call. Rows 19–22 and 24 are **proposed** movements from substrate, not yet accepted; row 23 is an executed test.
 
 > When you propose an iteration, add your row here **and** in the version document's own ledger, then follow [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 

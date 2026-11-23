@@ -28,7 +28,7 @@ Everything in the methodology is one of two kinds of work. Decide which the task
 
 `measured` · `forced` · `estimate` · `assumption` · `held-open` · `conflict`
 
-with a range and a falsifier on every `estimate` and `assumption`. A value may be omitted (`held-open`) only when **no prior, no structure, no analogue and no trend** exists. Anything that has happened before has a prior. The Big Bang's first moment passes that test; next quarter's revenue does not.
+with a range and a falsifier on every `estimate` and `assumption`. **Write the tag as `[tag: estimate]` (or `tag: estimate`)**: `tools/check_output.py` does not count a bare word in a table column as a tag. A value may be omitted (`held-open`) only when **no prior, no structure, no analogue and no trend** exists. Anything that has happened before has a prior. The Big Bang's first moment passes that test; next quarter's revenue does not.
 
 ## 3. The formulas: when to run which
 
