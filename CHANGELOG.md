@@ -10,6 +10,14 @@ This changelog records *what each iteration moved* — not marketing notes, but 
 
 These entries change how the work is published, not what it claims. **No version, no base code, and no variable is affected.**
 
+### 2026-11-23 — Neutrino prediction regraded; the gap-network frame
+
+The neutrino prediction is regraded **non-discriminating** (the default guess "lightest ≈ 0" gives nearly the same sum) and recorded as **borrowed** under the acceptance gate. `framework/tests/koide-neutrino-weights.md` gains the regrading, the model-dependence of the cosmology cap, the implied m_ββ and m_β, and what would make it discriminating. [`substrate/2026-11-23-gap-network.md`](substrate/2026-11-23-gap-network.md) records the author's frame (fills propagate; linked gaps stabilize or collapse) and the first map, the lepton sector. Ledger rows 25 (annotated) and 28. PRED-005 itself is not edited. **Canon text unchanged.**
+
+### 2026-11-23 — The acceptance gate (operating protocol, author decision)
+
+Adds `skills/gfunnel-methodology/workflows/accept.md`: an eight-stage filter, modelled on cellular quality control, that every new fill passes before it is written into the methodology as its own (author: *"the entirety of the methodology needs to prove it … it cannot have a random layer"*). Imported material is non-self and stays labelled as borrowed; acceptance needs three independent kinds of filter; an AI may run the gate but not mark a fill accepted. Wired into `CLAUDE.md` (§1, §4), `AGENTS.md`, the skill's `SKILL.md`, `CONTRIBUTING.md` (workflow step 2, checklist) and `docs/how-to-use.md`. Recorded in [`substrate/2026-11-23-acceptance-gate.md`](substrate/2026-11-23-acceptance-gate.md). Worked example: the neutrino prediction is quarantined as borrowed (form, sign and phase are non-self). **Canon text unchanged.**
+
 ### 2026-11-23 — Merged the 2026-10-31 container branch; corrected the neutrino record
 
 Merges `substrate/2026-10-31-container-superposition` (author frame: everything is a container; the neutrino half of the Koide run, first done 2026-10-31). Both branches had added `framework/tests/koide-neutrino.md` and `koide_neutrino.py`; the 2026-10-31 files keep those names, and the 2026-11-23 rerun becomes test 1c, `koide-neutrino-weights.md` + `koide_neutrino_weights.py` (the version sealed with PRED-005 stays recoverable as `git show 168156c:framework/tests/koide_neutrino.py`). **Correction:** the entries below say the neutrino step was "previously held as not runnable"; that was true of the default branch only. It had been run on 2026-10-31, with newer inputs, and reached the same result. With the newer inputs (DESI DR2 cap 0.064 eV) the weight on normal ordering rises from ≈95% to ≈97%. Substrate files dated 2026-11-23 are not edited. **No released file edited; base code unchanged.**

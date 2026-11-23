@@ -47,6 +47,7 @@ Apply this to your own outputs. Distinguish what is **measured**, what is **stru
 - Do not claim the framework proves something it explicitly lists as a live hypothesis or proven-open (see v5.3 §6, v5.4 §11, and [`framework/registers.md`](framework/registers.md)).
 - Do not present v5.4's constructs (Line-Field, Knot-Line, Lamina) as physics. v5.4 states **zero novel predictions** and files itself below string theory / LQG "for lacking equations" (§7). Carry its four required cautions — Bell, environmental decay rates, point-like quarks, the measurement problem — whenever you use it.
 - Do not alter the base code. Iterations operate *on* the base; they do not rewrite it.
+- Do not write anything new into the methodology as its own until it has passed the **acceptance gate** ([`skills/gfunnel-methodology/workflows/accept.md`](skills/gfunnel-methodology/workflows/accept.md)): the whole methodology must prove it; imported material is non-self and stays labelled as borrowed; no random layers.
 
 ## If you are here to contribute (write access)
 

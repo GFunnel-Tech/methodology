@@ -42,6 +42,17 @@ Weights come from multiplying each branch by its compatibility with current meas
 - **Cosmology measures Σ outside ≈ 0.058–0.065 eV**, once Euclid + CMB reach ~±0.02 eV → forced-no.
 - **A direct measurement of m₁ well above 10⁻³ eV** → forced-no.
 
+## Regrading and what the calculation was missing (added later on 2026-11-23)
+
+The sealed record is not edited; these notes sit below it.
+
+1. **Non-discriminating.** PRED-005 graded the sum as discriminating. It is not: the framework-free guess "normal ordering, lightest ≈ 0" gives Σ = 0.0587 eV, 0.0004 eV from 0.0591 eV, far below any planned sensitivity (cosmology ≈ ±0.01–0.02 eV). The whole prediction is non-discriminating as it stands.
+2. **Borrowed.** Under the acceptance gate (`skills/gfunnel-methodology/workflows/accept.md`) the form, the negative root and the phase are non-self (Koide 1981, Brannen 2006). The prediction is public and dated as a borrowed prediction, not the methodology's own.
+3. **The cosmology cap is model-dependent.** The 0.064 eV cap assumes constant dark energy. With evolving dark energy (DESI w₀wₐ fits) it loosens to roughly 0.12–0.20 eV, which would readmit the inverted branch (0.102 eV). The ≈97% weight assumes constant dark energy.
+4. **The weighting is crude.** The cap is modelled as a half-Gaussian at zero; the actual DESI likelihood prefers a sum below the oscillation floor, which disfavours both branches.
+5. **Implied quantities, computed now** (NuFIT 6.0 mixing): m_ββ = 1.3–4.0 meV (range from the unknown Majorana phases), m_β = 8.8 meV. Both are far below LEGEND-1000 (~9–20 meV) and Project 8 (~40 meV), so the double-beta falsifier of test 1b is not testable soon.
+6. **What would make it discriminating:** a canon-derived phase shift Δ = δ_ν − δₑ, sealed before JUNO's precision result, predicts the gap ratio Δm²₃₁/Δm²₂₁ (measured 33.55 ± ~1.0; JUNO to ~0.4%). For reference only, Brannen's external rule Δ = π/12 gives 32.43. See [`../../substrate/2026-11-23-gap-network.md`](../../substrate/2026-11-23-gap-network.md).
+
 ## Ledger movement
 
 | Narrowed | Newly opened | Status |

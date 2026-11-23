@@ -48,6 +48,7 @@ And the prohibitions:
 | Propose an iteration, log variable evidence, run a §14 test, or open an issue/PR | `workflows/iterate.md` |
 | Work on the Reality Audit (`audit/`), its predictions, the Cell Atlas (`tasks/cell-atlas/`), or knowledge containers (`containers/`) | `workflows/reality-audit.md` |
 | Quote, publish, build a product/prompt/RAG index on the framework, or register an integration | `workflows/integrate.md` |
+| **Accept anything new into the methodology** (a filled gap, result, prediction, correction or construct) — the last step of every workflow above that produces a claim | **`workflows/accept.md`** — the eight-stage cell filter; nothing enters as a random layer |
 
 **Decide first whether the task is a diagnosis (full methodology, `run-algorithm.md`) or an estimate (instruments only, `estimate.md`).** Loading the diagnostic layers onto an estimate costs 3–4× the time and adds no accuracy (`audit/VERDICT.md`). Say which you chose.
 
@@ -87,6 +88,7 @@ Load order when a task needs the whole framework: v5.1 → v5.2 → v5.3 → v5.
 - Name the **layer/algorithm** used, and the **version(s)** you read.
 - Tag each quantity **measured / forced / estimate / assumption / held-open / conflict**; every estimate or assumption carries a range and a falsifier; label derivations.
 - Flag data you could not supply.
+- Give every new claim its **acceptance-gate disposition** (`workflows/accept.md`): accepted-pending-author · held for rework · quarantined (borrowed) · recycled (forced-no).
 - When you reproduce or closely paraphrase the material, attach the credit line (CC BY 4.0 requires it):
 
 ```
